@@ -1,0 +1,22 @@
+name: testParser
+  
+jobs:
+  setup-matrix:
+    runs-on: ubuntu-latest
+    
+      - name: Tutorials checkout
+        uses: actions/checkout@v2
+        with:
+          repo: devonfw-tutorials/tutorials
+          path: tutorials
+          
+      - name: Tutorial Compiler checkout
+        uses: actions/checkout@v2
+        with:
+          repo: devonfw-tutorials/wiki-tutorials
+          path: tutorial-compiler
+          
+      - name: get Parser
+        run: |
+              pwd
+              ls
