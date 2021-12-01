@@ -1,7 +1,11 @@
 name: testParser
 
-on: pull_request
-  
+on:
+  workflow_run:
+    workflows: ["Dispcher event on update of devonfw guide"]
+    types:
+      - completed
+  workflow_dispatch: 
   
 jobs:
   setup-matrix:
