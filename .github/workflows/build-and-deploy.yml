@@ -123,6 +123,24 @@ jobs:
           node rereferencer/rereference.js ../../target/asciidoc/devonfw-guide/ ../../target/generated-docs/website/pages/docs/
           node highlight-current.js ../target/generated-docs/website
           cd ..
+          
+      - name: Tutorials checkout
+        uses: actions/checkout@v2
+        with:
+          repo: devonfw-tutorials/tutorials
+          path: tutorials
+          
+      - name: Tutorial Compiler checkout
+        uses: actions/checkout@v2
+        with:
+          repo: devonfw-tutorials/wiki-tutorials
+          path: tutorial-compiler
+          
+      - name: get Parser
+        run: |
+              pwd
+              ls
+              
 
       - name: Create output for architectures
         run: |
