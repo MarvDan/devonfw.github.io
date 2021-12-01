@@ -1,14 +1,12 @@
-name: testParser
-
+name: parser Check
 on:
   workflow_run:
-    workflows: ["Dispcher event on update of devonfw guide"]
+    workflows: ["build-and-deploy"]
     types:
       - completed
-  workflow_dispatch: 
-  
+  workflow_dispatch:
 jobs:
-  setup-matrix:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Tutorials checkout
