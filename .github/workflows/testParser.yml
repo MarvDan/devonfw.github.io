@@ -1,9 +1,12 @@
 name: testParser
+
+on: pull_request
+  
   
 jobs:
   setup-matrix:
     runs-on: ubuntu-latest
-    
+    steps:
       - name: Tutorials checkout
         uses: actions/checkout@v2
         with:
