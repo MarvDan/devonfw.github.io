@@ -168,7 +168,8 @@ jobs:
         run: |
           pwd
           ls
-          cd wiki-tutorials/tutorial-compiler/engine
+          #cd wiki-tutorials/tutorial-compiler/engine
+          npm install typescript
           tsc
           cp engine/parser.def build/engine/parser.def
           cp -r playbooks build
