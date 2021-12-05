@@ -170,12 +170,17 @@ jobs:
           ls
           #cd wiki-tutorials/tutorial-compiler/engine
           npm install typescript
-          tsc
-          cp engine/parser.def build/engine/parser.def
-          cp -r playbooks build
-          cp -r environments build
-          cp -r runners build
-          npm test
+          npx tsc -t es5 engine/parser.ts
+          pwd
+          ls
+          pwd
+          ls engine
+          #tsc
+          #cp engine/parser.def build/engine/parser.def
+          #cp -r playbooks build
+          #cp -r environments build
+          #cp -r runners build
+          #npm test
           pwd
           ls 
           pwd
