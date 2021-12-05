@@ -156,6 +156,27 @@ jobs:
         run: |
           cp -avr architectures/target/generated-docs/ target/generated-docs/website/pages/architectures/
           
+      - name: Tutorials Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: devonfw-tutorials/tutorials
+          path: tutorials
+          
+      - name: Tutorial Compiler Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: devonfw-tutorials/tutorial-compiler
+          path: tutorial-compiler
+          
+      - name: Test
+        run: |
+          pwd 
+          ls
+          pwd
+          ls ../
+          pwd
+          ls ../../
+          
       - name: Create output for tutorials
         run: |
           chmod +x wiki-tutorials/scripts/createOutput.sh
