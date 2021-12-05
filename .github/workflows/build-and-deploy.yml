@@ -57,6 +57,11 @@ jobs:
         run: |
           chmod +x architectures/scripts/copyPomFiles.sh
           architectures/scripts/copyPomFiles.sh
+          
+      - name: Copy pom files for tutorials
+        run: |
+          chmod +x wiki-tutorials/scripts/copyPomFiles.sh
+          wiki-tutorials/scripts/copyPomFiles.sh
 
       - name: npm install for architectures
         run: |
@@ -156,6 +161,15 @@ jobs:
           chmod +x wiki-tutorials/scripts/createOutput.sh
           wiki-tutorials/scripts/createOutput.sh
           
+      - name: Copy output of tutorials
+        run: |
+          cp -avr wiki-tutorials/target/generated-docs/ target/generated-docs/website/pages/learning/
+
+      - name: Create output for tutorials
+        run: |
+          chmod +x wiki-tutorials/scripts/createOutput.sh
+          wiki-tutorials/scripts/createOutput.sh
+
       - name: Copy output of tutorials
         run: |
           cp -avr wiki-tutorials/target/generated-docs/ target/generated-docs/website/pages/learning/
