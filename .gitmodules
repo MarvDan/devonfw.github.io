@@ -15,6 +15,6 @@
 	url = https://github.com/devonfw-tutorials/wiki-tutorials.git
 	branch = main
 [submodule "TESTING"]
-	path = wiki-tutorials
+	path = TESTING
 	url = https://github.com/MarvDan/wiki-tutorials.git
 	branch = createTutorials
