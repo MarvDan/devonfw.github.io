@@ -139,30 +139,19 @@ jobs:
         run: |
           cp -avr architectures/target/generated-docs/ target/generated-docs/website/pages/architectures/
           
+          
+      #TO-DO: Replace TESTING with wiki-tutorials
       - name: Tutorials Checkout
         uses: actions/checkout@v2
         with:
           repository: devonfw-tutorials/tutorials
-          path: wiki-tutorials/tutorials
+          path: TESTING/tutorials
           
       - name: Tutorial Compiler Checkout
         uses: actions/checkout@v2
         with:
           repository: devonfw-tutorials/tutorial-compiler
-          path: wiki-tutorials/tutorial-compiler
-          
-      - name: Test
-        run: |
-          pwd 
-          ls
-          pwd
-          ls ../
-          pwd
-          ls ../../
-          pwd
-          ls wiki-tutorials
-          pwd
-          ls wiki-tutorials/target
+          path: TESTING/tutorial-compiler
           
       - name: get Parser
         run: |
@@ -173,13 +162,18 @@ jobs:
           pwd
           ls
           pwd
-          ls wiki-tutorials/tutorial-compiler/engine
+          ls TESTING/tutorial-compiler/engine
           npm install @types/node
-          npx tsc -t es5 wiki-tutorials/tutorial-compiler/engine/parser.ts
+          npx tsc -t es5 TESTING/tutorial-compiler/engine/parser.ts
           pwd
           ls
           pwd
-          ls wiki-tutorials/tutorial-compiler/engine
+          ls TESTING/tutorial-compiler/engine
+          
+          cp -r TESTING/tutorial-compiler/engine TESTING/scripts
+          
+          pwd
+          ls TESTING/scripts
        
         
       - name: Create output for tutorials
