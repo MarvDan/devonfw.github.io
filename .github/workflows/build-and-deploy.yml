@@ -170,6 +170,10 @@ jobs:
           ls
           #cd wiki-tutorials/tutorial-compiler/engine
           npm install typescript
+          pwd
+          ls
+          pwd
+          ls wiki-tutorials/tutorial-compiler/engine
           npx tsc -t es5 wiki-tutorials/tutorial-compiler/engine/parser.ts
           pwd
           ls
