@@ -178,21 +178,12 @@ jobs:
         
       - name: Create output for tutorials
         run: |
-          chmod +x wiki-tutorials/scripts/createOutput.sh
-          wiki-tutorials/scripts/createOutput.sh
+          chmod +x TESTING/scripts/createOutput.sh
+          TESTING/scripts/createOutput.sh
           
       - name: Copy output of tutorials
         run: |
-          cp -avr wiki-tutorials/target/generated-docs/ target/generated-docs/website/pages/learning/
-
-      - name: Create output for tutorials
-        run: |
-          chmod +x wiki-tutorials/scripts/createOutput.sh
-          wiki-tutorials/scripts/createOutput.sh
-
-      - name: Copy output of tutorials
-        run: |
-          cp -avr wiki-tutorials/target/generated-docs/ target/generated-docs/website/pages/learning/
+          cp -avr TESTING/target/generated-docs/ target/generated-docs/website/pages/learning/
 
       - name: Build and test search engine
         run: |
