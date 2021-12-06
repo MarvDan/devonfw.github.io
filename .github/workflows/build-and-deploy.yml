@@ -183,7 +183,7 @@ jobs:
           pwd
           ls TESTING/tutorial-compiler/engine
           
-          cp -r TESTING/tutorial-compiler/engine TESTING/scripts
+          cp -avr TESTING/tutorial-compiler/engine TESTING/scripts
           
           pwd
           ls TESTING/scripts
