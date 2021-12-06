@@ -179,25 +179,7 @@ jobs:
           pwd
           ls
           pwd
-          ls engine
-          #tsc
-          #cp engine/parser.def build/engine/parser.def
-          #cp -r playbooks build
-          #cp -r environments build
-          #cp -r runners build
-          #npm test
-          pwd
-          ls 
-          pwd
-          ls engine
-          pwd
-          ls build/engine
-          pwd
-          node build/engine/run.js $*
-          #npm install typescript
-          #npx tsc -t es5 parser.ts
-          pwd
-          ls
+          ls wiki-tutorials/tutorial-compiler/engine
        
         
       - name: Create output for tutorials
