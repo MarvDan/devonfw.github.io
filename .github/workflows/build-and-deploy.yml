@@ -45,10 +45,6 @@ jobs:
           cd ..
       - name: Solutions from Stack repositories
         run: |
-          pwd
-          ls
-          pwd
-          ls solutions
           cd solutions/scripts
           npm install 
           node copySolutionsFromStack.js ../../devonfw-guide
@@ -137,6 +133,24 @@ jobs:
       - name: Copy output of tutorials
         run: |
           cp -avr wiki-tutorials/target/generated-docs/ target/generated-docs/website/pages/learning/
+          
+      - name: Tutorial Compiler checkout
+        uses: actions/checkout@v2
+        with:
+          ref: devonfw-tutorials/tutorial-compiler
+          path: tutorial-compiler
+      
+      - name: get Parser
+        run: |
+          pwd
+          ls
+          
+          npm install typescript
+          npm install @types/node
+          
+          npx tsc -t es5 TESTING/tutorial-compiler/engine/parser.ts
+          cp -a TESTING/tutorial-compiler/engine/. TESTING/scripts
+
       - name: Build and test search engine
         run: |
           cd website/components/header/search-engine
