@@ -45,6 +45,10 @@ jobs:
           cd ..
       - name: Solutions from Stack repositories
         run: |
+          pwd
+          ls
+          pwd
+          ls solutions
           cd solutions/scripts
           npm install 
           node copySolutionsFromStack.js ../../devonfw-guide
