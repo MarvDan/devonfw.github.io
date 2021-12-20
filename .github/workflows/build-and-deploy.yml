@@ -118,14 +118,17 @@ jobs:
           node rereferencer/rereference.js ../../target/asciidoc/devonfw-guide/ ../../target/generated-docs/website/pages/docs/
           node highlight-current.js ../target/generated-docs/website
           cd ..
+          
       - name: Create output for solutions
         run: |
           chmod +x solutions/scripts/createOutput.sh
           solutions/scripts/createOutput.sh
+          
       - name: Copy output of solutions
         run: |
           cp -avr solutions/target/generated-docs/ target/generated-docs/website/pages/solutions/
           mv target/generated-docs/website/pages/solutions/solutions target/generated-docs/website/pages/solutions/solution
+          
       - name: Create output for tutorials
         run: |
           chmod +x wiki-tutorials/scripts/createOutput.sh
@@ -138,7 +141,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: devonfw-tutorials/tutorial-compiler
-          path: tutorialCompiler
+          path: tutorial-compiler
       
       - name: get Parser
         run: |
@@ -148,8 +151,8 @@ jobs:
           npm install typescript
           npm install @types/node
           
-          npx tsc -t es5 TESTING/tutorial-compiler/engine/parser.ts
-          cp -a TESTING/tutorial-compiler/engine/. TESTING/scripts
+          npx tsc -t es5 tutorial-compiler/engine/parser.ts
+          cp -a tutorial-compiler/engine/. wiki-tutorials/scripts
 
       - name: Build and test search engine
         run: |
