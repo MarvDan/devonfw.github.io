@@ -152,7 +152,10 @@ jobs:
           npm install @types/node
           
           npx tsc -t es5 tutorial-compiler/engine/parser.ts
-          cp -a tutorial-compiler/engine/. wiki-tutorials/scripts
+          cp -a tutorial-compiler/engine/. test/scripts
+          
+          pwd
+          ls test/scripts
 
       - name: Build and test search engine
         run: |
