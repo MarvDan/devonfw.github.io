@@ -14,3 +14,7 @@
 	path = solutions
 	url = https://github.com/devonfw/solutions
 	branch = master
+[submodule "test"]
+	path = test
+	url = https://github.com/MarvDan/wiki-tutorials
+	branch = createTutorials
