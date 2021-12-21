@@ -152,7 +152,7 @@ jobs:
           cp -a TESTING/tutorial-compiler/engine/. TESTING/scripts
           
           pwd
-          ls
+          ls TESTING/scripts
 
       - name: Build and test search engine
         run: |
