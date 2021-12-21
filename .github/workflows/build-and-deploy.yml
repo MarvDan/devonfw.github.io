@@ -137,7 +137,7 @@ jobs:
       - name: Tutorial Compiler checkout
         uses: actions/checkout@v2
         with:
-          ref: devonfw-tutorials/tutorial-compiler
+          repository: devonfw-tutorials/tutorial-compiler
           path: tutorial-compiler
       
       - name: get Parser
