@@ -138,7 +138,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: devonfw-tutorials/tutorial-compiler
-          path: tutorial-compiler
+          path: TESTING/tutorial-compiler
       
       - name: get Parser
         run: |
