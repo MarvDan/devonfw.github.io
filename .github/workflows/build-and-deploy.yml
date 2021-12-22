@@ -43,6 +43,26 @@ jobs:
           npm install
           node renamer.js ../devonfw-guide/ Home .asciidoc
           cd ..
+          
+      - name: Tutorial Compiler checkout
+        uses: actions/checkout@v2
+        with:
+          repository: devonfw-tutorials/tutorial-compiler
+          path: TESTING/tutorial-compiler
+      
+      - name: get Parser
+        run: |
+          pwd
+          ls
+          
+          npm install typescript
+          npm install @types/node
+          
+          npx tsc -t es5 TESTING/tutorial-compiler/engine/parser.ts
+          cp -a TESTING/tutorial-compiler/engine/. TESTING/scripts
+          
+          pwd
+          ls TESTING/scripts
       - name: Solutions from Stack repositories
         run: |
           cd architectures/scripts
@@ -133,26 +153,6 @@ jobs:
       - name: Copy output of tutorials
         run: |
           cp -avr wiki-tutorials/target/generated-docs/ target/generated-docs/website/pages/learning/
-          
-      - name: Tutorial Compiler checkout
-        uses: actions/checkout@v2
-        with:
-          repository: devonfw-tutorials/tutorial-compiler
-          path: TESTING/tutorial-compiler
-      
-      - name: get Parser
-        run: |
-          pwd
-          ls
-          
-          npm install typescript
-          npm install @types/node
-          
-          npx tsc -t es5 TESTING/tutorial-compiler/engine/parser.ts
-          cp -a TESTING/tutorial-compiler/engine/. TESTING/scripts
-          
-          pwd
-          ls TESTING/scripts
 
       - name: Build and test search engine
         run: |
@@ -163,6 +163,14 @@ jobs:
           cp ./dist/bundle.js ../../../../target/generated-docs/website/components/header/search-engine
           ls -al ../../../../target/generated-docs/website/components/header/search-engine
           cd ../../../../
+      - name: testing
+        run: |
+          pwd
+          ls
+          pwd
+          ls target/generated-docs
+          pwd
+          ls target/generated-docs/tutorials
       - name: Reindex
         run: |
           cd search-engine
