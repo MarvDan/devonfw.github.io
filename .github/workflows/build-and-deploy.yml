@@ -170,7 +170,19 @@ jobs:
           pwd
           ls target/generated-docs
           pwd
-          ls target/generated-docs/tutorials
+          ls wiki-tutorials
+          pwd
+          ls wiki-tutorials/target
+          pwd
+          ls wiki-tutorials/target/generated-docs/
+          pwd
+          ls target
+          pwd
+          ls target/generated-docs/website
+          pwd
+          ls target/generated-docs/website/pages
+          pwd
+          ls target/generated-docs/website/pages/learning/
       - name: Reindex
         run: |
           cd search-engine
