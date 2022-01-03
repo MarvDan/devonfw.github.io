@@ -51,18 +51,13 @@ jobs:
           path: TESTING/tutorial-compiler
       
       - name: get Parser
-        run: |
-          pwd
-          ls
-          
+        run: |  
           npm install typescript
           npm install @types/node
           
           npx tsc -t es5 TESTING/tutorial-compiler/engine/parser.ts
           cp -a TESTING/tutorial-compiler/engine/. TESTING/scripts
-          
-          pwd
-          ls TESTING/scripts
+
       - name: Solutions from Stack repositories
         run: |
           cd architectures/scripts
