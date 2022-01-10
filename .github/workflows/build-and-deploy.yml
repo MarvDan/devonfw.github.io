@@ -182,13 +182,13 @@ jobs:
           echo --------------------
 
           pwd
-          ls target/generated-docs
+          ls target/generated-docs/website/pages/learning/
           pwd
-          ls target/generated-docs/tutorials
+          ls target/generated-docs/website/pages/learning/tutorials
           pwd
-          ls arget/generated-docs/tutorials/wiki_eclipse
+          ls target/generated-docs/website/pages/learning/tutorials/wiki_eclipse
           pwd
-          ls arget/generated-docs/tutorials/wiki_vscode
+          ls target/generated-docs/website/pages/learning/tutorials/wiki_vscode
           
       - name: Reindex
         run: |
