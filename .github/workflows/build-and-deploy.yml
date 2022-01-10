@@ -178,6 +178,18 @@ jobs:
           ls target/generated-docs/website/pages
           pwd
           ls target/generated-docs/website/pages/learning/
+          
+          echo --------------------
+
+          pwd
+          ls target/generated-docs
+          pwd
+          ls target/generated-docs/tutorials
+          pwd
+          ls arget/generated-docs/tutorials/wiki_eclipse
+          pwd
+          ls arget/generated-docs/tutorials/wiki_vscode
+          
       - name: Reindex
         run: |
           cd search-engine
