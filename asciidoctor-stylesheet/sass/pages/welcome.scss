@@ -71,6 +71,28 @@
     visibility: visible;
     li {
       margin-top: 0;
+      position: relative;
+      &:hover {
+        ul.sub-menu {
+          visibility: visible;
+        }
+      }
+    }
+    ul.sub-menu {
+      position: absolute;
+      top: 24px;
+      left: 0;
+      z-index: 1;
+      background: #4cbdec;
+      min-width: 170px;
+      box-shadow: 0px 14px 10px 0px #004f67;
+      visibility: hidden;
+      li {
+        padding: 8px 16px;
+        width: 100%;
+        margin: 0 !important;
+        border-bottom: 1px solid #23576e;
+      }
     }
   }
 }
@@ -258,6 +280,16 @@ b.button:after {
 @media (max-width:768px) {
   .intro-paragraph{
     width: 100% !important;
+  }
+  ul.sub-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    li {
+      &:first-child {
+       width: auto;
+      }
+    }
   }
 }
 
