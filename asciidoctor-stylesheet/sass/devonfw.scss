@@ -8,6 +8,29 @@
 @import 'pages/community';
 @import 'pages/docs';
 
+@font-face {
+  font-family: "Ubuntu";
+  src: url("website/assets/fonts/Ubuntu-Regular.woff2") format('woff2'),
+       url("website/assets/fonts/Ubuntu-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("website/assets/fonts/Ubuntu-Italic.woff2") format('woff2'),
+       url("website/assets/fonts/Ubuntu-Italic.ttf") format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("website/assets/fonts/Ubuntu-Bold.woff2") format('woff2'),
+       url("website/assets/fonts/Ubuntu-Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 body {
   overflow-x: hidden;
@@ -15,7 +38,7 @@ body {
 
 
 * { 
-  font-family: ubuntu;
+  font-family: Ubuntu;
 }
 pre * {
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
@@ -63,7 +86,7 @@ hr {
     & > li:first-child {
       margin-left: 60px;
       margin-top: 0;
-      height: 54px;
+      height: 50px;
       display: flex;
       align-items: center;
       visibility: visible;
@@ -223,11 +246,19 @@ tr:nth-child(even) {
 }
 
 
-
+/***** Landing page content ******/
 #content {
+  max-width: fit-content;
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+/***** Solutions page content ******/
+#content .sect1, #content #solutioncontent {
   max-width: 90em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
 }
 
@@ -359,6 +390,7 @@ h3 {
 		* {
 			&:nth-child(odd) {
 				font-weight: bolder;
+				word-break: break-word;
 			}
 			&:nth-child(even) {
 				font-weight: lighter;
@@ -426,4 +458,30 @@ h3 {
 }
 .custom-card .ulist ul li:nth-child(5) {
   margin-top: 1rem;
+}
+
+/***** Cookie consent box *****/
+#cookie-consent {
+  position: fixed;
+  bottom: 0;
+  width: 33%;
+  background: #23576e;
+  color: white;
+  padding: 1.25em;
+  z-index: 11111;
+
+  .cookie-consent-buttons {
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #cookie-consent {
+    width: 100%;
+
+    .cookie-consent-buttons {
+      text-align: left;
+    }
+  }
 }

@@ -32,17 +32,13 @@ end %>
 <title><%= doctitle(:sanitize => true) || (attr 'untitled-label') %></title>
 <!-- devonfw website stylesheet -->
 <link rel="stylesheet" type="text/css" href="/devonfw.css">
-<!-- Ubuntu Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
 <!-- Lunr -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js" integrity="sha256-M/Awbb/BYh+Rh0aGjpQid26p1b2OBsrk2k9yAvQxPV0=" crossorigin="anonymous"></script>
+<script src="/website/assets/scripts/lunr.min.js"></script>
 <!-- JQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><%
+<script src="/website/assets/scripts/jquery.min.js"></script><%
 if attr? :icons, 'font'
   if !(attr 'iconfont-remote', '').nil? %>
-<link rel="stylesheet" href="<%= attr 'iconfont-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css' %>"><%
+<link rel="stylesheet" href="<%= attr 'iconfont-cdn', '/website/assets/styles/font-awesome.min.css' %>"><%
   else %>
 <link rel="stylesheet" href="<%= normalize_web_path(%(#{attr 'iconfont-name', 'font-awesome'}.css), (attr :stylesdir, '')) %>"><%
   end
@@ -67,13 +63,13 @@ when 'pygments'
     end
   end
 when 'highlightjs' %>
-<link rel="stylesheet" href="<%= attr 'highlightjsdir', 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/7.4' %>/styles/<%= attr 'highlightjs-theme', 'googlecode' %>.min.css">
-<script src="<%= attr 'highlightjsdir', 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/7.4' %>/highlight.min.js"></script>
-<script src="<%= attr 'highlightjsdir', 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/7.4' %>/lang/common.min.js"></script>
+<link rel="stylesheet" href="/website/assets/styles/googlecode.min.css">
+<script src="/website/assets/scripts/highlight.min.js"></script>
+<script src="/website/assets/scripts/common.min.js"></script>
 <script>hljs.initHighlightingOnLoad()</script><%
 when 'prettify' %>
-<link rel="stylesheet" href="<%= attr 'prettifydir', 'https://cdnjs.cloudflare.com/ajax/libs/prettify/r298' %>/<%= attr 'prettify-theme', 'prettify' %>.min.css">
-<script src="<%= attr 'prettifydir', 'https://cdnjs.cloudflare.com/ajax/libs/prettify/r298' %>/prettify.min.js"></script>
+<link rel="stylesheet" href="/website/assets/styles/prettify.min.css">
+<script src="/website/assets/scripts/prettify.min.js"></script>
 <script>document.addEventListener('DOMContentLoaded', prettyPrint)</script><%
 end
 if attr? 'math' %>
@@ -90,14 +86,14 @@ MathJax.Hub.Config({
   }
 });
 </script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+<script type="text/javascript" src="/website/assets/scripts/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 <script>document.addEventListener('DOMContentLoaded', MathJax.Hub.TypeSet)</script><%
 end
 %><%= (docinfo_content = docinfo).empty? ? nil : %(
 #{docinfo_content}) %>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/website/assets/styles/bootstrap.min.css">
 
-<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script src="/website/assets/scripts/anchor.min.js"></script>
 
 <script src="/website/components/header/search-engine/bundle.js"></script>
 
@@ -182,16 +178,8 @@ unless nofooter %>
       }
       EditLinksModule.addEditLinks(alwaysVisible);
     </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="/website/assets/scripts/popper.min.js"></script>
+    <script src="/website/assets/scripts/bootstrap.min.js"></script>
 <div class="footnote"><sub>
 <%if attr? :revnumber %>
 <%= %(#{attr 'version-label'} #{attr :revnumber}) %><br><%
@@ -230,6 +218,32 @@ end %>
       })
     });
 	});
+</script>
+<script>
+      let cookieName = 'cookie_consent';
+      let expiryTime = new Date(2037, 11, 21);
+      let cookieConsentHtml = `
+      <div id="cookie-consent">
+        <p>
+          We use cookies to perform analytics and enhance user experience. Do you accept to the use of cookies?
+        </p>
+        <p class="cookie-consent-buttons">
+          <a id="decline-cookie-btn" class="btn white-button" href="javascript:void(0)">Decline</a>
+          <a id="accept-cookie-btn" class="btn blue-button" href="javascript:void(0)">Accept</a>
+        </p>
+      </div>
+      `;
+
+      if (document.cookie.indexOf(cookieName) < 0) {
+        $("body").append(cookieConsentHtml);
+      }
+      $("#accept-cookie-btn").click(function() {
+        document.cookie = `${cookieName}=accept;expires=${expiryTime};path=/`;
+        $("#cookie-consent").hide();
+      });
+      $("#decline-cookie-btn").click(function() {
+        $("#cookie-consent").hide();
+      });
 </script>
 </body>
 </html>

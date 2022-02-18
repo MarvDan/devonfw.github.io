@@ -184,6 +184,16 @@
   }
 }
 
+@media (max-width: 575px) {
+  .openblock.CTA {
+    top: 1rem;
+  }
+  
+  .openblock.CTA .welcome-desc1 p {
+    line-height: 40px;
+  }
+}
+
 @media (min-width: 576px) {
   .openblock.CTA h2 {
     line-height: 3.5rem;
@@ -239,6 +249,7 @@ b.button:after {
     display: inline-block;
     position: absolute;
     left: 0;
+    width: 100vw;
   }
   .custom-card {
     margin-left: 0rem !important;
@@ -246,40 +257,84 @@ b.button:after {
 }
 
 /****************DEVONFW INTRO****************/
-.devonfw-intro {
-  margin-top: 2rem;
-}
-.devonfw-intro .hdlist1 {
-  color: #23576e;
-  font-size: 3rem;
-  line-height: 2.5rem;
-  margin-left: 2rem;
-}
 
-.devonfw-intro .ulist ul {
-  margin-left: 0;
-  list-style-type: none;
-}
-
-.devonfw-intro .ulist p {
-  font-size: 1rem;
-  line-height: 1.4rem;
-}
-
-.devonfw-intro dl dd {
-  margin: 0;
-  width: 650px;
-}
 
 .devonfw-intro-content {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 10rem;
+  .content {
+    display: flex;
+    flex-direction: row;
+	padding: 50px;
+  }
+  
+  .devonfw-intro, .devon-intro-image {
+    flex: 1;
+  }
+  
+  .devonfw-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px 0 0;
+	
+	.hdlist1 {
+      color: #23576e;
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+	
+	dl dd {
+      margin: 0;
+      text-align: justify;
+    }
+	
+	.ulist {
+      margin-top: 30px;
+	  
+	  ul > li > p {
+        color: #4cbdec;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+	  
+	  li:last-child .olist li:last-child p {
+        text-align: right;
+		margin-top: 30px;
+		
+		a {
+          background-color: #4cbdec;
+          color: white;
+          padding: 8px;
+        }
+      }
+    }
+	
+	ul, ol {
+      margin-left: 0;
+      list-style-type: none;
+    }
+  }
+  
+  .devon-intro-image {
+    display: block;
+ 	padding: 0 0 0 50px;
+	
+	img {
+      transform: scale(1.3);
+    }
+  }
 }
 
+
 @media (max-width:768px) {
-  .intro-paragraph{
-    width: 100% !important;
+  .devonfw-intro {
+    padding: 0 !important;
+  }
+  .devon-intro-image {
+    display: none !important;
+  }
+  .devonfw-intro .ulist li:last-child .olist li:last-child p {
+    text-align: left !important;
   }
   ul.sub-menu {
     display: flex;
@@ -293,29 +348,12 @@ b.button:after {
   }
 }
 
-.intro-paragraph {
-  width: 580px;
-  text-align: justify;
-
-  .hdlist1 {
-    color: #4cbdec;
-    font-size: 20px;
-    margin-bottom: 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  ul {
-    margin-left: 0;
+@media (min-width: 769px) {
+  .devon-intro-image {
+    display: block;
   }
 }
 
-.intro-paragraph dl dd {
-  margin-left: 0;
-  margin-bottom: 0;
-}
 
 .learn-more{
   margin-top: 2rem;
@@ -331,9 +369,6 @@ b.button:after {
 .devon-intro-image {
   display: none; 
 }
-.devon-intro-image img {
-  max-width: 90%;
-}
 
 @media (min-width:1024px) {
   .learn-more p a {
@@ -343,14 +378,100 @@ b.button:after {
     padding: 8px;
   }
 
-  .devon-intro-image {
-    position: absolute;
-    margin-left: 700px;
-    top: 450px;
-    right: 0;
-    transform: scale(1.2);
-    display: inline-block;
+}
+
+/****************DEVONFW DEMO****************/
+.openblock.devonfw-demo {
+  background-color: #faf9f9;
+  padding: 50px;
+  
+  & > .content {
+    display: flex;
+    flex-direction: row;
+    
+    .devonfw-demo-image, .devonfw-demo-description {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+	
+	.devonfw-demo-image {
+		padding: 0 50px 0 0;
+	}
+	
+	.devonfw-demo-description {
+		padding: 0 0 0 50px;
+	}
   }
+}
+.devonfw-demo-description {
+
+  .hdlist1 {
+    color: #23576e;
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  ul, ol {
+    margin-left: 0;
+  }
+  
+  dl {
+    dd {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+  }
+  
+  .ulist ul > li:first-child > p {
+		color: #4cbdec;
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+	
+	.ulist .olist li:last-child p {
+		text-align: right;
+		margin-top: 30px;
+		
+		 a {
+			border-radius: 0;
+			&:hover {
+				color: white;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@media (max-width:768px) {
+  .openblock.devonfw-demo {
+    & > .content {
+      display: flex;
+      flex-direction: column;
+	  
+	  .devonfw-demo-image, .devonfw-demo-description {
+		padding: 0;
+	  }
+	  
+	  .devonfw-demo-description {
+		.ulist .olist li:last-child p {
+			text-align: left;
+		}
+	  }
+    }
+  }
+}
+
+@media (max-width:600px) {
+	.devonfw-demo-image {
+		display: none !important;
+	}
 }
 
 /****************DEVONFW DIFFERENT****************/
@@ -385,7 +506,6 @@ b.button:after {
 
 .openblock.cards {
   text-align: center;
-  background-color: #faf9f9;
   padding: 50px;
 }
 
@@ -419,6 +539,7 @@ b.button:after {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
+  min-height: 380px;
 
   ul li {
     & > * {
@@ -457,15 +578,21 @@ b.button:after {
   margin: 0 auto;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 600px) {
   .custom-card {
-    min-width: 13rem;
+    min-width: 47%;
   }
 
   .ulist.custom-card > ul {
     & > li {
       flex-direction: row;
     }
+  }
+}
+
+@media (min-width: 769px) {
+  .custom-card {
+    min-width: 13em;
   }
 }
 
@@ -511,7 +638,7 @@ b.button:after {
 
 /****************FOOTER****************/
 #footer {
-  background: none;
+  background: #faf9f9;
 }
 
 #footer .content {
