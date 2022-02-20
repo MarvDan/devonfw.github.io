@@ -39,6 +39,14 @@ jobs:
 
       - name: Install asciidoctor Gem
         run: gem install asciidoctor -v 1.5.7.1
+        
+      - name: Testing
+        run: |
+          pwd 
+          ls
+          cd website/pages/docs
+          pwd
+          ls
 
       - name: RenameHomeFiles
         run: |
