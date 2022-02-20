@@ -162,6 +162,14 @@ jobs:
           cp ./dist/bundle.js ../../../../target/generated-docs/website/components/header/search-engine
           ls -al ../../../../target/generated-docs/website/components/header/search-engine
           cd ../../../../
+          
+      - name: Testing
+        run: |
+          pwd 
+          ls
+          cd website/pages/docs
+          pwd
+          ls
 
       - name: Reindex
         run: |
