@@ -1,0 +1,3 @@
+.cicdgen
+* xref:Home.adoc[Cicdgen Home]
+* xref:master-cicdgen.adoc[Cicdgen Master]
