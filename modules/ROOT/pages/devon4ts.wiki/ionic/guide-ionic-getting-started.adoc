@@ -40,7 +40,7 @@ $ npm uninstall -g ionic
 $ npm install -g @ionic/cli
 ----
 
-# Basic project set up
+## Basic project set up
 The set up of an ionic application is pretty immediate and can be done in one line:
 
 `ionic start <name> <template> --type=angular`

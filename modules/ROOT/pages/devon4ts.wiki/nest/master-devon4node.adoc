@@ -10,27 +10,27 @@ include::devon4node-architecture[leveloffset=1]
 
 == Layers
 
-include::layer-controller[leveloffset=2]
-include::layer-service[leveloffset=2]
-include::layer-dataaccess[leveloffset=2]
+include::layer-controller.adoc[leveloffset=2]
+include::layer-service.adoc[leveloffset=2]
+include::layer-dataaccess.adoc[leveloffset=2]
 
 == Guides
 
-include::guides-key-principles[leveloffset=2]
-include::guides-code-generation[leveloffset=2]
-include::guides-coding-conventions[leveloffset=2]
-include::guides-dependency-injection[leveloffset=2]
-include::guides-configuration-module[leveloffset=2]
-include::guides-auth-jwt[leveloffset=2]
-include::guides-swagger[leveloffset=2]
-include::guides-typeorm[leveloffset=2]
-include::guides-serializer[leveloffset=2]
-include::guides-validation[leveloffset=2]
-include::guides-logger[leveloffset=2]
-include::guides-mailer[leveloffset=2]
-include::guides-eslint-sonarqube-config[leveloffset=2]
+include::guides-key-principles.adoc[leveloffset=2]
+include::guides-code-generation.adoc[leveloffset=2]
+include::guides-coding-conventions.adoc[leveloffset=2]
+include::guides-dependency-injection.adoc[leveloffset=2]
+include::guides-configuration-module.adoc[leveloffset=2]
+include::guides-auth-jwt.adoc[leveloffset=2]
+include::guides-swagger.adoc[leveloffset=2]
+include::guides-typeorm.adoc[leveloffset=2]
+include::guides-serializer.adoc[leveloffset=2]
+include::guides-validation.adoc[leveloffset=2]
+include::guides-logger.adoc[leveloffset=2]
+include::guides-mailer.adoc[leveloffset=2]
+include::guides-eslint-sonarqube-config.adoc[leveloffset=2]
 
 == devon4node applications
 
-include::samples[leveloffset=2]
-include::samples-step-by-step[leveloffset=2]
+include::samples.adoc[leveloffset=2]
+include::samples-step-by-step.adoc[leveloffset=2]
