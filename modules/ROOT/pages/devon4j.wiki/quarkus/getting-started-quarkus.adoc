@@ -193,26 +193,26 @@ Docker commands example for the JVM Dockerfile from our https://github.com/devon
 
 ----
 ####
-# This Dockerfile is used in order to build a container that runs the Quarkus application in JVM mode
+##This Dockerfile is used in order to build a container that runs the Quarkus application in JVM mode
 #
-# Before building the container image run:
+##Before building the container image run:
 #
-# ./mvnw package
+##./mvnw package
 #
-# Then, build the image with:
+##Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.jvm -t quarkus/quarkus-basics-jvm .
+##docker build -f src/main/docker/Dockerfile.jvm -t quarkus/quarkus-basics-jvm .
 #
-# Then run the container using:
+##Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/quarkus-basics-jvm
+##docker run -i --rm -p 8080:8080 quarkus/quarkus-basics-jvm
 #
-# If you want to include the debug port into your docker image
-# you will have to expose the debug port (default 5005) like this :  EXPOSE 8080 5050
+##If you want to include the debug port into your docker image
+##you will have to expose the debug port (default 5005) like this :  EXPOSE 8080 5050
 #
-# Then run the container using :
+##Then run the container using :
 #
-# docker run -i --rm -p 8080:8080 -p 5005:5005 -e JAVA_ENABLE_DEBUG="true" quarkus/quarkus-basics-jvm
+##docker run -i --rm -p 8080:8080 -p 5005:5005 -e JAVA_ENABLE_DEBUG="true" quarkus/quarkus-basics-jvm
 #
 ###
 ----

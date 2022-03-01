@@ -69,15 +69,15 @@ base:
 
 
 
-# FIXME vertical_rhythm is weird; we should think in terms of ems
+##FIXME vertical_rhythm is weird; we should think in terms of ems
 #vertical_rhythm: $base_line_height_length * 2 / 3
-# correct line height for Noto Serif metrics (comes with built-in line height)
+##correct line height for Noto Serif metrics (comes with built-in line height)
 vertical_rhythm: $base_line_height_length
 horizontal_rhythm: $base_line_height_length
 
 
 
-# QUESTION should vertical_spacing be block_spacing instead?
+##QUESTION should vertical_spacing be block_spacing instead?
 vertical_spacing: $vertical_rhythm
 
 
@@ -85,7 +85,7 @@ link:
   font_color: 428bca
 
 
-# literal is currently used for inline monospaced in prose and table cells
+##literal is currently used for inline monospaced in prose and table cells
 literal:
   font_color: b12146
   font_family: M+ 1mn
@@ -199,7 +199,7 @@ blockquote:
 
 
 
-# code is used for source blocks (perhaps change to source or listing?)
+##code is used for source blocks (perhaps change to source or listing?)
 code:
   font_color: $base_font_color
   font_family: $literal_font_family
@@ -300,7 +300,7 @@ toc:
     font_color: a9a9a9
     #levels: 2 3
 
-# NOTE in addition to footer, header is also supported
+##NOTE in addition to footer, header is also supported
 footer:
   font_size: 7
   #font_color: #1ac6ff
@@ -329,7 +329,7 @@ footer:
     center:
       content: This documentation is licensed under the Creative Commons License (Attribution-NoDerivatives 4.0 International).
 
-# header 
+##header 
 header:
   font_size: 7
  # font_color: #1ac6ff

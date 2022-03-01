@@ -2,7 +2,7 @@
 :toc: macro
 toc::[]
 
-# Guide for DBIntegration of MS SQL Server 2008
+##Guide for DBIntegration of MS SQL Server 2008
 
 devon4j is by default configured with the H2 Databse.  
 

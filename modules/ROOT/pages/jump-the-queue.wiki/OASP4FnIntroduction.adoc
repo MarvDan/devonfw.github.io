@@ -43,7 +43,7 @@ OASP4Fn is distributed as a **npm package** that you can install in your NodeJS 
 [source, bash]
 ----
 $ npm install @oasp/oasp4fn
-# or if you have yarn installed
+##or if you have yarn installed
 $ yarn add @oasp/oasp4fn
 ----
 

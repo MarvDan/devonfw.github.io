@@ -106,13 +106,13 @@ After clicking on proceed, the following lines will be executed:
 +
 [source, groovy]
 ----
-# Change to Angular directory
+##Change to Angular directory
 cd angular
 
-# Copy "dist" folder from workspace to deployment server
+##Copy "dist" folder from workspace to deployment server
 scp -o StrictHostKeyChecking=no -r dist root@10.40.235.244:/root/mythaistar/
 
-# Launch application in Docker container
+##Launch application in Docker container
 ssh -o StrictHostKeyChecking=no root@10.40.235.244 docker rm -f mythaistar
 ssh -o StrictHostKeyChecking=no root@10.40.235.244 docker run -itd --name=mythaistar -p 8090:80 nginx
 ssh -o StrictHostKeyChecking=no root@10.40.235.244 docker exec mythaistar bash -c \\"rm /usr/share/nginx/html/*\\"

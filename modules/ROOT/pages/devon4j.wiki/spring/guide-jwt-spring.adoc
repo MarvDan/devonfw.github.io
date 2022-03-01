@@ -39,26 +39,26 @@ The following properties need to be configured in your `application.properties` 
 
 [source,properties]
 ----
-# location of the keystore file, can be any spring resource (such as file or classpath URIs)
+##location of the keystore file, can be any spring resource (such as file or classpath URIs)
 security.keystore.location=classpath:config/keystore.pkcs
-# type of keystore e.g. "PKCS12" (recommended), "JKS", or "JCEKS"
+##type of keystore e.g. "PKCS12" (recommended), "JKS", or "JCEKS"
 security.keystore.type=PKCS12
-# password the keystore is secured with. Consider using password encryption as described in devon4j configuration guide
+##password the keystore is secured with. Consider using password encryption as described in devon4j configuration guide
 security.keystore.password=password
-# the algorithm for encryption/decryption and signing - see io.jsonwebtoken.SignatureAlgorithm
+##the algorithm for encryption/decryption and signing - see io.jsonwebtoken.SignatureAlgorithm
 security.authentication.jwt.algorithm=RS256
-# alias of public/private key in keystore (for validation only public key is used, for creation private key is required)
+##alias of public/private key in keystore (for validation only public key is used, for creation private key is required)
 security.authentication.jwt.alias=devonfw
-# the following properties are used if you are validating JWTs (e.g. via JwtAuthenticationFilter)
+##the following properties are used if you are validating JWTs (e.g. via JwtAuthenticationFilter)
 security.authentication.jwt.validation.expiration-required=false
 security.authentication.jwt.validation.max-validity=42h
 security.authentication.jwt.validation.not-before-required=false
-# the following properties are only used if you are issuing JWTs (e.g. via JwtLoginFilter)
+##the following properties are only used if you are issuing JWTs (e.g. via JwtLoginFilter)
 security.authentication.jwt.creation.add-issued-at=true
 security.authentication.jwt.creation.validity=4h
 security.authentication.jwt.creation.not-before-delay=1m
-# the following properties enable backward compatiblity for devon4j <= 2021.04.002
-# after microprofile JWT is used by default since 2021.04.003
+##the following properties enable backward compatiblity for devon4j <= 2021.04.002
+##after microprofile JWT is used by default since 2021.04.003
 #security.authentication.jwt.claims.access-controls-name=roles
 #security.authentication.jwt.claims.access-controls-array=false
 ----

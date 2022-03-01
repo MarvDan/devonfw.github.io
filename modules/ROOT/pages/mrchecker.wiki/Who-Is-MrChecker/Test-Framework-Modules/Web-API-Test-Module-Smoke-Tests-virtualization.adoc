@@ -26,7 +26,7 @@ LABEL name=ubuntu_java \
            wiremock="2.14.0" \
            description="Docker to use with Ubuntu, JAVA and WIREMOCK "
 
-# Update and install the applications needed
+##Update and install the applications needed
 COPY 80proxy /etc/apt/apt.conf.d/80proxy
 RUN apt-get update
 RUN apt-get install -y \

@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-# Guide for DBIntegration of Oracle 11g
+##Guide for DBIntegration of Oracle 11g
 
 devon4j is by default configured with the H2 Databse. 
  

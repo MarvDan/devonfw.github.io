@@ -1,4 +1,4 @@
-# Documentation
+##Documentation
 
 We are using [devonfw/docgen](https://github.com/devonfw/docgen) to build our documentation from adoc.
 ## Usage

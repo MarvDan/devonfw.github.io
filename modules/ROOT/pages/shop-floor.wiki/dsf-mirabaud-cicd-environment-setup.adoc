@@ -25,7 +25,7 @@ Due to that OS version, the only way to have Docker running in the CI machine is
 
 [source]
 ----
-# rpm -iUvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+##rpm -iUvh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 ----
 
 [start=2]
@@ -33,7 +33,7 @@ Due to that OS version, the only way to have Docker running in the CI machine is
 
 [source]
 ----
-# yum -y install docker-io
+##yum -y install docker-io
 ----
 
 [start=3]
@@ -41,7 +41,7 @@ Due to that OS version, the only way to have Docker running in the CI machine is
 
 [source]
 ----
-# service docker start
+##service docker start
 ----
 
 [start=4]
@@ -49,7 +49,7 @@ Due to that OS version, the only way to have Docker running in the CI machine is
 
 [source]
 ----
-# docker -v
+##docker -v
 Docker version 1.7.1, build 786b29d/1.7.1
 ----
 
@@ -59,9 +59,9 @@ Download and install it via *curl*. It will use link:https://github.com/docker/c
 
 [source]
 ----
-# curl -L https://github.com/docker/compose/releases/download/1.5.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+##curl -L https://github.com/docker/compose/releases/download/1.5.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 
-# chmod +x /usr/local/bin/docker-compose
+##chmod +x /usr/local/bin/docker-compose
 ----
 
 Add it to your `sudo` path:
@@ -70,7 +70,7 @@ Add it to your `sudo` path:
 . Find out where it is:
 [source]
 ----
-# echo $PATH
+##echo $PATH
 ----
 
 [start=2]
@@ -78,7 +78,7 @@ Add it to your `sudo` path:
 
 [source]
 ----
-# docker-compose -v
+##docker-compose -v
 docker-compose version 1.5.2, build 7240ff3
 ----
 
@@ -144,7 +144,7 @@ Several folders have been created to store each service's volumes, `docker-compo
 
 [source]
 ----
-# docker run -d -p 8080:8080 -p 50000:50000 --name=mirabaud_jenkins \
+##docker run -d -p 8080:8080 -p 50000:50000 --name=mirabaud_jenkins \
     -v /home/[username]/jenkins/volumes/jenkins_home:/var/jenkins_home \
     jenkins
 ----
@@ -176,7 +176,7 @@ volumes/jenkins_home:/var/jenkins_home
 
 [source]
 ----
-# docker run -d -p 9000:9000 -p 9092:9092 --name=mirabaud_sonarqube \
+##docker run -d -p 9000:9000 -p 9092:9092 --name=mirabaud_sonarqube \
     -v /home/[username]/sonarqube/volumes/conf:/opt/sonarqube/conf \
     -v /home/[username]/sonarqube/volumes/data:/opt/sonarqube/data \
     -v /home/[username]/sonarqube/volumes/extensions:/opt/sonarqube/extensions \
@@ -199,7 +199,7 @@ volumes/lib/bundled-plugins:/opt/sonarqube/lib/bundled-plugins
 
 [source]
 ----
-# docker run -d -p 8081:8081 --name=mirabaud_nexus\
+##docker run -d -p 8081:8081 --name=mirabaud_nexus\
     -v /home/[username]/nexus/nexus-data:/sonatype-work
     sonatype/nexus
 ----
@@ -216,7 +216,7 @@ volumes/nexus-data/:/sonatype-work
 
 [source]
 ----
-# docker run -d -p 8084:8080 --name=mirabaud_crucible \
+##docker run -d -p 8084:8080 --name=mirabaud_crucible \
     -v /home/[username]/crucible/volumes/data:/atlassian/data/crucible
     mswinarski/atlassian-crucible:latest
 ----
@@ -322,13 +322,13 @@ Get the *crt* and *key* from CA or *generate a new one self-signed*. Then:
 [source]
 ----
 // 1. create the p12 keystore
-# openssl pkcs12 -export -in cert.crt -inkey mycert.key -out certkeystore.p12
+##openssl pkcs12 -export -in cert.crt -inkey mycert.key -out certkeystore.p12
 
 // 2. export the pem certificate with password
-# openssl pkcs12 -in certkeystore.p12 -out cert.pem
+##openssl pkcs12 -in certkeystore.p12 -out cert.pem
 
 // 3. export the pem certificate without password
-# openssl rsa -in cert.pem -out key-no-password.pem
+##openssl rsa -in cert.pem -out key-no-password.pem
 ----
 
 SSL:

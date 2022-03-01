@@ -150,7 +150,7 @@ service.client.app.bar.user.login=user4711
 service.client.app.bar.user.password=ENC(jd5ZREpBqxuN9ok0IhnXabgw7V3EoG2p)
 
 service.client.app.foo.url=https://foo.company.com:8443/services/rest
-# authForward: simply forward Authorization header (e.g. with JWT) to remote service
+##authForward: simply forward Authorization header (e.g. with JWT) to remote service
 service.client.app.bar.auth=authForward
 ```
 

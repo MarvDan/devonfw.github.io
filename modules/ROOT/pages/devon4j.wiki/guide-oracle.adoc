@@ -45,7 +45,7 @@ with oracle.ucp.version being 11.2.0.4 or 12.2.0.1 or newer.
 Configuration is done via application.properties like this (example):
 ```
 #Oracle UCP
-# Datasource for accessing the database
+##Datasource for accessing the database
 spring.datasource.url=jdbc:oracle:thin:@192.168.58.2:1521:xe
 spring.jpa.database-platform=org.hibernate.dialect.Oracle12cDialect
 spring.datasource.user=MyUser
@@ -61,10 +61,10 @@ spring.datasource.validateConnectionOnBorrow=true
 spring.datasource.connectionPoolName=MyPool
 spring.datasource.jmx-enabled=true
 
-# Optional: Set the log level to INTERNAL_ERROR, SEVERE, WARNING, INFO, CONFIG, FINE, TRACE_10, FINER, TRACE_20, TRACE_30, or FINEST
-# logging.level.oracle.ucp=INTERNAL_ERROR
-# Optional: activate tracing
-# logging.level.oracle.ucp.jdbc.oracle.OracleUniversalPooledConnection=TRACE
+##Optional: Set the log level to INTERNAL_ERROR, SEVERE, WARNING, INFO, CONFIG, FINE, TRACE_10, FINER, TRACE_20, TRACE_30, or FINEST
+##logging.level.oracle.ucp=INTERNAL_ERROR
+##Optional: activate tracing
+##logging.level.oracle.ucp.jdbc.oracle.OracleUniversalPooledConnection=TRACE
 
 #Optional: Configures pool size manually
 #spring.datasource.minPoolSize=10

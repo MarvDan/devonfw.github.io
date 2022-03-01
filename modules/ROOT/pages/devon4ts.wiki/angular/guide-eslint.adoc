@@ -37,11 +37,11 @@ In order to create a brand new Angular CLI workspace which uses ESLint instead o
 
 [source, bash]
 ----
-# Install the Angular CLI and @angular-eslint/schematics globally however you want (e.g. npm, yarn, volta etc)
+##Install the Angular CLI and @angular-eslint/schematics globally however you want (e.g. npm, yarn, volta etc)
 
 $ npm i -g @angular/cli @angular-devkit/core @angular-devkit/schematics @angular-eslint/schematics
 
-# Create a new Angular CLI workspace using the @angular-eslint/schematics collection (instead of the default)
+##Create a new Angular CLI workspace using the @angular-eslint/schematics collection (instead of the default)
 
 $ ng new --collection=@angular-eslint/schematics
 ----

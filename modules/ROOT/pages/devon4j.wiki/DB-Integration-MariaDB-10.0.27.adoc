@@ -2,7 +2,7 @@
 :toc: macro
 toc::[]
 
-# Guide for DBIntegration of MariaDB
+##Guide for DBIntegration of MariaDB
 
 devon4j is by default configured with the H2 Databse. 
  

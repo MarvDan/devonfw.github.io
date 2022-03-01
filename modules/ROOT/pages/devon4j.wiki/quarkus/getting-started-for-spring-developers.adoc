@@ -32,7 +32,7 @@ Additionally, you can access the *Dev UI* at `\q\dev` in Dev Mode to browse endp
 mvn quarkus:list-extensions
 mvn quarkus:add-extension -Dextensions="groupId:artifactId"
 (or add it manually to pom.xml)
-# or
+##or
 gradle list-extensions
 (add dependency to build.gradle)
 ```

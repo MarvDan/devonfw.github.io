@@ -28,9 +28,9 @@ Here’s an example of a full CORS filter configuration, including a regular exp
 
 [source]
 ----
-# enable cors filter
+##enable cors filter
 quarkus.http.cors=true
-# configurations cors
+##configurations cors
 quarkus.http.cors.origins=http://foo.com,http://www.bar.io,/https://([a-z0-9\\-_]+)\\.app\\.mydomain\\.com/
 quarkus.http.cors.methods=OPTIONS,HEAD,GET,PUT,POST,DELETE,PATCH
 quarkus.http.cors.headers=X-Custom

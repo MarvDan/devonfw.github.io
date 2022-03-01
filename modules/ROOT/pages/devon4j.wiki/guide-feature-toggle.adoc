@@ -41,7 +41,7 @@ In addition to that, the following lines have to be included in the spring confi
 
 [source]
 ----
-# configuration for the togglz Feature-Toggle-Framework
+##configuration for the togglz Feature-Toggle-Framework
 togglz.enabled=true
 togglz.console.secured=false
 ----

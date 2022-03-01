@@ -31,7 +31,7 @@ quarkus.datasource.username=appuser01
 quarkus.datasource.password=************
 quarkus.datasource.db-kind=postgresql
 
-# drop and create the database at startup (use only for local development)
+##drop and create the database at startup (use only for local development)
 quarkus.hibernate-orm.database.generation=drop-and-create
 ----
 
