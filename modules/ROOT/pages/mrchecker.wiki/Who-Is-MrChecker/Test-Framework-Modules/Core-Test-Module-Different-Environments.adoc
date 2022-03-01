@@ -16,7 +16,7 @@ toc::[]
 :listing-caption: Listing
 
 
-==System under test environments
+== System under test environments
 
 image::images/image080.png[]
 
@@ -30,7 +30,7 @@ image::images/image080.png[]
 
 image::images/image051.png[]
 
-==How to use system environment
+== How to use system environment
 
 In Page classes, when you load / start web, it is uncommon to save fixed main url.  
 
@@ -42,9 +42,9 @@ An example of dynamic variable *GetEnvironmentParam.WWW_FONT_URL*
 
 image::images/image081.png[]
 
-==How to create / update system environment
+== How to create / update system environment
 
-== External file with variable values 
+==  External file with variable values 
 
 Dynamic variable values are stored under  *mrchecker-app-under-test\src\resources\enviroments\environments.csv*. 
 
@@ -52,7 +52,7 @@ Dynamic variable values are stored under  *mrchecker-app-under-test\src\resource
 
 image::images/image082.png[]
 
-== Encrypting sensitive data
+==  Encrypting sensitive data
 
 Some types of data you might want to store as environment settings are sensitive in nature (e.g. passwords). You might not want to store them (at least not in their plaintext form) in your repository. To be able to encrypt sensitive data you need to do following:
 
@@ -66,16 +66,16 @@ Some types of data you might want to store as environment settings are sensitive
 set SCRIPT_NAME=encrypt.bat
 set EXECUTABLE_CLASS=org.jasypt.intf.cli.JasyptPBEStringEncryptionCLI
 set EXEC_CLASSPATH=jasypt-1.9.2.jar
-if "%JASYPT_CLASSPATH%" == "" goto computeclasspath
+if "%JASYPT_CLASSPATH%" ==  "" goto computeclasspath
 set EXEC_CLASSPATH=%EXEC_CLASSPATH%;%JASYPT_CLASSPATH%
 
 :computeclasspath
-IF "%OS%" == "Windows_NT" setlocal ENABLEDELAYEDEXPANSION
+IF "%OS%" ==  "Windows_NT" setlocal ENABLEDELAYEDEXPANSION
 FOR %%c in (%~dp0..\lib\*.jar) DO set EXEC_CLASSPATH=!EXEC_CLASSPATH!;%%c
-IF "%OS%" == "Windows_NT" setlocal DISABLEDELAYEDEXPANSION
+IF "%OS%" ==  "Windows_NT" setlocal DISABLEDELAYEDEXPANSION
 
 set JAVA_EXECUTABLE=java
-if "%JAVA_HOME%" == "" goto execute
+if "%JAVA_HOME%" ==  "" goto execute
 set JAVA_EXECUTABLE="%JAVA_HOME%\bin\java"
 
 :execute
@@ -108,7 +108,7 @@ JN3nOFol2GMZoUxR5z2wI2qdipcNH1UD
 
 image::images/image083.png[]
 
-== Bridge between external file nad Page class
+==  Bridge between external file nad Page class
 
 To map values from external file with Page class you ought to use class *GetEnvironmentParam*
 
@@ -116,7 +116,7 @@ Therefore when you add new variable (row) in *environments.csv* you might need t
 
 image::images/image084.png[]
 
-==Run test case with system environment
+== Run test case with system environment
 
 To run test case with system environment, please use:
 * *-Denv=\<NameOfEnvironment\>*
@@ -124,26 +124,26 @@ To run test case with system environment, please use:
 
 
 *Since mrchecker-core-module version 5.6.2.1*
-== Command Line
+==  Command Line
 
 ----
 mvn test site -Dgroups=RegistryPageTestTag -Denv=DEV
 ----
 
-== Eclipse
+==  Eclipse
 
 image::images/image085.png[]
 image::images/image086_new.png[]
 
 
 *Prior to mrchecker-core-module version 5.6.2.1*
-== Command Line
+==  Command Line
 
 ----
 mvn test site -Dtest=RegistryPageTest -Denv=DEV
 ----
 
-== Eclipse
+==  Eclipse
 
 image::images/image085.png[]
 image::images/image086.png[]

@@ -1,16 +1,16 @@
 :toc: macro
 toc::[]
 
-==SAP HANA
+== SAP HANA
 
-== Download/Install VMware/SAP HANA
+==  Download/Install VMware/SAP HANA
 
 - Download VMware Workstation Player to run SAP HANA database https://www.vmware.com/in/products/workstation-player/workstation-player-evaluation.html  
 - Install VMware and open. Using VMware browse check if you can find hxe.ova file. This file is not visible through windows explorer. This is the SAP HANA Express Edition image to be run inside VMware. If available open it in VMware. Otherwise, download Download Manager for SAP HANA from the link below. It may ask to register which is a simple process.
 https://www.sap.com/cmp/ft/crm-xu16-dat-hddedft/typ.html
 - Run the download manager and on the screen use the defaults and click download.
 
-== Run SAP HANA Database Server
+==  Run SAP HANA Database Server
 
 - Once the .ova file has been opened inside VMware workstation. Click on the image and go to Edit Virtual Machine Settings. Set the memory allocation to 5GB. And Network Connection to NAT . NAT shows the IP for the virtual machine which will be used to establish JDBC connection
 - Click Play Virtual Machine. When first time the virtual machine runs it display following. Copy the IP address which will be used for JDBC connection
@@ -24,11 +24,11 @@ hxehost:hxeadm>hdbsql
    \c -d SYSTEMDB -n localhost:39013 -u SYSTEM -p <>
 ----
 
-== Setting up Database for MTSJ
+==  Setting up Database for MTSJ
 
 Once you have install SAP HANA with VMware , you need to setup the DB.
 
-== Connect to DB
+==  Connect to DB
 
 - After you start VMware, login with hxeadm as login and the password.
 At the prompt  - hxehost:hxeadm>hdbsql
@@ -46,7 +46,7 @@ Please note the IP address, that need to be put in MTSJ java back-end
 SELECT DATABASE_NAME,  ACTIVE_STATUS FROM SYS.M_DATABASES ORDER BY 1;
 ----
 
-== Enabling the script server
+==  Enabling the script server
 Run the below for enabling the script server
 [source, SQL]
 ----
@@ -59,7 +59,7 @@ SELECT SERVICE_NAME, PORT, ACTIVE_STATUS FROM SYS.M_SERVICES ORDER BY 1;
 ----
 It should see the `scriptserver` in it.
 
-== Creating a User on HXE
+==  Creating a User on HXE
 
 - Connect using the below
 [source, SQL]
@@ -93,7 +93,7 @@ GRANT MODELING TO hanauser1
 ----
 \c -d hxe -n localhost:39013 -u hanauser1 -p <password>
 ----
-== Setting up MTSJ Java back-end
+==  Setting up MTSJ Java back-end
 
 - Update application.properties file
 
@@ -124,9 +124,9 @@ spring.datasource.username=username
 spring.datasource.password=password
 ----
 
-== Enabling prediction UseCase in MTSJ
+==  Enabling prediction UseCase in MTSJ
 
-=== Setting up MTSJ angular
+== = Setting up MTSJ angular
 
 update the following property in config file in `my-thai-star\angular\src\app\core\config`
 

@@ -16,7 +16,7 @@ When the mouse is moved, JavaScript changes display attribute. It also hides win
 
 image::images/example35.png[]
 
-===== Page Class
+== == = Page Class
 
 ----
 public class ExitIntentPage extends BasePage {
@@ -143,15 +143,15 @@ public class ExitIntentPage extends BasePage {
 }
 ----
 
-===== Attributes 
+== == = Attributes 
 
 Elements on pages have attributes like "id", "class", "name", "style" etc. In order to check them, use method `getAttribute(String name)`. In this case attribute "style" determinates if the element is displayed. 
 
-===== Robot
+== == = Robot
 
 Robot class can perform mouse movement. Method `mouseMove(int x, int y)` moves the remote mouse to given coordinates. 
 
-===== Manage Timeouts 
+== == = Manage Timeouts 
 
 `manage().timeouts()` methods allows you to change WebDriver timeouts values such as: 
 
@@ -161,7 +161,7 @@ Robot class can perform mouse movement. Method `mouseMove(int x, int y)` moves t
 
 Changing timeouts can improve test stability but can also make them run slower.
 
-===== Test Class
+== == = Test Class
 
 Steps: 
 

@@ -13,7 +13,7 @@ Steps:
 5. Delete the file 
 6. Check if the file doesn't exist in the folder 
 
-===== Page Class
+== == = Page Class
 
 ----
 public class FileDownloadPage extends BasePage {
@@ -85,7 +85,7 @@ Use FluentWait class and create an expected condition using a lambda expression 
 
 To perform operations on files, use java File class. To get a file name, find it in download URL.
 
-===== Test Class
+== == = Test Class
 
 ----
 @Category({ TestsLocal.class, TestsNONParallel.class })

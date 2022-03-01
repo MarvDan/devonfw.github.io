@@ -15,9 +15,9 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==File Structure
+== File Structure
 
-== Top-level
+==  Top-level
 
 The top-level file structure is defined by Angular CLI. You might put this "top-level file structure" into a sub-directory to facilitate your build, but this is not relevant for this guide. So the applications file structure relevant to this guide is the folder `/src/app` inside the part managed by Angular CLI.
 
@@ -42,7 +42,7 @@ The top-level file structure is defined by Angular CLI. You might put this "top-
 Besides the definition of app module the `app` folder has feature modules on top-level.
 The special modules _shared_ and _core_ are present as well.
 
-== Feature Modules
+==  Feature Modules
 
 A feature module contains the modules definition and two folders representing both layers.
 
@@ -66,7 +66,7 @@ So `account-management.component.ts` would be only present if `account-managemen
 Otherwise, the module's routes would be defined _Component-less_
 (see http://vsavkin.tumblr.com/post/146722301646/angular-router-empty-paths-componentless-routes[vsavkin blog post]).
 
-== Components Layer
+==  Components Layer
 
 The component layer reflects the distinction between _Smart Components_ and _Dumb Components_.
 

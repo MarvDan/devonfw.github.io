@@ -1,4 +1,4 @@
-==devonfw shop floor ${project.version}
+== devonfw shop floor ${project.version}
 The devonfw community
 ${project.version}, ${buildtime}: Subtitle {doctitle}
 :description: comprehensive documentation for the devonfw shop floor.
@@ -21,40 +21,40 @@ include::Home.adoc[leveloffset=0]
 
 include::dsf-how-to-use.adoc[leveloffset=1]
 
-== Provisioning environments
+==  Provisioning environments
 include::dsf-provisioning-production-line.adoc[leveloffset=2]
 include::dsf-provisioning-dsf4docker.adoc[leveloffset=2]
 
-== Configuration and services integration
+==  Configuration and services integration
 include::dsf-configure-nexus.adoc[leveloffset=2]
 include::dsf-configure-sonarqube.adoc[leveloffset=2]
 
-== Create project
-=== Create and integrate git repository
+==  Create project
+== = Create and integrate git repository
 include::dsf-configure-gitlab.adoc[leveloffset=2].
 
-=== start new devonfw project
+== = start new devonfw project
 
 It is time to create your devonfw project:
 
   * visit our https://github.com/devonfw/devonfw-tutorial-sources/wiki/build-devon4ng-application[devon4ng] guide.
   * visitr our https://github.com/devonfw/devonfw-tutorial-sources/wiki/build-devon4j-application[devon4j] guide.
 
-=== cicd configuration
+== = cicd configuration
 
-==== Manual configuration
+== ==  Manual configuration
 
-===== Jenkinsfile
+== == = Jenkinsfile
 include::dsf-configure-jenkins.adoc[leveloffset=2].
 
-== Deployment
+==  Deployment
 
 include::dsf-deployment-dsf4openshift.adoc[leveloffset=2].
 
-== Annexes
-=== Custom Services
+==  Annexes
+== = Custom Services
 
-==== BitBucket
+== ==  BitBucket
 include::dsf-openshift-services-bitbucket-basic-server-setup.adoc[leveloffset=3]
 include::dsf-openshift-services-bitbucket-extra-server-configuration.adoc[leveloffset=3]
 include::dsf-mirabaud-cicd-environment-setup.adoc[leveloffset=2]

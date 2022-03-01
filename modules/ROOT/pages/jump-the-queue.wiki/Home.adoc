@@ -10,9 +10,9 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==Home
+== Home
 
-== General Concept
+==  General Concept
 This documentation serves as an introductory course to application development under devonfw. It is structured in an alternating fashion: First a general explanation of different components and features is provided -- using the complex https://github.com/devonfw/my-thai-star[_MyThaiStar_] application as an example, then the actual implementation of these aspects is demonstrated via code-examples -- which are part of the smaller _JumpTheQueue_ application.
 
 Here's some general advice up front: 
@@ -37,9 +37,9 @@ Here's some general advice up front:
 
 IMPORTANT: If you haven't already, please read the devonfw https://github.com/devonfw/getting-started/[getting started guide] for a basic overview over the framework and the available resources.
 
-== Document Overview
+==  Document Overview
 
-=== devon4j (Back-end)
+== = devon4j (Back-end)
 . link:devon4j-overview[devon4j Overview]
 . link:an-devon4j-application[devon4j Application]
 . link:build-devon4j-application[Build a devon4j Application]
@@ -50,7 +50,7 @@ IMPORTANT: If you haven't already, please read the devonfw https://github.com/de
 . link:devon4j-testing[devon4j Testing]
 . link:devon4j-deployment[devon4j Deployment]
 
-=== devon4ng (Front-end)
+== = devon4ng (Front-end)
 . link:devon4ng-introduction[devon4ng Introduction]
 . link:an-devon4ng-application[devon4ng Application]
 . link:devon4ng-components[devon4ng Components]
@@ -60,7 +60,7 @@ IMPORTANT: If you haven't already, please read the devonfw https://github.com/de
 . link:devon4ng-deployment[Angular Deployment]
 
 ////
-=== OASP4Fn (Serverless)
+== = OASP4Fn (Serverless)
 . link:OASP4FnIntroduction[OASP4Fn Introduction]
 . link:BuildOASP4FnApplication[Build a OASP4Fn Application]
 . link:OASP4FnTesting[OASP4Fn Testing]

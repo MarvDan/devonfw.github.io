@@ -17,7 +17,7 @@ endif::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==What is devonfw?
+== What is devonfw?
 
 image::images/introduction/devonfw-small.png[,align="center",width="250",devonfw, link="https://devonfw.com/"]
 
@@ -27,31 +27,31 @@ devonfw is a development platform aiming for the standardization of processes an
 
 TIP: The devonfw _name_ is a registered trademark of image:images/introduction/Capgemini_Logo_Small.png[,width="80",Capgemini,link="https://www.capgemini.com/"], but the software and documentation included in _devonfw_ are fully open source. Please refer to our https://github.com/devonfw/devonfw-guide/blob/master/general/oss-compliance.adoc[OSS Compliance] section for more information.
 
-== Building Blocks of the Platform
+==  Building Blocks of the Platform
 
 image::images/introduction/devonfwcatalog.png[,width="650",devonfw Building blocks,link="images/introduction/devonfwcatalog.png"]
 
 _devonfw_ uses a state-of-the-art, open source, core reference architecture for the server (these days considered a commodity in the IT-industry) and on top of that an ever increasing number of high-value assets, which are developed by Capgemini.
 
-== The devonfw Technology Stack
+==  The devonfw Technology Stack
 devonfw is fully open source and consists of the following technology stacks:
 
-=== Back-End Solutions
+== = Back-End Solutions
 For server applications, _devonfw_ includes the following solutions:
 
 * https://github.com/devonfw/devon4j[devon4j]: Server implementation based on Java, https://spring.io/[Spring] and https://projects.spring.io/spring-boot/[Spring Boot].
 * https://github.com/devonfw/devon4net[devon4net]: Server implementation based on https://dotnet.microsoft.com/[.NET].
 * https://github.com/devonfw/devon4node[devon4node]: Server implementation based on https://nestjs.com/[NestJS].
 
-=== Front-End solutions
+== = Front-End solutions
 For client applications, _devonfw_ includes two solutions based on _TypeScript_, _JavaScript_, _C#_ and _.NET_:
 
 * https://github.com/devonfw/devon4ng[devon4ng]: Frontend implementation based on https://angular.io/[Angular] and a hybrid mobile implementation based on https://ionicframework.com/[Ionic].
 * https://github.com/devonfw/devon4x[devon4X]: Mobile implementation based on https://docs.microsoft.com/xamarin/[Xamarin].
 
-== Custom Tools
+==  Custom Tools
 
-=== devonfw-ide
+== = devonfw-ide
 The https://github.com/devonfw/ide/wiki#devonfw-ide[devonfw-ide] is _not_ one monolithic program that is installed with a traditional executable; rather it's a collection of scripts which are invoked via command line to automate several, repetetive development tasks. These scripts then interact with other tools, frameworks, and third-party IDEs to streamline the development workflow.
 
 image::images/introduction/devonfw-ide.png[,width="550", link="images/introduction/devonfw-ide.png"]
@@ -60,14 +60,14 @@ The advantage of this approach is, that you can have as many instances of the _d
 
 Instances of the devonfw-ide do not interfere with each other, nor with other installed software. The package size of the _devonfw-ide_ is initally very small, the setup is simple, and the included software is portable.
 
-==== IDEs
+== ==  IDEs
 It supports the following IDEs:
 
 * https://www.eclipse.org/ide/[Eclipse]
 * https://code.visualstudio.com/[Visual Studio Code]
 * https://www.jetbrains.com/idea/[IntelliJ IDEA]
 
-==== Platforms
+== ==  Platforms
 It supports the following platforms:
 
 * https://go.java/index.html[Java] (see also https://github.com/devonfw/devon4j/wiki[devon4j])
@@ -75,7 +75,7 @@ It supports the following platforms:
 * https://angular.io/[Angular] (see also https://github.com/devonfw/devon4ng/wiki[devon4ng])
 * https://docs.microsoft.com/en-us/dotnet/csharp/[C#] (see also https://github.com/devonfw/devon4net/wiki[devon4net])
 
-==== Build-Systems
+== ==  Build-Systems
 It supports the following build-systems:
 
 * https://maven.apache.org/[Maven]
@@ -84,7 +84,7 @@ It supports the following build-systems:
 
 TIP: Other IDEs, platforms, or tools can easily be integrated as https://github.com/devonfw/ide/wiki/cli#commandlets[commandlets].
 
-=== CobiGen
+== = CobiGen
 
 https://github.com/devonfw/cobigen/wiki#architecture[CobiGen] is a code generator included in the _devonfw-ide_, that allows users to generate the project structure and large parts of the application component code. This saves a lot of time, which is usually wasted on repetitive engineering tasks and/or writing boilerplate code.
 

@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==Features
+== Features
 
 Every developer needs great tools to work efficiently. Setting up these tools manually can be tedious and error-prone. Furthermore, some projects may require different versions and configurations of such tools. Especially configurations like code-formatters should be consistent within a project to avoid diff-wars.
 
@@ -29,21 +29,21 @@ It supports working with different link:workspaces[workspaces] on different bran
 * *Free* +
 The `devonfw-ide` is free just like everything from https://devonfw.com[devonfw]. See link:license[LICENSE] for details.
 
-== IDEs
+==  IDEs
 We support the following IDEs:
 
 * link:eclipse[Eclipse]
 * link:vscode[Visual Studio Code]
 * link:intellij[IntelliJ]
 
-== Platforms
+==  Platforms
 We support the following platforms:
 
 * link:java[java] (see also https://github.com/devonfw/devon4j/wiki[devon4j])
 * link:cs[C#] (see https://devon4net.github.io/[devon4net])
 * link:node[node], link:ng[angular] and link:ionic[ionic] (see https://github.com/devonfw/devon4ng/wiki[devon4ng])
 
-== Build-Systems
+==  Build-Systems
 We support the following build-systems:
 
 * link:mvn[mvn] (maven)
@@ -52,7 +52,7 @@ We support the following build-systems:
 
 However, also other IDEs, platforms, or tools can be easily integrated as link:cli#commandlet[commandlet].
 
-== Motivation
+==  Motivation
 
 `TL;DR`? Lets talk to developers a correct language. Here are some examples with `devonfw-ide`:
 

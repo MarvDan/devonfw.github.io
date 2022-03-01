@@ -1,18 +1,18 @@
 :toc: macro
 toc::[]
 
-==Publishing the `MyThaiStar` Application
+== Publishing the `MyThaiStar` Application
 
 This page will explain how to build and deploy the application.
 
-== Production Line Instance
+==  Production Line Instance
 
 The Production Line instance being used can be found https://devon.s2-eu.capgemini.com[here]. After logging in you'll see a list of existing jobs and pipelines. 
 However, only a folder is relevant to this topic: *MTS*
 
 *Note*: A user account is required for authentication. Contact a devon team member to request a new account.
 
-== Pipeline Script
+==  Pipeline Script
 
 We'll have a closer look at the pipeline configuration script and its stages:
 
@@ -121,7 +121,7 @@ ssh -o StrictHostKeyChecking=no root@10.40.235.244 docker cp mythaistar/dist/. m
 +
 After deploying the application will be available at http://de-mucdevondepl01:8090[http://de-mucdevondepl01:8090]
 
-=== Complete Pipeline Script:
+== = Complete Pipeline Script:
 
 The complete Groovy script:
 
@@ -194,10 +194,10 @@ node {
 }
 ----
 
-== Accessing `MyThaiStar`
+==  Accessing `MyThaiStar`
 Finally, the application will be available at this URL: http://de-mucdevondepl01:8090[http://de-mucdevondepl01:8090].
 
-== Notes
+==  Notes
 Make sure not to launch multiple instances of this pipeline in parallel. While a pipeline is waiting for approval it'll still be blocking a build executor. 
 This PL instance is set up to have *two* build executors. 
 

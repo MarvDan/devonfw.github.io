@@ -6,7 +6,7 @@ When you click the link, a new website will be opened in the second tab.
 
 image::images/example49.png[]
 
-===== Page Class
+== == = Page Class
 
 ----
 public class MultipleWindowsPage extends BasePage {
@@ -74,7 +74,7 @@ public class NewWindowPage extends BasePage {
 }
 ----
 
-===== Test Class
+== == = Test Class
 
 Steps: 
 

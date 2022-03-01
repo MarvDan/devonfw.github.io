@@ -1,6 +1,6 @@
-==Pipeline structure
+== Pipeline structure
 
-== Pipeline configuration:
+==  Pipeline configuration:
 
 The default interaction with Jenkins required manual jobs. This keeps configuration of a job in Jenkins separate from source code. With Pipeline plugin users can implement a pipeline procedure in Jenkinsfile and store it in repository with other code. This approach is used in Mr Checker framework. More info: https://jenkins.io/solutions/pipeline/
 
@@ -18,9 +18,9 @@ Our CI & CD processes are divided into a few separate files: Jenkins_node.groovy
 
 Not all the steps must be present in the Jenkins files. This should be configured for particular job requirements.
 
-== Description of stages:
+==  Description of stages:
 
-=== Stage “Prepare environment”
+== = Stage “Prepare environment”
 
 First thing to do in this stage is overwriting properties loaded from Jenkins job. It is defined in “overrideProperties” function. The next function, “setJenkinsJobVariables” defines environment variables such as :
 
@@ -32,30 +32,30 @@ First thing to do in this stage is overwriting properties loaded from Jenkins jo
 
 The last function in the stage – “setWorkspace”  -creates an environment variable with path to local workspace. This is required beacuse when using pipeline plugin, Jenkins does not create the WORKSPACE env variables.
 
-=== Stage "Git pull"
+== = Stage "Git pull"
 
 It pulls sources from the repository and loads “git pull” file which contains additional methods:
 
 * setGitAuthor – setting properties about git author to the file “build.properties” and loading created file
 * tryMergeWithBranch – checking if actual branch can be merged with default main branch
 
-=== Stage “Build compile”
+== = Stage “Build compile”
 
 Verify with maven that code builds without errors
 
-=== Stage “Unit test”
+== = Stage “Unit test”
 
 Execute unit tests with mvn surefire test and publish reports in junit and allure format
 
-=== Stage “Integration test”
+== = Stage “Integration test”
 
 Execute integration tests with mvn surefire test and publish reports in junit and allure format
 
-=== Stage “Deploy – local repo”
+== = Stage “Deploy – local repo”
 
 Archive artifacts as a jar file in the local repository
 
-=== Stage ”Deploy – nexu repo”
+== = Stage ”Deploy – nexu repo”
 
 Deploy to the external repository with maven release deploy command with credentials stored in Jenkins machine. Additional files:
 

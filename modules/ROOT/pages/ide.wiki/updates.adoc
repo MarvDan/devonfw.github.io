@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==updates
+== updates
 
 The `updates` folder is used for temporary data. This includes:
 

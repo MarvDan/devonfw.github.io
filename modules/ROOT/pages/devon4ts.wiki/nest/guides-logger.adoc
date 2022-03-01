@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Logger
+== Logger
 
 When you create a new devon4node application, it already has a logger: `src/app/shared/logger/winston.logger.ts`. This logger provide the methods `log`, `error` and `warn`. All of those methods will write a log message, but with a different log level.
 
@@ -23,7 +23,7 @@ The winston logger has two transports: one to log everything inside the file log
 
 As you can see it is a simple example about how to use logger in a devon4node application. It will be update to a complex one in the next versions.
 
-== How to use logger
+==  How to use logger
 
 In order to use the logger you only need to inject the logger as a dependency:
 

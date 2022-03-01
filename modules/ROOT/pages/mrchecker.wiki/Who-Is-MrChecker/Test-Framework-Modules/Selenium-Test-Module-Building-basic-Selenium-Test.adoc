@@ -1,8 +1,8 @@
-==Sample Walkthrough
+== Sample Walkthrough
 
 This page will walk you through the process of creating a test case. We’ll create a very simple test for the Google search engine.
 
-== Test Procedure
+==  Test Procedure
 
 We would like to open the Google search engine, enter some search query and afterwards submit the form. We hope to see some results being listed, otherwise the test will fail. Summarized, the testing process would look like this.
 
@@ -11,11 +11,11 @@ We would like to open the Google search engine, enter some search query and afte
 3. Submit the form
 4. Get the results and check if the result list is empty
 
-== Creating new packages
+==  Creating new packages
 
 We will need two new packages, one for the new page classes, the other for our test classes.
 
-=== Creating package for test classes
+== = Creating package for test classes
 
 Open Eclipse, use the "Project Explorer" on the left to navigate to
 
@@ -25,7 +25,7 @@ Right click on "tests", click on "New" -> New Package. We’ll name the new pack
 
 image::images/image65.png[]
 
-=== Creating package for page classes
+== = Creating package for page classes
 
 Navigate to
 
@@ -35,7 +35,7 @@ Right click on "pages", click on "New" -> New Package. The new package will be c
 
 image::images/image66.png[]
 
-== Creating the test class
+==  Creating the test class
 
 The test class will contain the entire testing-routine. At first, we’ll create a new class inside our newly created "googleSearch" package (under src/test/java) and call it "GoogleSearchTest".
 
@@ -69,7 +69,7 @@ public void setUp() {
 }
 ----
 
-== Creating the GoogleSearchPage class
+==  Creating the GoogleSearchPage class
 
 We have created a new field for the GoogleSearchPage class and instantiated an object in the setUp() method. As this class doesn’t exist yet, we’ll have to create it inside the googleSearch page class package.
 
@@ -145,7 +145,7 @@ The method `isLoaded()` checks if the page was loaded by comparing the actual ti
 
 The completion of these methods finalizes our _GoogleSearchPage_ class. We still have to create the _GoogleResultPage_ class mentioned before. This page will deal with the elements on the Google search result page.
 
-== Creating the GoogleResultPage class
+==  Creating the GoogleResultPage class
 
 By right-clicking on the "pages" package, we’ll navigate to "new" -> "Class" to create a new class.
 
@@ -198,7 +198,7 @@ As we don’t use the `getTitle()` method we simply return an empty String.
 
 Finally, all required page classes are complete and we can finalize the test class.
 
-== Finalizing the test class
+==  Finalizing the test class
 
 At this point, our GoogleSearchTest class looks like this:
 

@@ -15,11 +15,11 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Production Line Templates
+== Production Line Templates
 
 This repository contains a collection of templates that can be used inside a Production Line Jenkins to setup/configure and execute certain tasks.
 
-== devonfw Technologies Templates
+==  devonfw Technologies Templates
 
 - link:how-to-add-a-template[How to add a Template to your PL instance]
 - link:devon4j-pl[devon4j Template]
@@ -28,21 +28,21 @@ This repository contains a collection of templates that can be used inside a Pro
 - link:devon4node-pl[devon4node Template]
 - link:from-existing-devonfw[From existing devonfw Template]
 
-== Utility Templates
+==  Utility Templates
 
 - link:initialize-instance[Initialize Instance Template]
 - link:install-sonar-plugin[Install SonarQube Plugin Template]
 - link:docker-configuration[Docker Configuration Template]
 - link:openshift-configuration[OpenShift Configuration Example]
 
-== MrChecker
+==  MrChecker
 
 - link:mrchecker[MrChecker Template]
 
-== Samples
+==  Samples
 
 - link:devon4j-mts[My Thai Star sample]
 
-== Troubleshooting
+==  Troubleshooting
 
 - link:troubleshoot[Troubleshooting]

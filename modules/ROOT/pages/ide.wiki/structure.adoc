@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==Structure
+== Structure
 The directory layout of your `devonfw-ide` will look like this:
 
 .File structure of your devonfw-ide

@@ -10,9 +10,9 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==devon4ng Application
+== devon4ng Application
 
-== MyThaiStar Basics
+==  MyThaiStar Basics
 As an example of how a devon4ng application is built, we are going to show the _MyThaiStar_ application front-end project, that can be found in https://github.com/devonfw/my-thai-star[GitHub].
 
 The _MyThaiStar_ application is a solution for managing the online booking and orders of a restaurant. It is presented as a showcase app but designed with real requirements in mind. Moreover, it attempts to demonstrate common features provided by many modern web apps (routing with and without guards, use of flex-box, theming, re-usable components, mock back end, ...).
@@ -29,14 +29,14 @@ The main features of the app are:
 * Logged-in users in the role _Waiter_ can also:
 ** Access a restricted area to see and filter the list and details of all reservations and orders made by users.
 
-== MyThaiStar devon4ng Front-end Overview
+==  MyThaiStar devon4ng Front-end Overview
 In the previous section we have shown the aspect of the _MyThaiStar_ server project and the services it provides.
 
 In this section we are going to focus on the implementation of the front-end components, services and directives. We will show how _MyThaiStar_ is created and how you can kickstart your own _devon4ng_ client project with the devonfw framework.
 
 The _MyThaiStar_ project is hosted on https://github.com/devonfw/my-thai-star[GitHub] and includes different technologies such as _Java_, _.NET_ and _Node_ for back-end solutions _Angular_ and _Xamarin_ as default clients.
 
-=== The devon4ng Project
+== = The devon4ng Project
 Using the _devon4ng_ approach for the client project we will have the structure of a main _Angular_ project as follows:
 
 image::images/devon4ng/2.Example_app/project_main_files.jpg[Angular Project Structure]
@@ -49,7 +49,7 @@ The `src` folder contains all the application code.
 
 Finally, the rest of the files are configuration files for different technologies involved in the project.
 
-=== Angular Folder Structure
+== = Angular Folder Structure
 Following the https://angular.io/docs/ts/latest/guide/style-guide.html[Angular style guide] rules, the application has been structured this way:
 
 * app
@@ -67,7 +67,7 @@ As can be seen in this image:
 
 image::images/devon4ng/2.Example_app/app_structure.jpg[Angular Folder Structure]
 
-=== Components
+== = Components
 As we already saw in the previous chapter, the Angular architecture is based on four types of elements: _components_, _services_, _modules_ and _directives_.
 
 In this section we are going to focus on the _components_. We can distinguish them, because they all are named with the extension `.component.ts`.
@@ -120,7 +120,7 @@ image::images/devon4ng/2.Example_app/book_table.jpg[MyThaiStar Book Table View]
 
 This component view shows a card, that contains a form for reservation or the creation of an event.
 
-=== Services
+== = Services
 Ideally, all logic should be taken out of a component. Only calls to services and minimal script interactions should be contained in a component. The services should then contain all the logic, for example, code that calls the server and so on.
 
 MyThaiStar components consume those services, for example a price-calculator service, which is called when a costumer makes an order:
@@ -147,10 +147,10 @@ With all of this correctly setup, we can log into to the waiter cockpit by enter
 
 image::images/devon4ng/2.Example_app/waiter_cockpit.jpg[MyThaiStar Waiter Cockpit View]
 
-=== Modules
+== = Modules
 Through modules, you can encapsulate whole functionalities or parts of the application. All Angular apps have at least one module: _app.module_. Angular encourages the use of more modules to organize all components and services. In MyThaiStar, every component and service is inside a module, so the _app.module_ is only composed of other, smaller modules.
 
-== Running MyThaiStar Client
+==  Running MyThaiStar Client
 To run MyThaiStar, you have to have https://nodejs.org/en/[Node] installed globally and https://github.com/angular/angular-cli[Angular CLI]. Once you have installed these dependencies, you can go to the project folder and run: `yarn install`. Once finished, you are ready to run the client via: `ng serve`.
 
 If everything goes well, the console will output something like this:

@@ -1,4 +1,4 @@
-==Description
+== Description
 
 The main idea is to write a specific function for a given element. Create names using template: `actionElementNameElementType()`, and for a verifying function: `isElementNameElementTypePresent()` or `isElementNameElementTypeAction()` To get a value of another element attribute try using this schema: `getElementNameElementTypeAttributeName()`.
 
@@ -6,12 +6,12 @@ We have a few basic web elements. There are items for a form input, submit butto
 
 *Important*: Visible and Present are not the same. First one means that a user sees this element. Present action means that element is in a HTML code but is not visible for a user (a css display attribute is set to none).
 
-==Naming convention to create functions in page package
+== Naming convention to create functions in page package
 
 Using this keyword you may create compilation of names. This method should be public. Every other method created onside this method should be private.
 
 [cols=3*,options=header]
-|===
+|== =
 
 |Element
 |Action
@@ -153,9 +153,9 @@ Using this keyword you may create compilation of names. This method should be pu
 |get
 |`getMoreLinkHref()` / `getRememberMeCheckboxName()`
 
-|===
+|== =
 
-==Naming convention used in the code
+== Naming convention used in the code
 
 Identifiers which are used in the code should be named as follows:
 
@@ -169,7 +169,7 @@ Identifiers which are used in the code should be named as follows:
     Example:
     *parseDbmXmlFromIPAddress* instead of *parseDBMXMLFromIPAddress*
 
-==Name convention to create selector naming in page package
+== Name convention to create selector naming in page package
 
 * selector variable must be *By* type
 * selector variable must be *private final static*

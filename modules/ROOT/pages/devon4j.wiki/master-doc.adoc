@@ -11,13 +11,13 @@ include::architecture.adoc[leveloffset=1]
 
 include::guide-component.adoc[leveloffset=2]
 
-== Coding
+==  Coding
 
 include::coding-conventions.adoc[leveloffset=2]
 
 <<<<
 
-== Layers
+==  Layers
 
 include::guide-client-layer.adoc[leveloffset=2]
 
@@ -41,7 +41,7 @@ include::guide-dataaccess-layer.adoc[leveloffset=2]
 
 include::guide-batch-layer.adoc[leveloffset=2]
 
-== Guides
+==  Guides
 
 include::guide-dependency-injection.adoc[leveloffset=2]
 
@@ -164,6 +164,6 @@ include::guide-blob-support.adoc[leveloffset=2]
 
 include::guide-jdk.adoc[leveloffset=2]
 
-== Tutorials
+==  Tutorials
 
 include::tutorial-newapp.adoc[leveloffset=2]

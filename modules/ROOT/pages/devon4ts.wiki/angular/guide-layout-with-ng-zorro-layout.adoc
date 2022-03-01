@@ -15,14 +15,14 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==NG ZORRO Layout
+== NG ZORRO Layout
 
 The purpose of this guide is to get a basic understanding of creating layouts using https://ng.ant.design/docs/introduce/en[NG ZORRO] in a devon4ng application.
 
 .This is what the finished application will look like
 image::images/angular-zorro-layout/figure1.png[]
 
-== Let's begin
+==  Let's begin
 
 Starts with opening the console(in the Devon distribution folder) and running the following command to start a project named `AngularZorroLayout`.
 `devon ng new AngularZorroLayout`
@@ -41,7 +41,7 @@ Angular will spin up a server and you can check your application by visiting htt
 
 .Blank application
 
-== Adding Angular ZORRO library to the project
+==  Adding Angular ZORRO library to the project
 
 Next we will add Angular Material to our application. In the integrated terminal, press CTRL + C to terminate the running application and run the following command:
 
@@ -84,7 +84,7 @@ export class AppModule { }
 
 
 
-== Internationalization
+==  Internationalization
 
 The default language of `ng-zorro-antd` is `Chinese` . If you want to use other languages, you can follow the instructions below. You can also set the language with `ng add ng-zorro-antd` when creating project.
 
@@ -120,7 +120,7 @@ const antDesignIcons = AllIcons as {
 const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key]);
 ----
 
-== Development
+==  Development
 
 We have all the NG ZORRO related dependencies set up in our project, we can start coding.
 
@@ -467,10 +467,10 @@ After that we need to create the table
           <tbody>
             <tr *ngFor="let data of editRowTable.data" class="editable-row">
               <td>
-                <div class="editable-cell" [hidden]="editId === data.id" (click)="startEdit(data.id)">
+                <div class="editable-cell" [hidden]="editId == = data.id" (click)="startEdit(data.id)">
                   {{ data.name }}
                 </div>
-                <input [hidden]="editId !== data.id" type="text" nz-input [(ngModel)]="data.name" (blur)="stopEdit()" />
+                <input [hidden]="editId !==  data.id" type="text" nz-input [(ngModel)]="data.name" (blur)="stopEdit()" />
               </td>
               <td>{{ data.age }}</td>
               <td>{{ data.address }}</td>

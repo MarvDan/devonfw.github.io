@@ -15,27 +15,27 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Links to UI Libraries
+== Links to UI Libraries
 
 We have listed some links to NestJS libraries and common requested feature components we recommend. Here is the list
 
-=== Utilities
+== = Utilities
 ** Nest CLS: https://github.com/Papooch/nestjs-cls
 ** Web Socket: https://docs.nestjs.com/websockets/gateways
 ** Nest Mailer: https://github.com/nest-modules/mailer
 
-=== Internationalization (i18n)
+== = Internationalization (i18n)
 ** Nest i18n: https://github.com/ToonvanStrijp/nestjs-i18n
 
-=== Monitoring
+== = Monitoring
 ** Nest OpenTelemetry: https://github.com/MetinSeylan/Nestjs-OpenTelemetry
 
-=== Logging
+== = Logging
 ** Nest Pino: https://github.com/iamolegga/nestjs-pino
 
-=== Microservice
+== = Microservice
 ** NestJS PG Notify: https://github.com/pvarentsov/nestjs-pg-notify
 
-=== RBAC (Role-based access control)
+== = RBAC (Role-based access control)
 ** Nest RBAC: https://github.com/sergey-telpuk/nestjs-rbac
 ** Nest Keycloak Admin: https://github.com/anonrig/nestjs-keycloak-admin

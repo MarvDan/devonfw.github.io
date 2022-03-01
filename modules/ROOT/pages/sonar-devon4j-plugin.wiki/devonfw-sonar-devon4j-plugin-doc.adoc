@@ -1,4 +1,4 @@
-==sonar-devon4j-plugin
+== sonar-devon4j-plugin
 :description: documentation for sonar-devon4j-plugin.
 :doctype: book
 :toc:

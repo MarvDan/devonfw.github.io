@@ -1,11 +1,11 @@
 :toc: macro
 toc::[]
 
-==Angular CI
+== Angular CI
 
 The Angular client-side of My Thai Star is going to have some specific needs for the CI-CD Pipeline to perform mandatory operations.
 
-== Pipeline
+==  Pipeline
 
 The Pipeline for the Angular client-side is going to be called *MyThaiStar_FRONT-END_BUILD*. It is located in the PL instance, under the link:https://devon.s2-eu.capgemini.com/jenkins/job/MTS/[MTS folder] (as previously explained). It is going to follow a process flow like this one:
 
@@ -87,11 +87,11 @@ post {
 }
 ----
 
-== Adjustments
+==  Adjustments
 
 The Angular project Pipeline needed some "extra" features to complete all planned processes. Those features resulted in some additions to the project.
 
-=== Pipeline Environment
+== = Pipeline Environment
 
 In order to easily reuse the pipeline in other angular projects, all variables have been defined in the block environment. All variables have the default values that Production Line uses, so if you're going to work in production line you won't have to change anything. Example:
 
@@ -130,7 +130,7 @@ environment {
 }
 ```
 
-==== Description
+== ==  Description
 - *build Script*: script for build the application. It must be defined at package.json.
 +
 Example (package.json):

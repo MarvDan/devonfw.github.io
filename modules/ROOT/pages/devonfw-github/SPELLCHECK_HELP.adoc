@@ -6,9 +6,9 @@ ifdef::env-github[]
 :note-caption: :information_source:
 endif::[]
 
-==Spellcheck
+== Spellcheck
 
-== What is Spellcheck and how it is configured?
+==  What is Spellcheck and how it is configured?
 
 Spellcheck is setup in each repository to automatically detect mispelled words in documents of respective repository.We are using PySpelling module for automatic spellcheck. Basic usage can be found https://facelessuser.github.io/pyspelling/[here].PySpell github repository can be found https://github.com/igsekor/pyspelling-any[here].
 `devonfw-spellcheck.yml` setup this workflow for each respective repository.It reuses common workflow from .github repository. 
@@ -18,20 +18,20 @@ Spellcheck workflow has 2 parts:
 * Configuration
 * Dictionary
 
-=== Configuration 
+== = Configuration 
 
 https://github.com/devonfw/.github/blob/master/.github/workflows/.spellcheck.yml[Configuration file] from .github contains all configuration for spellcheck workflow. 
 
 In configuration file you can configure folder path, file type to be scanned as well as filters to ignore some format of text. Currently, spellcheck is following en_US as configured in this file.
 
-=== Dictionary
+== = Dictionary
 
 Spellcheck has option to add your customized spellings which you think are correct but detected as mistakes in spellcheck report. 
 
 You can add technical terms or nouns detected as spell mistake. For example you can add names like FreeMarker or Angular etc. Also you can add standard terms like localhost, IDE etc. 
 You can find dictionary file https://github.com/devonfw/.github/blob/master/en-devonfw.dict[here].
 
-== How to fix your workflow?
+==  How to fix your workflow?
 
 After you have understood how spellcheck is configured lets see how we can fix failing workflow:
 

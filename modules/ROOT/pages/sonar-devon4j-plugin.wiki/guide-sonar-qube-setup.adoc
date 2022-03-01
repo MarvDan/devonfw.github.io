@@ -3,7 +3,7 @@ toc::[]
 
 https://sonarqube.org[SonarQube] is the recommended tool for continuous quality analysis. Ideally you will get it out-of-the-box and pre-configured with the `ProductionLine` otherwise you can set it up yourself what is described here.
 
-== Prerequisites
+==  Prerequisites
 You need to have the following components installed on your server:
 
 * https://www.sonarqube.org/downloads/[SonarQube] version `6.7.1` (LTS) (or above)
@@ -25,7 +25,7 @@ Inside SonarQube you need to install the following plugins (most of them via `Ma
 * https://github.com/devonfw/sonar-devon-plugin/[Devon Architecture Rules]
 * https://www.owasp.org/index.php/OWASP_SonarQube_Project[OWASP]
 
-== Quality Profiles
+==  Quality Profiles
 Import all quality profiles from https://github.com/devonfw/devon-ide/tree/master/settings/src/main/settings/sonarqube/profiles/[here].
 
 Each profile should be set as default. If you hit issues in your projects (missing findings, false-positives, etc.) feel free to adjust the config to your needs. However, be aware that we put a lot of energy into this config and the rules are there for reason. Only drop rules or lower the severity of rules if this really makes sense for your project (and not just for being lazy and getting rid of warnings - instead consider the findings as valuable input).
@@ -34,5 +34,5 @@ Further the following rules are not activated in our config because they only ma
 
 * `squid:S1451` (Track lack of copyright and license headers)
 
-== Quality Gates
+==  Quality Gates
 Quality gates unfortunately can not be imported and exported. 

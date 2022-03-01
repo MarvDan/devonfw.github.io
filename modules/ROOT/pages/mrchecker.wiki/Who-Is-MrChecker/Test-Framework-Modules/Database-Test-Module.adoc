@@ -15,18 +15,18 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Database Test Module
+== Database Test Module
 
-== What is MrChecker Database Test Module
+==  What is MrChecker Database Test Module
 
 Database module is based on Object-Relational Mapping programming technique. All functionalities are built using Java Persistence API but examples use Hibernate as a main provider.
 
-== JPA structure schema
+==  JPA structure schema
 
 This module was written to allow the use of any JPA provider. The structure is represented in the schema below.
 
 image::images/image3.png[]
 
-== ORM representation applied in Framework
+==  ORM representation applied in Framework
 
 image::images/image4.png[]

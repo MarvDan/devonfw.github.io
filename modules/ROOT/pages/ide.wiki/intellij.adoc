@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==intellij
+== intellij
 
 The `intellij` commandlet allows to install, configure, and launch https://www.jetbrains.com/idea/[IntelliJ].
 To launch IntelliJ for your current workspace and `devonfw-ide` installation, simply run:
@@ -11,7 +11,7 @@ You may also supply additional arguments as `devon intellij «args»`. These are
 
 .Usage of `devon intellij`
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Argument(s)*   |*Meaning*
 |`--all`         |if provided as first arg then to command will be invoked for each workspace
 |`setup`         |setup IntelliJ (install or update)
@@ -22,20 +22,20 @@ You may also supply additional arguments as `devon intellij «args»`. These are
 |`ws-re[verse]`  |reverse merge changes from workspace into settings
 |`ws-reverse-add`|reverse merge adding new properties
 |`create-script` |create launch script for this IDE, your current workspace and your OS
-|=======================
+|== == == == == == == == == == == =
 
 There are link:variables[variables] that can be used for IntelliJ. These are explained by the following table:
 
 .Variables of devonfw-ide for intelliJ
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Variable*|*Meaning*
 |*`INTELLIJ_VERSION`*|The version of the tool IntelliJ to install and use.
 |*`INTELLIJ_EDITION_TYPE`*|The edition of the tool IntelliJ to install and use. The value `C` mean Community edition and the value `U` mean Ultimate edition. The Ultimate edition requires a license. The user has to buy the license separately and it is not part of devonfw-ide. The devonfw-ide only supports download and installation.
 |*`EXTRA_JAVA_VERSION`|You can set this to a different (newer) version of Java used to launch your IDE (other than `JAVA_VERSION` that is used to build your project)
-|=======================
+|== == == == == == == == == == == =
 
-== plugins
+==  plugins
 
 To be productive with IntelliJ you need plugins. Of course `devonfw-ide` can automate this for your:
 In your link:settings[settings] git repository create a folder https://github.com/devonfw/ide-settings/tree/master/intellij/plugins[intellij/plugins] (click this link to see more examples and see which plugins come by default).

@@ -1,6 +1,6 @@
 :toc:
 toc::[]
 
-==.NET design
+== .NET design
 
 TODO

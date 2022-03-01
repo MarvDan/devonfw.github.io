@@ -1,6 +1,6 @@
-==devon4j
+== devon4j
 
-== Introduction
+==  Introduction
 The http://www.devonfw.com/[_devonfw_] provides a solution to building applications which combine best-in-class frameworks and libraries as well as industry proven practices and code conventions.
 It massively speeds up development, reduces risks and helps you to deliver better results.
 
@@ -10,13 +10,13 @@ include::architecture.adoc[leveloffset=1]
 
 include::guide-component.adoc[leveloffset=2]
 
-== Coding
+==  Coding
 
 include::coding-conventions.adoc[leveloffset=2]
 
 include::coding-tools.adoc[leveloffset=2]
 
-== Layers
+==  Layers
 
 include::guide-client-layer.adoc[leveloffset=2]
 
@@ -32,7 +32,7 @@ include::guide-dataaccess-layer.adoc[leveloffset=2]
 
 include::guide-batch-layer.adoc[leveloffset=2]
 
-== Guides
+==  Guides
 
 include::guide-dependency-injection.adoc[leveloffset=2]
 
@@ -108,7 +108,7 @@ include::guide-jdk.adoc[leveloffset=2]
 
 include::guide-apm.adoc[leveloffset=2]
 
-== devonfw Development 
+==  devonfw Development 
 
 include::devonfw-ide-setup.adoc[leveloffset=2]
 
@@ -118,12 +118,12 @@ include::devonfw-code-contribution.adoc[leveloffset=2]
 
 include::devonfw-documentation.adoc[leveloffset=2]
 
-== Tutorials
+==  Tutorials
 
 include::tutorial-introduction.adoc[leveloffset=2]
 
 include::tutorial-newapp.adoc[leveloffset=2]
 
-== For Core-Developers
+==  For Core-Developers
 
 include::devonfw-release.adoc[leveloffset=2]

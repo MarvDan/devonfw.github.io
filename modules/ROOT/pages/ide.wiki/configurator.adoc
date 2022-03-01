@@ -1,15 +1,15 @@
 :toc:
 toc::[]
 
-==Configurator
+== Configurator
 
 The `devonfw-ide` maintains and includes a tool called https://github.com/devonfw/ide/tree/master/configurator[devonfw-ide-configurator]. This allows to synchronize and manage complex configurations. Initially it was written for Eclipse that stores its information in a `.metadata` folder of your workspace. Unfortunately it contains different file-formats (including XML as String value inside properties files), temporary data as well as important configurations with sometimes mixtures of project specific, developer specific, and UI specific settings. To make it short it is a mess. Instead of bashing on Eclipse we want to make this IDE more usable and created a way to manage important parts of such configuration structures.
 
-== How to use
+==  How to use
 The easiest way is that you do not care. When you launch the IDE of your choice (e.g. via `devon eclipse`, `devon vscode` or by running `eclipse-main` script), this will happen automatically.
 If you want to explicitly update your workspace without launching the IDE, you can append `ws-update` (e.g. `devon eclipse ws-update`). Instead, if you want to launch your IDE without touching its configuration you can append `run` or `start` (e.g. `devon eclipse run`) what will omit this `configurator`.
 
-== How it works
+==  How it works
 For every tool managed with our configurator we distinguish the following file structures:
 
 1. The actual configuration location of the tool itself. We configure the tool to relocate this to a specific workspace (so by default `workspaces/main/`).
@@ -30,7 +30,7 @@ In other words this means:
 * Settings in 2. are therefore used as initial defaults and suggestions but can be changed by the end-user (developer). Hence, use 2. for things such as themes, UI tweaks, etc. Once the workspace is configured 2. typically is not relevant anymore.
 * Settings in 3. are applied on every update. By default this happens every time you start your IDE, these settings are managed by the `settings` and in control `configurator`. If the user modifies such settings and reopens his IDE his changes are reverted. Hence, use 3. for things such as code-formatters, compiler options, paths to tools shipped with `devonfw-ide`, etc. that should be consistent and homogeneous for every team-member.
 
-== How to customize
+==  How to customize
 
 Many fundamental settings for Eclipse can be found in the sub-folder `https://github.com/devonfw/ide/tree/master/settings/src/main/settings/eclipse/workspace/update/.metadata/.plugins/org.eclipse.core.runtime/.settings[.metadata/.plugins/org.eclipse.core.runtime/.settings]`. Of course you could manually edit these settings with a text editor. However, this requires a lot of knowledge. As we want to provide a great user-experience with `devonfw-ide` you can also do the following:
 

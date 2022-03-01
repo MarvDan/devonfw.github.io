@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==release
+== release
 
 Create a release in a standardized way including the following steps:
 
@@ -19,12 +19,12 @@ Create a release in a standardized way including the following steps:
 
 .Usage of `devon java`
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Argument(s)*                       |*Meaning*
 |`...`                               |any optional argument will directly be passed to the actual command to build the deployment
-|=======================
+|== == == == == == == == == == == =
 
-== Build-Tools
+==  Build-Tools
 
 This `release` commandlet utilizes the link:build[build] commandlet to support multiple build-tools such as link:mvn[maven], link:gradle[gradle], or link:npm[npm]. Each of those commandlets should respect the link:variables[variable] `«TOOL»_RELEASE_OPTS` to customize the parameters for the release build.
 

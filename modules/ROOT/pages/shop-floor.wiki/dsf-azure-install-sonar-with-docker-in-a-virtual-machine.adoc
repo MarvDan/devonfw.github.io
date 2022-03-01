@@ -1,10 +1,10 @@
-== Connect to a Virtual Machine(VM) in Azure
+==  Connect to a Virtual Machine(VM) in Azure
 
-==== Pre-requisites
+== ==  Pre-requisites
 
 Have a VM created and a private key in order to connect to it
 
-==== Establish a connection
+== ==  Establish a connection
 
 1- Open the client of your choice(putty,cmder,bash)
 
@@ -28,7 +28,7 @@ You are connected:
 
 image::./images/others/azure-sonarqube/vm-connection.png[]
 
-== Install Sonar using Docker and Docker-compose 
+==  Install Sonar using Docker and Docker-compose 
 
 As an example we will use the practical case of Bad Weather, a project where we were asked to install Sonar inside a VM in Azure portal
 
@@ -36,7 +36,7 @@ image::./images/others/azure-sonarqube/install-sonar.png[]
 
 We had 2 possible scenarios, we went for the *case A* since no other service will be installed in this VM
 
-==== Steps
+== ==  Steps
 
 1- Install docker and docker compose in the VM
 

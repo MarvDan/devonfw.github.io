@@ -17,7 +17,7 @@ endif::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Build Your First devonfw Application
+== Build Your First devonfw Application
 
 https://github.com/devonfw/jump-the-queue[JumpTheQueue] is a small application based on the devonfw framework, which you can create yourself by following our simple step-by-step tutorial. By doing so, you will learn about the app development workflow and gain insight into the design of a professional business information system. Please visit the JumpTheQueue wiki and start working trough the tutorial https://github.com/devonfw/jump-the-queue/wiki[*HERE*].
 

@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Angular Clarity Layout
+== Angular Clarity Layout
 
 The purpose of this guide is to get a basic understanding of creating layouts Angular Clarity in a devon4ng application. https://clarity.design/[Angular Clarity] is a HTML/CSS framework.
 
@@ -24,7 +24,7 @@ The purpose of this guide is to get a basic understanding of creating layouts An
 image::images/angular-clarity-layout/1.png[]
 
 
-== Let's begin
+==  Let's begin
 
 We start with opening the console(in the Devon distribution folder) and running the following command to start a project named `AngularZorroLayout`.
 
@@ -41,7 +41,7 @@ Angular will spin up a server and you can check your application by visiting htt
 .Blank Application
 image::images/angular-clarity-layout/2.png[]
 
-==  Adding Angular Clarity framework to the project
+==   Adding Angular Clarity framework to the project
 
 Next we will add Angular Clarity to our application. In the integrated terminal, press CTRL + C to terminate the running application and run the following command:
 
@@ -74,7 +74,7 @@ export class AppModule { }
 .ClarityModule
 image::images/angular-clarity-layout/3.png[]
 
-== Development
+==  Development
 
 After installed the library we can start to develop the code.
 

@@ -17,7 +17,7 @@ endif::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Explore Our devonfw Sample Application
+== Explore Our devonfw Sample Application
 
 https://github.com/devonfw/my-thai-star[MyThaiStar] is a complex sample app, that demonstrates the full capabilities of our framework. On this page we will describe how to download and launch the app on your system, so you can test the various functionalities it offers and explore its code.
 

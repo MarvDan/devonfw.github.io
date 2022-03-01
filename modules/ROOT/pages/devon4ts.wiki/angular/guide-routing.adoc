@@ -15,13 +15,13 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Routing
+== Routing
 
 A basic introduction to the Angular Router can be found in https://angular.io/guide/router[Angular Docs].
 
 This guide will show common tasks and best practices.
 
-== Defining Routes
+==  Defining Routes
 
 For each feature module and the app module all routes should be defined in a separate module with the suffix `RoutingModule`.
 This way the routing modules are the only place where routes are defined.
@@ -33,7 +33,7 @@ image::images/module-declaration.svg["Routing module declaration", width="450", 
 
 It is important to define routes inside app routing module with `.forRoot()` and in feature routing modules with `.forChild()`.
 
-=== Example 1 - No Lazy Loading
+== = Example 1 - No Lazy Loading
 
 In this example two modules need to be configured with routes - `AppModule` and `FlightModule`.
 
@@ -83,7 +83,7 @@ export class FlightSearchRoutingModule { }
 TIP: The import order inside `AppModule` is important.
 `AppRoutingModule` needs to be imported *after* `FlightModule`.
 
-=== Example 2 - Lazy Loading
+== = Example 2 - Lazy Loading
 
 Lazy Loading is a good practice when the application has multiple feature areas and a user might not visit every dialog.
 Or at least he might not need every dialog up front.
@@ -125,7 +125,7 @@ const routes: Routes = [
 export class FlightSearchRoutingModule { }
 ----
 
-== Triggering Route Changes
+==  Triggering Route Changes
 
 With Angular you have two ways of triggering route changes.
 
@@ -146,7 +146,7 @@ then you should aim for triggering navigation only in _Smart Components_.
 .Triggering navigation
 image::images/triggering-navigation.svg["Triggering navigation", link="images/triggering-navigation.svg", width=350,height=200]
 
-== Guards
+==  Guards
 
 Guards are Angular services implemented on routes which determines whether a user can navigate to/from the route. There are examples below which will explain things better. We have the following types of Guards:
 
@@ -158,9 +158,9 @@ Guards are Angular services implemented on routes which determines whether a use
 
 Let's have a look at some examples.
 
-=== Example 1 - `CanActivate` and `CanActivateChild` guards
+== = Example 1 - `CanActivate` and `CanActivateChild` guards
 
-==== `CanActivate` guard
+== ==  `CanActivate` guard
 
 As mentioned earlier, a guard is an Angular service and services are simply `TypeScript` classes. So we begin by creating a class. This class has to implement the `CanActivate` interface (imported from `angular/router`), and therefore, must have a `canActivate` function. The logic of this function determines whether the requested route can be navigated to or not. It returns either a Boolean value or an `Observable` or a `Promise` which resolves to a Boolean value. If it is true, the route is loaded, else not.
 
@@ -219,7 +219,7 @@ const routes: Routes = [
 
 As you can see, the `canActivate` property accepts an array of guards. So we can implement more than one guard on a route.
 
-==== `CanActivateChild` guard
+== ==  `CanActivateChild` guard
 
 To use the guard on nested (children) routes, we add it to the `canActivateChild` property like so:
 
@@ -237,7 +237,7 @@ const routes: Routes = [
 ];
 ----
 
-=== Example 2 - `CanLoad` guard
+== = Example 2 - `CanLoad` guard
 
 Similar to `CanActivate`, to use this guard we implement the `CanLoad` interface and overwrite it's `canLoad` function. Again, this function returns either a Boolean value or an `Observable` or a `Promise` which resolves to a Boolean value. The fundamental difference between `CanActivate` and `CanLoad` is that `CanLoad` is used to determine whether an entire module can be lazily loaded or not. If the guard returns `false` for a module protected by `CanLoad`, the entire module is not loaded.
 

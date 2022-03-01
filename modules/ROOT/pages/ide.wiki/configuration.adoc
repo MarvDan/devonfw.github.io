@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==Configuration
+== Configuration
 
 The `devonfw-ide` aims to be highly configurable and flexible. The configuration of the link:cli[devon] command and environment variables takes place via `devon.properties` files. The following list shows these configuration files in the order they are loaded so files can override variables from files above in the list:
 
@@ -14,7 +14,7 @@ The `devonfw-ide` aims to be highly configurable and flexible. The configuration
 7. `https://github.com/devonfw/ide-settings/blob/master/devon/conf/devon.properties[conf/devon.properties]` - user specific configurations (e.g. `M2_REPO=~/.m2/repository`). During setup this file is created by copying a template from `${SETTINGS_PATH}/devon/conf/devon.properties`.
 8. `https://github.com/devonfw/ide-settings/tree/master/projects[settings/projects/*.properties]`- properties to configure link:projects[project checkout and import]
 
-== devon.properties
+==  devon.properties
 
 The `devon.properties` files allow to define environment variables in a simple and OS independent way:
 

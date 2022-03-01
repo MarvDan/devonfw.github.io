@@ -3,7 +3,7 @@ toc::[]
 :idprefix:
 :idseparator: -
 
-==Security
+== Security
 
 The devonfw team is commited to keep its projects and – by extension – the users of these projects safe from information security risks. For this reason, all our GitHub repositories are monitored by an instance of https://dependabot.com/[Dependabot], which notifies the responsible product/project owners, as soon as known security vulnerabilities are detected.
 

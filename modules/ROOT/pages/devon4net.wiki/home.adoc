@@ -15,11 +15,11 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==devon4net
+== devon4net
 
 This guide describes an application architecture for API development with https://dotnet.microsoft.com/[.net core].
 
-== Motivation
+==  Motivation
 
 The main challenge we encounter in our projects is to bring junior and senior developers into .net core.
 There are a lot of different frameworks and architectures in the market.

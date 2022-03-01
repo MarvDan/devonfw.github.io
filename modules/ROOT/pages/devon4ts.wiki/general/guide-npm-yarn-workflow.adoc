@@ -15,9 +15,9 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Package Managers Workflow
+== Package Managers Workflow
 
-== Introduction
+==  Introduction
 
 // v1.0, 2017-11,
 
@@ -31,7 +31,7 @@ As you can see, packages are convenient. In some cases, they may be even needed,
 
 For more comprehensive information visit https://docs.npmjs.com/getting-started/what-is-npm[npm definition]
 
-=== Package.json
+== = Package.json
 
 Dependencies in your project are stored in a file called package.json. Every package.json must contain, at least, the name and version of your project.
 
@@ -45,7 +45,7 @@ If you wish to learn more information about package.json, click on the following
 * https://yarnpkg.com/en/docs/package-json[Yarn Package.json] 
 * https://docs.npmjs.com/getting-started/using-a-package.json[npm Package.json]
 
-==== Content of package.json
+== ==  Content of package.json
 
 As you noticed, package.json is a really important file in your project. It contains essential information about our project, therefore you need to understand what's inside.
 
@@ -125,7 +125,7 @@ Finally you can have bundled dependencies which are packages bundled together wh
 
 Here is the link to an in-depth explanation of https://yarnpkg.com/en/docs/dependency-types[dependency types]{zwsp}.
 
-==== Scripts
+== ==  Scripts
 
 Scripts are a great way of automating tasks related to your package, such as simple build processes or development tools.
 
@@ -161,7 +161,7 @@ Check different uses for scripts in the following links:
 Or you can go back to 
 <<Content of package.json>>{zwsp}. +
 
-=== Managing dependencies
+== = Managing dependencies
 
 In order to manage dependencies we recommend using package managers in your projects.
 
@@ -171,7 +171,7 @@ Another reason, closely related to the first one, is reducing human error by aut
 
 Two of the package managers you can use in NodeJS projects are "yarn" and "npm". While you can use both, we encourage you to use only one of them while working on projects. Using both may lead to different dependencies between members of the team.
 
-==== npm
+== ==  npm
 
 We'll start by installing npm following this small guide https://docs.npmjs.com/getting-started/installing-node[here].
 
@@ -277,7 +277,7 @@ It is *not* recommended to modify this file yourself. It's better to leave its m
 
 More information is provided by the npm team at https://docs.npmjs.com/files/package-lock.json[package-lock.json]
 
-==== Yarn
+== ==  Yarn
 
 Yarn is an alternative to npm, if you wish to install yarn follow the guide https://yarnpkg.com/en/docs/install[getting started with yarn] and download the correct version for your operative system. NodeJS is also needed you can find it https://nodejs.org/en/[here].
 
@@ -361,7 +361,7 @@ As with package-lock.json, it's strongly *not* advised to modify this file. Leav
 
 You can learn more about yarn.lock here: https://yarnpkg.com/en/docs/yarn-lock[yarn.lock]
 
-==== Global package
+== ==  Global package
 
 Global packages are packages installed in your operative system instead of your local project, 
 global packages useful for developer tooling that is not part of any individual project but instead is used for local commands.
@@ -377,7 +377,7 @@ npm install –g @angular/cli
 https://docs.npmjs.com/getting-started/installing-npm-packages-globally[Global npm] +
 https://yarnpkg.com/lang/en/docs/cli/global/[Global yarn]
 
-==== Package version
+== ==  Package version
 
 Dependencies are critical to the success of a package. You must be extra careful about
 which version packages are using, one package in a different version may break your code.
@@ -441,7 +441,7 @@ it cannot surpass 5.0.0 or be lower than 4.2.4 .
 
 You can learn more about this in https://yarnpkg.com/en/docs/dependency-versions[Versions]
 
-=== Problems you may encounter
+== = Problems you may encounter
 
 If you can't find package.json, you may have deleted the one you had previously, 
 which means you have to download the package.json from the repository. 
@@ -472,7 +472,7 @@ there is a solution to a problematic update to one package.
 
 A list of common errors of npm can be found in: https://docs.npmjs.com/troubleshooting/common-errors[npm errors]
 
-==== Recomendations
+== ==  Recomendations
 
 Use yarn *or* npm in your project, reach an agreement with your team in order to choose one, this will avoid
 undesired situations like forgetting to upload an updated yarn.lock or package-lock.json.

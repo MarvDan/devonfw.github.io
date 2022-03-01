@@ -1,11 +1,11 @@
 :toc:
 toc::[]
 
-==Style guide
+== Style guide
 
 image::images/mts_styleguide.png[, link="images/mts_styleguide.png"]
 
-==Low and high fidelity wireframes
+== Low and high fidelity wireframes
 
 History of Mockup designs for My Thai Star.
 

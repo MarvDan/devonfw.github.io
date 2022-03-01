@@ -10,7 +10,7 @@ If user data is wrong, an appropriate message appears:
 
 image::images/example39.png[]
 
-===== Page Class
+== == = Page Class
 
 ----
 public class FormAuthenticationPage extends BasePage {
@@ -91,18 +91,18 @@ public class FormAuthenticationPage extends BasePage {
 }
 ----
 
-====== InputTextElement
+== == ==  InputTextElement
 
 Use methods from this class to perform actions on text fields: 
 
 * `clearInputText()` - remove all text from selected input field 
 * `setInputText(String text)` - enter given text 
 
-====== LabelElement
+== == ==  LabelElement
 
 * String `getText()` method returns visible text from label
 
-===== TestClass
+== == = TestClass
 
 Prepare six test cases: 
 

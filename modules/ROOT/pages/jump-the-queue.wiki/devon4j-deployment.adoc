@@ -10,7 +10,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==Deployment of devon4j Applications
+== Deployment of devon4j Applications
 As mentioned already in the xref:an-devon4j-application#the-devon4j-project[devon4j project section], apart from the `core` and `api` project, apps created with _devon4j_ also provide a `server` project that configures the packaging of the app. 
 
 In our _JumpTheQueue_ app we can verify that this _server_ project is available:
@@ -19,7 +19,7 @@ image::images/devon4j/9.Deployment/jumpthequeue_server_structure.png[JumpTheQueu
 
 So -- using _Maven_ -- we are going to be able to easily package our app in a `.war` file to be deployed in an application server like _Tomcat_ (the default server provided in devonfw).
 
-== The _server_ Project
+==  The _server_ Project
 The _server_ project provided in _devon4j_ applications is an almost empty _Maven_ project. It only has a `pom.xml` file that is used to configure the packaging of the _core_ project. Taking a closer look at this `pom.xml` file, we realize that it only contains a single dependency to the core project:
 
 [source,xml]
@@ -55,7 +55,7 @@ It also includes the https://docs.spring.io/spring-boot/docs/current/reference/h
 ...
 ----
 
-== Disabling Security Tests
+==  Disabling Security Tests
 Since this is a basic tutorial and there is no security or permission handling, we have to modify the files `SecurityRestServiceImplTest` and `PermissionCheckTest` in `jtqj-core`, to disable the tests for these features. This is done by adding the `@Disabled` annotation to the affected test methods.
 
 Your Eclipse should automatically add the required dependencies for the annotation once you save the files, so they should contain the same `import` statements as shown below. More specifically `org.junit.jupiter` will be replacing the older `org.junit` test framework, which was used before.
@@ -63,9 +63,9 @@ Your Eclipse should automatically add the required dependencies for the annotati
 First, in `src/test/java/.../general/service/impl/rest/SecurityRestServiceImplTest.java` disable the `testLogin()` method and make sure that the class is annotated with `@ExtendWith(SpringExtension.class)`, instead of the older `@RunWith(SpringRunner.class)` annotation:
 
 [NOTE]
-====
+== == 
 If this class doesn't exist, go to the next one
-====
+== == 
 
 [source, java]
 ----
@@ -246,7 +246,7 @@ public class PermissionCheckTest extends ModuleTest {
 
 This is going to allow our application to pass the tests and be built.
 
-== Running the App with Maven
+==  Running the App with Maven
 Thanks to _Spring Boot_ and the _Spring Boot Maven Plugin_, we can run our app using Maven. To do so, just open a command prompt with access to _Maven_ (in our devonfw project folder we can simply do so by right clicking and selecting `Open Devon CMD shell here`).
 
 Now we need to follow these steps:
@@ -288,7 +288,7 @@ image::images/devon4j/9.Deployment/jumpthequeue_simpleget1.png[JumpTheQueue Simp
 
 If you get a response similar to the one in the image, you have verified that the app is running fine.
 
-== Packaging the App with Maven
+==  Packaging the App with Maven
 In the same way, using _Maven_ we can package our project in a `.war` file. As in the previous section, open a command prompt with access to _Maven_ (in our devonfw project folder we can simply do so by right clicking and selecting `Open Devon CMD shell here`). Now execute the following command in the projects root directory:
 
 ```

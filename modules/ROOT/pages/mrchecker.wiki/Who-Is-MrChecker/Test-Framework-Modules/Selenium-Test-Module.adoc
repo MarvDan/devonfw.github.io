@@ -15,19 +15,19 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Selenium Test Module
+== Selenium Test Module
 
-== What is MrChecker E2E Selenium Test Module
+==  What is MrChecker E2E Selenium Test Module
 
 image::images/image2.png[]
 
-== Selenium Structure
+==  Selenium Structure
 
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-What-is-Selenium.adoc[What is Selenium]
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-What-is-WebDriver.adoc[What is WebDriver]
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-What-is-Page-Object-Model-Pattern.adoc[What is Page Object Model/Pattern]
 
-== Framework Features
+==  Framework Features
 
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Construction-of-Framework-Page-Class.adoc[Construction of Framework Page Class]
     - Every Page class must extend BasePage
@@ -42,14 +42,14 @@ image::images/image2.png[]
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Run-on-different-browsers.adoc[Run with different browser options]
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Run-with-full-range-of-resolution.adoc[Run with full range of resolution (mobile, desktop): Testing responsible Design Webpage]
 
-== How to start?
+==  How to start?
 
 Read: https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Building-basic-Selenium-Test.adoc[My first Selenium Test]
 
-== Selenium Best Practices
+==  Selenium Best Practices
 
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Selenium-Best-Practices.adoc[Table of best practices]
 
-== Selenium UFT Comparison
+==  Selenium UFT Comparison
 
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Selenium-UFT-Comparison.adoc[Selenium UFT Comparison]

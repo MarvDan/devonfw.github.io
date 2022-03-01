@@ -10,12 +10,12 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==Components
+== Components
 image::images/devon4j/4.Components/architecture.png[Architecture, 700]
 
 When working with _devon4j_ the recommended approach for designing an applications is _Component Oriented Design_. Each component will represent a significant part (or feature) of our application related to _CRUD_ operations. Internally, the components will be divided into three layers (`service`, `logic`, and `dataaccess`) and will communicate in two directions: service with database or -- in the _logic_ layer -- a component with another component.
 
-== Principles
+==  Principles
 The benefits of dividing our application into components are:
 
 - https://en.wikipedia.org/wiki/Separation_of_concerns[separation of concerns]
@@ -30,7 +30,7 @@ The benefits of dividing our application into components are:
 
 - https://en.wikipedia.org/wiki/Data_consistency[data consistency] (a component is responsible for its data and changes to this data shall only happen via the component)
 
-=== Component Structure
+== = Component Structure
 A component consists of three packages, which correspond to the three layers defined by the _devon4j_ architecture: `service`, `logic` and `dataaccess`.
 
 image::images/devon4j/4.Components/layers.png[Component Layers, 300]
@@ -43,7 +43,7 @@ image::images/devon4j/4.Components/layers.png[Component Layers, 300]
 
 Apart from that, most components will have a fourth package -- _common_ -- to store shared elements, which will be used by all layers of the component. It will contain common _interfaces_, _constants_, _exceptions_ or _enumerations_.
 
-=== Component Core
+== = Component Core
 As we mentioned earlier, each component will be related to a functionality. This functionality will be represented in code by an _Entity_ that defines all the properties needed to wrap the logic of that feature.
 
 This _Entity_ represents the "core" of the component and will be located in the `dataaccess.api` package.
@@ -61,7 +61,7 @@ Basically, each _Entity_ is a https://en.wikipedia.org/wiki/Plain_old_Java_objec
 [caption="Example: "]
 image::images/devon4j/4.Components/example_entity.png[Example Entity, 800]
 
-== Create your Components
+==  Create your Components
 We are now going to create our first app components. Our example application needs to provide two basic functionalities:
 
 * register a user (returning an access code)
@@ -74,7 +74,7 @@ image::images/devon4j/4.Components/jtq_entities.png[JumpTheQueue Entities, 750]
 The components will be defined as follows:
 
 [caption=""]
-|===
+|== =
 |Visitor | Access Code | Daily Queue
 
 |`username`
@@ -108,7 +108,7 @@ The components will be defined as follows:
 |--
 |--
 |`customers`
-|===
+|== =
 
 In addition, we will have to represent two relationships:
 
@@ -119,11 +119,11 @@ In addition, we will have to represent two relationships:
 Now is the moment to decide about the components of our app. The low complexity of the functionality would allow us to create only one component for managing all entities. In order to clarify the example we are going to create three managing components however; one for _Visitor_, one for _Access Code_ and one for _Daily Queue_.
 
 [NOTE]
-====
+== == 
 If you feel more comfortable managing all the entities in a single component, you could also do it this way. The result will be the same, the only difference will be the structure of some elements and the distribution of code inside the packages.
-====
+== == 
 
-=== The Database
+== = The Database
 Projects created with the _devon4j_ archetype already contain a pre-defined database schema, which we can use as a basis to create our own. We are going to utilize the http://www.h2database.com/html/main.html[H2 Database Engine], because our generated _devon4j_ application uses it by default.
 
 There are four pre-defined database schemas:
@@ -135,11 +135,11 @@ jtqj-core/src/main/resources/db/migration/1.0/V0004__Add_blob_data.sql
 ```
 
 [NOTE]
-====
+== == 
 May be you need to install some SQL editor from eclipse marketplace, or use an external one.
-====
+== == 
 
-==== _Visitor_ Table
+== ==  _Visitor_ Table
 We are going to create our own table for _Visitor(s)_ by right-clicking the folder `/jtqj-core/src/main/resources/db/migration/1.0` and selecting `New > File`. Following the naming scheme we are going to call it:
 ```
 V0005__Create_Visitor.sql
@@ -172,7 +172,7 @@ create table Visitor(
 * `acceptedTerms`: A `boolean` to denote if the visitor has accepted the terms & conditions.
 * `userType`: Denotes the type of user.
 
-==== _Daily Queue_ Table
+== ==  _Daily Queue_ Table
 In a second table we will represent the _Daily Queue_, which will contain `name`, `logo`, `currentNumber`, `attentionTime`, `minAttentionTime`, `active` and `customers`. This table will be created in `/jtqj-core/src/main/resources/db/type/h2`, and is called:
 ```
 V0006__Create_Queue.sql
@@ -205,7 +205,7 @@ create table DailyQueue(
 * `active`: A `boolean` to denote if the queue is active.
 * `customer`: The queues total number of customers.
 
-==== _Access Code_ Table
+== ==  _Access Code_ Table
 The third table will represent the _Access Code_ and contain the `ticketNumber`, `creationTime`, `startTime` and `endTime`. This table will be created in `/jtqj-core/src/main/resources/db/type/h2`, and is called:
 ```
 V0007__Create_Access_Code.sql
@@ -238,7 +238,7 @@ CREATE TABLE AccessCode(
 * `idVisitor`: The relation with the _Visitor_ table.
 * `idQueue`: The relation with the `_DailyQueue_` table.
 
-==== Mock Data
+== ==  Mock Data
 Finally we are going to provide a certain amount of mock data, which will be available right from the start in our application. Create a new SQL script in `/jtqj-core/src/main/resources/db/migration/1.0/`, called:
 ```
 V0008__Master_data.sql
@@ -271,12 +271,12 @@ INSERT INTO AccessCode (id, modificationCounter, ticketNumber, creationTime, sta
 INSERT INTO AccessCode (id, modificationCounter, ticketNumber, creationTime, startTime, endTime, idVisitor, idQueue) VALUES (9, 1, 'Q009', CURRENT_TIMESTAMP, '2008-01-01 00:00:01', NULL, 9, 1);
 ----
 
-=== The Core of the Components
+== = The Core of the Components
 Now that we have defined the database for our entities, we should start creating the code of the related components.
 
 We are going to use CobiGen to generate the component structure. That means that -- as already commented -- we can generate all the structure and layers starting from a _core_ element: a simple _Plain Old Java Object_ that represents our _Entity_. So, in order to use CobiGen, we have to create our entities in the expected locations (as you will see in the following section): `<entitymanagement>.dataaccess.api`.
 
-==== _Visitor_ Component
+== ==  _Visitor_ Component
 To implement the component we will need to define a `_VisitorEntity_` to connect and manage the data of the _Visitor_ table in the database. The name of this component will be `visitormanagement`, the entity will be called `VisitorEntity`.
 
 Right-click on the root folder of the project `/jtqj-core/src/main/java`, select `New > Package` and create the following package:
@@ -315,9 +315,9 @@ We are going to need fields, which represent the data model, so our entity shoul
 ----
 
 [NOTE]
-====
+== == 
 We are not adding `id` or `modificationCounter`, because CobiGen will generate these fields for us.
-====
+== == 
 
 Now we need to declare our entity as a `JPA` entity with the `@Entity` annotation (`javax.persistence.Entity`) at class level. To map the entity to the database table, we will use the `@Table` annotation (`javax.persistence.Table`) defining the `name` of our already created _Visitor_ table (also at class level):
 [source, java]
@@ -463,7 +463,7 @@ public class VisitorEntity {
 }
 ----
 
-==== `_AccessCode_` component
+== ==  `_AccessCode_` component
 We are going to repeat the same process for the `_AccessCode_` component. Create these packages in `/jtqj-core/src/main/java`:
 ```
 com.devonfw.application.jtqj.accesscodemanagement.dataaccess.api
@@ -607,12 +607,12 @@ public class AccessCodeEntity {
 ----
 
 [WARNING]
-====
+== == 
 Eclipse will report some errors related to `QueueEntity`. +
 These will be resolved, when we create the corresponding class in the next step.
-====
+== == 
 
-==== _Queue_ Component
+== ==  _Queue_ Component
 Finally, we are going to repeat the same process for our last entity `_QueueEntity_` component. Create these packages in `/jtqj-core/src/main/java`:
 ```
 com.devonfw.application.jtqj.queuemanagement.dataaccess.api
@@ -760,16 +760,16 @@ public class QueueEntity {
 Now we have finished preparing the _core_ of our components and can start using CobiGen to generate the remaining structure (services, layers, DAOs, ...).
 
 [IMPORTANT]
-====
+== == 
 Now we can resolve the compilation errors related to `QueueEntity` in the `AccessCodeEntity.java` by applying the suggestions of the IDE. To do this, open the offending file, click the first red light bulb on the left border of the editor and select `Import 'QueueEntity' (com.devonfw. ...)`.
 
 Or just manually add this line to your import statements:
 ```
 import com.devonfw.application.jtqj.queuemanagement.dataaccess.api.QueueEntity;
 ```
-====
+== == 
 
-=== The Component Structure (using CobiGen)
+== = The Component Structure (using CobiGen)
 Once we are finished creating the _core_ of our components we could continue to create the structure and all elements manually, but we are going to use CobiGen for these tasks, since we can save a significant amount of time and effort this way.
 
 First however, we need to make sure that the CobiGen plugin is installed in our Eclipse instance:
@@ -785,7 +785,7 @@ devon eclipse add-plugin cobigen
 
 \... and re-open Eclipse via the `eclipse-main.bat` script. 
 
-==== CobiGen Health Check
+== ==  CobiGen Health Check
 When using CobiGen for the first time it's recommended to check the health of the tool. +
 To do so, right-click one of our entities and select `CobiGen > Health Check...`.
 
@@ -806,7 +806,7 @@ image::images/devon4j/4.Components/adapt-templates.png[CobiGen Health Check 3, 5
 Now the templates should be downloaded, and you will see a new folder in the workspace:
 image::images/devon4j/4.Components/cobigen-folder.png[CobiGen Health Check 3, 400]
 
-==== _Queue_ Component Structure (Entity without Relations)
+== ==  _Queue_ Component Structure (Entity without Relations)
 In order to create the whole structure of a component with CobiGen we only need to right-click our component core entity (`_QueueEntity_`) and select `CobiGen > Generate`.
 
 image::images/devon4j/4.Components/cobigen1.png[CobiGen Generate, 550]
@@ -822,7 +822,7 @@ By default, all files will be selected for generation (which is what we want in 
 For now just click `Finish` and let CobiGen do its work.
 
 [NOTE]
-====
+== == 
 In detail the selected options do the following:
 
 * _CRUD `SpringData` Repository_: Generates the entity repository (that contains the CRUD operations) in the data access layer.
@@ -844,7 +844,7 @@ image::images/devon4j/4.Components/cobigen2_entity_infrastructure.png[CobiGen En
 * _TO's_: Generates the related _Transfer Objects_, that we will explain in next chapters of this tutorial.
 
 image::images/devon4j/4.Components/cobigen2_to.png[CobiGen Transfer Objects, 650]
-====
+== == 
 
 During the process CobiGen will show a message asking us to review some ambiguous references, which we will get to right away. For now just click `Continue`.
 
@@ -868,7 +868,7 @@ We can fix these errors manually by adding `*import* java.sql.Timestamp` to the 
 
 image::images/devon4j/4.Components/cobigen5_manual_import.png[CobiGen Manual Import]
 
-==== `_AccessCode_` Component Structure (Entity with Relations)
+== ==  `_AccessCode_` Component Structure (Entity with Relations)
 We repeat this process on our `_AccessCodeEntity_`, but in this case -- since its an entity with relations -- we are going to have to select different CobiGen options:
 
 image::images/devon4j/4.Components/cobigen-accesscode-new.png[CobiGen New `AccessCode`]
@@ -889,7 +889,7 @@ There will be some compilation errors left. This is because we have some depende
 
 image::images/devon4j/4.Components/cobigen6_expected_errors.png[CobiGen Expected Errors]
 
-==== _Visitor_ Component Structure (Entity without Relations)
+== ==  _Visitor_ Component Structure (Entity without Relations)
 Finally we are going to generate the same classes that we generated for the `_QueueEntity_` component for our `_VisitorEntity_` component:
 
 image::images/devon4j/4.Components/cobigen-visitor-new.png[CobiGen New Visitor]
@@ -904,7 +904,7 @@ Once CobiGen has finished we can fix the rest of the compilation errors related 
 
 * `accesscodemanagement.logic.api.to.AccessCodeCto`
 
-==== Run the App
+== ==  Run the App
 If all compilation errors are solved run the app (right-click `SpringBootApp.java > Run As > Java Application`). The back-end should launch without errors.
 
 *Congratulations!* +

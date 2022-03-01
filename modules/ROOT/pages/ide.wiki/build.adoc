@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==build
+== build
 The `build` commandlet is an abstraction of build systems like link:mvn[maven], link:gradle[gradle], link:npm[yarn], link:npm[npm], etc.
 It will auto-detect your build-system (via existence of files like `pom.xml`, `package.json`, etc.). According to this detection, it will simply delegate to the according commandlet of the specific build system. If that build-system is not yet available it will be downloaded and installed automatically.
 

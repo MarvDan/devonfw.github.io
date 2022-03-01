@@ -1,4 +1,4 @@
-==Hangar
+== Hangar
 
 :description: comprehensive documentation of devonfw hangar.
 :doctype: book

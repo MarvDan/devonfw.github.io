@@ -1,4 +1,4 @@
-==devonfw-ide
+== devonfw-ide
 
 include::devonfw-ide-introduction.adoc[leveloffset=1]
 

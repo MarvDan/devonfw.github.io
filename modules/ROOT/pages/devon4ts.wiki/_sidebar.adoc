@@ -1,11 +1,11 @@
-=== General
+== = General
 ** link:guide-package-managers[Package Managers]
 ** link:guide-npm-yarn-workflow[Package Managers Workflow]
 ** link:guide-yarn-2-support[Yarn 2 Support]
 ** link:guide-angular-libraries[Angular Libraries]
 ** link:guide-nestjs-libraries[NestJS Libraries]
 
-=== Angular
+== = Angular
 ** Architecture
 *** link:architecture[Architecture Overview]
 *** link:meta-architecture[Client Meta Architecture]
@@ -41,15 +41,15 @@
 *** link:guide-working-with-angular-cli[Working with Angular CLI]
 *** link:guide-layout-with-angular-material[Angular Material Layout]
 
-=== Ionic
+== = Ionic
 ** link:guide-ionic-getting-started[Ionic Getting started]
 ** link:guide-ionic-from-code-to-android[Ionic to Android]
 ** link:guide-ionic-pwa[Ionic Progressive Web Apps]
 
-=== Nx
+== = Nx
 ** link:guide-creating-angular-app-with-nx-cli[Starting with Nx CLI in Angular]
 
-=== NestJS backend:
+== = NestJS backend:
 ** Layers
 *** link:layer-controller[Controller]
 *** link:layer-service[Service]

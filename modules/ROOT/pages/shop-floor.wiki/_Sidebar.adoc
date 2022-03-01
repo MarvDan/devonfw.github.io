@@ -1,20 +1,20 @@
 
-== devonfw Shop Floor Guide
+==  devonfw Shop Floor Guide
 
 * link:Home[Introduction]
 * link:dsf-how-to-use[How to use it]
 
-=== Provisioning environments
+== = Provisioning environments
 
 * link:dsf-provisioning-production-line[Production Line]
 * link:dsf-provisioning-dsf4docker[Docker]
 
-=== Configuration and services integration
+== = Configuration and services integration
 
 * link:dsf-configure-nexus[Nexus]
 * link:dsf-configure-sonarqube[SonarQube]
 
-=== Create project
+== = Create project
 
 * link:dsf-configure-gitlab[Create and integrate git repository]
 
@@ -31,15 +31,15 @@
 
 *** https://github.com/devonfw/cicdgen/wiki[cicdgen documentation].
 
-=== Deployment environments
+== = Deployment environments
 
 * link:dsf-deployment-dsf4openshift[OpenShift].
 
-=== Monitoring
+== = Monitoring
 
 * link:dsf-configure-jenkins-build-monitor-view[jenkins build monitor].
 
-=== Annexes
+== = Annexes
 
 * Custom Services
 // ** TODO: MongoDB

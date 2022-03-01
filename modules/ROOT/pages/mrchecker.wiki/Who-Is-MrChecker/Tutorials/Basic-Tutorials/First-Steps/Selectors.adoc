@@ -1,6 +1,6 @@
-== Selectors
+==  Selectors
 
-=== Create selectors
+== = Create selectors
 
 Create a selector for every interactable element on a webpage using By type. Find elements and it's attributes using browser developer mode (F12).
 
@@ -87,7 +87,7 @@ private static final By abTestLinkSelector               = By.cssSelector("li >
            a[href*='tinymce']");
 ----
 
-=== Implement methods
+== = Implement methods
 
 Then use these selectors to create Objects and perform actions on page elements: 
 

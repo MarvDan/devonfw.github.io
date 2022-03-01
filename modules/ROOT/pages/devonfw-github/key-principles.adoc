@@ -1,4 +1,4 @@
-==Key Principles
+== Key Principles
 
 For https://devonfw.com[devonfw] we follow these fundamental key principles for all decisions about architecture, design, or choosing standards, libraries, and frameworks:
 

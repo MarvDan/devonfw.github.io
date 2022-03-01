@@ -1,4 +1,4 @@
-==How to make a virtual asset
+== How to make a virtual asset
 
 This can be done in four ways:
 
@@ -7,7 +7,7 @@ This can be done in four ways:
 * Create Mappings and Responses manually by text files
 * Create Mappings and Responses manually by code
 
-== Record all traffic (Mappings and Responses) that comes through proxy - UI
+==  Record all traffic (Mappings and Responses) that comes through proxy - UI
 
 Full article here http://wiremock.org/docs/record-playback/[Wiremock record-playback].
 
@@ -35,7 +35,7 @@ $ curl http://localhost:8080/recordables/123
 }
 ----
 
-== Record all traffic (Mappings and Responses) that comes through proxy - by Code
+==  Record all traffic (Mappings and Responses) that comes through proxy - by Code
 
 An example of how such a record can be achieved
 
@@ -57,15 +57,15 @@ public void startRecording() {
 }
 ----
 
-== Create Mappings and Responses manually by text files
+==  Create Mappings and Responses manually by text files
 
 EMPTY
 
-== Create Mappings and Responses manually by code
+==  Create Mappings and Responses manually by code
 
 Link to full file structure: https://github.com/devonfw/devonfw-testing/blob/develop/mrchecker-framework-modules/mrchecker-webapi-module/src/test/java/com/capgemini/mrchecker/endpoint/rest/REST_FarenheitToCelsiusMethod_Test.java[REST_FarenheitToCelsiusMethod_Test.java]
 
-=== Start up Virtual Server
+== = Start up Virtual Server
 
 ----
 public void startVirtualServer() {
@@ -85,7 +85,7 @@ public void startVirtualServer() {
 }
 ----
 
-=== Plug in a virtual asset
+== = Plug in a virtual asset
 
 REST_FarenheitToCelsiusMethod_Test.java
 

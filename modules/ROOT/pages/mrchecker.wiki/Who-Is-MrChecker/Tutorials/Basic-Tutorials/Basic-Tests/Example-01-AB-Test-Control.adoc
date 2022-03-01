@@ -11,7 +11,7 @@ Steps:
 
 image::images/example2.png[]
 
-===== Page Class 
+== == = Page Class 
 
 Create a Page class for AB Testing page. Override all the required methods:
 
@@ -40,7 +40,7 @@ Create a Page class for AB Testing page. Override all the required methods:
  } 
 ----
  
-===== How to use Enum?
+== == = How to use Enum?
  
 Similarly as in environmental variables case, create an enum for storing values of subURLs: 
  
@@ -120,13 +120,13 @@ Instead of mapping data from an external file, you can store and access them dir
 
  PageSubURLsProjectYEnum.ABTEST.getValue()
  
-==== Selector
+== ==  Selector
  
 In this test case you need selector for only one page element:
  
   private static final By elementalSeleniumLinkSelector = By.cssSelector("div > div > a");
   
-==== Page methods
+== ==  Page methods
  
 You need two methods for performing page actions: 
  
@@ -153,7 +153,7 @@ You need two methods for performing page actions:
     }
 ----
  
-==== Elemental Selenium Page Class
+== ==  Elemental Selenium Page Class
  
 To return new Elemental Selenium Page object, implement its class. You only need to write basic methods to check if the page is loaded. There is no need to interact with objects on the site:
  
@@ -181,7 +181,7 @@ To return new Elemental Selenium Page object, implement its class. You only need
 }
 ----
  
-==== Test Class 
+== ==  Test Class 
  
 Create a Test class and write a @Test method to execute the scenario: 
  
@@ -207,7 +207,7 @@ public class ABtestingTest extends TheInternetBaseTest {
 }
 ----
 
-==== Assert
+== ==  Assert
 
 Asserts methods are used for creating test pass or fail conditions. The optional first parameter is a message which will be displayed in the test failure description. 
 
@@ -231,7 +231,7 @@ Also, add the @BeforeClass method to open the tested page:
 
 You don't need to implement @setUp and @tearDown methods because they're already in TheInternetBaseTest class which you extend. 
 
-==== Categories
+== ==  Categories
 
 You can group tests in categories. It's useful when running many tests at once. Use this parameter: 
 

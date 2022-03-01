@@ -6,7 +6,7 @@ This site uses JavaScript to read the key pressed and display its value.
 
 image::images/example47.png[]
 
-===== Page Class
+== == = Page Class
 
 ----
 public class KeyPressesPage extends BasePage {
@@ -55,7 +55,7 @@ public class KeyPressesPage extends BasePage {
 }
 ----
 
-===== Test Class
+== == = Test Class
 
 Steps: 
 

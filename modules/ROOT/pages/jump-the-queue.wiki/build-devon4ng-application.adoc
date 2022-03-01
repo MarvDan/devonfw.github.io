@@ -10,11 +10,11 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==Build your own devon4ng Application
+== Build your own devon4ng Application
 
 In this chapter we are going to see how to build a new devon4ng from scratch. The proposal of this tutorial is to end having enough knowledge of Angular and the of the remaining technologies regarding devon4ng to know how to start developing. If you need more advanced and specific functionalities, you can find them on the cookbook.
 
-== Goal of JumpTheQueue
+==  Goal of JumpTheQueue
 
 These mock-ups show what you can expect to see after you finished this tutorial. It will be an App to manage codes assigned to people attending a queue in order to ease the management of the queue. With a code, you can jump between positions in the queue and you will be able to keep track of your position.
 
@@ -22,7 +22,7 @@ image::images/devon4ng/3.BuildYourOwn/mockups.png[JumpTheQueue Mock-Ups, 500]
 
 So, hands on it: Let's configure the environment and build this app!
 
-== Setting up the devonfw Tools (recommended)
+==  Setting up the devonfw Tools (recommended)
 
 We will be utilizing NodeJS, npm and Yarn to create our Angular front end. Using NodeJS inside the devonfw environment avoids a manual download and installation, and keeps the tool isolated from other projects, so we don't run into version conflicts down the road.
 
@@ -34,15 +34,15 @@ devon node setup
 devon yarn setup
 ```
 
-== Installing Global Tools (optional)
+==  Installing Global Tools (optional)
 
 [WARNING]
-====
+== == 
 If you are using a devonfw work environment -- as instructed in the https://github.com/devonfw/jump-the-queue/wiki/build-devon4j-application#setting-up-a-devonfw-work-environment[devon4j] part of this tutorial -- you *DON'T* have to install these tools globally, since they can be accessed from the devon CLI. +
 A global installation is only useful if you want to create Angular projects _outside_ of a devonfw environment or without the devon CLI.
-====
+== == 
 
-=== Visual Studio Code
+== = Visual Studio Code
 
 To install the editor, download the installer from the https://code.visualstudio.com/Download[official page] and install it.
 
@@ -52,13 +52,13 @@ Once installed, the first thing you should do is install the extensions that wil
 
 2. Install the `devonfw Platform Extension Pack` (this might take a while).
 
-=== NodeJS
+== = NodeJS
 
 Go to https://nodejs.org/en/[nodejs.org] and download the version you like the most -- LTS or Current -- as you wish.
 
 The recommendation is to install the latest version, but keep in mind that to use Angular CLI, your version must be at least 8.x and to use npm at least 5.x. If you have NodeJS already installed on your computer, this is a good moment to check your version and upgrade if necessary.
 
-=== TypeScript
+== = TypeScript
 
 Let’s install what is going to be the main language during development: TypeScript. This ES6 super set is tightly coupled to the Angular framework and will help us to get a final clean and distributable JavaScript code. This is installed globally with npm, the package manager used to install and create JavaScript modules in NodeJS, that is installed along with Node. To install TypeScript, you don’t have to install npm explicitly, just run this command:
 
@@ -66,7 +66,7 @@ Let’s install what is going to be the main language during development: TypeSc
 npm install –g typescript
 ```
 
-=== Yarn
+== = Yarn
 
 Just like npm, https://yarnpkg.com/en/[Yarn] is a package manager for JavaScript/Node modules. Yarn is quite a bit faster and more usable in our opinion, so we decided to use it to manage the dependencies of devon4ng projects.
 
@@ -74,7 +74,7 @@ To install Yarn, you only have to go to the official https://yarnpkg.com/en/docs
 
 However, if you feel more comfortable with npm, you can keep using it.
 
-=== Angular/CLI
+== = Angular/CLI
 
 This CLI is specifically built to make Angular projects easier to develop, maintain and deploy, so we are going to make use of it.
 
@@ -96,7 +96,7 @@ ng config -g cli.packageManager yarn
 
 Finally, once all these tools have been installed successfully, you are ready to create a new project.
 
-== Creating a New Project with the Angular/CLI
+==  Creating a New Project with the Angular/CLI
 
 One of the main reasons to use Angular/CLI is the feature to create whole new projects from scratch by simply running one command. We are going create an Angular 7  (legacy) project, to keep this tutorial working even if a new Angular version is released. Inside the `C:\...\workspaces\main\jumpthequeue` directory run:
 
@@ -105,7 +105,7 @@ npx -p @angular/cli@7 ng new angular
 ```
 
 [NOTE]
-====
+== == 
 If you want to create a 'real' project on your own later on, you should do so using the _latest_ Angular version by running:
 
 ```
@@ -115,7 +115,7 @@ ng new <project name>
 Where <project name> is the name of the Angular project you want to create.
 
 In the case shown above we called our project `angular`, since we want to distribute its code as part of our complete `jumpthequeue` project. This is analogous to the `java` directory used for our devon4j back-end.
-====
+== == 
 
 After executing the command, Angular/CLI will ask, if we want to use Angular routing (*Yes*) and what style sheet format we want to use (*SCSS*):
 
@@ -155,16 +155,16 @@ The `ng serve` command starts the development mode of the Angular/CLI. This mean
 
 For the next steps we'll have to stop the development mode by pressing `Ctrl + C` and terminating the batch job (*Y*).
 
-=== Adding Google Material and Covalent Teradata
+== = Adding Google Material and Covalent Teradata
 
 [NOTE]
-====
+== == 
 We will be using very specific module versions in this tutorial, to ensure that all dependencies are compatible with the legacy Angular 7 project. For this reason we will be appending `@<version>` behind each dependency.
 
 If you create a new project with the _latest_ Angular version on your own later down the line, you can omit this tag. This way, the latest compatible version of a dependency will be downloaded and linked.
 
 For Angular Material this would be for example be done via `npm install @angular/material` or `yarn add @angular/material`.
-====
+== == 
 
 Go to the `C:/.../workspaces/main/jumpthequeue/angular` directory and run the following command to add *Google Material* to the project dependencies:
 

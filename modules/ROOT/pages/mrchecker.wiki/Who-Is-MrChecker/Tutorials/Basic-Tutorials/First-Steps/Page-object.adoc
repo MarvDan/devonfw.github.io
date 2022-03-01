@@ -1,4 +1,4 @@
-== Page Object
+==  Page Object
 
 Your Product Under Test will be the following website: http://the-internet.herokuapp.com/
 

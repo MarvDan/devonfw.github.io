@@ -8,19 +8,19 @@ toc::[]
 :listing-caption: Listing
 
 
-==devonfw Release notes 2020.08
+== devonfw Release notes 2020.08
 
-== Introduction
+==  Introduction
 
 We are proud to announce the release of devonfw version 2020.08. 
 
 This release includes lots of addition of new features, updates and bug fixes but it is very important to highlight the following improvements:
 
-== devonfw IDE
+==  devonfw IDE
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-=== 2020.08.001
+== = 2020.08.001
 
 Update with the following bugfixes and improvements:
 
@@ -36,7 +36,7 @@ Update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/12?closed=1[milestone 2020.08.001].
 
-=== 2020.04.004
+== = 2020.04.004
 
 Minor update with the following bugfixes and improvements:
 
@@ -45,7 +45,7 @@ Minor update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/14?closed=1[milestone 2020.04.004].
 
-=== 2020.04.003
+== = 2020.04.003
 
 Minor update with the following bugfixes and improvements:
 
@@ -54,7 +54,7 @@ Minor update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/13?closed=1[milestone 2020.04.003].
 
-=== 2020.04.002
+== = 2020.04.002
 
 Minor update with the following bugfixes and improvements:
 
@@ -67,11 +67,11 @@ Minor update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/11?closed=1[milestone 2020.04.002].
 
-== devon4j
+==  devon4j
 
 The consolidated list of features for this devon4j release is as it follows.
 
-=== 2020.08.001
+== = 2020.08.001
 
 New release of `devon4j` with async REST service client support and other improvements:
 
@@ -82,7 +82,7 @@ New release of `devon4j` with async REST service client support and other improv
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2020.08.001/devon4j-doc-2020.08.001.pdf[devon4j guide 2020.08.001].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/12?closed=1[milestone devon4j 2020.08.001].
 
-=== 2020.04.002
+== = 2020.04.002
 
 Minor update of `devon4j` with the following bugfixes and small improvements:
 
@@ -97,7 +97,7 @@ Minor update of `devon4j` with the following bugfixes and small improvements:
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2020.04.002/devon4j-doc-2020.04.002.pdf[devon4j guide 2020.04.002].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/11?closed=1[milestone devon4j 2020.04.002].
 
-== devon4ng
+==  devon4ng
 
 This release is focused mainly on the **Angular 10 upgrade**:
 
@@ -107,7 +107,7 @@ This release is focused mainly on the **Angular 10 upgrade**:
 * https://github.com/devonfw/devon4ng/pull/165[#165]: Cypress sample.
 * https://github.com/devonfw/devon4ng/pull/164[#164]: Update to Angular 10 (samples and documentation).
 
-== devon4node
+==  devon4node
 
 New `devon4node` version is published, the changes are:
 
@@ -115,11 +115,11 @@ New `devon4node` version is published, the changes are:
 * Solved bug when you introduce a name with dashes in new command.
 * Add more options to the non-interactive new command.
 
-== CobiGen
+==  CobiGen
 
 CobiGen version numbers have been consolidated to now represent plug-in compatibility in the major release number (7.x.x).
 
-=== CLI
+== = CLI
 
 * CLI increments can be referenced by name and description.
 * Ability to configure logging.
@@ -128,36 +128,36 @@ CobiGen version numbers have been consolidated to now represent plug-in compatib
 * Possibility to prefer custom plug-ins over CobiGen ones.
 * Fixed bug, which broke whole CobiGen execution in case a custom CobiGen Plug-in was throwing an arbitrary exception.
 
-=== Eclipse
+== = Eclipse
 
 * Improved Performance by lazy plug-in loading.
 * Possibility to prefer custom plug-ins over CobiGen ones.
 * Fixed bug, which broke whole CobiGen execution in case a custom CobiGen Plug-in was throwing an arbitrary exception.
 
-=== Maven
+== = Maven
 
 * Fixed bug to properly load template util classes.
 * Improved Performance by lazy plug-in loading.
 * Possibility to prefer custom plug-ins over CobiGen ones.
 * Fixed bug, which broke whole CobiGen execution in case a custom CobiGen Plug-in was throwing an arbitrary exception.
 
-=== XML Plug-in
+== = XML Plug-in
 
 * Added ability to provide custom merge schemas as part of the template folder.
 * Added further merge strategies for merging including XML validation.
 
-=== Java Plug-in
+== = Java Plug-in
 	
 * Fixed NPE for annotated constructors.
 * Fixed line separator handling to now prefer the file's one instead of the system ones.
 * Fixed unwanted new lines in constructors after merging.
 * Fixed annotation formatting after merge.
 
-=== TypeScript Plug-in
+== = TypeScript Plug-in
 
 * Fixed issue on automatic update of the ts-merger bundle.
 
-== Sonar devon4j plugin
+==  Sonar devon4j plugin
 
 The consolidated list of features for this `Sonar devon4j plugin` release is as it follows.
 
@@ -167,7 +167,7 @@ With this release, we added our own quality profile:
 
 Changes for this release can be found in https://github.com/devonfw/sonar-devon4j-plugin/milestone/6?closed=1[milestone 2020.08.001]
 
-== My Thai Star with Microservices and ISTIO Service Mesh Implementation
+==  My Thai Star with Microservices and ISTIO Service Mesh Implementation
 
 As always, our reference application, `My Thai Star` now has been implemented with Microservices and ISTIO Service Mesh features: 
 

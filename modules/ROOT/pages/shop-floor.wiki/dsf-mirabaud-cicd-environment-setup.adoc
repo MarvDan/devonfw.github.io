@@ -1,4 +1,4 @@
-==Mirabaud CICD Environment Setup
+== Mirabaud CICD Environment Setup
 
 Initial requirements:
 
@@ -14,9 +14,9 @@ Remote setup in CI machine (located in the Netherlands)
     - SonarQube
 ```
 
-== 1. Install Docker and Docker Compose in RHEL 6.5
+==  1. Install Docker and Docker Compose in RHEL 6.5
 
-=== Docker
+== = Docker
 
 Due to that OS version, the only way to have Docker running in the CI machine is by installing it from the *EPEL* repository (Extra Packages for Enterprise Linux).
 
@@ -53,7 +53,7 @@ Due to that OS version, the only way to have Docker running in the CI machine is
 Docker version 1.7.1, build 786b29d/1.7.1
 ----
 
-=== Docker Compose
+== = Docker Compose
 
 Download and install it via *curl*. It will use link:https://github.com/docker/compose/releases?after=1.7.0-rc2[this site].
 
@@ -82,7 +82,7 @@ Add it to your `sudo` path:
 docker-compose version 1.5.2, build 7240ff3
 ----
 
-== 2. Directories structure
+==  2. Directories structure
 
 Several directories had been added to organize some files related to docker (like `docker-compose.yml`) and docker volumes for each service. Here's how it looks:
 
@@ -132,15 +132,15 @@ Several directories had been added to organize some files related to docker (lik
                 
 ----
 
-== 3. CICD Services with Docker
+==  3. CICD Services with Docker
 
 Some naming conventions had been followed as naming containers as `mirabaud_[service]`.
 
 Several folders have been created to store each service's volumes, `docker-compose.yml`(s), extra configuration settings and so on:
 
-=== Jenkins
+== = Jenkins
 
-==== Command
+== ==  Command
 
 [source]
 ----
@@ -149,14 +149,14 @@ Several folders have been created to store each service's volumes, `docker-compo
     jenkins
 ----
 
-==== Generate keystore
+== ==  Generate keystore
 
 [source]
 ----
 keytool -importkeystore -srckeystore server.p12 -srcstoretype pkcs12 -srcalias 1 -destkeystore newserver.jks -deststoretype jks -destalias server
 ----
 
-==== Start jekins with SSL (TODO: make a docker-compose.yml for this):
+== ==  Start jekins with SSL (TODO: make a docker-compose.yml for this):
 
 [source]
 ----
@@ -164,15 +164,15 @@ sudo docker run -d --name mirabaud_jenkins -v /jenkins:/var/jenkins_home -p 8080
 ----
 
 
-==== Volumes
+== ==  Volumes
 
 ```
 volumes/jenkins_home:/var/jenkins_home
 ```
 
-=== SonarQube
+== = SonarQube
 
-==== Command
+== ==  Command
 
 [source]
 ----
@@ -184,7 +184,7 @@ volumes/jenkins_home:/var/jenkins_home
     sonarqube
 ----
 
-==== Volumes
+== ==  Volumes
 
 ```
 volumes/conf:/opt/sonarqube/conf
@@ -193,9 +193,9 @@ volumes/extensions:/opt/sonarqube/extensions
 volumes/lib/bundled-plugins:/opt/sonarqube/lib/bundled-plugins                                                    
 ```
 
-=== Nexus
+== = Nexus
 
-==== Command
+== ==  Command
 
 [source]
 ----
@@ -204,15 +204,15 @@ volumes/lib/bundled-plugins:/opt/sonarqube/lib/bundled-plugins
     sonatype/nexus
 ----
 
-==== Volumes
+== ==  Volumes
 
 ```
 volumes/nexus-data/:/sonatype-work                         
 ```
 
-=== Atlassian Crucible
+== = Atlassian Crucible
 
-==== Command
+== ==  Command
 
 [source]
 ----
@@ -221,20 +221,20 @@ volumes/nexus-data/:/sonatype-work
     mswinarski/atlassian-crucible:latest
 ----
 
-==== Volumes
+== ==  Volumes
 
 ```
 volumes/data:/atlassian/data/crucible                                                   
 ```
 
 
-== 4. CICD Services with Docker Compose
+==  4. CICD Services with Docker Compose
 
 Both Services had been deploying by using the `# docker-compose up -d` command from their root directories (`/gitlab` and `/mattermost`). The syntax of the two `docker-compose.yml` files is the one corresponding with the 1st version (due to the `docker-compose v1.5`).
 
-=== GitLab
+== = GitLab
 
-==== `docker-compose.yml`
+== ==  `docker-compose.yml`
 
 [source,yaml]
 ----
@@ -249,7 +249,7 @@ mirabaud:
             - '/home/[username]/gitlab/volumes/var/opt:/var/opt/gitlab'
 ----
 
-==== Command (docker)
+== ==  Command (docker)
 
 [source]
 ----
@@ -260,7 +260,7 @@ docker run -d -p 8888:80 --name=mirabaud_gitlab \
     gitlab/gitlab-ce
 ----
 
-==== Volumes
+== ==  Volumes
 
 ```
 volumes/etc/gitlab:/etc/gitlab
@@ -268,9 +268,9 @@ volumes/var/opt:/var/log/gitlab
 volumes/var/log:/var/log/gitlab
 ```
 
-=== Mattermost
+== = Mattermost
 
-==== `docker-compose.yml`:
+== ==  `docker-compose.yml`:
 
 [source,yaml]
 ----
@@ -313,7 +313,7 @@ web:
     - /etc/localtime:/etc/localtime:ro
 ----
 
-==== SSL Certificate
+== ==  SSL Certificate
 
 How to generate the certificates:
 
@@ -343,7 +343,7 @@ and
 
 Restart the server and the SSL should be enabled at port *8089* using *HTTPS*.
 
-==== Volumes
+== ==  Volumes
 
 ```
 -- db --
@@ -361,7 +361,7 @@ volumes/web/cert:/cert:ro
 /etc/localtime:/etc/localtime:ro                                # absolute path
 ```
 
-== 5. Service Integration
+==  5. Service Integration
 
 All integrations had been done following *CICD Services Integration* guides:
 
@@ -372,4 +372,4 @@ All integrations had been done following *CICD Services Integration* guides:
 NOTE: These guides may be obsolete. You can find here the link:dsf-how-to-use#Step-1---Configuration-and-service-integration[official configuration guides],
 
 // TODO:
-// == 6. SSL Certification
+// ==  6. SSL Certification

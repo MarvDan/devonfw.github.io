@@ -1,4 +1,4 @@
-==Choosing your Database
+== Choosing your Database
 
 include::guide-database.adoc[leveloffset=1]
 

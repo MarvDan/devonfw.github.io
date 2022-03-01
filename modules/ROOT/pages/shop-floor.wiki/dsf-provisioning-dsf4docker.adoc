@@ -1,20 +1,20 @@
-==dsf4docker provisioning environment
+== dsf4docker provisioning environment
 
 image::./images/dsf4docker/docker.png[]
 
-== Architecture overview
+==  Architecture overview
 
 image:./images/dsf4docker/dsf-docker-arch.png[]
 
-== Prerequisite
+==  Prerequisite
 
 To use dsf4docker provisioning environment you need a remote server and you must clone or download devonfw shop floor.
 
-== How to use it
+==  How to use it
 
 Navigate to `./devonfw-shop-floor/dsf4docker/environment` and here you can find one scripts to install it, and another one to uninstall it.
 
-=== Install devonfw shop floor 4 Docker
+== = Install devonfw shop floor 4 Docker
 
 There is an installation script to do so, so the complete installation should be completed by running it. Make sure this script has execution permissions in the Docker Host:
 
@@ -27,7 +27,7 @@ There is an installation script to do so, so the complete installation should be
 
 This script, besides the container "installation" itself, will also adapt the `docker-compose.yml` file to your host (using `sed` to replace the **IP_ADDRESS** word of the file for your real Docker Host's IP address).
 
-=== Uninstall devonfw shop floor 4 Docker
+== = Uninstall devonfw shop floor 4 Docker
 
 As well as for the installation, if we want to remove everything concerning **devonfw shop floor 4 Docker** from our Docker Host, we'll run this script:
 
@@ -37,7 +37,7 @@ As well as for the installation, if we want to remove everything concerning **de
  sudo ./dsf4docker-uninstall.sh
 ----
 
-== Troubleshooting
+==  Troubleshooting
 
 When trying to execute the install or uninstall .sh there may be some problems related to the windows/linux format file, so if you see this error log while executing the script:
 ----
@@ -51,7 +51,7 @@ or
 ----
 dos2unix dsf4docker-uninstall.sh
 ----
-== A little history
+==  A little history
 
 The *Docker* part of the shop floor is created based on the experience of the environment setup of the project *Mirabaud Advisory*, and intended to be updated to latest versions. Mirabaud Advisory is a web service developed with devonfw (Java) that, alongside its own implementation, it needed an environment both for the team to follow CICD rules through their 1-week-long sprints and for the client (Mirabaud) to check the already done work.
 

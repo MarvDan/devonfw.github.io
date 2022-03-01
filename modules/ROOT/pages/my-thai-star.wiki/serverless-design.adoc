@@ -1,9 +1,9 @@
 :toc: macro
 toc::[]
 
-==Serverless design (deprecated)
+== Serverless design (deprecated)
 
-== Introduction
+==  Introduction
 
 The NodeJS back-end for My Thai Star application is going to be based on:
 
@@ -17,7 +17,7 @@ To know more details about the above technologies please visit the following doc
  - https://github.com/devonfw/devon4node/wiki[devon4node]
  - https://aws.amazon.com/dynamodb/developer-resources/[DynamoDB]
 
-== Basic architecture details
+==  Basic architecture details
 
 This structure can be shown in the following example image:
 
@@ -31,13 +31,13 @@ image::images/serverless/folder_organization.png[, link="images/serverless/folde
 ** _logic.ts_ - File with the business logic
 * test - Folder with all tests
 
-== Layers
+==  Layers
 
 - Service Layer: this layer will expose the REST API to exchange information with the client applications.
 - Logic Layer: the layer in charge of hosting the business logic of the application.
 - Data Access Layer: the layer to communicate with the data base.
 
-=== Service layer
+== = Service layer
 
 The services layer will be solved using REST services with https://serverless.com/[Serverless]
 
@@ -111,7 +111,7 @@ export async function bookingSearch(event: HttpEvent, context: Context, callback
         // falta lo que viene siendo comprobar el token y eso
 
         auth.decode(authToken, (err, decoded) => {
-            if (err || decoded.role !== 'WAITER') {
+            if (err || decoded.role !==  'WAITER') {
                 throw { code: 403, message: 'Forbidden'};
             }
 
@@ -136,29 +136,29 @@ export async function bookingSearch(event: HttpEvent, context: Context, callback
 
 The default integration for a handler is _lambda_. See https://github.com/devonfw/devon4node/wiki/guides-configuration-module[devon4node documentation] for more information about default values and how to change it.
 [NOTE]
-====
+== == 
 If you change the integration to lambda-proxy, you must take care that in this case the data will not be parsed. You must do JSON.parse explicitly 
-====
+== == 
 
 After defining all the handlers, we must execute the _fun_ command, which will generate the files serverless.yml and `webpack.config.js`. 
 
-=== Logic layer and Data access layer
+== = Logic layer and Data access layer
 
 link:NodeJS-design#logic-layer-and-data-access-layer[See in NodeJS section]
 
-== Security with Json Web Token
+==  Security with Json Web Token
 
 For the _Authentication_ and _Authorization_ the app will implement the https://jwt.io/[json web token] protocol.
 
-=== JWT basics
+== = JWT basics
 
 Refer to link:java-design#jwt-basics[JWT basics] for more information.
 
-=== JWT implementation details
+== = JWT implementation details
 
 The _Json Web Token_ pattern will be implemented based on the https://github.com/auth0/node-jsonwebtoken[_JSON web token_] library available on npm.
 
-==== Authentication
+== ==  Authentication
 
 Based on the _JSON web token_ approach, we will implement two methods in order to verify and user + generate the token and decode the token + return the user data. Also, as _My Thai Star_ is a mainly _public_ application, we will define here the resources that won't be secured.
 
@@ -194,11 +194,11 @@ We have two default users created in the database:
 - password: _password_
 - role: _CUSTOMER_
 
-==== Token set up
+== ==  Token set up
 
 link:NodeJS-design#token-set-up[See in NodeJS section]
 
-==== Current User request
+== ==  Current User request
 
 To provide the client with the current user data our application should expose a service to return the user details. In order to do this, we must define a handler called current-user-handler. This handler must decode the _Authorization token_ and return the user data.
 
@@ -223,7 +223,7 @@ export async function currentUser(event: HttpEvent, context: Context, callback: 
 }
 ----
 
-==== Authorization
+== ==  Authorization
 
 We need to secure three services, that only should be accessible for users with role _Waiter_:
 
@@ -242,7 +242,7 @@ export async function bookingSearch(event: HttpEvent, context: Context, callback
     const authToken = event.headers.Authorization;
     auth.decode(authToken, (err, decoded) => {
         try {
-            if (err || decoded.role !== 'WAITER') {
+            if (err || decoded.role !==  'WAITER') {
                 throw { code: 403, message: 'Forbidden' };
             }
 

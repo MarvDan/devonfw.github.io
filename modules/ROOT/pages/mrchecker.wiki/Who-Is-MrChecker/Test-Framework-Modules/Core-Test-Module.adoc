@@ -15,13 +15,13 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Core Test Module
+== Core Test Module
 
-== What is Core Test Module
+==  What is Core Test Module
 
 image::images/image1_new.png[]
 
-== Core Test Module Functions
+==  Core Test Module Functions
 
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Core-Test-Module-Test-reports-with-logs-and-or-screenshots.adoc[Test reports with logs and/or screenshots]
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Core-Test-Module-test-groups-tags.adoc[Test groups/tags]
@@ -32,6 +32,6 @@ image::images/image1_new.png[]
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Core-Test-Module-Externalize-test-environment-DEV-QA-SIT-PROD.adoc[Externalize test environment (DEV, QA, SIT, PROD)]
 * https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Core-Test-Module-Different-Environments.adoc[Encrypting sensitive data]
 
-== How to start?
+==  How to start?
 
 Read: https://github.com/devonfw/devonfw-testing/blob/develop/documentation/Who-Is-MrChecker/Test-Framework-Modules/Core-Test-Module-Framework-Test-Class.adoc[Framework Test Class]

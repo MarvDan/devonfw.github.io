@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Swagger
+== Swagger
 
 We can use swagger (OpenAPI) in order to describe the endpoints that our application exposes.
 

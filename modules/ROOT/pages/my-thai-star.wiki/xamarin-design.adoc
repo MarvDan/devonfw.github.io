@@ -1,6 +1,6 @@
 :toc:
 toc::[]
 
-==Xamarin design
+== Xamarin design
 
 TODO

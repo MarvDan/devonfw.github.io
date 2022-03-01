@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==kubernetes
+== kubernetes
 
 The `kubernetes` commandlet allows to install https://kubernetes.io/[kubernetes]. This command is implemented to currently work on Windows. Other OS are not supported yet. 
 
@@ -23,8 +23,8 @@ The arguments (`devon kubernetes «args»`) are explained by the following table
 
 .Usage of `devon kubernetes`
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Argument(s)*             |*Meaning*
 |`setup`                   |setup Kubernetes (install and verify) as per above flow.
 |`«args»`                  |call kubernetes(kubectl) with the specified arguments. Call `kubectl help` for details or use kubectl directly as preferred. (`«args»`)
-|=======================
+|== == == == == == == == == == == =

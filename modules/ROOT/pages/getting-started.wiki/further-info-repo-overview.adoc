@@ -17,7 +17,7 @@ endif::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Repository Overview
+== Repository Overview
 
 The GitHub repositories within the https://github.com/devonfw[devonfw organization] contain the source code and documentation for official devonfw projects.
 

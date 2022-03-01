@@ -10,12 +10,12 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==devon4j
+== devon4j
 For _Java_ based back-end solutions, _devonfw_ includes https://github.com/devonfw/devon4j/wiki/architecture[devon4j] that provides a standardized architecture blueprint, an open best-of-breed technology stack as well as industry proven best practices and code conventions for a cloud ready _Spring_ based server.
 
 Included in _devonfw_ framework as default server solution, https://github.com/devonfw/devon4j[devon4j] is the result of applying devonfw principles in a Java based technology stack. With _devon4j_ developers are able to create web application back-ends in a fast and reliable way, generating web services (REST, SOAP) that web clients can consume.
 
-== devon4j Technology Stack
+==  devon4j Technology Stack
 As mentioned before, devon4j is not only a framework but a set of tools and conventions. devon4j provides a Java back-end solution based on the following technologies:
 
 * https://spring.io/[Spring framework] as the main development framework.
@@ -57,16 +57,16 @@ As service framework:
 
 ** https://en.wikipedia.org/wiki/SOAP[SOAP] services through https://en.wikipedia.org/wiki/Java_API_for_XML_Web_Services[JAX-WS]
 
-== devon4j Tools
+==  devon4j Tools
 The following tools are included in the https://github.com/devonfw/ide[devonfw IDE], which -- among many other things -- can create, run and deploy devon4j applications, avoiding lots of manual work.
 
-=== Custom Eclipse Instance
+== = Custom Eclipse Instance
 As part of the _devonfw_ framework, devon4j projects are integrated into a customized Eclipse instance, which provides pre-configurations and pre-installed plugins, focusing on code quality and productivity boosting. 
 
-=== CobiGen
+== = CobiGen
 A generic incremental generator for end to end code generation that allows us to automate the generation of major components of our apps. Based on entities, CobiGen can generate all CRUD functionality for us, starting with services and ending with the persistence data layer.
 
-== devon4j Architecture Overview
+==  devon4j Architecture Overview
 devon4j provides a solution for industrialized web apps based on _components_ and a three-layers architecture.
 
 image::images/devon4j/1.Overview/devon4j_architecture.png[devon4j Architecture, 600]

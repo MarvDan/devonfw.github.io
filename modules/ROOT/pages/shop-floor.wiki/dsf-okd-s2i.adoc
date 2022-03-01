@@ -1,4 +1,4 @@
-==s2i devonfw
+== s2i devonfw
 
 This are the s2i source and templates to build an s2i images. It provides OpenShift builder images for components of the devonfw (at this moment only for angular and java).
 
@@ -6,15 +6,15 @@ This work is totally based on the implementation of  https://github.com/Mickuehl
 
 All this information is used as a part of the link:dsf-okd-initial-setup[initial setup] for openshift.
 
-== Previous setup
+==  Previous setup
 
 In order to build all of this, it will be necessary, first, to have a running OpenShift cluster. How to install it link:dsf-okd-how-to-install[here].
 
-== Usage
+==  Usage
 
 Before using the builder images, add them to the OpenShift cluster.
 
-=== Deploy the Source-2-Image builder images
+== = Deploy the Source-2-Image builder images
 
 First, create a dedicated `devonfw` project as admin.
 
@@ -42,11 +42,11 @@ oc policy add-role-to-group system:image-puller system:authenticated --namespace
 
 That's all!
 
-=== Deploy devonfw templates
+== = Deploy devonfw templates
 
 Now, it's time to create devonfw templates to use this s2i and add it to the browse catalog. More information link:dsf-okd-templates[here].
 
-== Build All
+==  Build All
 
 Use https://raw.githubusercontent.com/devonfw/devonfw-shop-floor/master/dsf4openshift/openshift-cluster-setup/initial-setup/initial-setup.sh[this] script to automatically install and build all image streams. The script also creates templates devonfw-angular and devonfw-java inside the project 'openshift' to be used by everyone.
 
@@ -60,7 +60,7 @@ $ /PATH/TO/BUILD/FILE/initial-setup.sh
 
 More information about what this script does https://raw.githubusercontent.com/devonfw/devonfw-shop-floor/master/dsf4openshift/openshift-cluster-setup/initial-setup#script-initial-setup[here].
 
-== Links & References
+==  Links & References
 
 This is a list of useful articles, etc, that I found while creating the templates.
 

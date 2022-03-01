@@ -1,13 +1,13 @@
 :toc: macro
 toc::[]
 
-==PostgreSQL
+== PostgreSQL
 
 This section gives guidance and hints for those who use https://www.postgresql.org/[PostgreSQL] as link:guide-database.adoc#rdbms[RDBMS].
 
-== Java
+==  Java
 
-=== Driver
+== = Driver
 PostgreSQL is fully open-source. The driver is therefore available in maven central.
 Your dependency for the driver should look as following:
 

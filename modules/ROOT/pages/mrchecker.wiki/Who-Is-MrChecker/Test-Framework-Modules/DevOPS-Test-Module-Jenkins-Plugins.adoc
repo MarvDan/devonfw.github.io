@@ -1,7 +1,7 @@
-==List of Jenkins Plugins
+== List of Jenkins Plugins
 
 [cols=2*,options=header]
-|===
+|== =
 
 |Plugin Name
 |Version
@@ -330,4 +330,4 @@
 |bouncycastle-api
 |2.16.1
 
-|===
+|== =

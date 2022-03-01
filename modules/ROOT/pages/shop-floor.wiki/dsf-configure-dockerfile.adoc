@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==Dockerfile
+== Dockerfile
 
 You have examples of dockerfiles in cicdgen repository.
 

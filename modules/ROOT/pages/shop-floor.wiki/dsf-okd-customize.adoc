@@ -1,8 +1,8 @@
-==Customize Openshift Origin for devonfw
+== Customize Openshift Origin for devonfw
 
 This is a guide to customize Openshift cluster.
 
-== Images Styles
+==  Images Styles
 
 The icons for templates must measure the same as below or the images don't show right:
 
@@ -10,7 +10,7 @@ The icons for templates must measure the same as below or the images don't show 
 * `Template logo`: 50px x 50px.
 * `Category logo`: 110px x 36px.
 
-== How to use
+==  How to use
 
 To use it, we need to enter in openshift as an admin and use the next command:
 
@@ -41,12 +41,12 @@ webconsole-config.yaml: |
   [...]
 ----
 
-== More information
+==  More information
 
 * link:dsf-okd-customize-icons[Customize icons] for Openshift.
 * link:dsf-okd-customize-catalog[Customize catalog] for Openshift.
 * https://docs.openshift.com/container-platform/latest/install_config/web_console_customization.html#loading-custom-scripts-and-stylesheets[Openshift docs] about customization.
 
-== Old versions
+==  Old versions
 
 * Customize Openshift for link:dsf-okd-customize-v3-7[version 3.7].

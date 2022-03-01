@@ -1,4 +1,4 @@
-==devonfw Java Quality Profile
+== devonfw Java Quality Profile
 
 This plugin comes with the quality profile `devonfw Java` that is automatically added and maintained with every update.
 The `devonfw Java` quality profile contains not only the previously described rules, but also Java based rules from other plugins that are vital to ensure optimal code quality (see prerequisites in link:installation[installation]).

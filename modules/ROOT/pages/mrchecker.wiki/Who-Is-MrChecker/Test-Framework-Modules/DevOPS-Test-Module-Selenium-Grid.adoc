@@ -1,6 +1,6 @@
-==Selenium Grid
+== Selenium Grid
 
-== What is Selenium Grid
+==  What is Selenium Grid
 
 Selenium Grid allows running web/mobile browsers test cases to fulfill basic factors, such as:
 
@@ -14,7 +14,7 @@ image::images/image88.png[]
 
 On a daily basis, a test automation engineer uses their local environments for test case execution/development. However, a created browser test case has to be able to run on any  infrastructure. Selenium Grid enables this portability.
 
-== Selenium Grid Structure
+==  Selenium Grid Structure
 
 image::images/image89.png[]
 
@@ -25,7 +25,7 @@ Full documentation of Selenium Grid can be found https://github.com/SeleniumHQ/s
 1. *Selenium Hub* - as one machine, accepting connections to grid from test cases executors. It also plays a managerial role in connection to/from Selenium Nodes
 2. *Selenium Node* - from one to many machines, where on each machine a browser used during test case execution is installed.
 
-== How to setup
+==  How to setup
 
 There are two options of Selenium Grid setup:
 
@@ -36,7 +36,7 @@ Advantages and disadvantages of both solutions:
 
 image::images/image90.png[]
 
-== How to use Selenium Grid with E2E Mr Checker Test Frameworks
+==  How to use Selenium Grid with E2E Mr Checker Test Frameworks
 
 Run the following command either in Eclipse or in Jenkins:
 

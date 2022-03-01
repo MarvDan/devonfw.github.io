@@ -15,13 +15,13 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Initialize Instance Template for Production Line
+== Initialize Instance Template for Production Line
 
-== Introduction
+==  Introduction
 
 Production Line Templates allows you to create/configure certain task. In order to work properly, Production Line Templates needs some previous configurations. You can do it link:initialize-instance-manually[manually] or executing the Initialize Instance Template.
 
-== Prerequisites
+==  Prerequisites
 
 In order to be able to start this template, you need:
 
@@ -63,18 +63,18 @@ image::images/initialize-instance/create-account4.png[]
 image::images/initialize-instance/create-account5.png[]
 
 
-== Template
+==  Template
 
 In order to execute this template, you need to add it into Jenkins manually. In order to do that, you can follow link:how-to-add-a-template[this guide]
 
-=== Parameters
+== = Parameters
 
 The required parameters are:
 
 - `svcaccount`: The service account created as prerequisite. It must be added as a Jenkins credential.
 - `installDeploymentPlugins`: With this parameter you can install extra plugins into Jenkins. Also, you can add extra template utils.
 
-=== Execution
+== = Execution
 
 . Press the Build with Parameters button
 . Insert the parameters.
@@ -87,7 +87,7 @@ WARNING: if any plugin is installed, Jenkins will be restarted and the pipeline 
 image::images/initialize-instance/initialize-instance.png[]
 image::images/initialize-instance/initialize-instance2.png[]
 
-=== The result
+== = The result
 
 * Install plugins stage
 +

@@ -10,10 +10,10 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-== Angular Services
+==  Angular Services
 In this chapter we are going to take a closer look at Angular services and learn how to utilize them.
 
-== What are Angular Services?
+==  What are Angular Services?
 From https://angular.io/guide/architecture-services[Angular's Services Intro]:
 
 ____
@@ -30,7 +30,7 @@ Services are often created in a shared folder, with the purpose of containing al
 
 Just like components, services have to be declared as a `NgModule`. In this case via the `providers` array.
 
-== Dependency Injection
+==  Dependency Injection
 The https://angular.io/guide/architecture#dependency-injection[Angular Architecture Documentation] says the following about DI:
 
 ____
@@ -45,26 +45,26 @@ ____
 
 For more information, please visit the https://angular.io/guide/dependency-injection[Angular Dependency Injection] guide.
 
-== Create a new Service
+==  Create a new Service
 Security or other global services will be stored in a shared folder, at the same level as the rest of the components. Services that are specific to a certain component, will be stored in a folder for the respective component. We can specify the path to a service when creating it with the Angular CLI:
 
 ```
 ng generate service <path>/<service_name>
 ```
 
-== Authentication
+==  Authentication
 Authentication is a special service created to maintain user sessions in the application. In the case of our tutorial application it serves as an indicator of the log-in state and stores the name of the user, but it can be extended to store tokens, validate permissions of roles, and so on.
 
 Basically, the objective of this service is to manage, what the user can or can not see, depending on their actions in the application.
 
-== Guards
+==  Guards
 https://angular.io/guide/router#milestone-5-route-guards[Guards] are services, that implement an interface called `*CanActivate*`. This interface forces developers to implement the `canActivate` method, which returns a simple `boolean`. Is up to you to decide, what conditions you are going to implement, to forbid or allow the navigation to a certain component.
 
 Guards are strongly related to the Router, because routes can carry the property `canActivate:[GuardServiceName]`. You can create as many Guards as you want, to secure every single component of your app, just as you require.
 
 If your application will have a login process, or special areas not accessible to everyone, we encourage you to use Guards, because even if you hide a navigation-button, the user can still modify the URL in the browser to access a component. With Guards in place, this type of navigation will be forbidden, and you app will not be compromised easily.
 
-== Server Communication
+==  Server Communication
 Angular uses https://angular.io/guide/http#http[HTTP] to communicate with the application server, but the return call is implemented via an object from the https://rxjs-dev.firebaseapp.com/guide/overview[RxJS] library. RxJS is a third party library, endorsed by Angular, and used to manage asynchronous calls based on the https://en.wikipedia.org/wiki/Observer_pattern[Observer pattern].
 
 You don't need to install the RxJS package manually, it comes preinstalled when you create a project via the Angular CLI. You just have to import the correct operators and modules to use it correctly.

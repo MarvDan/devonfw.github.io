@@ -1,4 +1,4 @@
-== Slaves creation for jenkins
+==  Slaves creation for jenkins
 
 Click on "Manage Jenkins" -> "Manage Nodes" -> "New Node":
 We define a name and select "Permanent Agent"

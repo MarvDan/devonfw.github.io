@@ -15,13 +15,13 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==MrChecker E2E tutorials
+== MrChecker E2E tutorials
 
 In order to learn more about MrChecker structure, start from Project Organisation section and then check out our fantastic tutorials:
 
-== How to create a basic test in MrChecker
+==  How to create a basic test in MrChecker
 
-=== Example: Booking a table
+== = Example: Booking a table
 As an example to test we will use https://mts-devonfw-core.cloud.okteto.net/bookTable[MyThaiStar] booking page. +
 In order to book a table, do the following steps:
 
@@ -38,9 +38,9 @@ image::images/image2.png[]
 
 You can go through these steps manually and doublecheck the result.
 
-=== How to prepare a test
+== = How to prepare a test
 
-==== 1. Create BookTablePage class
+== ==  1. Create BookTablePage class
 
 You will need a class which will represent MyThaiStart booking page. +
 Fill the required methods with the following code:
@@ -167,7 +167,7 @@ public ConfirmBookPage enterBookingData(String date, String name, String email, 
 }
 ----
 
-==== 2. Create ConfirmBookPage class
+== ==  2. Create ConfirmBookPage class
 
 As you can see, this method returns another page object that has not yet been created. This step is required, as the booking information that you would like to check is on another webpage. This means that you will have to create another page class and call it ConfirmBookPage:
 
@@ -233,7 +233,7 @@ public boolean checkConfirmationDialog() {
 }
 ----
 
-==== 3. Create BookTableTest class
+== ==  3. Create BookTableTest class
 
 At this point you can start creating a test class:
 
@@ -267,7 +267,7 @@ public class BookTableTest extends BaseTest {
 }
 ----
 
-==== 4. Write the first test
+== ==  4. Write the first test
 
 You can prepare our first test method using the methods from page classes
 
@@ -288,7 +288,7 @@ public void Test_BookTableAndCheckConfirmation() {
 }
 ----
 
-==== 5. Run the test
+== ==  5. Run the test
 
 Run the test by right-clicking on the test method -> Run as -> JUnit test. 
 

@@ -15,9 +15,9 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Create the employee sample step by step
+== Create the employee sample step by step
 
-== Application requisites
+==  Application requisites
 
 The employee application needs:
 
@@ -31,7 +31,7 @@ The employee application needs:
 ** surname
 ** email
 
-== Create the application
+==  Create the application
 
 . Install Nest CLI
 +

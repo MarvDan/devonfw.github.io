@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Services Layer
+== Services Layer
 
 The services layer is more or less what we call 'business logic layer' on the server side.
 It is the layer where the business logic is placed.
@@ -30,7 +30,7 @@ The main challenges are:
 All parts of the services layer are described in this chapter.
 An example which puts the concepts together can be found at the end <<Interaction of Smart Components through the services layer>>.
 
-== Boundaries
+==  Boundaries
 
 There are two APIs for the components layer to interact with the services layer:
 
@@ -42,7 +42,7 @@ To illustrate the fact the following figure shows an abstract overview.
 .Boundaries to components layer
 image::images/components-layer-service-layer-boundaries.svg["Smart and Dumb Components Interaction", width="450", link="images/components-layer-service-layer-boundaries.svg"]
 
-== Store
+==  Store
 
 A store is a class which defines and handles application state with its transitions over time.
 Interaction with a store is always synchronous.
@@ -90,7 +90,7 @@ This equals the _Observer Pattern_ push type.
 A store is the API for _Smart Components_ to receive state from the service layer.
 State transitions are handled automatically with _Smart Components_ registering to the `state$` observable.
 
-== Use Case Service
+==  Use Case Service
 
 A use case service is a service which has methods to perform asynchronous state transitions.
 In reactive terminology this would be an _Action of Actions_ - a thunk (`redux`) or an effect (`@ngrx`).
@@ -102,7 +102,7 @@ A use case services method - an action - interacts with adapters, business servi
 So use case services orchestrate whole use cases.
 For an example see `<<usecaseservice-example,use case service example>>`.
 
-== Adapter
+==  Adapter
 
 An adapter is used to communicate with the back-end.
 This could be a simple XHR request, a WebSocket connection, etc.
@@ -129,7 +129,7 @@ export class ProducsAdapter {
 }
 ----
 
-== Interaction of Smart Components through the services layer
+==  Interaction of Smart Components through the services layer
 
 The interaction of smart components is a classic problem which has to be solved in every UI technology.
 It is basically how one dialog tells the other something has changed.
@@ -144,7 +144,7 @@ With this action there need to be multiple state updates.
 * Ads need to be updated with related products
 * etc.
 
-=== Pattern
+== = Pattern
 
 To handle this interaction in a scalable way we apply the following pattern. 
 
@@ -155,7 +155,7 @@ The state of interest is encapsulated inside a store. All _Smart Components_ int
 
 To put this pattern into perspective the `UseCaseService` is a programmatic alternative to `redux-thunk` or `@ngrx/effects`. The main motivation here is to use the full power of TypeScript `--strictNullChecks` and to let the learning curve not to become as steep as it would be when learning a new state management framework. This way actions are just `void` method calls.
 
-=== Example
+== = Example
 
 .Smart Components interaction example
 image::images/smart-smart-components-example.svg["Smart component interaction example", link="images/smart-smart-components-example.svg", width="450"]

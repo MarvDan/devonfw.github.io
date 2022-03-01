@@ -1,11 +1,11 @@
 :toc:
 toc::[]
 
-==Devon CLI
+== Devon CLI
 
 The `devonfw-ide` is shipped with a central command `devon`. The link:setup[setup] will automatically register this command so it is available in any shell on your system. This page describes the Command Line Interface (CLI) of this command.
 
-== Devon
+==  Devon
 Without any argument the `devon` command will determine your `DEVON_IDE_HOME` and setup your link:variables[environment variables] automatically. In case you are not inside of a `devonfw-ide` folder the command will echo a message and do nothing.
 
 [source,bash]
@@ -21,7 +21,7 @@ devonfw-ide has environment variables have been set for /projects/my-project in 
 /projects/my-project/software/java
 --------
 
-== Commandlets
+==  Commandlets
 The `devon` command supports a pluggable set of _commandlets_. Such commandlet is provided as first argument to the devon command and may take additional arguments:
 
 `devon «commandlet» [«arg»]*`
@@ -31,13 +31,13 @@ Every commandlet takes the following generic arguments:
 
 .Generic arguments of every commandlet
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Argument(s)*     |*Meaning*
 |`-b` or `--batch` |run in non-interactive mode (do not ask any questions).
 |`-q` or `--quiet` |be quiet and avoid output.
-|=======================
+|== == == == == == == == == == == =
 
-=== Command-wrapper
+== = Command-wrapper
 For many commandlets the `devon` command acts as a wrapper.
 Similar to `mvnw` or `gradlew` you can use it as a proxy command.
 Therefore `devon mvn clean install` will be the same as `mvn clean install`.
@@ -46,7 +46,7 @@ We see the main benefit in this for writing portable scripts that you may commit
 In your daily usage you can and surely should avoid to always type `devon` as prefix to every command.
 However, when you automate and want to avoid "command not found" errors, you can simply prefix the command with `devon`.
 
-=== Commandlet overview
+== = Commandlet overview
 
 The following commandlets are currently available:
 

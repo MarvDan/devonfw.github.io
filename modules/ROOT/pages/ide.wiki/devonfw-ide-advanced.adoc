@@ -1,4 +1,4 @@
-==Advanced Features
+== Advanced Features
 
 include::advanced-tooling-generic.adoc[leveloffset=2]
 

@@ -8,19 +8,19 @@ toc::[]
 :listing-caption: Listing
 
 
-==devonfw Release notes 2021.04
+== devonfw Release notes 2021.04
 
-== Introduction
+==  Introduction
 
 We are proud to announce the release of devonfw version 2021.04. 
 
 This release includes lots of addition of new features, updates and bug fixes but it is very important to highlight the following improvements:
 
-== devonfw IDE
+==  devonfw IDE
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-=== 2021.04.001
+== = 2021.04.001
 
 Update with the following bugfixes and improvements:
 
@@ -38,11 +38,11 @@ Update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/18?closed=1[milestone 2021.04.001].
 
-== devon4j
+==  devon4j
 
 The consolidated list of features for this devon4j release is as it follows.
 
-== 2021.04.002
+==  2021.04.002
 
 Bugfix release of with the following stories:
 * https://github.com/devonfw/devon4j/issues/389[#389]: archetype build broken with ci-friendly-maven
@@ -52,7 +52,7 @@ Bugfix release of with the following stories:
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2021.04.002/devon4j-doc-2021.04.002.pdf[devon4j guide 2021.04.002].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/18?closed=1[milestone devon4j 2020.04.002].
 
-=== 2021.04.001
+== = 2021.04.001
 
 New release of `devon4j` with fixes, updates and improvements:
 
@@ -71,12 +71,12 @@ New release of `devon4j` with fixes, updates and improvements:
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2021.04.001/devon4j-doc-2021.04.001.pdf[devon4j guide 2021.04.001].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/15?closed=1[milestone devon4j 2020.04.001].
 
-== devon4ng
+==  devon4ng
 
 Updated template and samples to Angular 11.
 Updated guide of devon4ng.
 
-== MrChecker
+==  MrChecker
 
 MrChecker Test Framework is an end to end test automation framework written in Java. It is an automated testing framework for functional testing of web applications, API web services, Service Virtualization, Security, native mobile apps and, in the near future, databases. All modules have tangible examples of how to build resilient integration test cases based on delivered functions. Two new modules are added to MrChecker:
 
@@ -84,7 +84,7 @@ MrChecker Test Framework is an end to end test automation framework written in J
 
 * CLI Module - we have created a module intended to make testing command line applications like compilers or batches easier and faster. Huge success here is that, team using this solution was able to prepare a test suite, without app provided, basing only on documentation and using mocking technique.
 
-== Trainings/tutorials   
+==  Trainings/tutorials   
 
 * Katakoda tutorials : https://katacoda.com/devonfw
 * Youtube tutorials : https://www.youtube.com/channel/UCtb1p-24jus-QoXy49t9Xzg

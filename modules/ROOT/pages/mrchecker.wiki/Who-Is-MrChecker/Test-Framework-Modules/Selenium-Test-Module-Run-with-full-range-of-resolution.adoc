@@ -1,4 +1,4 @@
-==Run with full range of resolution
+== Run with full range of resolution
 
 image::images/image62.png[]
 

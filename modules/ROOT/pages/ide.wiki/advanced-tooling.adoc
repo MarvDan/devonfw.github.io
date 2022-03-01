@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-==Advanced Tooling
+== Advanced Tooling
 
 We have various great hints to offer for advanced tooling:
 

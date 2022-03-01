@@ -1,13 +1,13 @@
 :toc: macro
 toc::[]
 
-==MariaDB
+== MariaDB
 
 This section gives guidance and hints for those who use https://mariadb.org/[MariaDB] as link:guide-database.adoc#rdbms[RDBMS].
 
-== Java
+==  Java
 
-=== Driver
+== = Driver
 MariaDB is fully open-source. The driver is therefore available in maven central.
 Your dependency for the driver should look as following:
 

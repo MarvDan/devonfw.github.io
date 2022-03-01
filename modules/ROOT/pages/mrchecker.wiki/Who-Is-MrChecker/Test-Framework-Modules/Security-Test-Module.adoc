@@ -15,9 +15,9 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Security Test Module
+== Security Test Module
 
-== What is Security
+==  What is Security
 
 Application Security is concerned with *Integrity*, *Availability* and *Confidentiality* of data processed, stored and transferred by the application.
 
@@ -25,7 +25,7 @@ Application Security is a cross-cutting concern which touches every aspect of th
 
 Because of this and many other reasons, not every aspect of security can be automatically verified. Manual tests and audits will still be needed. Nevertheless, every security requirement which is automatically verified will prevent code degeneration and misconfiguration in a continuous manner.
 
-== How to test Security
+==  How to test Security
 
 Security tests can be performed in many different ways, such as:
 

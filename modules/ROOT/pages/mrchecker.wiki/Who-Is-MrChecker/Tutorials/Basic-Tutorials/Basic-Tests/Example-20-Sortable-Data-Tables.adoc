@@ -6,7 +6,7 @@ After clicking on a column header, the data will be sorted descending and after 
 
 image::images/example55.png[]
 
-===== Page Class
+== == = Page Class
 
 ----
 public class SortableDataTablesPage extends BasePage {
@@ -102,11 +102,11 @@ public class SortableDataTablesPage extends BasePage {
 }
 ----
 
-====== Finding values
+== == ==  Finding values
 
 Using proper selectors, save elements such as tables and their columns' headers as Web Element Lists. Afterwards, you can get the desired element finding it by index (e. g. table or column number). To get column values, use `JsoupHelper` and to check if the column is sorted get its class attribute.
 
-===== Test Class
+== == = Test Class
 
 Before all tests: Open The Internet Main Page 
 

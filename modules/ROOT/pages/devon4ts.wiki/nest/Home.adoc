@@ -15,18 +15,18 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==devon4node Wiki
+== devon4node Wiki
 
 - link:devon4node-introduction[Introduction]
 - link:devon4node-architecture[Architecture overview]
 
-== Layers
+==  Layers
 
 - link:layer-controller[Controller]
 - link:layer-service[Service]
 - link:layer-dataaccess[Data Access]
 
-== Guides
+==  Guides
 
 - link:guides-key-principles[Key Principles]
 - link:guides-code-generation[Code Generation]
@@ -43,7 +43,7 @@ toc::[]
 - link:guides-eslint-sonarqube-config[ESLint SonarQube Configuration]
 - link:guides-graphql[GraphQL]
 
-== devon4node applications
+==  devon4node applications
 
 - link:samples[devon4node Samples]
 - link:samples-step-by-step[devon4node Sample Step by Step]

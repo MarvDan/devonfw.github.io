@@ -1,25 +1,25 @@
-==devonfw dashboard
+== devonfw dashboard
 
-== Landing page
+==  Landing page
 
 include::landing-page.adoc[leveloffset=3]
 
-== Home
+==  Home
 
 include::home-page.adoc[leveloffset=3]
 
-== Projects
+==  Projects
 
 include::projects-page.adoc[leveloffset=3]
 
-== Repositories
+==  Repositories
 
 include::repositories-page.adoc[leveloffset=3]
 
-== Wiki
+==  Wiki
 
 include::wiki-page.adoc[leveloffset=3]
 
-== Settings
+==  Settings
 
 include::settings-page.adoc[leveloffset=3]

@@ -1,6 +1,6 @@
-==Is it doable to keep pace in QA with today’s software agile approach?
+== Is it doable to keep pace in QA with today’s software agile approach?
 
-DevOps + Microservices + Shift left + Time to Market == *? Service virtualization ?*
+DevOps + Microservices + Shift left + Time to Market ==  *? Service virtualization ?*
 
 image::images/image72.png[]
 
@@ -8,7 +8,7 @@ Test pyramid
 
 image::images/image73.png[]
 
-== What is service virtualization
+==  What is service virtualization
 
 *Service Virtualization has become recognized as one of the best ways to speed up testing and accelerate your time to market.*
 
@@ -28,7 +28,7 @@ According to http://en.wikipedia.org/wiki/Service_virtualization[Wikipedia’s s
 
 For instance, instead of virtualizing an entire database (and performing all associated test data management as well as setting up the database for every test session), you monitor how the application interacts with the database, then you emulate the related database behaviour (the SQL queries that are passed to the database, the corresponding result sets that are returned, and so forth).
 
-== Mocks, stubs and virtual services
+==  Mocks, stubs and virtual services
 
 The most commonly discussed categories of test doubles are mocks, stubs and virtual services.
 

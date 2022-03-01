@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Simplifying CRUD with NgRx/Entity
+== Simplifying CRUD with NgRx/Entity
 
 Most of the time when manipulating entries in the store, we like to create, add, update, or delete entries (CRUD). NgRx/Entity provides convenience functions if each item of a collection has an id property. Luckily all our entities already have this property.
 
@@ -29,9 +29,9 @@ export const addToWatchlist = createAction('[Recommendation List] Add to watchli
 ----
 
 [NOTE]
-====
+== == 
 You may wonder why the Date object is not created inside the reducer instead, since it should always be the current time. However, remember that reducers should be deterministic state machines -- State A + Action B should always result in the same State C. This makes reducers easily testable.
-====
+== == 
 
 Then, rewrite the `watchlistData` reducer to make use of NgRx/Entity:
 
@@ -52,7 +52,7 @@ export function reducer(state = initialState, action: playbackActions.ActionsUni
     case playbackActions.playbackFinished.type:
       const itemToUpdate = entitySelectors
       .selectAll(state) <4>
-      .find(item => item.movie.id === action.movieId);
+      .find(item => item.movie.id == = action.movieId);
       if (itemToUpdate) {
         return entityAdapter.updateOne({ <5>
           id: itemToUpdate.id,

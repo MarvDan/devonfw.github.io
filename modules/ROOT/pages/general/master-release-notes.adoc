@@ -1,4 +1,4 @@
-==Release Notes
+== Release Notes
 
 include::release-notes-version-2021.04.adoc[leveloffset=1]
 

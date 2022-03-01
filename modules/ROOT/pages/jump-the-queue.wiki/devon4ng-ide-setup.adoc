@@ -10,7 +10,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==IDE Setup
+== IDE Setup
 This Tutorial explains how to setup Visual Studio Code to work on and contribute to devon4ng projects with your Windows computer.
 
 To get started follow these steps:

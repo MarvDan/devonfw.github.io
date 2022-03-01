@@ -1,4 +1,4 @@
-==NodeJS
+== NodeJS
 
 link:https://www.devonfw.com/[devonfw] is a platform which provides solutions to building business applications which combine best-in-class frameworks and libraries as well as industry proven practices and code conventions. devonfw is 100% Open Source (Apache License version 2.0) since the beginning of 2018.
 
@@ -8,13 +8,13 @@ devon4node is based on link:https://nestjs.com/[NestJS]. Nest (NestJS) is a fram
 
 include::devon4node-architecture.adoc[leveloffset=1]
 
-== Layers
+==  Layers
 
 include::layer-controller.adoc[leveloffset=2]
 include::layer-service.adoc[leveloffset=2]
 include::layer-dataaccess.adoc[leveloffset=2]
 
-== Guides
+==  Guides
 
 include::guides-key-principles.adoc[leveloffset=2]
 include::guides-code-generation.adoc[leveloffset=2]
@@ -30,7 +30,7 @@ include::guides-logger.adoc[leveloffset=2]
 include::guides-mailer.adoc[leveloffset=2]
 include::guides-eslint-sonarqube-config.adoc[leveloffset=2]
 
-== devon4node applications
+==  devon4node applications
 
 include::samples.adoc[leveloffset=2]
 include::samples-step-by-step.adoc[leveloffset=2]

@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==conf
+== conf
 This folder contains configurations for your IDE:
 
 .File structure of the conf folder

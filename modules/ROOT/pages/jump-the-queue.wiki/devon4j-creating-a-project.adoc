@@ -10,11 +10,11 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==Introduction
+== Introduction
 In this chapter you will learn to create a workspace and create a project using the CLI or the GUI. When using devon, each project has its own workspace and can be edited by different instances of the IDE, e.g. eclipse.
 
 
-== Command Line Interface
+==  Command Line Interface
 * Go to your Devon-dist. folder. Open `console.bat` 
 
 * Execute: `cd workspaces` 
@@ -51,13 +51,13 @@ image::images/tutorialsources/devcon-create-backend.png[Devcon Back-end Creation
 
 
 [NOTE]
-==== 
+== ==  
 There are two commands `devon` and `devcon`. Any of these two commands can be used. With the -h option you will always get help, e.g. `devon -h` or `devon workspaces -h`.
-====
+== == 
 
 We see later, how to access these server. For now just use ctr+c to stop it from running.
 
-== Graphical User Interface
+==  Graphical User Interface
 * Open: `console.bat`
 
 * Go to your `workspaces` directory.
@@ -101,12 +101,12 @@ image::images/tutorialsources/devcon-gui-project.png[Devcon GUI Project, 600]
 Now you know how to create a project with devon/devcon.
 
 [NOTE]
-====
+== == 
 You can also create new projects:
 
 - from Eclipse https://github.com/devonfw/devon4j/wiki/tutorial-newapp#from-eclipse[see how]
 
-====
+== == 
 
 '''
 *Next Chapter*: link:jump-the-queue-design[JumpTheQueue Design]

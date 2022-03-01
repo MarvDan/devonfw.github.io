@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==PrimeNG Layout
+== PrimeNG Layout
 
 The purpose of this guide is to get a basic understanding of creating layouts of PrimeNG in a devon4ng application. https://www.primefaces.org/primeng/[PrimeNG] is a HTML/CSS framework.
 
@@ -24,7 +24,7 @@ The purpose of this guide is to get a basic understanding of creating layouts of
 image::images/angular-primeng-layout/Screenshot_0.png[]
 
 
-== Let's begin
+==  Let's begin
 
 We start with opening the console(in the Devon distribution folder) and running the following command to start a project named `AngularZorroLayout`.
 
@@ -41,7 +41,7 @@ Angular will spin up a server and you can check your application by visiting htt
 .Blank Application
 image::images/angular-primeng-layout/Screenshot_1.png[]
 
-==  Adding PrimeNG to the project
+==   Adding PrimeNG to the project
 
 Next we will add Angular Material to our application. In the integrated terminal, press CTRL + C to terminate the running application and run the following command:
 
@@ -65,7 +65,7 @@ The css dependencies are as follows, Prime Icons, theme of your choice and struc
 .Styles on angular.json
 image::images/angular-primeng-layout/Screenshot_2.png[]
 
-== Development
+==  Development
 
 Now we need to create a component for the header. We will create it with the command
 We will create a folder component to have a good practices.
@@ -1280,7 +1280,7 @@ The first method is to edit a specifict product `(click)="editProduct(product)"`
       header: 'Confirm',
       icon: 'pi pi-exclamation-triangle',
       accept: () => {
-        this.products = this.products.filter(val => val.id !== product.id);
+        this.products = this.products.filter(val => val.id !==  product.id);
         this.product = {};
         this.messageService.add({ severity: 'success', summary: 'Successful', detail: 'Product Deleted', life: 3000 });
       }

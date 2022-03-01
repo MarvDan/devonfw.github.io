@@ -1,8 +1,8 @@
-==Why join Test Cases in groups - Test Suites
+== Why join Test Cases in groups - Test Suites
 
 image::images/image22.png[]
 
-== Regresion Suite:
+==  Regresion Suite:
 
 Regression testing is a type of https://en.wikipedia.org/wiki/Software_testing[software testing] which verifies that software which was previously developed and tested still performs the same way after it was changed or interfaced with another software.
 
@@ -10,20 +10,20 @@ Regression testing is a type of https://en.wikipedia.org/wiki/Software_testing[s
 * Business vital functionalities
 * Full scope of test cases
 
-== https://www.rainforestqa.com/blog/2016-06-27-what-is-functional-testing[Functional Suite]:
+==  https://www.rainforestqa.com/blog/2016-06-27-what-is-functional-testing[Functional Suite]:
 
 * Smoke
 * Business function A
 * Business function B
 
-== https://en.wikipedia.org/wiki/Single_responsibility_principle[Single Responsibility Unit]:
+==  https://en.wikipedia.org/wiki/Single_responsibility_principle[Single Responsibility Unit]:
 
 * Single page
 * Specific test case
 
-==How to build a Test Suite based on tags
+== How to build a Test Suite based on tags
 
-== Structure of the Test Suite
+==  Structure of the Test Suite
 
 *Since mrchecker-core-module version 5.6.2.1:*
 
@@ -71,7 +71,7 @@ Example:
 2. `@IncludeCategories({ TestsTag1.class }) , @ExcludeCategories({ SlowTest.class })` -> will execute all test cases with the tag `"TestsTag1.class"` although it will exclude from this list the test cases with the tag `"SlowTest.class"`
 3. `@IncludeCategories({ }) , @ExcludeCategories({ SlowTest.class })` -> will execute all test cases from `/src/test/java`, although it will exclude from this list the test cases with the tag `"SlowTest.class"`
 
-== Structure of Test Case
+==  Structure of Test Case
 
 *Since mrchecker-core-module version 5.6.2.1:*
 
@@ -92,7 +92,7 @@ Where:
 * `@Category({ TestsTag1.class, TestsSmoke.class, TestSelenium.class })` - list of tags / categories assigned to this test case - `"TestsTag1.class, TestsSmoke.class, TestSelenium.class"`
 * `public class FristTest_tag1_Test` - the name of the test case is `"FristTest_tag1_Test"`
 
-== Structure of Tags / Categories
+==  Structure of Tags / Categories
 
 *Since mrchecker-core-module version 5.6.2.1:*
 
@@ -123,7 +123,7 @@ Tag name: `TestSelenium.class`
 
 image::images/image27.png[]
 
-==How to run Test Suite
+== How to run Test Suite
 
 To run a Test Suite you perform the same steps as you do to run a test case
 

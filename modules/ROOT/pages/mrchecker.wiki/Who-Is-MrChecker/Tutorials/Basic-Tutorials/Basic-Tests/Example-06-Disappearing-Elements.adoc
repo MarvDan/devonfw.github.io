@@ -24,7 +24,7 @@ Steps:
 8. Check if Gallery Button does not exist 
 9. Check if the number of buttons is smaller than before 
 
-===== Page Class 
+== == = Page Class 
 
 ----
 public class DisappearingElementsPage extends BasePage {
@@ -105,7 +105,7 @@ public class DisappearingElementsPage extends BasePage {
     }
 
     private boolean isMaxNumberOfAttemptsReached(int attemptNo, int maxNumberOfAttempts) {
-        return attemptNo == maxNumberOfAttempts;
+        return attemptNo ==  maxNumberOfAttempts;
     }
 
 }
@@ -114,7 +114,7 @@ public class DisappearingElementsPage extends BasePage {
 
 findElementQuietly(By selector) works similar as findElementDynamics(By selector) but won't throw an exception if an element wasn't found. In this case, the searched WebElement will have a NULL value. 
 
-===== Test Class
+== == = Test Class
 ----
 @Category({ TestsSelenium.class, TestsChrome.class, TestsFirefox.class, TestsIE.class })
 public class DisappearingElementsTest extends TheInternetBaseTest {

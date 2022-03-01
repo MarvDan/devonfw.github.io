@@ -1,8 +1,8 @@
-== CONNECTION STRINGS
+==  CONNECTION STRINGS
 
 Once your database is created, you will need to connect that DB to your backend application, this can be made using https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/connection-strings[*connection strings*].
 
-==== CREATE THE CONNECTION STRING
+== ==  CREATE THE CONNECTION STRING
 Go to the Azure portal,select the App Service that you want to connect with the DB, to be able to establish this connection, both your DB and your App Service must be under the same resource group.
 
 P.E
@@ -25,7 +25,7 @@ Paste the connection string in the 'value' box and click OK
 
 Your connection string has been created.
 
-==== USE THE CONNECTION STRING 
+== ==  USE THE CONNECTION STRING 
 
 Go to your project, open the file AppSettings.json and add the connection string
 

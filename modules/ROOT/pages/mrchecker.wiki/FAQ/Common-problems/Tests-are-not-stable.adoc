@@ -1,4 +1,4 @@
-==Tests are not stable
+== Tests are not stable
 
 Selenium tests perform actions much faster than a normal user would. Because pages can contain dynamically changing content, some web elements can still not be loaded when Selenium driver tries to access them. 
 

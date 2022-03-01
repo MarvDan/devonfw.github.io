@@ -1,10 +1,10 @@
-==Customize Openshift Origin v3.7 for devonfw
+== Customize Openshift Origin v3.7 for devonfw
 
 This is a guide to customize Openshift cluster. For more information read the next:
 
 * https://docs.openshift.com/container-platform/3.7/install_config/web_console_customization.html#loading-custom-scripts-and-stylesheets[Openshift docs customization] for the version 3.7.
 
-== Images Styles
+==  Images Styles
 
 The icons for templates must measure the same as below or the images don't show right:
 
@@ -12,15 +12,15 @@ The icons for templates must measure the same as below or the images don't show 
 - `Template logo`: 50px x 50px.
 - `Category logo`: 110px x 36px.
 
-== Quick Use
+==  Quick Use
 
 This is a quick example to add custom icons and categories inside openshift.
 
 To modify the icons inside openshift, we must to modify our master-config.yaml of our openshift cluster. This file is inside the openshift container and to obtain a copy of it, we must to know what's our openshift container name.
 
-=== Obtain the master-config.yaml of our openshift cluster
+== = Obtain the master-config.yaml of our openshift cluster
 
-==== Obtain the name of our openshift container
+== ==  Obtain the name of our openshift container
 
 To obtain it, we can know it executing the next:
 
@@ -33,7 +33,7 @@ CONTAINER ID        IMAGE                                           COMMAND     
 
 Here we can see that the name of the container is origin. Normaly the container it's called as origin.
 
-==== Copy the master-config.yaml of our openshift container to our directory
+== ==  Copy the master-config.yaml of our openshift container to our directory
 
 This file is inside the openshift container in the next directory: /var/lib/origin/openshift.local.config/master/`master-config.yaml` and we can copy it with the next command:
 
@@ -44,7 +44,7 @@ $ docker cp origin:/var/lib/origin/openshift.local.config/master/master-config.y
 
 Now we have a file with the configuration of our openshift cluster.
 
-=== Copy all customize files inside the openshift container
+== = Copy all customize files inside the openshift container
 
 To use our customization of devonfw Openshift, we need to copy our files inside the openshift container. 
 
@@ -56,7 +56,7 @@ container, for example, we could put it all inside a folder called openshift.loc
 $ docker cp ./openshift.local.devonfw origin:/var/lib/origin/
 ----
 
-=== Edit and copy the master-config.yaml to use our customize files
+== = Edit and copy the master-config.yaml to use our customize files
 
 The master-config.yaml have a sections to charge our custom files. All these sections are inside the `assetConfig` and their names are the next:
 
@@ -91,7 +91,7 @@ $ docker cp ./master-config.yaml origin:/var/lib/origin/openshift.local.config/m
 
 To re-start openshift do `oc cluster down` and start again your persistent openshift cluster.
 
-== More information
+==  More information
 
 * link:dsf-okd-customize-icons[Customize icons] for Openshift.
 * link:dsf-okd-customize-catalog[Customize catalog] for Openshift.

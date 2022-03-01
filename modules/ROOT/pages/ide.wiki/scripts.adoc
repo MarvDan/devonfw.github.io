@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==scripts
+== scripts
 This directory is the heart of the `devonfw-ide` and contains the required link:https://github.com/devonfw/ide/tree/master/scripts/src/main/resources/scripts[scripts].
 
 .File structure of the conf folder

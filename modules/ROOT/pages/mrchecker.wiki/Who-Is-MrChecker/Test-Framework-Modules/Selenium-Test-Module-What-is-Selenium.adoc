@@ -1,4 +1,4 @@
-==What is Selenium
+== What is Selenium
 
 Selenium is a framework for testing browser applications. The test automation supports:
 
@@ -30,7 +30,7 @@ The major change in Selenium 3.0 is removing the original Selenium Core implemen
 +
 Selenium Grid allows the scaling of Selenium RC test cases, that must be run in multiple and potentially variable environments. The tests can be run in parallel on different remote machines.
 
-== Selenium on the Production Line
+==  Selenium on the Production Line
 
 More information on Selenium on the Production Line can be found https://km3.capgemini.com/book/1051672[here].
 

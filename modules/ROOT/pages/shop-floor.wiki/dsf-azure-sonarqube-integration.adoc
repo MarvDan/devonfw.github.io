@@ -1,8 +1,8 @@
-== Integrate the SonarQube plugin in an Azure DevOps pipeline 
+==  Integrate the SonarQube plugin in an Azure DevOps pipeline 
 The purpose of this readme is that you can configure your Azure Devops pipeline in order to be able to run a code analysis, analyse the code coverage and publish the results through the Sonar plugin.
 
-== How to do it
-==== Step 1: Create a service connection
+==  How to do it
+== ==  Step 1: Create a service connection
 The first thing to do is to declare your SonarQube server as a service endpoint in your Azure DevOps project settings.
 
 Go to project settings -> pipelines -> service connections and *create* and choose 'SonarQube'.
@@ -21,7 +21,7 @@ Once this step is done your service creation will appear now in the _service con
 
 For more info regarding the Authentication part please read the https://docs.sonarqube.org/latest/user-guide/user-token/[official documentation]
 
-==== Step 2: Add the required tasks in the azure pipeline
+== ==  Step 2: Add the required tasks in the azure pipeline
 In order to integrate the SonarQube in the pipeline, 3 steps or *tasks* are required(Depending on the different solutions like .NET, Java, C..etc some of this tasks can be optional), this tasks are:
 
 Prepare Analysis configuration
@@ -56,7 +56,7 @@ Same as we did before, select in the display the publish extension and add it
 
 image::./images/others/azure-sonarqube/publish.png[]
 
-==== Step 3: Run the pipeline
+== ==  Step 3: Run the pipeline
 
 With this, all the required steps to integrate SonarQube in your Azure DevOps pipeline are done, the last thing you need to do is **run** your pipeline and your code will be analyzed and the results published.
 

@@ -10,12 +10,12 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==Testing with devon4j
+== Testing with devon4j
 Testing our applications is one of the most important parts of the development. The _devon4j_ documentation provides detailed information about the https://github.com/devonfw/devon4j/wiki/guide-testing[testing principles]. In addition to that, you can also find information about the topic in the https://github.com/devonfw/devonfw-guide[devonfw guide].
 
 In this chapter we are going to focus on showing some test examples, and explain briefly how to start testing our _devon4j_ apps.
 
-== MyThaiStar Testing Example
+==  MyThaiStar Testing Example
 In all the _devon4j_ projects (based on _Maven_ and _Spring_) we are going to find a dedicated package for testing.
 
 In addition to this, the testing part of the project also has its own _resources_ package, so we are going to be able to configure the application properties or other resources to create specific test scenarios:
@@ -74,7 +74,7 @@ public class DishmanagementTest extends ComponentTest {
 * _Spring Test_ gives us the option for dependency injection, so we are going to be able to `@Inject` our components to test them.
 * Finally with the `@Test` annotation we can declare a test to be executed during the testing process.
 
-== Testing our Application
+==  Testing our Application
 Now that we have brief overview, we are going to add some tests to our _JumpTheQueue_ application.
 
 We have a main component for managing _visitors_, so we are going to create a dedicated package for testing that component within the `com.devonfw.application.jtqj` package, called `visitormanagement.logic.impl`. Inside this new package we are going to add a new test class named `VisitormanagementTest.java`:
@@ -82,9 +82,9 @@ We have a main component for managing _visitors_, so we are going to create a de
 image::images/devon4j/8.Testing/jumpthequeue_testing_structure.png[JumpTheQueue Testing Structure, 300]
 
 [NOTE]
-====
+== == 
 You can see that we already have some test packages in the `src/test/java/com.devonfw.application.jtqj.general` package. Those tests are from the _devon4j_ archetype and we can use them as a model for further tests in our apps.
-====
+== == 
 
 In the `VisitormanagementTest` class we are going to add annotations to run our app in the correct context when executing tests, extend the `ComponentTest` class to obtain assertions, and inject our `visitormanagement` component:
 
@@ -112,9 +112,9 @@ public class VisitormanagementTest extends ComponentTest {
 ----
 
 [NOTE]
-====
+== == 
 Please note, that the class `VisitormanagementTest` in the code snippet above, *extends* the class `ComponentTest`. Make sure, that this is the case in your code too.
-====
+== == 
 
 Now we can start adding our first test. In link:jump-the-queue-design[JumpTheQueue] we have two main functionalities:
 
@@ -123,7 +123,7 @@ Now we can start adding our first test. In link:jump-the-queue-design[JumpTheQue
 
 Let's add tests to check these functionalities:
 
-=== 1. Registration
+== = 1. Registration
 We are going to create a method with a descriptive name; `saveVisitorTest`, and we are going to add the `@Test` annotation to it.
 
 Inside this test, we are going to verify the registration process of our app. To do so, we only need to call the `saveVisitor` method of the component and provide a `VisitorEto` object. After the method is called, we are going to check the response of the method, to verify that the expected business logic has been executed correctly:
@@ -159,14 +159,14 @@ public class VisitormanagementTest extends ComponentTest {
 ----
 
 [NOTE]
-====
+== == 
 In this `saveVisitorTest` method, that we give as an example, we can see that there is a `deleteVisitor` at the end. This would normally only be done, if the tests were run against a production database.If you use a separate database for testing, the last delete is not needed.
-====
+== == 
 
 [NOTE]
-====
+== == 
 Have you noticed, that the _mock_ data of this test is the same data, that we used in previous chapters for the _manual_ verification of our services? Exactly! From now on, this test will allow us to _automate_ the manual verification process.
-====
+== == 
 
 Now is the time for running the test:
 
@@ -175,16 +175,16 @@ We can do this in several ways, but to simplify the example, just right click th
 image::images/devon4j/8.Testing/jumpthequeue_testing_runtest.png[JumpTheQueue Running Tests]
 
 [NOTE]
-====
+== == 
 We can also debug our tests using the `Debug As > JUnit Test` option.
-====
+== == 
 
 [IMPORTANT]
-====
+== == 
 If you get an error-message saying: `No tests found with test runner 'JUnit 5'`, right-click the test-class, `Run As > Run Configurations...` and then select `JUnit 4` as your test runner:
 
 image::images/devon4j/8.Testing/jumpthequeue_testing_junit5_error.png[JumpTheQueue Running Tests]
-====
+== == 
 
 //TODO: Test fails... continue here!
 
@@ -205,7 +205,7 @@ Now running again the test we should obtain the expected result
 
 image::images/devon4j/8.Testing/jumpthequeue_testing_result2.png[JumpTheQueue Test Results 2]
 
-=== 2. Finding Visitors
+== = 2. Finding Visitors
 
 For the second functionality (finding visitors) we can add a new test with a very similar approach. The only difference is that in this case we are going to need to declare a _Search Criteria_ object, that will contain a pageable to recover the first page and the first 100 values.
 
@@ -228,7 +228,7 @@ To run both tests (all the tests included in the class) we only need to do right
 
 image::images/devon4j/8.Testing/jumpthequeue_testing_result3.png[JumpTheQueue Test Results 3]
 
-=== Extra Functionalities
+== = Extra Functionalities
 The _devon4j_ test module provide us with some extra functionalities that we can use to create tests in an easier way.
 
 Extending `ComponentTest` class we also have available the `doSetUp()` and `doTearDown()` methods, that we can use to initialize and release resources in our test classes.
@@ -284,7 +284,7 @@ public class VisitormanagementTest extends ComponentTest{
 }
 ----
 
-== Running the Tests with Maven
+==  Running the Tests with Maven
 We can use _Maven_ to automate the testing of our project. To do so, just open a command prompt with access to _Maven_ (in our devonfw project folder we can simply right click and select `Open Devon CMD shell here`). Now enter and run:
 
 ----

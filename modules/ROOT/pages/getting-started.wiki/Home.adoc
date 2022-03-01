@@ -10,6 +10,6 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==Home
+== Home
 Welcome to the wiki pages of the *devonfw* getting-started guide! +
 Please select a topic from the sidebar. =>

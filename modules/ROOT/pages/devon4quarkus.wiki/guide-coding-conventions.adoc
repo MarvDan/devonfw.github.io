@@ -1,11 +1,11 @@
 :toc: macro
 toc::[]
 
-==devon4quarkus coding conventions
+== devon4quarkus coding conventions
 
 This  guide describe the conventions for naming and structure in a devon4quarkus application. In addition to the points mentioned here, the code should follow the general Java conventions (see http://www.oracle.com/technetwork/java/namingconventions-139351.html[Oracle Naming Conventions], https://google.github.io/styleguide/javaguide.html[Google Java Style], etc.).
 
-== Things to discuss
+==  Things to discuss
 * Using CamelCase even for abbreviations. devon4j naming conventions clearly discourage to use CAPITALCASE for abbreviation (`XmlUtil` instead of `XMLUtil`, `Dao` instead of `DAO`)
 * `Eto` vs. `Dto` and dropping the `Eto` and `Cto` concept
 * `*RestService` vs. `*RestController`. According to devon4j we should use `*RestService` that has already been established
@@ -14,9 +14,9 @@ This  guide describe the conventions for naming and structure in a devon4quarkus
 * Bean-Mapping - see https://github.com/devonfw-forge/devonfw-microservices/issues/8
 * Lombok usage - see https://github.com/devonfw-forge/devonfw-microservices/issues/29
 
-== Structure
+==  Structure
 
-=== Packages
+== = Packages
 
 For a devon4quarkus-based application, we recommend using the following Java package scheme:
 
@@ -28,7 +28,7 @@ See also existing https://github.com/devonfw/devon4j/blob/master/documentation/c
 
 .Segments of package schema
 [options="header"]
-|=============================================
+|== == == == == == == == == == == == == == == == == == == == == == =
 | *Segment*      | *Description* | *Example*
 | `«root»` | The root package. Typically we suggest to use `«group».«artifact»` for `«root»`. However, we will not enforce anything and let you the freedom of choice if the recommendation does not fit for you.|`com.devonfw`
 | `«group»` | Matches your maven `groupId` coordinate, basic name-space of the organization or IT project owning the code. Corresponds to domain name reversed. |`com.devonfw`
@@ -37,7 +37,7 @@ See also existing https://github.com/devonfw/devon4j/blob/master/documentation/c
 | `«layer»` | The name of the technical layer (See link:architecture[technical architecture]) which is one of the predefined layers (`domain`, `rest`, `logic`) or `common` for code not assigned to a technical layer (datatypes, cross-cutting concerns). Additional layers can be introduced if they have clear scope e.g. `batch`, `process`.. | `rest`
 | `«detail»` | You will technically have the freedom of choice to define your sub-packages. Compared to `devon4j` we neither enforce nor recommend anymore to use the `«scope»` segment in your packaging. You are still free to do so if you like it. However, we now suggest the `«type»` segment for furhter classification within `«detail»`.|`dao`
 | `«type»` | Further division based on common stereotypes based on type of component. Suggested stereotypes for `rest` layer are [`controller`, `model`, `mapper`, `filter`..] for `domain` layer: [`model`, `dao`]  | `dao`
-|=============================================
+|== == == == == == == == == == == == == == == == == == == == == == =
 
 For a typical backend microservice that provides HTTP API and data persistence via JPA in the business domain `serviceorder`, the structure would be something like this: 
 
@@ -64,9 +64,9 @@ For a typical backend microservice that provides HTTP API and data persistence v
       └──ServiceOrderDTO
 ----
 
-=== Layer
+== = Layer
 
-==== Data access layer
+== ==  Data access layer
 
 When using JPA/Hibernate for data persistence, please use the following subpackages under your domain package:
 
@@ -74,14 +74,14 @@ When using JPA/Hibernate for data persistence, please use the following subpacka
 * `repo`: For repositories, if you use Spring Data for data access
 * `model`: For all entities, views or other objects used to read and write to DB.
 
-==== Logic layer
+== ==  Logic layer
 
 Use the layer to provide any microservice-specific business logic and add sub-packages as needed, depending on the type and number of classes required.
 
 Before introducing a new service, check whether it is really needed or whether it can be replaced by a standard/framework solution (e.g. validators can be covered by the bean validation specification in 90% of cases by using annotations on models).
 Strive for clear naming, based on the scope of the class, instead of generic names. BAD: `OrderService`, `EmailManagement`, BETTER: `OrderValidator`, `EmailSender`
 
-==== REST layer 
+== ==  REST layer 
 
 Depending on the requirements of the project, a service may provide several APIs, e.g. a fixed version, a public API that must remain strictly backward compatible, and a separate non-public API used for internal functions or operations. Often the app needs to provide multiple public API versions.
 If this is the case, we suggest to introduce `«version»` as an intermediate package:
@@ -124,12 +124,12 @@ If this is the case, we suggest to introduce `«version»` as an intermediate pa
    
 ----
 
-=== Comparison with devon4j
+== = Comparison with devon4j
 * `service.[api|impl].[rest|ws]` simply becomes `rest`, `ws` (in case someone is still using legacy SOAP), `grpc`, etc. Technically we can still derive that this all implies the `service` layer.
 * `dataaccess` becomes `domain`. You are not forced to follow this and architcture validation such as our `sonar-devon4j-plugin` will in the future support both. However, new CobiGen templates for quarkus/cloud-native will use this new default and would need to adopt them if you want to change. We also suggest to put entities in the `model` sub-package (see `«type»`).
 * `logic` remains `logic`
 
-== Naming conventions
+==  Naming conventions
 
 In addition to the general Java naming conventions, the following rules should be observed
 

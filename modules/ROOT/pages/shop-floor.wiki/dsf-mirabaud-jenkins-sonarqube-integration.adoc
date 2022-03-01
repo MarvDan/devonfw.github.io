@@ -1,16 +1,16 @@
-==Jenkins - SonarQube integration
+== Jenkins - SonarQube integration
 
 First thing is installing both tools by, for example, Docker or Docker Compose. Then, we have to think about how they should collaborate to create a more efficient Continuous Integration process.
 
 Once our project's pipeline is triggered (it could also be triggered in a fancy way, such as when a merge to the `develop` branch is done).
 
-== 1. Jenkins SonarQube plugin
+==  1. Jenkins SonarQube plugin
 
 Typically in those integration cases, Jenkins plug-in installations become a *must*. Let's look for some available SonarQube plug-in(s) for Jenkins:
 
 image::./images/others/jenkins-sonarqube/jenkins-sonarqube-plugin.png[]
 
-== 2. SonarQube token
+==  2. SonarQube token
 
 Once installed let's create a *token* in SonarQube so that Jenkins can communicate with it to trigger their Jobs. Once we install SonarQube in our CI/CD machine (ideally a remote machine) let's login with `admin/admin` credentials:
 
@@ -28,19 +28,19 @@ You click in "continue" and the token's generation is completed:
 
 image::./images/others/jenkins-sonarqube/sonarqube-token-done.png[]
 
-== 3. Jenkins SonarQube Server setup
+==  3. Jenkins SonarQube Server setup
 
 Now we need to tell Jenkins where is SonarQube and how to communicate with it. In `Manage Jenkins > Configure Settings`. We add a name for the server (up to you), where it is located (URL), version and the Server authentication token created in point 2.
 
 image::./images/others/jenkins-sonarqube/jenkins-sonarqube-server-setup.png[]
 
-== 4. Jenkins SonarQube Scanner
+==  4. Jenkins SonarQube Scanner
 
 Install a SonarQube Scanner as a Global tool in Jenkins to be used in the project's pipeline.
 
 image::./images/others/jenkins-sonarqube/jenkins-sonarqube-scanner.png[]
 
-== 5. Pipeline code
+==  5. Pipeline code
 
 Last step is to add the SonarQube process in our project's Jenkins pipeline. The following code will trigger a SonarQube process that will evaluate our code's quality looking for bugs, duplications, and so on.
 
@@ -58,7 +58,7 @@ Last step is to add the SonarQube process in our project's Jenkins pipeline. The
     
 ----
 
-== 6. Results
+==  6. Results
 
 After all this, you should end up having something like this in Jenkins:
 
@@ -68,7 +68,7 @@ And in SonarQube:
 
 image::./images/others/jenkins-sonarqube/sonarqube-project-result.png[]
 
-== 7. Changes in a devonfw project to execute SonarQube tests with Coverage
+==  7. Changes in a devonfw project to execute SonarQube tests with Coverage
 
 The plugin used to have Coverage reports in the SonarQube for devonfw projects is *Jacoco*. There are some changes in the project's parent `pom.xml` that are mandatory to use it.
 
@@ -241,7 +241,7 @@ Plugins:
 </plugins>
 ----
 
-== Jenkins SonarQube execution
+==  Jenkins SonarQube execution
 
 If the previous configuration is already setup, once Jenkins execute the sonar maven plugin, it will automatically execute coverage as well.
 

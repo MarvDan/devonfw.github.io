@@ -6,13 +6,13 @@ toc::[]
 :stylesdir: css
 
 
-==Introduction
+== Introduction
 
 The aim of this document is to show  how to get devon4net things done in a easy way.
 
-==How to
+== How to
 
-== Start a new devonfw project
+==  Start a new devonfw project
 
 The _.Net Core 3.1_ template allows you to start developing an n-layer server application to provide the latest features. The template can be used in Visual Studio Code and Visual Studio 2019.
 
@@ -20,8 +20,8 @@ The application result can be deployed as a console application, microservice or
 
 To start developing with devon4Net template, please follow this instructions:
 
-==== Using devon4Net template
-==== Option 1
+== ==  Using devon4Net template
+== ==  Option 1
 
 [listing]
 ....
@@ -33,7 +33,7 @@ Go to project's path
 You are ready to start developing with devon4Net
 ....
 
-==== Option 2
+== ==  Option 2
 [listing]
 ....
 Create a new dotnet` API` project from scratch
@@ -99,7 +99,7 @@ Set up your project as follows in startup.cs file:
 Add the devonfw configuration options in your appsettings.json file
 
 
-=== devon4net configuration files
+== = devon4net configuration files
 
 To start using devon4net in your .net core application add this configuration in your appsettings.json file:
 
@@ -422,23 +422,23 @@ Also, for start using the devon4net components, you should add the next json opt
 
 ```
 
-== devon4net Cobigen Guide
+==  devon4net Cobigen Guide
 
-=== Overview
+== = Overview
 
 In this guide we will explain how to generate a new WebApi project from an OpenAPI 3.0.0 specification. This  means that we are going to use a “contract first” strategy. This is going to be possible due to these type of files that contain all the information about entities, operations, etc…
 
 In order to make it work we are using https://github.com/devonfw/cobigen[CobiGen], a powerful tool for generating source code. CobiGen allows users to generate all the structure and code of the components, helping to save a lot of time otherwise wasted on repetitive tasks.
 
-=== Getting things ready
+== = Getting things ready
 
-==== devonfw Distribution
+== ==  devonfw Distribution
 
 The devonfw distributions can be obtained from https://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=com.devonfw.tools.ide&a=devonfw-ide-scripts&v=LATEST&p=tar.gz[here]. You can find all releases in https://repo.maven.apache.org/maven2/com/devonfw/tools/ide/devonfw-ide-scripts/[maven central].
 
 It is not necessary to install nor configure anything. Just extracting the zip content is enough to have a fully functional devonfw. The only thing you have to do is run *create-or-update-workspace.bat* and then *update-all-workspaces.bat* to set up all the needed tools.
 
-==== devon4net Templates
+== ==  devon4net Templates
 
 We are going to use the template of devon4net as a base to generate all the code, so what we have to do now is to download said template using the following steps.
 
@@ -452,7 +452,7 @@ and then:
 
     dotnet new Devon4NetAPI
     
-==== OpenAPI File
+== ==  OpenAPI File
 
 In order to let CobiGen generate all the files, we first have to make some modifications to our OpenAPI file. 
 
@@ -460,36 +460,36 @@ It is obligatory to put the _“x-rootpackage”_ tag to indicate where CobiGen 
 
 You can read more information about how to configure your OpenAPI file and a working example https://github.com/devonfw/cobigen/wiki/cobigen-openapipluginfull-example[here].
 
-=== Generating files
+== = Generating files
 
 Cobigen allow us to generate the files in two different ways. One of them is using Eclipse which it can be done by using the its graphical interface. The other way to generate the code is using the Cobigen` CLI` tool.
 
-==== Generating files through Eclipse
+== ==  Generating files through Eclipse
 In order to generate the files using Eclipse we need to follow some simple steps.
 
 First we are going to import our basic devon4net WebAPI Project into Eclipse. to do so open Eclipse with the “eclipse-main.bat” file that can be found in the devon distribution root folder. Once we are inside of Eclipse we go to *File > Open projects from file system...* and, under "Directory", search for your project.
 
 [[img-cobigen]]
-image::images/Project_selection.png["cobigen", width=="600", link=="images/Project_selection.png"]
+image::images/Project_selection.png["cobigen", width== "600", link== "images/Project_selection.png"]
 
 Next we copy our OpenAPI file into the root folder of the project.
 
 [[img-cobigen]]
-image::images/OpenAPI_file_root_folder.png["cobigen", width=="300", link=="images/OpenAPI_file_root_folder.png"]
+image::images/OpenAPI_file_root_folder.png["cobigen", width== "300", link== "images/OpenAPI_file_root_folder.png"]
 
 And then we right click on OpenAPI file and then select *CobiGen > Generate...* It will display a window like this:
 
 [[img-cobigen]]
-image::images/cobigen_generate0.png["cobigen", width=="800", link=="images/cobigen_generate0.png"]
+image::images/cobigen_generate0.png["cobigen", width== "800", link== "images/cobigen_generate0.png"]
 
 To select all .NET features choose *CRUD devon4net Server* otherwise you can select only those that interest you.
 
 [[img-cobigen]]
-image::images/cobigen_generate1.png["cobigen", width=="800", link=="images/cobigen_generate1.png]
+image::images/cobigen_generate1.png["cobigen", width== "800", link== "images/cobigen_generate1.png]
 
 Ones you select all the files that you want to generate, click on the _“Finish”_ button to generate all the source code.
 
-==== Generating files through Cobigen` CLI`
+== ==  Generating files through Cobigen` CLI`
 
 In order to generate the files using the Cobigen` CLI` it is needed to do the following steps:
 
@@ -502,47 +502,47 @@ In order to generate the files using the Cobigen` CLI` it is needed to do the fo
 
 5. A list of increments will be printed so that you can start the generation. It has to be selected *CRUD devon4net Server* increment.
 
-=== Configuration
+== = Configuration
 
-==== Dependency Injection configuration
+== ==  Dependency Injection configuration
 
 At this point it is needed to make some modifications in the code in order to configure correctly the server. To do so it is needed to locate the services and the repositories files that were created in *Devon4Net.WebAPI.Implementation*
 
 Services location:
 [[img-cobigen]]
-image::images/Services.png["cobigen", width=="300", link=="images/Services.png]
+image::images/Services.png["cobigen", width== "300", link== "images/Services.png]
 
 Repositories location:
 [[img-cobigen]]
-image::images/Repositories.png["cobigen", width=="300", link=="images/Repositories.png]
+image::images/Repositories.png["cobigen", width== "300", link== "images/Repositories.png]
 
 Now, we are going to open the following file *Devon4Net.WebAPI.Implementation\Configure\DevonConfiguration.cs*.
 In there we have to add the Dependency Injection for the services and the repositories that Cobigen has generated. The following image is an example of what is needed to add.
 
 [[img-cobigen]]
-image::images/BussinessConfiguration.png["cobigen", width=="800", link=="images/BussinessConfiguration.png]
+image::images/BussinessConfiguration.png["cobigen", width== "800", link== "images/BussinessConfiguration.png]
 
 Moreover it is needed to remove the last line in order to be able to run the application:
 
     `throw new NotImplementedException(...);`
 
-==== Configure data base
+== ==  Configure data base
 
 Cobigen is generating an empty context that has to be filled with manually in order to be able to work with the database. The context can be found in *[Project_Name]/Devon4Net.WebAPI.Implementation/Domain/Database/CobigenContext.cs*.
 
 [[img-cobigen]]
-image::images/CobigenContextLocation.png["cobigen", width=="350", link=="images/CobigenContextLocation.png]
+image::images/CobigenContextLocation.png["cobigen", width== "350", link== "images/CobigenContextLocation.png]
 
-==== Configure services
+== ==  Configure services
 
 In order to finish the configuration of the services it is needed to go to each service file of the managements generated. 
 
 In there we will see some `"NotImplementedExceptions"`, so it is needed to read carefully each comment inside of each exception in order to be able to use the service. It can be shown an example of the service with its `NotImplementedExceptions` comments:
 
 [[img-cobigen]]
-image::images/ServiceExample.png["cobigen", width=="800", link=="images/ServiceExample.png]
+image::images/ServiceExample.png["cobigen", width== "800", link== "images/ServiceExample.png]
 
-==== Run the application
+== ==  Run the application
 
 After doing all the steps defined above, open a terminal in path: *[Project_Name]/Devon4Net.Application.WebAPI* and then type:
 
@@ -551,22 +551,22 @@ After doing all the steps defined above, open a terminal in path: *[Project_Name
 This will deploy our application in our localhost with the port 8081, so when you click https://localhost:8082/swagger/index.html[here] (https://localhost:8082/swagger) you can see, in swagger, all the services and the data model.
 
 
-== Use HTTP2 protocol
+==  Use HTTP2 protocol
 
 You can specify the` HTTP` protocol to be used on your devon4net application modifying some node values at _devonfw_ node in your appsettings configuration file.
 
-=== HttpProtocol
+== = HttpProtocol
 The supported protocols are:
 
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Protocol*|*Description*
 |Http1| Http1 protocol
 |Http2| Http2 Protocol
 |Http1AndHttp2| Both supported
-|=======================
+|== == == == == == == == == == == =
 
-===` SSL`
+== =` SSL`
 To activate the HTTP2, the _SslProtocol_ node must be set to _Tls12_ value.
 
 The` SSL` protocol supported version values are: 
@@ -579,13 +579,13 @@ The` SSL` protocol supported version values are:
 - Ssl3
 
 
-== Create a certificate for development purposes
+==  Create a certificate for development purposes
 
 In order to create a valid certificate for development purposes the Open` SSL` tools are needed. 
 
 
 
-=== Certificate authority (CA)
+== = Certificate authority (CA)
 
 Run the next commands in a shell:
 
@@ -606,7 +606,7 @@ openssl pkcs12 -export -out localhost.pfx -inkey RootCA.key -in RootCA.crt
 
 
 
-=== Domain name certificate
+== = Domain name certificate
 
 Run the next commands in a shell:
 
@@ -642,7 +642,7 @@ If you want to convert your certificate run the command:
 openssl pkcs12 -export -out localhost.pfx -inkey localhost.key -in localhost.crt 
 ----
 
-== Setup the database driver
+==  Setup the database driver
 
 Add the database connection on the `SetupDatabase` method at Startup.cs
     
@@ -656,12 +656,12 @@ Add the database connection on the `SetupDatabase` method at Startup.cs
 Where: 
 
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Param*|*Description*
 |`TodoContext`| Is the database context definition
 |Default| Is the connection string defined at `_ConnectionString_` node at the appsettings configuration file 
 |`WebAPI.Configuration.Enums.DatabaseType.InMemory`| Is the database driver selection. In this case InMemory data base is chosen
-|=======================
+|== == == == == == == == == == == =
 
 The supported databases are:
 
@@ -677,13 +677,13 @@ The supported databases are:
         - MSAccess
 
 
-== Change the JWT encryption algorithm
+==  Change the JWT encryption algorithm
 
 In the appsettings.json configuration file, you can use the next values on the `_SecretKeyLengthAlgorithm_` and `_SecretKeyEncryptionAlgorithm_` nodes at JWT configuration:
 
 
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Algorithm*|*Description*
 |`Aes128Encryption`|"http://www.w3.org/2001/04/xmlenc#aes128-cbc"
 |`Aes192Encryption`|"http://www.w3.org/2001/04/xmlenc#aes192-cbc"
@@ -736,5 +736,5 @@ In the appsettings.json configuration file, you can use the next values on the `
 |`Aes128CbcHmacSha256`|"A128CBC-HS256"
 |`Aes192CbcHmacSha384`|"A192CBC-HS384"
 |`Aes256CbcHmacSha512`|"A256CBC-HS512"
-|=======================
+|== == == == == == == == == == == =
 

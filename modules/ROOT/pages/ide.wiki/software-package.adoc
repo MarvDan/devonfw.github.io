@@ -1,11 +1,11 @@
 :toc:
 toc::[]
 
-==Software Package
+== Software Package
 
 The `devon-ide` requires a software package. This section explains how to build one yourself.
 
-== Layout
+==  Layout
 The software package is a simple ZIP file with the following structure:
 
 * software
@@ -19,15 +19,15 @@ So for each tool you have a simple folder inside the `software` folder that is n
 
 By intention the tool folders do not contain the version of the tool as configurations may refer to tools via their path and the idea is that the software package can be updated easy and smooth.
 
-== Customization of environment
+==  Customization of environment
 
 If a tool needs extra initialization, you can create a batch file named `ide-config.bat` inside the tool directory. This file will be called during environment initialization (for example when a user opens `console.bat`), and allows you to do additional init work, without changing the main `devon-ide` script files.
 
-== Tools
+==  Tools
 For most of the tools you just download the official release and add the content to the folder in the layout above (resulting in e.g. `software/maven/bin/mvn` and NOT `software/maven/apache-maven-3.2.0/bin/mvn`).
 However, there are some specials to care about.
 
-=== Eclipse
+== = Eclipse
 Eclipse is typically the most complicated animal out of the tools. Here is a suggestion how to build your eclipse distribution:
 
 . Download the latest stable version of `Eclipse IDE for JEE developers` from https://www.eclipse.org/downloads/
@@ -66,7 +66,7 @@ Eclipse is typically the most complicated animal out of the tools. Here is a sug
 
 Please read the license agreements of each plugin and only install what is suitable for you.
 
-== Creating the Software Package
+==  Creating the Software Package
 Finally you create a ZIP from your software folder. Open it and ensure the it has the specified xref:layout[layout] (it contains the `software` folder as root with the tool folders inside).
 
 You may want to use our https://github.com/devonfw/devon-ide/blob/master/software/build.xml[ant script] for building the ZIP.

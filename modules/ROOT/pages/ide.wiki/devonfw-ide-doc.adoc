@@ -1,4 +1,4 @@
-==devonfw-ide
+== devonfw-ide
 The devonfw community
 ${project.version}, ${buildtime}
 :description: comprehensive documentation of the devonfw-ide tool to manage your development tools.

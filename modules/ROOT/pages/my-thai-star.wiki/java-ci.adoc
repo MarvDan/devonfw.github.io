@@ -1,11 +1,11 @@
 :toc: macro
 toc::[]
 
-==Java CI
+== Java CI
 
 The Java server-side of My Thai Star is an *devon4j*-based application. As long as *Maven* and a *Java 8* are going to be needed, the Pipeline should have those tools available as well.
 
-== Pipeline
+==  Pipeline
 
 This Pipeline is called *MyThaiStar_SERVER_BUILD*, and it is located exactly in the same PL instance's folder than `*MyThaiStar_FRONTEND_BUILD*`. Let's see how the Pipeline's flow behaves.
 
@@ -92,9 +92,9 @@ mvn deploy -Dmaven.test.skip=true
 Create the docker image and then publish the image into a docker registry.
 
 
-== Adjustments
+==  Adjustments
 
-=== Pipeline Environment
+== = Pipeline Environment
 
 In order to easily reuse the pipeline in other java projects, all variables have been defined in the block environment. All variables have the default values that Production Line uses, so if you're going to work in production line you won't have to change anything. Example:
 
@@ -121,7 +121,7 @@ environment {
 }
 ----
 
-==== Description
+== ==  Description
 - *java Dir*: Relative route to java application. In My Thai Star this is the `java/mtsj` folder. The actual directory (.) is also allowed.
 +
 image::images/ci/java/java_directory.png[, link="java_directory.png"]
@@ -133,7 +133,7 @@ image::images/ci/angular/nexus3_global_config.png[, link="nexus3_global_config.P
 +
 image::images/ci/angular/maven_tool.png[, link="maven_tool.PNG"]
 
-=== Distribution management
+== = Distribution management
 The only _extra_ thing that needs to be added to the Java server-side is some information that determines where the artifact of the project is going to be stored in *Nexus*. This is going to be a section in the main `pom.xml` file called `<distributionManagement>`. This section will point to the PL instance's Nexus. Let's have a look at it. It's already configured with the PL default values.
 
 [source, xml]

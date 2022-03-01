@@ -1,14 +1,14 @@
-==Build monitor view
+== Build monitor view
 
 This tool you will be able to see in real time what is the state of your Jenkins pipelines.
 
-== Prerequisites
+==  Prerequisites
 
-=== Add build monitor view plugin
+== = Add build monitor view plugin
 
 To integrate it, you need to have installed the build monitor view. To install it go to Manage Jenkins clicking on left menu and enter in *_Manage Plugins_*. Go to Available tab and search it using the filter textbox in the top right corner and install it.
 
-== How to use it
+==  How to use it
 
 When you have build monitor view installed, you could add a new view clicking on the *`+`* tab in the top bar.
 

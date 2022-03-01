@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==GraphQL on Devon4Node
+== GraphQL on Devon4Node
 
 GraphQL is a query language that gets exactly the data that we ask for instead of static predefined responses.
 
@@ -59,16 +59,16 @@ To install it:
 yarn add @nestjs/graphql graphql-tools graphql apollo-server-express
 ----
 
-== Schema first
+==  Schema first
 
 [NOTE]
-====
+== == 
 This tutorial uses the schema first method.
 
 We assume you have already a functioning TODO module / app.
 
 If not you can use https://github.com/devonfw/devon4node/tree/develop/samples/graphql[Devon4node GraphQL sample]
-====
+== == 
 
 First we need to import GraphQLModule to our `app.module.ts`.
 
@@ -97,7 +97,7 @@ The `typePaths` indicates the location of the schema definition files.
 
 The `definitions` indicates the file where the typescript definitions will automatically save, adding the `outputAs: 'class'` saves those definitions as classes.
 
-=== Schema
+== = Schema
 
 Graphql is a typed language with `object types`, `scalars`, and `enums`.
 
@@ -128,7 +128,7 @@ type Mutation {
 For more information about Types go to the official https://graphql.org/learn/schema/[graphQL documentation]
 
 
-=== Resolver
+== = Resolver
 
 Resolver has the instructions to turn GraphQL orders into the data requested.
 
@@ -205,7 +205,7 @@ Also if we go back to the `schema.graphql`, we will see how we define the query 
 Learn more about Resolvers, mutations and their argument decorators on the https://docs.nestjs.com/graphql/resolvers#schema-first[NestJS documentation].
 
 
-=== Playground
+== = Playground
 
 To test our backend we can use tools as Postman, but graphql already gives us a playground to test our Resolvers, we can access by default on `http://localhost:3000/graphql`. 
 

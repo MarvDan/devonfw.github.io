@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==License
+== License
 
 The product `devonfw-ide` is licensed under the following terms.
 
@@ -21,7 +21,7 @@ The following table shows the components that may be used. The column `inclusion
 
 .Third party components
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Component*|*Inclusion*|*License*
 |https://github.com/devonfw/ide[devonfw-ide] | Directly included |https://github.com/devonfw/ide/blob/master/LICENSE[ASL 2.0]
 |https://github.com/eclipse-ee4j/jsonp[JSON-P] API | Directly included |https://github.com/eclipse-ee4j/jsonp/blob/master/LICENSE.md[EPL 2.0]
@@ -57,9 +57,9 @@ The following table shows the components that may be used. The column `inclusion
 |http://www.jasypt.org/[jasypt] |Optional|http://www.jasypt.org/license.html[ASL 2.0]
 |https://www.docker.com/[docker]|Optional|https://docs.docker.com/engine/#licensing[ASL 2.0] and https://www.docker.com/legal/docker-software-end-user-license-agreement[EULA]
 |https://kubernetes.io/[kubernetes]|Optional|https://github.com/kubernetes/kubernetes/blob/master/LICENSE[ASL 2.0]
-|=======================
+|== == == == == == == == == == == =
 
-== Apache Software License - Version 2.0
+==  Apache Software License - Version 2.0
 
 ```
                                  Apache License
@@ -265,7 +265,7 @@ The following table shows the components that may be used. The column `inclusion
    limitations under the License.
 ```
 
-== Eclipse Public License - Version 1.0
+==  Eclipse Public License - Version 1.0
 
 ```
 THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
@@ -355,7 +355,7 @@ Everyone is permitted to copy and distribute copies of this Agreement, but in or
 This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
 ```
 
-== Eclipse Public License - Version 2.0
+==  Eclipse Public License - Version 2.0
 
 ```
 THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE (“AGREEMENT”). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
@@ -443,7 +443,7 @@ Exhibit A – Form of Secondary Licenses Notice
 
     You may add additional accurate notices of copyright ownership.
 ```
-== MIT License
+==  MIT License
 
 ```
 Copyright <YEAR> <COPYRIGHT HOLDER>
@@ -455,7 +455,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-== Artistic License - Version 2.0
+==  Artistic License - Version 2.0
 ```
 Copyright (c) 2000-2006, The Perl Foundation.
 
@@ -531,7 +531,7 @@ General Provisions
 (14) Disclaimer of Warranty: THE PACKAGE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTORS "AS IS' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES. THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-== Creative Commons License - Attribution-NoDerivatives 4.0 International
+==  Creative Commons License - Attribution-NoDerivatives 4.0 International
 ```
 By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NoDerivatives 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
 
@@ -627,7 +627,7 @@ Section 8 – Interpretation.
     Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
 ```
 
-== GNU LESSER GENERAL PUBLIC LICENSE - Version 2.1
+==  GNU LESSER GENERAL PUBLIC LICENSE - Version 2.1
 ```
  Version 2.1, February 1999
 
@@ -804,7 +804,7 @@ signature of Ty Coon, 1 April 1990
 Ty Coon, President of Vice
 ```
 
-== GNU LESSER GENERAL PUBLIC LICENSE - Version 3
+==  GNU LESSER GENERAL PUBLIC LICENSE - Version 3
 ```
 Version 3, 29 June 2007
 
@@ -871,7 +871,7 @@ Each version is given a distinguishing version number. If the Library as you rec
 If the Library as you received it specifies that a proxy can decide whether future versions of the GNU Lesser General Public License shall apply, that proxy's public statement of acceptance of any version is permanent authorization for you to choose that version for the Library.
 ```
 
-== GNU GENERAL PUBLIC LICENSE - Version 2
+==  GNU GENERAL PUBLIC LICENSE - Version 2
 
 ```
  Version 2, June 1991
@@ -1005,7 +1005,7 @@ signature of Ty Coon, 1 April 1989
 Ty Coon, President of Vice
 ```
 
-== DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE - Version 2
+==  DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE - Version 2
 ```
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
@@ -1022,7 +1022,7 @@ Ty Coon, President of Vice
   0. You just DO WHAT THE FUCK YOU WANT TO.
 ```
 
-== License of Node.js
+==  License of Node.js
 ```
 Node.js is licensed for use as follows:
 
@@ -1562,7 +1562,7 @@ The externally maintained libraries used by Node.js are:
   """
     libuv is licensed for use as follows:
 
-    ====
+    == == 
     Copyright (c) 2015-present libuv project contributors.
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1582,12 +1582,12 @@ The externally maintained libraries used by Node.js are:
     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
     IN THE SOFTWARE.
-    ====
+    == == 
 
     This license applies to parts of libuv originating from the
     https://github.com/joyent/libuv repository:
 
-    ====
+    == == 
 
     Copyright Joyent, Inc. and other Node contributors. All rights reserved.
     Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1608,7 +1608,7 @@ The externally maintained libraries used by Node.js are:
     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
     IN THE SOFTWARE.
 
-    ====
+    == == 
 
     This license applies to all parts of libuv that are not externally
     maintained libraries.
@@ -1705,7 +1705,7 @@ The externally maintained libraries used by Node.js are:
     STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
     ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
     OF THE POSSIBILITY OF SUCH DAMAGE.
-    ====================================================================
+    == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == 
 
     This product includes cryptographic software written by Eric Young
     (eay@cryptsoft.com).  This product includes software written by Tim
@@ -2492,7 +2492,7 @@ The externally maintained libraries used by Node.js are:
     ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
     OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-    === src/compat.h src/compat-inl.h ===
+    == = src/compat.h src/compat-inl.h == =
 
     ISC License
 
@@ -2556,7 +2556,7 @@ The externally maintained libraries used by Node.js are:
   """
 ```
 
-== MICROSOFT SOFTWARE LICENSE TERMS
+==  MICROSOFT SOFTWARE LICENSE TERMS
 ```
 MICROSOFT VISUAL STUDIO CODE
 

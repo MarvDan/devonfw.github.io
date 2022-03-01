@@ -10,7 +10,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==Deploy a devon4ng Application
+== Deploy a devon4ng Application
 
 If you have a finished version of your app and want to deploy it somewhere, you only need to make sure that all tests are passed and that your app compiles correctly (this is tested continuously during `ng serve`). After this, run the following command inside your `angular` root folder:
 

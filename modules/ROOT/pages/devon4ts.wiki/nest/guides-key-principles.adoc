@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Key Principles
+== Key Principles
 
 devon4node is built following some basic principles like:
 
@@ -29,7 +29,7 @@ But key principles that best define devon4node (and are inherited from NestJS) a
 - Reusability
 - Productivity
 
-== Simplicity
+==  Simplicity
 
 In devon4node we tried to do everything as simple as possible. Following this principle we will be able to do easy to maintain applications.
 
@@ -65,7 +65,7 @@ Another empty class which extends from `TypeOrmCrudService<Employee>` and inject
 
 With these examples you can get an idea of how simple it can be to code a devon4node application .
 
-== Reusability
+==  Reusability
 
 NestJS (and devon4node) applications are designed in a modular way. This allows you to isolate some functionality in a module, and then reuse it in every application that you need. This is the same behaviour that Angular has. You can see it in the NestJS modules like link:https://github.com/nestjs/typeorm[TypeORM], link:https://github.com/nestjs/swagger[Swagger] and others. Also, in devon4node we have the link:https://www.npmjs.com/package/@devon4node/mailer[Mailer module].
 
@@ -79,7 +79,7 @@ In your applications, you only need to import those modules and then you will be
 export class SomeModule {}
 ----
 
-== Productivity
+==  Productivity
 
 devon4node is designed to create secure enterprise applications. But also, it allow you to do it in a fast way. To increase the productivity devon4node, devon4node provide schematics in order to generate some boilerplate code.
 

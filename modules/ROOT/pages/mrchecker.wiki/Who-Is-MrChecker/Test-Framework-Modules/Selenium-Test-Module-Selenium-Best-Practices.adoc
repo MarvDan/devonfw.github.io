@@ -1,9 +1,9 @@
-==Selenium Best Practices
+== Selenium Best Practices
 
 The following table displays a few best practices that should be taken into consideration when developing Selenium test cases.
 
 [cols=2*,options=header]
-|===
+|== =
 
 |Best Practices
 |Description
@@ -29,4 +29,4 @@ The following table displays a few best practices that should be taken into cons
 |Test data
 |Consider before actually developing tests and choosing tools: Where to get test data from, how to reset test data
 
-|===
+|== =

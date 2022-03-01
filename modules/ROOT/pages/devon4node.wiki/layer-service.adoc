@@ -15,11 +15,11 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Service Layer
+== Service Layer
 
 The logic layer is the heart of the application and contains the main business logic. It knows everything about the business logic, but it does not know about the response to the client and the HTTP errors. That's why this layer is separated from the controller layer.
 
-== How to implement the service layer
+==  How to implement the service layer
 
 This layer is implemented by services, a specific kind of link:https://docs.nestjs.com/providers[providers]. Let's see one example:
 

@@ -1,4 +1,4 @@
-==== Introduction
+== ==  Introduction
 
 * link:introduction-what-is-devonfw[What is devonfw?]
 
@@ -8,7 +8,7 @@
 
 ---
 
-==== For Students and Junior Engineers:
+== ==  For Students and Junior Engineers:
 
 // * link:guide-enterprise-dev-basics[Basics of Enterprise Software Development.]
 
@@ -21,11 +21,11 @@
 * https://github.com/devonfw/devon4net/blob/develop/documentation/howto.adoc[Create an application with *devon4net*.]
 
 
-==== For Senior Engineers and Architects:
+== ==  For Senior Engineers and Architects:
 
 * link:guide-sample-application[Explore the devonfw sample application.]
 
-==== For Team Leaders and Product Ambassadors:
+== ==  For Team Leaders and Product Ambassadors:
 
 // * link:guide-team-start[Get a team set up and running with devonfw.]
 
@@ -33,7 +33,7 @@
 
 ---
 
-==== Further Information
+== ==  Further Information
 
 * link:further-info-repo-overview[Repository Overview]
 

@@ -1,8 +1,8 @@
-=== link:home[Home]
+== = link:home[Home]
 
-==== link:jump-the-queue-design[JumpTheQueue Design]
+== ==  link:jump-the-queue-design[JumpTheQueue Design]
 
-==== devon4j (Back-end)
+== ==  devon4j (Back-end)
 . link:devon4j-overview[devon4j Overview]
 . link:an-devon4j-application[devon4j Application]
 . link:build-devon4j-application[Build a devon4j Application]
@@ -13,7 +13,7 @@
 . link:devon4j-testing[devon4j Testing]
 . link:devon4j-deployment[devon4j Deployment]
 
-==== devon4ng (Front-end)
+== ==  devon4ng (Front-end)
 . link:devon4ng-introduction[devon4ng Introduction]
 . link:an-devon4ng-application[devon4ng Application]
 . link:devon4ng-components[devon4ng Components]
@@ -23,7 +23,7 @@
 . link:devon4ng-deployment[devon4ng Deployment]
 
 ////
-==== OASP4Fn (Serverless)
+== ==  OASP4Fn (Serverless)
 . link:OASP4FnIntroduction[OASP4Fn Introduction]
 . link:BuildOASP4FnApplication[Build a OASP4Fn Application]
 . link:OASP4FnTesting[OASP4Fn Testing]

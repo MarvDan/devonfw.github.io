@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-==Angular testing
+== Angular testing
 
 image::images/angular/testing.JPG[, link="images/angular/testing.JPG"]
 
@@ -14,13 +14,13 @@ In the configuration of Karma we indicate which syntax language we are going to 
 Taking all of this into account, to run the test in `MyThaiStar` we need to move to project root folder and run this command : `ng test --browser <browser>`
 
 [NOTE]
-====
+== == 
 If you run just `ng test` it will run the three browser options *simultaneously*, giving as a result three test runs and outputs, it can cause timeouts and unwanted behaviors, if you want a shortcut to run the test with chrome window you can just run `yarn test` so we really encourage to *not use* just `ng test`.
-====
+== == 
 
 Here we are going to see how Client side testing of `MyThaiStar` has been done.
 
-== Testing Components
+==  Testing Components
 Angular components were created using angular/CLI `ng create component` so they already come with an spec file to test them. The only thing left to do is to add the providers and imports needed in the component to work as the component itself, once this is done, the most basic test is to be sure that all the dependencies and the component itself can be correctly created.
 
 As an example, this is the _spec.ts_ of the menu view component:
@@ -66,7 +66,7 @@ Finally, we are ready to use the component and it's fixture to check if the comp
 
 At this moment this is the case for most of the components, in the future, some work would be applied on this matter to have a full testing experience in `MyThaiStar` components.
 
-=== Dialog components
+== = Dialog components
 
 Dialog components are in a special category because they can not be tested normally. In the way Material implements the opening of dialogs, you have to create a component that will load into a dialog, to tell the module to load this components when needed, they have to be added into a special array category: `_EntryComponents_`. So, to test them, we need to import them in the test file as well.
 
@@ -84,7 +84,7 @@ Also, the testing code to open the component is a bit different too:
 
 That is right, the `beforeEach()` function is slightly different from the the example above, in this case we have to force to the test to know that the component is only displayed in a dialog, so we have to open a dialog with this component in order to access it.
 
-== Testing Services
+==  Testing Services
 
 As well as components, services can be tested too, actually, they are even more necessary to be tested because they have inside more complex logic and data management.
 
@@ -133,5 +133,5 @@ In this same test file you can find some more test regarding all the possibiliti
 
 Some services as well as the components have only tested that they are correctly created and they dependencies properly injected, in the future, will be full covering regarding this services test coverage.
 
-== Testing in a CI environment
+==  Testing in a CI environment
 

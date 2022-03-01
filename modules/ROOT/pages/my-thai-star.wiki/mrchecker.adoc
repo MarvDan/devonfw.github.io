@@ -1,12 +1,12 @@
 :toc: macro
 toc::[]
 
-==MrChecker E2E Testing
+== MrChecker E2E Testing
 
-== Introduction
+==  Introduction
 MrChecker is a testing framework included in devonfw with several useful modules, from which we will focus on the Selenium Module, a module designed to make end-to-end testing easier to implement.
 
-== How to use it
+==  How to use it
 
 First of all download the repository.
 
@@ -38,7 +38,7 @@ For more information about how to use MrChecker and build your own end to end te
 
 
 
-== End to end tests in My Thai Star
+==  End to end tests in My Thai Star
 
 We have included a test suite with four tests to run in My Thai Star to verify everything works properly.
 

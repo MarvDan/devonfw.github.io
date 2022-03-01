@@ -1,4 +1,4 @@
-==Usage
+== Usage
 
 include::usage.adoc[leveloffset=2]
 

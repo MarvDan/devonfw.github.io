@@ -15,14 +15,14 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Consuming REST services
+== Consuming REST services
 
 A good introduction to working with `Angular HttpClient` can be found in https://angular.io/guide/http[Angular Docs]
 
 This guide will cover, how to embed `Angular HttpClient` in the application architecture.
 For back-end request a special service with the suffix `Adapter` needs to be defined.
 
-== Defining Adapters
+==  Defining Adapters
 
 It is a good practice to have a Angular service whose single responsibility is to call the back-end and parse the received value to a transfer data model (e.g. Swagger generated TOs).
 Those services need to have the suffix `Adapter` to make them easy to recognize.
@@ -102,11 +102,11 @@ export class FlightsAdapter {
 }
 ----
 
-== Token management
+==  Token management
 
 In most cases the access to back-end API is secured using well known mechanisms as **CSRF**, **JWT** or both. In these cases the front-end application must manage the tokens that are generated when the user authenticates. More concretely it must store them to include them in every request automatically. Obviously, when user logs out these tokens must be removed from `localStorage`, memory, etc.
 
-=== Store security token
+== = Store security token
 
 In order to make this guide simple we are going to store the token in memory. Therefore, if we consider that we already have a login mechanism implemented we would like to store the token using a `auth.service.ts`:
 
@@ -144,7 +144,7 @@ export class AuthService {
 
 Using the previous service we will be able to store the token obtained in the login request using the method `setToken(token)`. Please consider that, if you want a more sophisticated approach using `localStorage` API, you will need to modify this service accordingly.
 
-=== Include token in every request
+== = Include token in every request
 
 Now that the token is available in the application it is necessary to include it in every request to a protected API endpoint. Instead of modifying all the HTTP requests in our application, Angular provides a class to intercept every request (and every response if we need to) called `HttpInterceptor`. Let's create a service called `http-interceptor.service.ts` to implement the `intercept` method of this class:
 
@@ -176,7 +176,7 @@ export class HttpRequestInterceptorService implements HttpInterceptor {
       let authReq: HttpRequest<any>;
 
       // CSRF
-      if (environment.security === 'csrf') {
+      if (environment.security == = 'csrf') {
         authReq = req.clone({
           withCredentials: true,
           setHeaders: { 'x-csrf-token': authHeader },
@@ -184,7 +184,7 @@ export class HttpRequestInterceptorService implements HttpInterceptor {
       }
 
       // JWT
-      if (environment.security === 'jwt') {
+      if (environment.security == = 'jwt') {
         authReq = req.clone({
           setHeaders: { Authorization: authHeader },
         });

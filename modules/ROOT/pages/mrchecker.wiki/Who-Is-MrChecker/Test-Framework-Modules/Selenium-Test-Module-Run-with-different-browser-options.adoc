@@ -1,4 +1,4 @@
-==Browser options
+== Browser options
 
 To run a browser with specific options during runtime, please use
 

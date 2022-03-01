@@ -1,4 +1,4 @@
-==quarkus 
+== quarkus 
 :description: comprehensive documentation for quarkus stack of devonfw.
 :doctype: book
 :toc:

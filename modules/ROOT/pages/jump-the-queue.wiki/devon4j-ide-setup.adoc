@@ -10,7 +10,7 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==IDE Setup
+== IDE Setup
 This Tutorial explains how to setup the development environment to work on and contribute to devonfw4j with your Windows computer.
 
 We are using a pre-configured https://github.com/devonfw/devon-ide[devon-ide] for development. To get started follow these steps:

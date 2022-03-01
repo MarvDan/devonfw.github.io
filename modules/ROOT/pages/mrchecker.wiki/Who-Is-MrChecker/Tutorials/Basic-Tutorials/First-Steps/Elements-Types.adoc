@@ -1,4 +1,4 @@
-== Elements types
+==  Elements types
 
 MrChecker includes Object types for various elements existing on webpages such as Button, TextBox etc. There is also WebElement class and `getDriver().findElementDynamic(By selector)` method for creating webpage objects dynamically and performing basic actions: 
 

@@ -1,4 +1,4 @@
-==Contributing
+== Contributing
 
 include::../devonfw-github/CONTRIBUTING.adoc[leveloffset=1]
 

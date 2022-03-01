@@ -18,13 +18,13 @@ toc::[]
 image::images/devon4node-pl/pl.png[400,300]
 image::images/devon4node-pl/devonfw.png[400,300]
 
-==From existing devonfw Template for Production Line
+== From existing devonfw Template for Production Line
 
-== Overview
+==  Overview
 
 From existing devonfw template is very similar to devon4j, devon4ng, devon4net and devon4node templates. The main difference is from existing devonfw template will no create a new devonfw project, it takes an existing project from GitLab and then add/create everything in order to apply a CICD strategy to your project.
 
-== Prerequisites
+==  Prerequisites
 To be able to run Jenkins Node job under ProductionLine you need to configure below settings in Jenkins and Gitlab
 
 * Jenkins +
@@ -56,12 +56,12 @@ The GitLab API user needs to have API access and the rights to create a new grou
 * Select the user(s) in question and click 'Edit'
 * Scroll down to 'Access' and un-tick 'Can Create Group'
 
-== How to insert the Template
+==  How to insert the Template
 
 In order to add the template, you can follow the link:./how-to-add-a-template.adoc[guide].
 
 
-== How to run the Template
+==  How to run the Template
 
 * Build the job with parameters:
 ** REPOSITORY_URL: The internal repository URL. Without protocol. Example: gitlab-core:80/gitlab/mygroup/myproject-frontend.

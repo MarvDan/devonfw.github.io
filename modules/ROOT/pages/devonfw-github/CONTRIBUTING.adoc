@@ -6,7 +6,7 @@ ifdef::env-github[]
 :note-caption: :information_source:
 endif::[]
 
-==Contributing
+== Contributing
 
 https://devonfw.com[devonfw] is truly free and open. 
 We are looking forward to your contribution and are more than happy to receive your feedback and improvements to code and documentation.
@@ -14,16 +14,16 @@ This page describes the few conventions to follow.
 Please note that this is an open and international project and all content has to be in English language.
 Also read our link:code-of-conduct.adoc[code of conduct].
 
-== Using GitHub
+==  Using GitHub
 We are using GitHub as our social coding platform. Hence, we follow the principles of GitHub to deal with changes. If you are a first time contributor to GitHub projects, read https://github.com/firstcontributions/first-contributions#first-contributions[first contributions]
 
-=== Account
+== = Account
 In case you do not have an account please first https://github.com/join[join GitHub]. 
 If you have a CORP username use it also as GitHub username. 
 If possible and suitable also provide your real name in your profile.
 Now that you are logged into GitHub you are ready to go.
 
-=== Organizations
+== = Organizations
 For devonfw we have the following organizations on GitHub:
 
 * https://github.com/devonfw/[*devonfw*]
@@ -40,7 +40,7 @@ The organization used as a starting point for trainings about devonfw. We do not
 The organization used for work on incubators and other research projects.
 New projects start here and in case they evolve properly and get mature, they are moved to the official devonfw organization.
 
-=== Repositories 
+== = Repositories 
 Within the organization we have many different repositories.
 In case you want to give feedback or provide contributions you need to know the corresponding repository.
 
@@ -65,7 +65,7 @@ Tools we provide typically have a repository named like the tool they provide (o
 There is much more to discover.
 Browse our organization to find out.
 
-=== Trivial Changes
+== = Trivial Changes
 Please note that for trivial changes like a typo in the documentation you do not need to follow a complex process. Please do the following:
 
 * Just browse to the file online on GitHub.
@@ -79,7 +79,7 @@ Please note that for trivial changes like a typo in the documentation you do not
 
 For non-trivial changes please read on.
 
-=== Issues
+== = Issues
 We are working issue-based, so check if there is already an issue in our tracker for the task you want to work on.
 Otherwise first create a new issue for it (e.g. a bug report or a feature request).
 
@@ -90,14 +90,14 @@ and ensure that there is a common understanding of what and potentially even how
 You surely do not want to invest your valuable work and time into something that will later be rejected by the community.
 When you have been assigned to the issue (see `Assignees` on the right) you are sure that nobody else will work on the same issue in parallel and you are ready to go.
 
-=== Code Changes
+== = Code Changes
 Before you start with your code changes, please check the following conventions:
 
 * For each programming language we have a stack repository (see xref:repositories[repositories]) containing documentation about the coding conventions (example: https://github.com/devonfw/devon4j/blob/develop/documentation/coding-conventions.adoc[Java]). Please read and follow these conventions before making (bigger) changes.
 * Use https://github.com/devonfw/ide/blob/master/documentation/Home.adoc[devon-ide] to setup your development environment and get code formatters, etc. configured properly as we do not like "diff-wars" because of inconsistent formatter settings.
 * Thank you, happy coding!
 
-=== Documentation Changes
+== = Documentation Changes
 Before you start with your documentation changes, please check the following conventions:
 
 * Documentation will always be found in the `documentation` folder at the root of a repository.
@@ -110,14 +110,14 @@ Before you start with your documentation changes, please check the following con
 [.internal]
 contributing-internal-snippets
 
-=== Testing Changes
+== = Testing Changes
 To test your changes all you need to do is run the following command:
 [source]
 devon build
 
 If the build failed, you need to rework your changes.
 
-=== Committing Changes
+== = Committing Changes
 Always commit your changes in small logical units associated with an issue (see above section) using the commit message format:
 [source]
 #«issue-id»: «describe your change»
@@ -135,7 +135,7 @@ Example:
 [source]
 devonfw/devon4j#1: added REST service for tablemanagement
 
-=== Definition of Done
+== = Definition of Done
 To complete your changes ensure the following aspects:
 
 * You have tested your changes and the build succeeds.

@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==Production Line provisioning environment
+== Production Line provisioning environment
 
 image:./images/dsf4pl/pl.png[]
 
@@ -9,7 +9,7 @@ The Production Line Project is a set of server-side collaboration tools for Capg
 
 For additional information use the https://km3.capgemini.com/community/1042857/home[official documentation].
 
-== How to obtain your Production Line
+==  How to obtain your Production Line
 
 You can order your Production Line environment instance following the https://km3.capgemini.com/book/1082360[official guide]. Remember that you need to order at least the next tools:
  * Jenkins

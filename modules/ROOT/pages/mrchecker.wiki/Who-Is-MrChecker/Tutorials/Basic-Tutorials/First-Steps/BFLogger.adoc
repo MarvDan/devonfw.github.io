@@ -1,4 +1,4 @@
-== BFLogger
+==  BFLogger
 
 BFLogger is a default MrChecker logging tool. Use it to communicate important information from test execution. There are three basic logging methods: 
 

@@ -1,12 +1,12 @@
-==How to add custom catalog categories inside openshift
+== How to add custom catalog categories inside openshift
 
 This is a guide to add custom `Catalog Categories` into an Openshift cluster.
 
 https://github.com/devonfw/devonfw-shop-floor/tree/master/dsf4openshift/openshift-cluster-setup/initial-setup/customizeOpenshift/scripts[Here] we can find a catalog-categories.js example to use the devonfw catalog categories.
 
-== Create a scrip to add custom langauges and custom catalog categories
+==  Create a scrip to add custom langauges and custom catalog categories
 
-=== Custom language
+== = Custom language
 
 For this example, we are going add a new language into the languages category. To do that we must create a script and we named as catalog-categories.js
 [source,Javascript]
@@ -31,7 +31,7 @@ category.subCategories.splice(2,0,{ // Insert at the third spot.
 });
 ----
 
-=== Custom category
+== = Custom category
 
 For this example, we are going add a new category into the category tab. To do that we must create a script and we named as catalog-categories.js
 [source,Javascript]
@@ -61,7 +61,7 @@ window.OPENSHIFT_CONSTANTS.SERVICE_CATALOG_CATEGORIES.unshift({
 });
 ----
 
-== Use our own javascript inside openshift
+==  Use our own javascript inside openshift
 
 To do that, we need to enter in openshift as an admin and use the next command:
 

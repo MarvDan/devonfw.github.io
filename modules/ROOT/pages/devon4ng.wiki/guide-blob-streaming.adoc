@@ -1,11 +1,11 @@
-==Angular File Uploading
+== Angular File Uploading
 
 This sample demonstrates how to upload a file to a server. For this, we will need to use an Angular form. In this case we have chosen a simple template-driven form, as the goal of this sample is just to show the process to upload a file. You can learn more about Forms in Angular in the https://angular.io/guide/forms-overview[official documentation].
 
 NOTE: The back-end implementation for this sample is located here: https://github.com/devonfw-sample/devon4j-blob-streaming[
 devon4j-blob-streaming]
 
-== `FormData`
+==  `FormData`
 
 `FormData` is an object where you can store key-value pairs that allows you to send through `XMLHttpRequest`. You can create a `FormData` object as simply as:
 
@@ -17,7 +17,7 @@ formData.append('key', value);
 ....
 ----
 
-== Let's begin
+==  Let's begin
 I assume you already have your angular application running, if not, you can have a look to our  `AngularBasicPWA` sample      
 include::guide-angular-pwa[leveloffset=2]
 
@@ -25,7 +25,7 @@ We are going to use Angular Material components, so it is necessary to install t
 
 `npm install --save @angular/material @angular/cdk @angular/animations`
 
-== Importing necessary components
+==  Importing necessary components
 
 These are the component I am going to use for our sample, are material HTML components. For use the template-driven form you do not need to import any component. I am going to create a module called Core where I place the needed imports. After that, I will import Core module on my main App module, and I be able to use these components in any part of my application.
 
@@ -65,7 +65,7 @@ Then, in the app.component.html we need to add the selector for our new componen
   <img
     width="40"
     alt="Angular Logo"
-    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg== "
   />
   <span>File uploader</span>
 </div>
@@ -78,7 +78,7 @@ Then, in the app.component.html we need to add the selector for our new componen
 
 Now, our new component `uploader` will be loaded in the root page. Let's add some code to it.
 
-== Uploader component
+==  Uploader component
 
 I will begin editing the html file. First thing we need is an input component, which will allow us to select the file to upload. Furthermore, I added a button which will be the responsible of calling the upload file window. Apart from this, there is also two labels and a progress bar. Labels will give feedback about file upload request, both with an `if` clause with `uploadSuccess` and `uploadFail` global variables that will be in `uploader.component.ts`. The progress bar will show the progress of the file being uploaded.
 
@@ -190,7 +190,7 @@ In `uploader.component.ts` is missing `uploadFile(...)` method.
     const formDataBody = this.getFormData(file);
     this.dataService.uploadFile(formDataBody).subscribe(
       (event) => {
-        if (event.type === HttpEventType.UploadProgress) {
+        if (event.type == = HttpEventType.UploadProgress) {
           this.fileProgress = Math.round((100 * event.loaded) / event.total);
         } else if (event instanceof HttpResponse) {
           this.fileInProgress = false;

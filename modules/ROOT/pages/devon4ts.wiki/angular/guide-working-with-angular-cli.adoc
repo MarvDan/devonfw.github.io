@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Working with Angular CLI
+== Working with Angular CLI
 
 Angular CLI provides a facade for building, testing, linting, debugging and generating code.
 Under the hood Angular CLI uses specific tools to achieve these tasks.
@@ -27,7 +27,7 @@ https://github.com/angular/angular-cli/wiki[The Angular CLI Wiki can be found he
 In this guide we will go through the most important tasks.
 To go into more details, please visit the Angular CLI wiki.
 
-== Installing Angular CLI
+==  Installing Angular CLI
 
 Angular CLI should be added as global and local dependency.
 The following commands add Angular CLI as global Dependency.
@@ -50,7 +50,7 @@ This should print out the version installed.
 .Printing Angular CLI Version
 image::images/install-cli-success.png["Printing Angular CLI Version", width="450", link="images/install-cli-success.png"]
 
-== Running a live development server
+==  Running a live development server
 
 The Angular CLI can be used to start a live development server.
 First your application will be compiled and then the server will be started.
@@ -61,7 +61,7 @@ Run your application with the following command:
 ng serve -o
 ```
 
-== Running Unit Tests
+==  Running Unit Tests
 
 All unit tests can be executed with the command:
 
@@ -78,7 +78,7 @@ ng test -sr -cc
 TIP: You can configure the output format for code coverage files to match your requirements in the file `karma.conf.js` which can be found on toplevel of your project folder.
 For instance, this can be useful for exporting the results to a SonarQube.
 
-== Linting the code quality
+==  Linting the code quality
 
 You can lint your files with the command
 
@@ -88,9 +88,9 @@ ng lint --type-check
 
 TIP: You can adjust the linting rules in the file tslint.json which can be found on toplevel of your project folder.
 
-== Generating Code
+==  Generating Code
 
-=== Creating a new Angular CLI project
+== = Creating a new Angular CLI project
 
 For creating a new Angular CLI project the command `ng new` is used.
 
@@ -100,7 +100,7 @@ The following command creates a new application named my-app.
 ng create my-app
 ```
 
-=== Creating a new feature module
+== = Creating a new feature module
 
 A new feature module can be created via `ng generate module`` command.
 
@@ -116,7 +116,7 @@ image::images/generate-module.png["Generate a module with Angular CLI", width="4
 TIP: The created feature module needs to be added to the AppModule by hand.
 Other option would be to define a lazy route in AppRoutingModule to make this a lazy loaded module.
 
-=== Creating a new component
+== = Creating a new component
 
 To create components the command `ng generate component` can be used.
 
@@ -134,7 +134,7 @@ image::images/generate-component.png["Generate a component with Angular CLI", wi
 TIP: If you want to export the component, you have to add the component to exports array of the module.
 This would be the case if you generate a component inside shared module.
 
-== Configuring an Angular CLI project
+==  Configuring an Angular CLI project
 
 Inside an Angular CLI project the file `.angular-cli.json` can be used to configure the Angular CLI.
 

@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Abstract Class Store
+== Abstract Class Store
 
 The following solution presents a base class for implementing stores which handle state and its transitions.
 Working with the base class achieves:
@@ -118,7 +118,7 @@ export abstract class Store<T> implements OnDestroy {
     }
 
     for (const prop of sameProbs) {
-      if ((<any>before)[prop] !== (<any>after)[prop]) {
+      if ((<any>before)[prop] !==  (<any>after)[prop]) {
         result[prop] = { from: (<any>before)[prop], to: (<any>after)[prop] };
       }
     }

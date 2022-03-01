@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Auth JWT module
+== Auth JWT module
 
 devon4node provides a way to generate a default authentication module using JWT (JSON Web Token). It uses the `@nestjs/passport` library describe link:https://docs.nestjs.com/techniques/authentication[here].
 
@@ -28,7 +28,7 @@ In this page we will explain the default implementation provided by devon4node. 
 - link:https://www.npmjs.com/package/passport[Passport]
 - link:https://www.npmjs.com/package/passport-jwt[Passport JWT]
 
-== Auth JWT endpoints
+==  Auth JWT endpoints
 
 In order to execute authentication operations, the auth-jwt module exposes the following endpoints:
 
@@ -36,7 +36,7 @@ In order to execute authentication operations, the auth-jwt module exposes the f
 - `POST /auth/register`: register a new user.
 - `GET /auth/currentuser`: return the user data if he is authenticated.
 
-== Protect endpoints with auth-jwt
+==  Protect endpoints with auth-jwt
 
 In order to protect your endpoints with auth-jwt module you only need to add the `AuthGuard()` in the `UseGuards` decorator. Example:
 
@@ -51,7 +51,7 @@ currentUser(@Request() req: UserRequest) {
 
 Now, all request to currentuser are protected by the `AuthGuard`.
 
-== Role based Access Control
+==  Role based Access Control
 
 The auth-jwt module provides also a way to control the access to some endpoints by using roles. For example, if you want to grant access to a endpoint only to admins, you only need to add the `Roles` decorator to those endpoints with the roles allowed. Example:
 

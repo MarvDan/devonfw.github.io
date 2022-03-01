@@ -5,26 +5,26 @@ toc::[]
 :iconfont-name: font-awesome
 :stylesdir: css
 
-==Environment
+== Environment
 
-== [navy]#Overview#
+==  [navy]#Overview#
 
 
-== [navy]#Required software#
+==  [navy]#Required software#
 https://code.visualstudio.com/[Visual Studio Code]
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp[C# Extension for VS Code]
 
 https://www.microsoft.com/net/core[.Net Core SDK]
 
-== [navy]#Setting up the environment#
+==  [navy]#Setting up the environment#
 . Download and install https://code.visualstudio.com/[Visual Studio Code]
 
 . Download and install https://www.microsoft.com/net/core[.Net Core SDK]
 
 . https://code.visualstudio.com/docs/editor/extension-gallery[Intall the extension] https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp[Omnisharp] in Visual Studio Code
 
-==== [navy]#Hello world#
+== ==  [navy]#Hello world#
 . Open a project:
 *    Open Visual Studio Code.
 *   Click on the Explorer icon on the left menu and then click **Open Folder**.
@@ -46,7 +46,7 @@ https://www.microsoft.com/net/core[.Net Core SDK]
 *   Type `dotnet run`.
 
 
-=== [navy]#Debug#
+== = [navy]#Debug#
 
 . Open Program.cs by clicking on it. The first time you open a C# file in Visual Studio Code, OmniSharp will load in the editor.
 
@@ -66,11 +66,11 @@ https://www.microsoft.com/net/core[.Net Core SDK]
 . Select the green arrow at the top to continue debugging, or select the red square at the top to stop.
 
 [NOTE]
-====
+== == 
 For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md[Instructions for setting up the .NET Core debugger].
-====
+== == 
 
-== [navy]#External links#
+==  [navy]#External links#
 
 https://www.microsoft.com/net/core[.Net Core]
 

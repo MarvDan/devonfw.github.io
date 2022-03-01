@@ -15,9 +15,9 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Initialize Instance Template for Production Line
+== Initialize Instance Template for Production Line
 
-== Technical User Setup 
+==  Technical User Setup 
 
 In order to configure the services, we need technical users for the following components:
 
@@ -27,7 +27,7 @@ In order to configure the services, we need technical users for the following co
 
 *The following sections describe how to configure the components to enable technical users and tokens.*
 
-=== Technical Gitlab User and settings
+== = Technical Gitlab User and settings
 
 The creation of the GitLab Group and Project will require a private GitLab token which has to be created manually. The token can be obtained like this:
 
@@ -51,9 +51,9 @@ image::./images/devon4j-mts/created_token.JPG[600,500]
 
 
 [IMPORTANT]
-====
+== == 
 The GitLab API user needs to have API access and the rights to create a new group. To set this permission follow the next steps:
-====
+== == 
 
 1. Enter the Admin control panel
 2. Select 'Users'
@@ -61,11 +61,11 @@ The GitLab API user needs to have API access and the rights to create a new grou
 4. Scroll down to 'Access' and un-tick 'Can Create Group'
 
 
-=== Technical Nexus3 user and settings
+== = Technical Nexus3 user and settings
 
 Nexus3 is used to store build artifacts such as the frontend and the backend. In the future it might also be used to store docker images of MTS.
 
-==== Create the technical Nexus User
+== ==  Create the technical Nexus User
 
 1. The nexus3-api user should be created in section Administration
 
@@ -75,7 +75,7 @@ image::./images/devon4j-mts/nexusadmin.png[600,500]
 
 image::./images/devon4j-mts/nexususer.png[600,500]
 
-====  Add it as credential in Jenkins
+== ==   Add it as credential in Jenkins
 
 Credentials 'nexus-api' user should be added to Jenkins
 Jenkins -> Credentials -> System -> Global credentials (unrestricted) -> Add Credentials
@@ -83,7 +83,7 @@ Jenkins -> Credentials -> System -> Global credentials (unrestricted) -> Add Cre
 image::./images/devon4j-mts/credential.png[800,500]
 
 
-====  Add the user to maven global settings in Jenkins:
+== ==   Add the user to maven global settings in Jenkins:
 
 1. Jenkins -> Settings -> Managed Files -> Edit Global Maven Settings XML
 
@@ -93,7 +93,7 @@ image::./images/devon4j-mts/mavensettings.PNG[600,500]
 
 image::./images/devon4j-mts/mavensettings2.PNG[600,500]
 
-=== Jenkins Preparation
+== = Jenkins Preparation
 
 ** Install required plugins: +
 HTTP Request Plugin +
@@ -102,7 +102,7 @@ Allure Jenkins Plugin +
 
 image::./images/devon4j-mts/allure.JPG[500,400]
 
-==== Sonarqube Server configuration in Jenkins
+== ==  Sonarqube Server configuration in Jenkins
 
 SonarQube must be configured in Jenkins, so that we can easily use the SonarQube server in our builds.
 
@@ -112,9 +112,9 @@ Add the following data
 
 image::./images/devon4j-mts/sonarjenkins.PNG[600,500]
 
-=== Technical SonarQube user and settings
+== = Technical SonarQube user and settings
 
-==== User Token for SonarQube
+== ==  User Token for SonarQube
 
 * Go to SonarQube.
 * Go to your account.
@@ -123,14 +123,14 @@ image::./images/devon4j-mts/sonaraccount.PNG[600,500]
 * Go to Security tab.
 * Generate the token.
 
-==== Install SonarQube plugins from Marketplace
+== ==  Install SonarQube plugins from Marketplace
 
 In order to analyze devonfw projects in SonarQube properly, you need to install manually some plugins. To do that you only need to open your SonarQube website and go to Administration -> Marketplace. Then, you need to install the following plugins:
 
 - Checkstyle
 - Cobertura
 
-==== SonarQube Webhook to inform Jenkins
+== ==  SonarQube Webhook to inform Jenkins
 
 A part of the Build Job will ask SonarQube if the quality gate has been passed. For this step a so called "webhook" has to be configured in SonarQube. To do so,
 

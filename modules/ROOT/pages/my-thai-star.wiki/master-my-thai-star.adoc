@@ -1,21 +1,21 @@
 :toc: macro
 toc::[]
 
-==MyThaiStar
+== MyThaiStar
 
 include::agile.adoc[leveloffset=1]
 
 include::User-Stories.adoc[leveloffset=1]
 
-== Technical design
+==  Technical design
 
-=== Data Model
+== = Data Model
 
 include::My-Thai-Star-data-model.adoc[leveloffset=3]
 
 include::my-thai-star-nosql-data-model.adoc[leveloffset=3]
 
-=== Server Side
+== = Server Side
 
 include::java-design.adoc[leveloffset=3]
 
@@ -27,19 +27,19 @@ include::serverless-design.adoc[leveloffset=3]
 
 include::graphql-design.adoc[leveloffset=3]
 
-=== Client Side
+== = Client Side
 
 include::angular-design.adoc[leveloffset=3]
 
 include::xamarin-design.adoc[leveloffset=3]
 
-== Security
+==  Security
 
 include::twofactor.adoc[leveloffset=2]
 
-== Testing
+==  Testing
 
-=== Server Side
+== = Server Side
 
 include::java-testing.adoc[leveloffset=3]
 
@@ -49,21 +49,21 @@ include::nodejs-testing.adoc[leveloffset=3]
 
 include::graphql-testing.adoc[leveloffset=3]
 
-=== Client Side
+== = Client Side
 
 include::angular-testing.adoc[leveloffset=3]
 
 include::xamarin-testing.adoc[leveloffset=3]
 
-=== End to end
+== = End to end
 
 include::mrchecker.adoc[leveloffset=3]
 
-== UI design
+==  UI design
 
 include::style-guide.adoc[leveloffset=2]
 
-== CI/CD
+==  CI/CD
 
 include::production-line-ci.adoc[leveloffset=2]
 

@@ -11,7 +11,7 @@ When you click status code link, you will be redirected to the subpage which ret
 
 image::images/example57.png[]
 
-===== Page Class
+== == = Page Class
 
 Add new methods to existing Status Codes Home Page Class
 
@@ -194,7 +194,7 @@ public class StatusCodesCodePage extends BasePage {
 }
 ----
 
-===== Test Class
+== == = Test Class
 
 Before all tests: Open The Internet Main Page, go to Status Codes page 
 

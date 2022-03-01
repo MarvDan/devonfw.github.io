@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==vscode
+== vscode
 
 The `vscode` commandlet allows to install, configure, and launch https://code.visualstudio.com/[Visual Studio Code].
 To launch VSCode for your current workspace and `devonfw-ide` installation, simply run:
@@ -11,7 +11,7 @@ You may also supply additional arguments as `devon vscode «args»`. These are e
 
 .Usage of `devon vscode`
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Argument(s)*   |*Meaning*
 |`--all`         |if provided as first arg then to command will be invoked for each workspace
 |`setup`         |setup VSCode (install or update)
@@ -22,10 +22,10 @@ You may also supply additional arguments as `devon vscode «args»`. These are e
 |`ws-re[verse]`  |reverse merge changes from workspace into settings
 |`ws-reverse-add`|reverse merge adding new properties
 |`create-script` |create launch script for this IDE, your current workspace and your OS
-|=======================
+|== == == == == == == == == == == =
 
 
-== plugins
+==  plugins
 
 To be productive with VS Code you need plugins (called `extensions` in VS Code). Of course `devonfw-ide` can automate this for your:
 In your link:settings[settings] git repository create a folder https://github.com/devonfw/ide-settings/tree/master/vscode/plugins[vscode/plugins] (click this link to see more examples and see which plugins come by default).
@@ -44,7 +44,7 @@ In general you should try to stick with the configuration pre-defined by your pr
 
 As maintainer of the link:settings[settings] for your project you should avoid to ship too many plugins that may waste resources but are not used by every developer. By configuring additional plugins with `plugin_active=false` you can give your developers the freedom to install some additional plugins easily.
 
-=== cleaning plugins on update
+== = cleaning plugins on update
 
 If you want to strictly manage the plugins for `VS code` in your project, you can create or edit the file `settings/vscode/plugins` in your link:settings[settings] and add this variable:
 ```

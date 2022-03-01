@@ -8,19 +8,19 @@ toc::[]
 :listing-caption: Listing
 
 
-==devonfw Release notes 2021.12
+== devonfw Release notes 2021.12
 
-== Introduction
+==  Introduction
 
 We are proud to announce the release of devonfw version 2021.12. 
 
 This release includes lots of addition of new features, updates and bug fixes but it is very important to highlight the following improvements:
 
-== devonfw IDE
+==  devonfw IDE
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-=== 2021.12.001
+== = 2021.12.001
 
 Update with the following bugfixes and improvements:
 
@@ -30,11 +30,11 @@ Update with the following bugfixes and improvements:
 * https://github.com/devonfw/ide/issues/601[#601]: Update of node.js to 14.17.6 to fix CVE-2021-22930
 * https://github.com/devonfw/ide/pull/625[#625]: There is no doIsQuiet yet for CobiGen
 
-== devon4j
+==  devon4j
 
 The consolidated list of features for this devon4j release is as it follows.
 
-=== 2021.04.003
+== = 2021.04.003
 
 Bugfix release of with the following stories:
 
@@ -48,7 +48,7 @@ Bugfix release of with the following stories:
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2021.04.003/devon4j-doc-2021.04.003.pdf[devon4j guide 2021.04.003].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/19?closed=1[milestone devon4j 2020.04.003].
 
-=== 2021.04.002
+== = 2021.04.002
 
 Bugfix release of with the following stories:
 
@@ -59,9 +59,9 @@ Bugfix release of with the following stories:
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2021.04.002/devon4j-doc-2021.04.002.pdf[devon4j guide 2021.04.002].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/18?closed=1[milestone devon4j 2020.04.002].
 
-== Quarkus
+==  Quarkus
 
-=== Documentation update
+== = Documentation update
 
 * Separated the Java section of the homepage into 'General', 'Spring' and 'Quarkus'
 * Guiding the reader
@@ -72,7 +72,7 @@ The full list of changes for this release can be found in https://github.com/dev
 * Project structure: Defined 'new' modern project structure for Quarkus applications
 * Added and updated different technical guides for Quarkus
 
-=== Reference applications
+== = Reference applications
 
 * devon4quarkus-product
 https://github.com/devonfw-sample/devon4quarkus-reference is application including a REST service for product management including different concepts documented in the devon4j documentation. Additionally it demonstrates Kubernetes deployment and Helm charts.
@@ -83,7 +83,7 @@ Application including a REST service for order management. Connected with the de
     - Similar feature as the devon4quarkus-product application
     - Includes REST client using tkit-mp-restclient-plugin with API first approach
 
-== devon4ng
+==  devon4ng
 
 In this release we have introduced some new samples to serve as a reference for integrating some popular 3rd-party component libraries like PrimeNG, NG-ZORRO and more with devon4ng. Also, all samples and templates are updated to the latest Angular 13:
 
@@ -92,7 +92,7 @@ In this release we have introduced some new samples to serve as a reference for 
 * https://github.com/devonfw/devon4ng/tree/develop/samples/AngularZorroLayout[AngularZorroLayout]: A front-end integrated with the https://ng.ant.design/docs/introduce/en[NG-ZORRO] library.
 * https://github.com/devonfw/devon4ng/tree/v13[v13]: Updated all samples and templates to Angular 13.
 
-== devon4net
+==  devon4net
 
  * Real modular clean+onion architecture
  * .NET 6 Updated
@@ -106,11 +106,11 @@ In this release we have introduced some new samples to serve as a reference for 
  * Code review. Start your project with 0 Errors / 0 Warnings
  * Component options cleaned and reviewed
 
-== CobiGen
+==  CobiGen
 
 This is bug fix release of CobiGen more details can be found in https://github.com/devonfw/cobigen/milestone/187?closed=1[here].
 
-== Trainings/tutorials   
+==  Trainings/tutorials   
 
 * Katakoda tutorials : https://katacoda.com/devonfw
 * Youtube tutorials : https://www.youtube.com/channel/UCtb1p-24jus-QoXy49t9Xzg

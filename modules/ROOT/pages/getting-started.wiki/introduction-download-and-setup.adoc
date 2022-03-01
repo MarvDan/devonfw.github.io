@@ -17,13 +17,13 @@ endif::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Download and Setup
+== Download and Setup
 
 In this section, you will learn how to setup the devonfw environment and start working on first project based on devonfw.
 
 The devonfw environment contains all software and tools necessary to develop the applications with devonfw.
 
-== Prerequisites
+==  Prerequisites
 
 In order to setup the environment, following are the prerequisites:
 
@@ -31,14 +31,14 @@ In order to setup the environment, following are the prerequisites:
 * more than 1GB of free disk space to install customized environment
 * command line tool devonfw IDE is already installed
 
-== Download
+==  Download
 IMPORTANT: Please refer to the https://github.com/devonfw/ide/wiki[devonfw-ide] documentation for the **current installation process**.
 
 Older devonfw distributions can be obtained from the http://de-mucevolve02/files/devonfw/[FTP releases library] and are packaged in a ZIP file that includes all the needed tools, software and configurations. Browse to the corresponding version folder in order to get the latest version. 
 
-== Setup the Workspace for Older Versions
+==  Setup the Workspace for Older Versions
 
-=== Windows
+== = Windows
 
 1. Unzip the devonfw distribution into a directory of your choice. *The path to the devonfw distribution directory should contain no spaces*, to prevent problems with some of the tools.
 
@@ -57,7 +57,7 @@ image::images/introduction/download-install/setup_2.png[, width="450", link="ima
 
 *Note* : If you use a proxy to connect to the Internet, you have to manually configure it in Maven, Sencha Cmd and Eclipse. Next section explains about it.
 
-=== Linux
+== = Linux
 
 * Unzip the devonfw distribution into a directory of your choice. *The path to the devonfw distribution directory should contain no spaces*, to prevent problems with some of the tools.
 

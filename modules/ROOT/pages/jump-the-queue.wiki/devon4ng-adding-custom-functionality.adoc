@@ -10,20 +10,20 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-==devon4j adding Custom Functionality
+== devon4j adding Custom Functionality
 
 Now we have a fully functional blank project. All we have to do now is to create the components and services which will compose our application.
 
 First, we are going to develop the views of the app through its components, then we will create the services with the logic, security and back-end connection.
 
 
-== Creating Components
+==  Creating Components
 
 [NOTE]
-====
+== == 
 You have already learned about creating Components in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-components#create-a-new-component[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 Our app is going to consist of 3 main views:
 
@@ -35,23 +35,23 @@ To navigate between these views/components, we are going to implement routes usi
 
 To see our progress, move to the root folder of the `angular` project and run `ng serve -o` again. This will recompile and publish our client app to http://localhost:4200. Angular will keep watching for changes, so whenever we modify the code, the app will automatically reload.
 
-=== Root Component
+== = Root Component
 
 `app.component.ts` inside `angular/src/app` will be our root component, so we don't have to create a new file yet. We are going to add elements to the root component that will be common no matter what view will be displayed.
 
 [NOTE]
-====
+== == 
 You have already learned about the Root Component in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-components#root-component[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 This applies to the header element which will be on top of the window and on top of all other components. If you want, you can read more about https://teradata.github.io/covalent/#/layouts[Covalent layouts], which we are going to use a lot from now on, for every view component.
 
 [NOTE]
-====
+== == 
 You have already learned about Covalent Layouts in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-components#teradata-covalent-layouts[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 We don't really need anything more than a header, so we are going to use the simplest layout for this purpose; the *nav view*.
 
@@ -175,9 +175,9 @@ export class CoreModule {}
 ----
 
 [NOTE]
-====
+== == 
 This `CoreModule` has almost every module of the different components for *Angular Material* and *Covalent Teradata*. If you decide to use a component that is not included yet, you need to add the corresponding module here.
-====
+== == 
 
 Remember that we need to import this `CoreModule` module into the `AppModule` and inside every module of the different components that use *Angular Material* and *Covalent Teradata*. If a component does not have a module, it will be imported in the `AppModule` and hence automatically have the `CoreModule`. Our `app.module.ts` should have the following content:
 
@@ -208,15 +208,15 @@ import { CoreModule } from './shared/core.module';
 export class AppModule { }
 ----
 [NOTE]
-====
+== == 
 Even if we setup module correctly the HTML file can give us this red flag: "If `td-layout` is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the `@NgModule.schemas` of this component to suppress this message."
 To solve this we add "schemas: [ CUSTOM_ELEMENTS_SCHEMA ]" inside the `@NgModule` of all the affected modules.
-====
+== == 
 
 [NOTE]
-====
+== == 
 Remember this step because you will have to repeat it for every other component from Teradata you use in your app.
-====
+== == 
 
 Now we can use this layout, so let's implement it in `app.component.html`. Use the following code:
 
@@ -233,16 +233,16 @@ Now we can use this layout, so let's implement it in `app.component.html`. Use t
 ----
 
 [NOTE]
-====
+== == 
 You have already learned about Toolbars in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-components#toolbars[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 [NOTE]
-====
+== == 
 You have already learned about Toolbars in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-components#toolbars[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 Once this is done, our app should have a header and "app works!" should appear in the body of the page:
 
@@ -284,10 +284,10 @@ export class AppRoutingModule {}
 ----
 
 [NOTE]
-====
+== == 
 You have already learned about Routing in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-components#routing[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 Finally, we remove the `<h1>app works!</h1>` from `app.component.html` and replace it with a `<router-outlet></router-outlet>` tag. The final result of our root component will look like this:
 
@@ -297,7 +297,7 @@ As you can see, now the body content is the HTML of `FormLoginComponent`. This i
 
 For now we are going to leave the header like this. In the future we will separate it into another component inside a layout folder.
 
-=== `LoginForm` Component
+== = `LoginForm` Component
 
 As we have already created this component from the section before, let's move on to building the template of the login view.
 
@@ -338,7 +338,7 @@ image::images/devon4ng/3.BuildYourOwn/formlogin.png[Form Login, 250]
 This is going to be the container for the login. +
 Now we will continue with the second component: Login.
 
-=== Login Component
+== = Login Component
 
 Our first step will be to create the component in the exact same way we created the `FormLogin` component but this time we are going to generate it in a new folder called components inside `formlogin`. Putting every child component inside that folder will allow us to keep a good and clear structure. In order to do this, we use the command:
 
@@ -408,9 +408,9 @@ import { FormLoginModule } from './form-login/form-login-module';
 ----
 
 [NOTE]
-====
+== == 
 This is done so the `form-login` (container/wrapper) and the `login` stay separated allowing us to reuse the login without having the card around in other views.
-====
+== == 
 
 After this, we modify the `login.component.html` and add the form: 
 
@@ -441,10 +441,10 @@ After this, we modify the `login.component.html` and add the form:
 ----
 
 [NOTE]
-====
+== == 
 You have already learned about Forms in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-components#forms[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 This form contains two input containers from Material. The containers enclose the input with the properties listed above.
 
@@ -468,7 +468,7 @@ image::images/devon4ng/3.BuildYourOwn/login.png[JumpTheQueue Login Screen, 250]
 
 With two components already created, we need to use the router to navigate between them. Following the application flow of events, we are going to add a _navigate_ function to the register button. When we press it, we will be redirected to our future register component.
 
-=== Register Component
+== = Register Component
 
 First, we are going to generate the register component via:
 
@@ -520,10 +520,10 @@ const appRoutes: Routes = [
 ----
 
 [NOTE]
-====
+== == 
 You have already learned about Dependency Injection in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-services#dependency-injection[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 Now we are going to imitate the `login` to shape our `register.component.html`:
 
@@ -602,17 +602,17 @@ export class VisitorArray {
 ----
 
 [NOTE]
-====
+== == 
 You have already learned about creating new services in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-services#create-a-new-service[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 If we take a closer look, we can see that id has a `?` behind it. This indicates that the id is optional.
 
 [NOTE]
-====
+== == 
 At this point we are going to assume that you have finished the https://github.com/devonfw/jump-the-queue/wiki/build-devon4j-application[devon4j] part of this tutorial, or have at least downloaded the project and have the back end running locally on http://localhost:8081.
-====
+== == 
 
 After doing this, we are going to add an environment variable with our base-URL for the REST services. This way we won't have to change every URL when we switch to production. Inside `environments/environment.ts` we add:
 
@@ -654,10 +654,10 @@ export class RegisterService {
 This method will send our model to the back-end and return an Observable that we will use on the `component.ts`.
 
 [NOTE]
-====
+== == 
 You have already learned about Observables and RxJs in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-services#server-communication[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 Now we are going to modify `register.component.ts` to call this service:
 
@@ -722,7 +722,7 @@ image::images/devon4ng/3.BuildYourOwn/register.png[Register Page, 250]
 
 Using the method and taking a look at the browser console, we should see the visitor model being returned.
 
-== Creating Services
+==  Creating Services
 
 Now that we registered a `Visitor`, it's time to create 3 important services:
 
@@ -733,11 +733,11 @@ Now that we registered a `Visitor`, it's time to create 3 important services:
 The `AuthService` will be the one that contains the login info, the `AuthGuardService` will check if a user is authorized to use a component (via the `canActivate` method), and the `LoginService` will be used to fill the `AuthService`.
 
 [NOTE]
-====
+== == 
 To keep this tutorial simple, we are going to perform the password check client side. *THIS IS NOT CORRECT!* Usually, you would send the username and password to the back-end, check that the values are correct, and create a corresponding token which you would pass in the header and use it inside the `AuthService` -- checking with some interceptors that the token is both in the `AuthService` and in the request.
-====
+== == 
 
-=== Login, Auth and AuthGuard Services
+== = Login, Auth and AuthGuard Services
 
 We are going to create the 3 services via `ng generate service <path>`:
 
@@ -779,9 +779,9 @@ export class Role {
 ----
 
 [NOTE]
-====
+== == 
 As you can see, we added a `Pageable`, since a lot of the search methods in the back-end are using `SearchCriterias`. These need pageables which specify a `paseSize` and `pageNumber`. Also, we can see that in this case `FilterVisitor` uses a pageable and adds parameters as a filter (`username` and `password`), which are optional.
-====
+== == 
 
 Then we are going to create a `config.ts` file inside the root (`angular/app`). We are going to use that file to set up default config variables, for example: role names with their permission number, default pagination settings etc. For now we are just adding the roles:
 
@@ -857,7 +857,7 @@ export class AuthService {
 
   public isPermited(userRole: string): boolean {
     return (
-      this.getPermission(this.currentRole) === this.getPermission(userRole)
+      this.getPermission(this.currentRole) == = this.getPermission(userRole)
     );
   }
 }
@@ -866,10 +866,10 @@ export class AuthService {
 We will use this service to fill it with information from the logged-in user once the user logs in. This will allow us to check the information of the logged-in user in any way necessary.
 
 [NOTE]
-====
+== == 
 You have already learned about Authentication in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-services#authentication[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 Now we are going to use this class to fill the `auth-guard.service.ts`:
 
@@ -905,7 +905,7 @@ export class AuthGuardService implements CanActivate {
       console.log('Error login');
     }
 
-    if (this.router.url === '/') {  // if the router is the app route
+    if (this.router.url == = '/') {  // if the router is the app route
       this.router.navigate(['/login']);
     }
     return false;
@@ -916,10 +916,10 @@ export class AuthGuardService implements CanActivate {
 This service will be slightly different because we have to implement an interface called `CanActivate`. It has a method called `canActivate()` returning a boolean. This method will be called when navigating to a specified route, and -- depending on the return value of this implemented method -- the navigation will proceed or be rejected.
 
 [NOTE]
-====
+== == 
 You have already learned about Guards in devon4ng https://github.com/devonfw/jump-the-queue/wiki/devon4ng-services#guards[here]. +
 You can go back and read that section again to refresh your memory.
-====
+== == 
 
 Once this is done, the last step is to fill the `login.service.ts`. In this case, there's going to be three methods:
 
@@ -974,11 +974,11 @@ export class LoginService {
       // Checks if given username and password are the ones aved in the database
       this.getVisitorByUsername(username).subscribe(
           (visitorFound) => {
-              if (visitorFound.username === username && visitorFound.password === password) {
+              if (visitorFound.username == = username && visitorFound.password == = password) {
                   this.authService.setUserId(visitorFound.id);
                   this.authService.setLogged(true);
                   this.authService.setUser(visitorFound.username);
-                  if (visitorFound.userType === false) {
+                  if (visitorFound.userType == = false) {
                       this.authService.setRole('VISITOR');
                       this.router.navigate(['ViewQueue']);
                   } else {
@@ -1013,9 +1013,9 @@ export class LoginService {
 If you remember the devon4j tutorial, we used `Criteria` in order to filter and to search the DB. The `Criteria` require a pageable and you can add extra parameters to get specific results. In `getVisitorByUsername()` you can see the creation of a `FilterVisitor` corresponding to the `Criteria` in the back-end. This `FilterVisitor` gets a `Pageable` and a `username` and will return a single result as soon as the POST call is performed. That's why we return the first page and only a single result.
 
 [NOTE]
-====
-For the tutorial we are only considering the visitor side of the application. That's why we `setLogged(false)` if it's `userType === true` (BOSS side).
-====
+== == 
+For the tutorial we are only considering the visitor side of the application. That's why we `setLogged(false)` if it's `userType == = true` (BOSS side).
+== == 
 
 Then we add to the `login-module.ts` and `LoginService`:
 
@@ -1095,11 +1095,11 @@ constructor(private registerService: RegisterService, private router: Router, pu
 ...
 ----
 
-== Finishing Touches
+==  Finishing Touches
 
 Now we only need to generate two more components (`header` and `view-queue`) and services (`AccessCodeService` and `QueueService`) in order to finish the implementation of our _JumpTheQueue_ app.
 
-=== Separating Header from Layout
+== = Separating Header from Layout
 
 By separating the header on top of the page from the layout, we enable the reuse of this component and reach a better separation of concerns across our application. To do this, we are going to generate a new component inside `angular/src/app/layout/header` via:
 
@@ -1144,7 +1144,7 @@ In the header logic (`header.component.ts`) we are simply going to inject the `A
 
 Separating components will allow us to keep the code clean and easy to work with.
 
-=== `ViewQueue` Component
+== = `ViewQueue` Component
 
 For the last view, we are going to learn how to use our Observables on the HTML template directly without having to `subscribe()` to them.
 
@@ -1230,7 +1230,7 @@ export class AccessCodeArray {
 ...
 ----
 
-=== AccessCode and Queue Services
+== = AccessCode and Queue Services
 
 After this is done, we are going to generate the `AccessCodeService` and the `QueueService`:
 
@@ -1394,7 +1394,7 @@ Now we are going to create the template `view-queue.component.html` (which will 
           <h1 style="font-size: 100px" class="text-center text-xxl push-lg">{{data.accessCodeAttended?.ticketNumber}}</h1> 
         </div>
       </div>
-      <div style="border-top: 2px solid black;" class="pad-bottom-lg pad-top-lg text-center row" *ngIf="data.accessCodeVisitor === null">
+      <div style="border-top: 2px solid black;" class="pad-bottom-lg pad-top-lg text-center row" *ngIf="data.accessCodeVisitor == = null">
         <button mat-raised-button (click)="onJoinQueue(data.queue.id)" color="primary" class="text-upper">Join the queue</button> 
       </div>
     </mat-card>
@@ -1402,7 +1402,7 @@ Now we are going to create the template `view-queue.component.html` (which will 
         <button mat-raised-button (click)="onLeaveQueue(data.accessCodeVisitor.id)" color="primary" class="text-upper">Leave the queue</button> 
     </div>
   </div>
-  <div *ngIf="data.queue === null || (data.queue !== null && data.queue.active === false)" class="row">
+  <div *ngIf="data.queue == = null || (data.queue !==  null && data.queue.active == = false)" class="row">
     <h1 style="font-size: 50px" class="text-center text-xxl push-lg">The queue is not active try again later</h1> 
   </div>
 </td-layout>
@@ -1413,9 +1413,9 @@ If you watch closely, the starting `td-layout` has an `*ngIf` inside it. This `*
 In this HTML, we give `*ngif` another use: We use it to hide certain panels. Using `accessCodeVisitor`, we hide the ticket number panel and the "leave the queue"-button and show the button to join the queue. On the contrary we can hide the ticket number and the "leave the queue"-button and only show the "join the queue"-button.
 
 [NOTE]
-====
+== == 
 In this case, since we are using HTTP and the calls are finite, there wouldn't be any problems if you don't `unsubscribe()` from their corresponding observables. However, if -- for example -- we use an observable to keep track of an input and `subscribe()` to it but not controlling the `unsubscribe()` method, the app could end up containing a memory leak. This is because -- every time we visit the component with the input -- it is going to create another subscription without unsubscribing from the last one.
-====
+== == 
 
 Finally, to adapt the `async` pipe, the `ngOnInit()` method inside `view-queue.component.ts` now does not subscribe to the observable. In its place, we equal the queue variable directly to the observable, so we can load it using `*ngIf`.
 

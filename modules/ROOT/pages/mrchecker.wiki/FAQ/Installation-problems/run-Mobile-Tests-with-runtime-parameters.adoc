@@ -1,4 +1,4 @@
-==Where should I run the comand :
+== Where should I run the comand :
 ----
 - mvn clean compile test  -Dapp="mio-file.apk -DautomationName="UiAutomator1" -Dthread.count=1
 ----

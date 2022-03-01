@@ -1,4 +1,4 @@
-==How to: Start a browser in Incognito/Private mode?
+== How to: Start a browser in Incognito/Private mode?
 
 In MrChecker there is a fpossibility of changing browser options during runtime execution.
 

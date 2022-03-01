@@ -1,4 +1,4 @@
-== Setup Azure DevOps project
+==  Setup Azure DevOps project
 
 By the end of this guide a new project in Azure DevOps will be created.
 
@@ -12,13 +12,13 @@ By the end of this guide a new project in Azure DevOps will be created.
 
 :url-az-workflows: https://docs.microsoft.com/en-us/azure/devops/boards/work-items/guidance/choose-process?view=azure-devops
 
-== Prerequisites
+==  Prerequisites
 
 . Sign up into {url-az-devops}[Azure DevOps] (just follow the section `Sign up with a personal Microsoft account`).
 . Install the {url-az-CLI}[Azure CLI].
 . Create an Azure DevOps {url-pat-token}[Personal Access Token (PAT)].
 
-== Creating the Azure DevOps project
+==  Creating the Azure DevOps project
 
 There are two ways of creating an Azure DevOps project:
 [loweralpha]
@@ -27,11 +27,11 @@ There are two ways of creating an Azure DevOps project:
 
 NOTE:  Both when done manually and when using the script with `-p` flag, you will need to choose a process workflow. Learn more about the different options in the {url-az-workflows}[official documentation]. By default, "Basic" workflow is chosen.
  
-== Creating Azure DevOps project using provided script
+==  Creating Azure DevOps project using provided script
 
 The script located at `scripts/accounts/azure-devops/create-project.sh` enables you to create a new Azure DevOps project or configure an existing one.
 
-== Usage
+==  Usage
 
 ```
 create-project.sh \
@@ -43,7 +43,7 @@ create-project.sh \
   [-w <process workflow>]
 ```
 
-== Flags
+==  Flags
 
 ```
 -n    [Required] Name of the new project.
@@ -55,6 +55,6 @@ create-project.sh \
 
 ```
 
-== Example
+==  Example
 
 `./create-project.sh -n "Hello World" -d "This is a sample application" -o devon-hangar -v public -t myToken -w agile`

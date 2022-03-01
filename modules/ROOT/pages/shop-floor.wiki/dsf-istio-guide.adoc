@@ -1,6 +1,6 @@
-==ISTIO Service Mesh Implementation Guide
+== ISTIO Service Mesh Implementation Guide
 
-== Introduction
+==  Introduction
 
 A service mesh separating applications from network functions like resilience, fault tolerance, etc,.
 
@@ -18,19 +18,19 @@ A service mesh addresses the below functions without changing the application co
 
 ISTIO service mesh is an open environment for Connecting, Securing, Monitoring services across the environments.
 
-== ISTIO Architecture
+==  ISTIO Architecture
 
 image:images/others/istio/media/image1.png[image,width=373,height=277]
 
 ISTIO is split into data plane and control plane. Refer https://istio.io/latest/docs/ops/deployment/architecture[ISTIO Architecture]
 
-=== Data Plane
+== = Data Plane
 
 The data plane is a set of intelligent proxies (Envoy) deployed as sidecars that mediate and control all network communication among microservices.
 
 image:images/others/istio/media/image2.png[image,width=199,height=185]
 
-=== Control Plane
+== = Control Plane
 
 The control plane is managing and configuring proxies to route traffic and enforcing policies.
 
@@ -38,7 +38,7 @@ The control plane is managing and configuring proxies to route traffic and enfor
 * Mixer collects telemetry and policy check
 * Citadel does Certificate management (TLS certs to Envoys)
 
-== ISTIO installation
+==  ISTIO installation
 
 Download ISTIO from https://github.com/istio/istio/releases/[releases]
 
@@ -60,7 +60,7 @@ Verify:
 
 For more installation guides, refer https://istio.io/latest/docs/setup/install/[ISTIO Installation]
 
-== Traffic Management
+==  Traffic Management
 
 ISITO's traffic management model relies on the Envoy proxies which deployed as sidecars to services.
 
@@ -74,13 +74,13 @@ Below are the traffic management API resources
 
 A virtual service, higher level abstraction of Kubernetes Service, lets you configure how requests are routed to a service within an Istio service mesh. Your mesh may have multiple virtual services or none. Virtual service consists of routing rules that are evaluated in order.
 
-=== Dark Launch
+== = Dark Launch
 
 The following virtual service routes requests to different versions of a service depending on whether the request comes from a testuser. If the testuser calls then version v1 will be used, and for others version v2.
 
 image:images/others/istio/media/image3.png[image,width=601,height=124]
 
-=== Blue/Green deployment
+== = Blue/Green deployment
 
 In blue/green deployment two versions of the application running. Both versions are live on different domain names, in this example it is mtsj.com and test.mtsj.com.
 
@@ -91,7 +91,7 @@ image:images/others/istio/media/image4.png[image,width=601,height=139]
 
 When end user browses _mtsj.com_, the gateway call goes to subset v1 of the virtual service and redirects to destination version v1, and for _test.mtsj.com_ to version v2.
 
-=== Canary Deployment (Traffic Splitting)
+== = Canary Deployment (Traffic Splitting)
 
 In canary deployment old and new versions of the application alive. ISTIO can be configured, how much percentage of traffic can go to each version.
 
@@ -101,7 +101,7 @@ Here, the traffic is divided 75% to the version V1, and 25% to the version V2, a
 
 You may refer https://istio.io/latest/docs/concepts/traffic-management[ISTIO Traffic Management] for more details.
 
-==== MyThaiStar Implementation
+== ==  MyThaiStar Implementation
 
 In this example dish will have two versions and the traffic will be routed alternately using the ISTIO configuration.
 
@@ -119,15 +119,15 @@ The above configurations are defined in a single yaml file for all the different
 . destination-rule-all defines the subsets here for later traffic routing
 . dish-50-50: traffic routing for different versions of dishmanagement.
 
-=== Network Resilience
+== = Network Resilience
 
-==== Timeout
+== ==  Timeout
 
 Istio lets you adjust the timeouts using virtual services. The default timeout is 15 seconds.
 
 image:images/others/istio/media/image6.png[image,width=185,height=155]
 
-==== Retry
+== ==  Retry
 
 A retry setting specifies the maximum number of times an Envoy proxy attempts to connect to a service if the initial call fails.
 
@@ -137,7 +137,7 @@ Retries can also be configured on Gateway Error, Connection failure, Connection 
 
 retryOn: gateway-error,connect-failure,refused-stream,5xx
 
-==== Circuit Breakers
+== ==  Circuit Breakers
 
 By defining the destination rule, set limits for calls to individual hosts within a service, such as the number of concurrent connections or how many times calls to this host have failed once the limit reached.
 
@@ -146,7 +146,7 @@ By defining the destination rule, set limits for calls to individual hosts withi
 
 image:images/others/istio/media/image8.png[image,width=182,height=150]
 
-==== Fault Injection
+== ==  Fault Injection
 
 Two types of faults can be generated using ISTIO. This is useful for the testing.
 
@@ -163,7 +163,7 @@ The below virtual service configured to wait 10s for all requests.
 image:images/others/istio/media/image10.png[image,width=254,height=217]
 
 
-== Security
+==  Security
 
 ISTIO provides security solution has the below functions.
 
@@ -171,20 +171,20 @@ ISTIO provides security solution has the below functions.
 * Mutual TLS and fine-grained access policies.
 * Auditing tools
 
-=== Authentication
+== = Authentication
 
 ISTIO provides two types of authentication.
 
 * Peer authentication, secures service to service authentication
 * Request authentication is end user authentication to verify credential attached to the request.
 
-=== Mutual TLS Authentication
+== = Mutual TLS Authentication
 
 By default, the TLS protocol only proves the identity of the server to the client. Mutual TLS authentication ensures that traffic has been traffic is secure and trusted in both the directions between the client and server.
 
 All traffic between services with proxies uses mutual TLS by default.
 
-=== Peer Authentication
+== = Peer Authentication
 
 Peer authentication has Permissive, Strict and Disabled mode. With permissive mode, a service accepts both plain text and mutual TLS traffic. Permissive mode is good at the time of onboarding and should switch to Strict later.
 
@@ -199,22 +199,22 @@ Check the default mesh policy:
 `kubectl describe meshpolicy default`
 
 
-=== Request authentication
+== = Request authentication
 
 Request authentication policies specify the values needed to validate JWT tokens.
 
 [cols=",,,",]
-|===
+|== =
 |*Authentication* |*Applies to* |*Uses* |*Identity*
 |Peer authentication |Service to service |mTLS |source.principal
 |Request authentication |End User authentication |JWT |request.auth.principal
-|===
+|== =
 
-=== Authorization
+== = Authorization
 
 Apply an authorization policy to the workload/namespace/mesh to enforce the access control. Supports ALLOW and DENY actions.
 
-==== Deny All
+== ==  Deny All
 
 Below example authorization policy without any rules denies access to all workloads in admin namespace.
 
@@ -230,7 +230,7 @@ image:images/others/istio/media/image14.png[image,width=236,height=166]
 
 You may refer https://istio.io/latest/docs/concepts/security[ISTIO Security] for more details.
 
-== Observability
+==  Observability
 
 ISTIO generates
 
@@ -240,7 +240,7 @@ ISTIO generates
 
 * Access Logs enables audit service behaviour to the individual service level.
 
-=== Grafana dashboard
+== = Grafana dashboard
 
 Grafana and Prometheus are preconfigured addons on ISTIO. To enable, choose the configuration profile which has Prometheus and Grafana enabled. Eg: Demo profile
 
@@ -248,7 +248,7 @@ Verify Prometheus and Grafana running in the cluster.
 
 `kubectl get pods -n istio-system`
 
-=== Kiali dashboard
+== = Kiali dashboard
 
 The Kiali dashboard helps you understand the structure of your service mesh by displaying the topology. The demo profile enables Kiali dashboard also.
 
@@ -258,7 +258,7 @@ Access the Kiali dashboard. The default user name is admin and default password 
 
 You may refer https://istio.io/latest/docs/concepts/observability[ISTIO Observability]
 
-== Minikube Troubleshooting Tips
+==  Minikube Troubleshooting Tips
 
 This documentation provides the troubleshooting tips while working with minikube in a local machine.
 

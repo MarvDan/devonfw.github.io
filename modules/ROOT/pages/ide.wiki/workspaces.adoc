@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==workspaces
+== workspaces
 
 The `workspaces` folder contains folders for your active work. There is a workspace folder `main` dedicated for your primary work. You may do all your work inside the `main` workspace. Also, you are free to create any number of additional workspace folders named as you like (e.g. `test`, `release`, `testing`, `my-sub-project`, etc.). Using multiple workspaces is especially relevant for Eclipse as each workspace has its own Eclipse runtime instance and configuration.
 

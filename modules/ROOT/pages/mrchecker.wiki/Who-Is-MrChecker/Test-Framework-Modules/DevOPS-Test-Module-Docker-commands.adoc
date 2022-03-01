@@ -1,8 +1,8 @@
-==What is Docker
+== What is Docker
 
 Docker is an open source software platform to create, deploy and manage virtualized application containers on a common operating system (OS), with an ecosystem of allied tools.
 
-==Where do we use Docker
+== Where do we use Docker
 
 DevOps module consists of Docker images
 
@@ -13,7 +13,7 @@ DevOps module consists of Docker images
 
 in addition, each new node is also based on Docker
 
-==Exploring basic Docker options
+== Exploring basic Docker options
 
 Let’s show some of the most important commands that are needed when working with our DevOps module based on the Docker platform. Each command given below should be preceded by a sudo call by default. If you don’t want to use `sudo` command create a Unix group called docker and add a user to it.
 
@@ -22,7 +22,7 @@ $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
 ----
 
-== Build an image from a Dockerfile
+==  Build an image from a Dockerfile
 
 ----
 ##docker build [OPTIONS] PATH | URL | -
@@ -33,7 +33,7 @@ $ sudo usermod -aG docker $USER
 $ docker build -t vc_jenkins_jobs .
 ----
 
-== Container start
+==  Container start
 
 ----
 ##docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
@@ -50,7 +50,7 @@ $ docker build -t vc_jenkins_jobs .
 $ docker run -d --name vc_jenkins_jobs vc_jenkins_jobs
 ----
 
-== Remove one or more containers
+==  Remove one or more containers
 
 ----
 ##docker rm [OPTIONS] CONTAINER
@@ -61,7 +61,7 @@ $ docker run -d --name vc_jenkins_jobs vc_jenkins_jobs
 $ docker rm -f jenkins
 ----
 
-== List containers
+==  List containers
 
 ----
 ##docker ps [OPTIONS]
@@ -70,7 +70,7 @@ $ docker rm -f jenkins
 $ docker ps
 ----
 
-== Pull an image or a repository from a registry
+==  Pull an image or a repository from a registry
 
 ----
 ##docker pull [OPTIONS] NAME[:TAG|@DIGEST]
@@ -78,7 +78,7 @@ $ docker ps
 $ docker pull jenkins/jenkins:2.73.1
 ----
 
-== Push the image or a repository to a registry
+==  Push the image or a repository to a registry
 
 Pushing new image takes place in two steps. First save the image by adding container ID to the commit command and next use push:
 
@@ -91,7 +91,7 @@ $ docker commit b46778v943fh vc_jenkins_mng:project_x
 $ docker push vc_jenkins_mng:project_x
 ----
 
-== Return information on Docker object
+==  Return information on Docker object
 
 ----
 ##docker inspect [OPTIONS] NAME|ID [NAME|ID...]
@@ -102,7 +102,7 @@ $ docker push vc_jenkins_mng:project_x
 $ docker inspect -f '{{ .Mounts }}' vc_jenkins_mng
 ----
 
-== List images
+==  List images
 
 ----
 ##docker images [OPTIONS] [REPOSITORY[:TAG]]
@@ -114,7 +114,7 @@ $ docker images
 $ docker images jenkins
 ----
 
-== Remove one or more images
+==  Remove one or more images
 
 ----
 ##docker rmi [OPTIONS] IMAGE [IMAGE...]
@@ -125,7 +125,7 @@ $ docker images jenkins
 $ docker rmi jenkins/jenkins:latest
 ----
 
-== Run a command in a running container
+==  Run a command in a running container
 
 ----
 ##docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
@@ -137,45 +137,45 @@ $ docker rmi jenkins/jenkins:latest
 $ docker exec vc_jenkins_jobs sh -c "chmod 755 config.xml"
 ----
 
-==Advanced commands
+== Advanced commands
 
-== Remove dangling images
+==  Remove dangling images
 
 ----
 $ docker rmi $(docker images -f dangling=true -q) 
 ----
 
-== Remove all images
+==  Remove all images
 
 ----
 $ docker rmi $(docker images -a -q) 
 ----
 
-== Removing images according to a pattern
+==  Removing images according to a pattern
 
 ----
 $ docker images | grep "pattern" | awk '{print $2}' | xargs docker rm 
 ----
 
-== Remove all exited containers
+==  Remove all exited containers
 
 ----
 $ docker rm $(docker ps -a -f status=exited -q) 
 ----
 
-== Remove all stopped containers
+==  Remove all stopped containers
 
 ----
 $ docker rm $(docker ps --no-trunc -aq) 
 ----
 
-== Remove containers according to a pattern
+==  Remove containers according to a pattern
 
 ----
 $ docker ps -a | grep "pattern" | awk '{print $1}' | xargs docker rmi 
 ----
 
-== Remove dangling volumes
+==  Remove dangling volumes
 
 ----
 $ docker volume rm $(docker volume ls -f dangling=true -q) 

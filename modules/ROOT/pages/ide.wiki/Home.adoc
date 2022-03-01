@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-==devonfw-ide
+== devonfw-ide
 
 Welcome to the `devonfw-ide`!!!
 

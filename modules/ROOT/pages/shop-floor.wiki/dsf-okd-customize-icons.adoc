@@ -1,10 +1,10 @@
-==How to add Custom Icons inside openshift
+== How to add Custom Icons inside openshift
 
 This is a guide to add custom icons into an Openshift cluster.
 
 https://github.com/devonfw/devonfw-shop-floor/tree/master/dsf4openshift/openshift-cluster-setup/initial-setup/customizeOpenshift/stylesheet[Here] we can find an icons.css example to use the devonfw icons.
 
-== Images Styles
+==  Images Styles
 
 The icons for templates must measure the same as below or the images don't show right:
 
@@ -12,9 +12,9 @@ The icons for templates must measure the same as below or the images don't show 
 - `Template logo`: 50px x 50px.
 - `Category logo`: 110px x 36px.
 
-== Create a css
+==  Create a css
 
-=== Custom logo for openshift cluster
+== = Custom logo for openshift cluster
 
 For this example, we are going to call the css icons.css but you can call as you wish.
 Openshift cluster draw their icon by the id header-logo, then we only need to add to our icons.css the next Style Attribute ID
@@ -27,7 +27,7 @@ Openshift cluster draw their icon by the id header-logo, then we only need to ad
 }
 ----
 
-=== Custom icons for templates
+== = Custom icons for templates
 
 To use a custom icon to a template openshift use a class name. Then, we need to insert inside our icons.css the next Style Class
 
@@ -63,7 +63,7 @@ To show that custom icon on a template, we only need to write the name of our cl
 }
 ----
 
-== Use our own css inside openshift
+==  Use our own css inside openshift
 
 To do that, we need to enter in openshift as an admin and use the next command:
 

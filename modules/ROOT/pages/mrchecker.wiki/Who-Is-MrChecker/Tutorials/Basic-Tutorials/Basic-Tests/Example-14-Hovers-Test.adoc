@@ -10,7 +10,7 @@ Labels exist in page DOM all the time but their display attributes change. In th
 
 image::images/example42.png[]
 
-===== Page Class
+== == = Page Class
 
 ----
 public class HoversPage extends BasePage {
@@ -65,11 +65,11 @@ public class HoversPage extends BasePage {
 }
 ----
 
-====== Actions
+== == ==  Actions
 
 Actions class contains methods used to execute basic user actions such as mouse moving and clicking or keys sending. Action or actions series will be performed after calling `perform()` method.
 
-===== Test Class
+== == = Test Class
 
 Steps: 
 

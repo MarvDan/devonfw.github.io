@@ -1,4 +1,4 @@
-==What is Page Object Model?
+== What is Page Object Model?
 
 image::images/image55.png[]
 

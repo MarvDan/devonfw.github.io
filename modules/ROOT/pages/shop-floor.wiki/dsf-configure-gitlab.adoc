@@ -1,6 +1,6 @@
-==GitLab Configuration
+== GitLab Configuration
 
-== Create new repository
+==  Create new repository
 
 To create a new project in GitLab, go to your dashboard and click the green _New project_ button or use the plus icon in the navigation bar.
 
@@ -12,7 +12,7 @@ image::./images/configuration/gitlab-new-prject-form.jpg[]
 
 NOTE: more information about how to create projects in https://docs.gitlab.com/ee/gitlab-basics/create-project.html[GitLab in the official documentation]
 
-== Service integration
+==  Service integration
 
 To learn how to configure the integration between GitLab and Jenkins see the next link:dsf-mirabaud-jenkins-gitLab-integration[example]
 

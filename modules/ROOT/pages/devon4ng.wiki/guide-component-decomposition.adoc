@@ -15,7 +15,7 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Component Decomposition
+== Component Decomposition
 
 When implementing a new requirement there are a few design decisions, which need to be considered.
 A decomposition in _Smart_ and _Dumb Components_ should be done first.
@@ -27,7 +27,7 @@ In the component tree this would translate to the definition of a new sub-tree.
 .Component Tree with highlighted sub-tree
 image::images/component-tree-highlighted-subtree.svg["Component Tree With Highlighted Sub Tree", width="450", link="images/component-tree-highlighted-subtree.svg"]
 
-== Defining Components
+==  Defining Components
 
 The following gives an example for component decomposition.
 Shown is a screenshot from a style guide to be implemented.
@@ -65,7 +65,7 @@ This way the widget can be reused without a form needed.
 A widgets is a typical _Smart Component_ to be shared across feature modules.
 So the `SharedModule` is the place for it to be defined.  
 
-== Defining state
+==  Defining state
 
 Every UI has state.
 There are different kinds of state, for example
@@ -155,7 +155,7 @@ So there would be no state property and just properties for every state defined 
 When complexity grows and state becomes larger this is usually a good idea.
 If the state should be shared between _Smart Components_ a store is to be used.
 
-== When are Dumb Components needed
+==  When are Dumb Components needed
 
 Sometimes it is not necessary to perform a full decomposition. The architecture does not enforce it generally. What you should keep in mind is, that there is always a point when it becomes recommendable.
 

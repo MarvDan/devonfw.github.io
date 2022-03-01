@@ -1,4 +1,4 @@
-==Run on different browsers
+== Run on different browsers
 
 image::images/image59.png[]
 

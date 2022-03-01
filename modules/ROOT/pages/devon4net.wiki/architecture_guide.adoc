@@ -6,15 +6,15 @@ toc::[]
 :stylesdir: css
 
 
-==Introduction
+== Introduction
 The https://devonfw.com[_devonfw platform_] provides a solution to building applications which combine best-in-class frameworks and libraries as well as industry proven practices and code conventions.
 It massively speeds up development, reduces risks and helps you to deliver better results.
 
-== Overview Onion Design
+==  Overview Onion Design
 
 This guide shows the overall proposed architecture in terms of separated layers making use the Onion architecture pattern. Each layers represents a logical group of components and functionality. In this guide you will learn the basics of the proposed architecture based in layers in order to develop software making use of the best practices.
 
-== Layer specification
+==  Layer specification
 [quote, Layered Application Guidelines, MSDN Microsoft]
 ____
 It is important to understand the distinction between layers and tiers. __Layers__ describe the logical groupings of the functionality and components in an application; whereas __tiers__ describe the physical distribution of the functionality and components on separate servers, computers, networks, or remote locations. Although both layers and tiers use the same set of names (presentation, business, services, and data), remember that only tiers imply a physical separation. It is quite common to locate more than one layer on the same physical machine (the same tier). You can think of the term tier as referring to physical distribution patterns such as two-tier, three-tier, and __n__-tier.
@@ -31,7 +31,7 @@ image::images/onion_architecture.png["technical architecture", width="450", link
 
 The layers are separated in physical tiers making use of interfaces. This pattern makes possible to be flexible in different kind of projects maximizing performance and deployment strategies (synchronous/asynchronous access, security, component deployment in different environments, microservices...). Another important point is to provide automated unit testing or test-driven development (TDD) facilities.
 
-==== Application layer
+== ==  Application layer
 
 The _Application Layer_ encapsulates the different .Net projects and its resource dependencies and manages the user interaction depending on the project's nature.
 
@@ -41,7 +41,7 @@ image::images/project_nature.png["technical architecture", width="850", link="im
 
 The provided application template implements an dotnet API application. Also integrates by default the Swagger client. This provides the possibility to share the contract with external applications (angular, mobile apps, external services...).
 
-==== Business layer
+== ==  Business layer
 The business layer implements the core functionality of the application and encapsulates the component's logic. 
 This layer provides the interface between the data transformation and the application exposition. This allow the data to be optimized and ready for different data consumers.
 
@@ -64,7 +64,7 @@ PE: devon4Net API template shows how to implement the TODOs service as follows:
 Where _Service_ is the base service class to be inherited and have full access for the _Unit of work_, `_TodoContext_` is the TODOs database context and _ITodoService_ is the interface of the service, which exposes the public extended methods to be implemented.
 
 
-==== Data layer
+== ==  Data layer
 The data layer orchestrates the data obtained between the _Domain Layer_ and the _Business Layer_. Also transforms the data to be used more efficiently between layers.
 
 So, if a service needs the help of another service or repository, the implemented Dependency Injection is the solution to accomplish the task.
@@ -92,7 +92,7 @@ Where _Repository_ is the the base repository class to be inherited and have ful
 NOTE: Please remember that <T> is the mapped class which reference the entity from the database context. This abstraction allows to write services implementation with different database contexts
 
 
-==== Domain layer
+== ==  Domain layer
 
 The domain layer provides access to data directly exposed from other systems. The main source is used to be a data base system. The provided template makes use of _Entity Framework_ solution from Microsoft in order to achieve this functionality.
 
@@ -112,7 +112,7 @@ The repository and unit of work patterns are create an abstraction layer between
 
 NOTE: Domain Layer has no dependencies with other layers. It contains the Entities, datasources and the Repository Interfaces.
 
-=== devon4Net architecture layer implementation
+== = devon4Net architecture layer implementation
 
 The next picture shows how the devon4Net API template implements the architecture described in previous points:
 
@@ -121,14 +121,14 @@ The next picture shows how the devon4Net API template implements the architectur
 .devon4Net architecture implementations
 image::images/onion_architecture_solution.png["devon4Net api template architecture implementation", width="400", link="images/onion_architecture_solution.png"]
 
-==== Cross-Cutting concerns
+== ==  Cross-Cutting concerns
 
 Cross-cutting provides the implementation functionality that spans layers. Each functionality is implemented through components able to work stand alone. This approach provides better reusability and maintainability.
 
 A common component set of cross cutting components include different types of functionality regarding to authentication, authorization, security, caching, configuration, logging, and communication.
 
 
-== Communication between Layers: Interfaces
+==  Communication between Layers: Interfaces
 
 The main target of the use of interfaces is to loose coupling between layers and minimize dependencies. 
 
@@ -143,8 +143,8 @@ The provided _Data Layer_ contains the abstract classes to inherit from. All new
 .Architecture representation in deep
 image::images/layer_arch_detail.png["technical architecture", width="750", link="images/layer_arch_detail.png"]
 
-== Templates
-=== State of the art
+==  Templates
+== = State of the art
 
 The provided bundle contains the devon4Net API template based on .net core. The template allows to create a microservice solution with minimal configuration. 
 
@@ -223,11 +223,11 @@ Included features:
             - Added Apache Kafka support for deliver/consume messages and create/delete topics as well             
 
 
-=== Software stack
+== = Software stack
 
 .Technology Stack of devon4Net
 [options="header"]
-|=======================
+|== == == == == == == == == == == =
 |*Topic*|*Detail*|*Implementation*
 |runtime|language & VM|.Net Core Version 3.0
 |link:guide-dataaccess-layer[persistence]|OR-mapper| https://msdn.microsoft.com/en-us/data/ee712907.aspx[Entity Framework Core]
@@ -242,16 +242,16 @@ Included features:
 |CQRS|Memory events and queue events| https://github.com/jbogard/MediatR[`MediatR`] - https://github.com/EasyNetQ/EasyNetQ[EasyNetQ] - https://github.com/confluentinc/confluent-kafka-dotnet[Kafka]
 |Kafka| Kafka support for enterprise applications| https://github.com/confluentinc/confluent-kafka-dotnet[Confluent.Kafka]
 |Fluent Validation| Fluent validation for class instances|https://fluentvalidation.net/[Fluent validation]
-|=======================
+|== == == == == == == == == == == =
 
 
-=== Target platforms
+== = Target platforms
 
 Thanks to the new .Net Core platform from Microsoft, the developed software can be published Windows, Linux, OS, X and Android platforms.
 
 
 
-== External links
+==  External links
 
 https://docs.microsoft.com/en-us/dotnet/standard/frameworks[.Net Frameworks]
 

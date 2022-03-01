@@ -8,9 +8,9 @@ toc::[]
 :listing-caption: Listing
 
 
-==devonfw Release notes 2020.04
+== devonfw Release notes 2020.04
 
-== Introduction
+==  Introduction
 
 We are proud to announce the immediate release of devonfw version 2020.04. This version is the first one with the new versioning that will make easier to the community to identify when it was released since we use the year and month as many other software distributions. 
 
@@ -42,11 +42,11 @@ Please check the detailed list below.
 
 This would have not been possible without the commitment and hard work of the devonfw core team, German, Indian and ADCenter Valencia colleagues and collaborators as, among many others, the Production Line team. 
 
-== devonfw IDE
+==  devonfw IDE
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-=== 2020.04.001
+== = 2020.04.001
 
 Starting with this release we have changed the versioning schema in `devonfw` to `yyyy.mm.NNN` where `yyyy.mm` is the date of the planned milestone release and `NNN` is a running number increased with every bug- or security-fix update.
 
@@ -59,7 +59,7 @@ Starting with this release we have changed the versioning schema in `devonfw` to
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/9?closed=1[milestone 2020.04.001].
 
-=== 3.3.1
+== = 3.3.1
 
 New release with bugfixes and new ide plugin feature:
 
@@ -74,7 +74,7 @@ New release with bugfixes and new ide plugin feature:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/10?closed=1[milestone 3.3.1].
 
-=== 3.3.0
+== = 3.3.0
 
 New release with bugfixes and new project import feature:
 
@@ -86,11 +86,11 @@ New release with bugfixes and new project import feature:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/5?closed=1[milestone 3.3.0].
 
-== devon4j
+==  devon4j
 
 The consolidated list of features for this devon4j release is as it follows.
 
-=== 2020.04.001
+== = 2020.04.001
 
 Starting with this release we have changed the versioning schema in `devonfw` to `yyyy.mm.NNN` where `yyyy.mm` is the date of the planned milestone release and `NNN` is a running number increased with every bug- or security-fix update.
 
@@ -128,11 +128,11 @@ The following changes have been incorporated in devon4j:
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2020.04.001/devon4j-doc-2020.04.001.pdf[devon4j guide 2020.04.001].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/8?closed=1[milestone devon4j 2020.04.001].
 
-== devon4ng
+==  devon4ng
 
 The consolidated list of features for this devon4ng release is as it follows.
 
-=== 2020.04.001
+== = 2020.04.001
 
 Starting with this release we have changed the versioning schema in `devonfw` to `yyyy.mm.NNN` where `yyyy.mm` is the date of the planned milestone release and `NNN` is a running number increased with every bug- or security-fix update.
 
@@ -143,7 +143,7 @@ Starting with this release we have changed the versioning schema in `devonfw` to
   ** Documentation updates and improvements.
 * https://github.com/devonfw/devon4ng/pull/95[#95]: Added token management info in documentation
 
-== devon4net
+==  devon4net
 
 The consolidated list of features for this devon4net release is as it follows:
 
@@ -155,7 +155,7 @@ The consolidated list of features for this devon4net release is as it follows:
 * Added support to order query results from database via lambda expression
 * Updated template and nuget packages
 
-== devon4node
+==  devon4node
 
 The consolidated list of features for this devon4node release is as it follows:
 
@@ -168,7 +168,7 @@ The consolidated list of features for this devon4node release is as it follows:
 * Improve documentation
 * Update dependencies to latest versions
 
-== CobiGen
+==  CobiGen
 
 New release with updates and bugfixes:
 
@@ -211,7 +211,7 @@ New release with updates and bugfixes:
     ** https://github.com/devonfw/cobigen/pull/1138[#1138]: #1108 dev cli feature custom templates folder
     ** https://github.com/devonfw/cobigen/pull/1136[#1136]: (Cobigen-CLI) Resolve Template utility classes from core
 
-== devonfw-shop-floor
+==  devonfw-shop-floor
 
 * Add documentation for deploy jenkins slaves
 * Improve documentation
@@ -242,11 +242,11 @@ New release with updates and bugfixes:
         *** Remove the following parameters: plurl, ocurl
         *** Add the following parameters: dockerurl, dockercertid, registryurl, ocname and merge
 
-== Sonar devon4j plugin
+==  Sonar devon4j plugin
 
 The consolidated list of features for this Sonar devon4j plugin release is as it follows.
 
-=== 2020.04.001
+== = 2020.04.001
 
 This is the first version using our new versioning scheme. Here, the following issues were resolved:
 
@@ -263,7 +263,7 @@ Unrelated to any specific issues, there was some refactoring and cleaning up don
 
 Changes for this release can be found in https://github.com/devonfw/sonar-devon4j-plugin/milestone/3?closed=1[milestone 2020.04.001].
 
-== My Thai Star
+==  My Thai Star
 
 As always, our reference application, My Thai Star, contains some interesting improvements that come from the new features and bug fixes from the other assets. The list is as it follows:
 

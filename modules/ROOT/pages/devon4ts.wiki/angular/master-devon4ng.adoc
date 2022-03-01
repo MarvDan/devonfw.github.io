@@ -1,23 +1,23 @@
-==Angular
+== Angular
 
 
-== Introduction
+==  Introduction
 
 include::home.adoc[leveloffset=2]
 
-== Architecture
+==  Architecture
 
 include::architecture.adoc[leveloffset=2]
 
 include::meta-architecture.adoc[leveloffset=2]
 
-== Layers
+==  Layers
 
 include::components-layer.adoc[leveloffset=2]
 
 include::services-layer.adoc[leveloffset=2]
 
-== Guides
+==  Guides
 
 include::guide-package-managers.adoc[leveloffset=2]
 
@@ -25,7 +25,7 @@ include::guide-npm-yarn-workflow.adoc[leveloffset=2]
 
 include::guide-yarn-2-support.adoc[leveloffset=2]
 
-== Angular
+==  Angular
 
 include::guide-accessibility.adoc[leveloffset=2]
 
@@ -61,7 +61,7 @@ include::guide-upgrade-devon4ng.adoc[leveloffset=2]
 
 include::guide-working-with-angular-cli.adoc[leveloffset=2]
 
-== Ionic
+==  Ionic
 
 include::guide-ionic-getting-started.adoc[leveloffset=2]
 
@@ -69,11 +69,11 @@ include::guide-ionic-from-code-to-android.adoc[leveloffset=2]
 
 include::guide-ionic-pwa.adoc[leveloffset=2]
 
-== Layouts
+==  Layouts
 
 include::guide-layout-with-angular-material.adoc[leveloffset=2]
 
-== NgRx
+==  NgRx
 
 include::guide-ngrx-getting-started.adoc[leveloffset=2]
 
@@ -83,7 +83,7 @@ include::guide-ngrx-effects.adoc[leveloffset=2]
 
 include::guide-ngrx-entity.adoc[leveloffset=2]
 
-== Cookbook
+==  Cookbook
 
 include::cookbook-abstract-class-store.adoc[leveloffset=2]
 

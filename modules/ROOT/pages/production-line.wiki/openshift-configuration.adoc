@@ -15,13 +15,13 @@ toc::[]
 :source-highlighter: rouge
 :listing-caption: Listing
 
-==Docker Configuration
+== Docker Configuration
 
-== Introduction
+==  Introduction
 
 OpenShift is a docker container orchestrator built on top Kubernetes.
 
-=== Overview
+== = Overview
 
 This template allow you to configure Jenkins in order to work with OpenShift.
 
@@ -30,7 +30,7 @@ It will:
 * Add OpenShift client as custom tool.
 * Configure an OpenShift cluster to work with.
 
-== Prerequisites
+==  Prerequisites
 
 In order to execute this template, you need the following plugins installed in your Jenkins:
 
@@ -38,7 +38,7 @@ In order to execute this template, you need the following plugins installed in y
 
 NOTE: The initialize instance template will install all plugins if you select `Openshift` or `Docker+Openshift` in the `installDeploymentPlugins` parameter
 
-== Template
+==  Template
 
 This template will be automatically created in your jenkins after executing the `Initialize_Instance` template inside the `UTILS` folder with the name `Openshift_Configuration`.
 
@@ -46,7 +46,7 @@ For manual creation see: link:how-to-add-a-template[How to add a Template]
 
 IMPORTANT: This template needs the link:https://github.com/devonfw/production-line-shared-lib[devonfw Production Line Shared Lib]
 
-=== Parameters
+== = Parameters
 
 The required parameters are:
 
@@ -55,7 +55,7 @@ The required parameters are:
 - `ocProject`: The OpenShift Project.
 - `ocToken`: The OpenShift token. In order to have a long-term token, this token should be a service account token.
 
-=== Execution
+== = Execution
 
 . Press the Build with Parameters button
 . Insert the parameters.

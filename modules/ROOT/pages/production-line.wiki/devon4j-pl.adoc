@@ -18,9 +18,9 @@ toc::[]
 image::images/devon4j-pl/pl.png[400,300]
 image::images/devon4j-pl/devonfw.png[400,300]
 
-==devon4j Template for Production Line
+== devon4j Template for Production Line
 
-== Overview
+==  Overview
 
 This template will configure your PL instance to have a 'ready to use' devon4j template. It can be used as a starting point for your Java projects. +
 This includes CICD files for a devonfw technology stack with configuration for:
@@ -28,7 +28,7 @@ This includes CICD files for a devonfw technology stack with configuration for:
 ** docker or openshift deployment
 ** pushing artifacts to nexus3
 
-== Prerequisites
+==  Prerequisites
 To be able to run Jenkins devon4j job under ProductionLine you need to configure below settings in Jenkins and Gitlab
 
 * Jenkins +
@@ -59,11 +59,11 @@ The GitLab API user needs to have API access and the rights to create a new grou
 * Select the user(s) in question and click 'Edit'
 * Scroll down to 'Access' and enable 'Can Create Group'
 
-== How to insert the Template
+==  How to insert the Template
 
 In order to add the template, you can follow the link:./how-to-add-a-template.adoc[guide].
 
-== How to run the Template
+==  How to run the Template
 
 * Build the job with parameters:
 ** PROJECT_NAME: The project name.
