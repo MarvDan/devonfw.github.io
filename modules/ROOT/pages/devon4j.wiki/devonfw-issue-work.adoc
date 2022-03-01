@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Issue creation and resolution
+==Issue creation and resolution
 
 == Issue creation
 You can create an issue https://github.com/devonfw/devon4j/issues/new[here]. Please consider the following points:

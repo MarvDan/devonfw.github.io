@@ -1,4 +1,4 @@
-= Guides
+==Guides
 
 include::guide-dependency-injection.asciidoc[leveloffset=2]
 

@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Errors & Fix
+==Errors & Fix
 
 == Unable to find valid certification path to requested target
 

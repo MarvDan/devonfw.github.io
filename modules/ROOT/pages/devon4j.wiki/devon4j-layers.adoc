@@ -1,4 +1,4 @@
-= Layers
+==Layers
 
 include::guide-client-layer.asciidoc[leveloffset=2]
 

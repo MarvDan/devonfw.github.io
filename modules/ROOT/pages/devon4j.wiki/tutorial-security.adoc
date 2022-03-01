@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-= Securing the application
+==Securing the application
 
 == CORS filter
 

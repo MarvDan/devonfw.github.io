@@ -1,4 +1,4 @@
-= Quarkus Quickstart 
+==Quarkus Quickstart 
 
 This guide serves as a quickstart on how to create a Quarkus app, briefly presenting the key functionalities that Quarkus provides, both for beginners and experienced developers.
 

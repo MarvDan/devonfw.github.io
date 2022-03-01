@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Logging
+==Logging
 
 Logging is the recording of messages during the execution of an application. The log messages provide information for developers or administrators that can be used to troubleshoot or maintain the application, such as errors and warnings, but also info messages such as runtime statistics that can be used for analysis.
 

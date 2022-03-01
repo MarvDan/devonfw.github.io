@@ -5,12 +5,12 @@ toc::[]
 
 
 [[introduction]]
-= Introduction
+==Introduction
 
 This short document describes the outline of how to manage an devonfw project. It´s purpose is to be descriptive rather than prescriptive as each Product Owner should find his or her own way on the route towards efficient steering (“management”) of an Open Source project. An exception is when the word MUST (thus capitalized) is being used. In that case it is an absolute requirement to comply with the stated directive.
 
 [[prerequisites]]
-= Prerequisites
+==Prerequisites
 
 It is critical that you and your contributors know Git and Github. An important distinction as they are not synonymous.
 
@@ -33,7 +33,7 @@ See: https://github.com/devonfw/devon/wiki/Contributing-Code-of-Conduct[https://
 (private repo)
 
 [[steering-the-project]]
-= Steering the Project
+==Steering the Project
 
 The project needs steering or managing: planning out goals, maintaining and improving documentation. This requires certain practices and tools which GitHub supports and provides out of the box:
 
@@ -130,7 +130,7 @@ The documentation minimally should contain:
 * Contact info
 
 [[cooperation-within-the-devonfw-platform-devonfw-core-team]]
-= Cooperation within the devonfw Platform (devonfw core team)
+==Cooperation within the devonfw Platform (devonfw core team)
 
 The Product Owners and contributors are principally working on the their projects without any commitment that their contributions merit financially compensation. From within Capgemini it can be decided to have work done within working hours. And to, effectively, financially compensate for activities. Quite a few people are supported by budget provided for by either the SBU or their local BU.
 

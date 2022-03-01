@@ -1,4 +1,4 @@
-= Packaging the application
+==Packaging the application
 
 The application packaging is based on maven package, so you must execute the command 
 

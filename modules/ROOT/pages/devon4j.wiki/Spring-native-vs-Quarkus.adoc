@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Spring Native vs Quarkus
+==Spring Native vs Quarkus
 
 Nowadays, it is very common to write an application and deploy it to a cloud. 
 Serverless computing and Function-as-a-Service (FaaS) have become

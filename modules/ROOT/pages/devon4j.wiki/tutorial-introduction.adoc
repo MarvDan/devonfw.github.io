@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-= Introduction
+==Introduction
 
 This is an step by step tutorial for starting an devonfw server application from setting up the environment to packaging for production.
 

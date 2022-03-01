@@ -1,7 +1,7 @@
 :toc:
 toc::[]
 
-= Creating a CRUD functionality for an entity
+==Creating a CRUD functionality for an entity
 
 In this tutorial we are going to create an entity for the application and provide services for Create, Read, Update and Delete instances of that entity.
 

@@ -1,4 +1,4 @@
-= Architecture
+==Architecture
 
 include::architecture.asciidoc[leveloffset=1]
 

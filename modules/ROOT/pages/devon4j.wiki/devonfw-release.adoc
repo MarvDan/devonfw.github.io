@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Creating a Release
+==Creating a Release
 
 This page documents how to create and publish a release of devon4j.
 

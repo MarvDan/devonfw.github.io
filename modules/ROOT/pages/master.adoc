@@ -1,4 +1,4 @@
-= devonfw guide
+==devonfw guide
 Updated at {localdatetime}
 :toc:
 :doctype: book
@@ -25,7 +25,7 @@ include::devon4node.wiki/master-devon4node[leveloffset=0]
 
 include::general/db/master-database[leveloffset=0]
 
-= Tools
+==Tools
 
 include::cobigen.wiki/master-cobigen[leveloffset=1]
 
@@ -37,7 +37,7 @@ include::solicitor.wiki/master-solicitor[leveloffset=1]
 
 include::shop-floor.wiki/master-devonfw-shop-floor[leveloffset=1]
 
-= CI/CD
+==CI/CD
 There are different CICD tools:
 [.internal]
 production-line-link

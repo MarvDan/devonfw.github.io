@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Sample My-Thai-Star application
+==Sample My-Thai-Star application
 
 The My-Thai-Star application is an example implementation for an devon4j web application. It acts as a demo and also shows various integration aspects.
 

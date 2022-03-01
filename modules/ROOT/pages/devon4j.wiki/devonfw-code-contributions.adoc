@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Code contribution
+==Code contribution
 
 We are looking forward to your contribution to devon4j. This page describes the few conventions to follow. Please note that this is an open and international project and all content has to be in (American) English language.
 

@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Deploy & Run devonfw sample app with Tomcat
+==Deploy & Run devonfw sample app with Tomcat
 This section describes the different ways to run the provided sample application.
 
 == Deploy locally inside Eclipse

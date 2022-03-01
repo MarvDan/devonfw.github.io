@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Configuration
+==Configuration
 
 link:quarkus[Quarkus] provides a comprehensive guide on configuration https://quarkus.io/guides/config-reference[here].
 

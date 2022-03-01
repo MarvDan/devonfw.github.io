@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Access-Control
+==Access-Control
 Access-Control is a central and important aspect of link:guide-security[Security]. It consists of two major aspects:
 
 * xref:Authentication[] (Who tries to access?)

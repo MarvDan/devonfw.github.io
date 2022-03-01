@@ -1,7 +1,7 @@
 :toc: macro
 toc::[]
 
-= Testing
+==Testing
 
 == Configuration
 Quarkus relies on JUnit for testing.

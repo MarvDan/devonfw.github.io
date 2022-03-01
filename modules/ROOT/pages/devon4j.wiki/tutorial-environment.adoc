@@ -1,4 +1,4 @@
-= Preparing the environment
+==Preparing the environment
 
 == Pre-requisites
 
