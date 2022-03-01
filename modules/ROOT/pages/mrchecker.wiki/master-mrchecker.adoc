@@ -188,7 +188,7 @@ include::Who-Is-MrChecker/Tutorials/Basic-Tutorials/First-Steps/BFLogger.adoc[le
 
 === E2E Tutorials
 
-include::Who-Is-MrChecker/Tutorials/E2E-Tutorials/Tutorial1[leveloffset=4]
+include::Who-Is-MrChecker/Tutorials/E2E-Tutorials/Tutorial1.adoc[leveloffset=4]
 
 == Migration from JUnit4 to JUnit5
 
@@ -218,4 +218,4 @@ include::FAQ/How-to/Start-a-browser.adoc[leveloffset=4]
 
 include::FAQ/Installation-problems/Chromedriver-version.adoc[leveloffset=4]
 
-include::FAQ/Installation-problems/My-browser-opens-up[leveloffset=4]
+include::FAQ/Installation-problems/My-browser-opens-up.adoc[leveloffset=4]
