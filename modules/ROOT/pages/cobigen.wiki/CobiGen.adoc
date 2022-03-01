@@ -41,7 +41,7 @@ This document contains the documentation of the CobiGen core module as well as a
 * Marco Rose
 
 [preface]
-include::Guide-to-the-Reader[]
+include::Guide-to-the-Reader.adoc[]
 
 :leveloffset: 0
 :toc:
@@ -49,45 +49,45 @@ include::Guide-to-the-Reader[]
 :leveloffset: 0
 include::Home[]
 
-include::cobigen-usecases[]
+include::cobigen-usecases.adoc[]
 
 :leveloffset: 0
 ==CobiGen
 :leveloffset: 2
-include::cobigen-core_configuration[]
+include::cobigen-core_configuration.adoc[]
 
 :leveloffset: 0
 === Plug-ins
 :leveloffset: 3
-include::cobigen-javaplugin[]
+include::cobigen-javaplugin.adoc[]
 
-include::cobigen-propertyplugin[]
+include::cobigen-propertyplugin.adoc[]
 
-include::cobigen-xmlplugin[]
+include::cobigen-xmlplugin.adoc[]
 
-include::cobigen-textmerger[]
+include::cobigen-textmerger.adoc[]
 
-include::cobigen-jsonplugin[]
+include::cobigen-jsonplugin.adoc[]
 
-include::cobigen-tsplugin[]
+include::cobigen-tsplugin.adoc[]
 
-include::cobigen-htmlplugin[]
+include::cobigen-htmlplugin.adoc[]
 
 :leveloffset: 0
 ==Maven Build Integration
 :leveloffset: 2
-include::cobigen-maven_configuration[]
+include::cobigen-maven_configuration.adoc[]
 
 :leveloffset: 0
 ==Eclipse Integration
 :leveloffset: 2
-include::cobigen-eclipse_installation[]
+include::cobigen-eclipse_installation.adoc[]
 
-include::cobigen-eclipse_usage[]
+include::cobigen-eclipse_usage.adoc[]
 
-include::cobigen-eclipse_logging[]
+include::cobigen-eclipse_logging.adoc[]
 
 :leveloffset: 0
 ==Template Development
 :leveloffset: 2
-include::cobigen-templates_helpful-links[]
+include::cobigen-templates_helpful-links.adoc[]

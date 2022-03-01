@@ -11,43 +11,43 @@ Updated at {localdatetime}
 :chapter-label:
 :partnums:
 
-include::getting-started.wiki/getting-started[leveloffset=0]
+include::getting-started.wiki/getting-started.adoc[leveloffset=0]
 
-include::ide.wiki/devonfw-ide[leveloffset=0]
+include::ide.wiki/devonfw-ide.adoc[leveloffset=0]
 
-include::devon4j.wiki/devon4j[leveloffset=0]
+include::devon4j.wiki/devon4j.adoc[leveloffset=0]
 
-include::devon4ng.wiki/master-devon4ng[leveloffset=0]
+include::devon4ng.wiki/master-devon4ng.adoc[leveloffset=0]
 
-include::devon4net.wiki/master-devon4net[leveloffset=0]
+include::devon4net.wiki/master-devon4net.adoc[leveloffset=0]
 
-include::devon4node.wiki/master-devon4node[leveloffset=0]
+include::devon4node.wiki/master-devon4node.adoc[leveloffset=0]
 
-include::general/db/master-database[leveloffset=0]
+include::general/db/master-database.adoc[leveloffset=0]
 
 ==Tools
 
-include::cobigen.wiki/master-cobigen[leveloffset=1]
+include::cobigen.wiki/master-cobigen.adoc[leveloffset=1]
 
-include::mrchecker.wiki/master-mrchecker[leveloffset=1]
+include::mrchecker.wiki/master-mrchecker.adoc[leveloffset=1]
 
-include::dashboard.wiki/master-dashboard[leveloffset=1]
+include::dashboard.wiki/master-dashboard.adoc[leveloffset=1]
 
-include::solicitor.wiki/master-solicitor[leveloffset=1]
+include::solicitor.wiki/master-solicitor.adoc[leveloffset=1]
 
-include::shop-floor.wiki/master-devonfw-shop-floor[leveloffset=1]
+include::shop-floor.wiki/master-devonfw-shop-floor.adoc[leveloffset=1]
 
 ==CI/CD
 There are different CICD tools:
 [.internal]
 production-line-link
 
-include::cicdgen.wiki/master-cicdgen[leveloffset=1]
+include::cicdgen.wiki/master-cicdgen.adoc[leveloffset=1]
 
-include::hangar.wiki/hangar[leveloffset=+1]
+include::hangar.wiki/hangar.adoc[leveloffset=+1]
 
-include::my-thai-star.wiki/master-my-thai-star[leveloffset=0]
+include::my-thai-star.wiki/master-my-thai-star.adoc[leveloffset=0]
 
-include::general/master-contributing[leveloffset=0]
+include::general/master-contributing.adoc[leveloffset=0]
 
-include::general/master-release-notes[leveloffset=0]
+include::general/master-release-notes.adoc[leveloffset=0]
