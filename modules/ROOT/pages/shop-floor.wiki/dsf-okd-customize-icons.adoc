@@ -14,7 +14,7 @@ The icons for templates must measure the same as below or the images don't show 
 
 ==  Create a css
 
-== = Custom logo for openshift cluster
+== Custom logo for openshift cluster
 
 For this example, we are going to call the css icons.css but you can call as you wish.
 Openshift cluster draw their icon by the id header-logo, then we only need to add to our icons.css the next Style Attribute ID
@@ -27,7 +27,7 @@ Openshift cluster draw their icon by the id header-logo, then we only need to ad
 }
 ----
 
-== = Custom icons for templates
+== Custom icons for templates
 
 To use a custom icon to a template openshift use a class name. Then, we need to insert inside our icons.css the next Style Class
 

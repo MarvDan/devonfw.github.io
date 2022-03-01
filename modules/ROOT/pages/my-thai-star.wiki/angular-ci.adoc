@@ -91,7 +91,7 @@ post {
 
 The Angular project Pipeline needed some "extra" features to complete all planned processes. Those features resulted in some additions to the project.
 
-== = Pipeline Environment
+== Pipeline Environment
 
 In order to easily reuse the pipeline in other angular projects, all variables have been defined in the block environment. All variables have the default values that Production Line uses, so if you're going to work in production line you won't have to change anything. Example:
 

@@ -18,7 +18,7 @@ labels:
     - "traefik.http.services.angular.loadBalancer.healthcheck.scheme=http"
 ----
 
-== = How to use it
+== How to use it
 
 If you want to build the images from code, change to My Thai Star root folder and execute:
 

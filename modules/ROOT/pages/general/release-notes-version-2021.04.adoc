@@ -20,7 +20,7 @@ This release includes lots of addition of new features, updates and bug fixes bu
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-== = 2021.04.001
+== 2021.04.001
 
 Update with the following bugfixes and improvements:
 
@@ -52,7 +52,7 @@ Bugfix release of with the following stories:
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2021.04.002/devon4j-doc-2021.04.002.pdf[devon4j guide 2021.04.002].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/18?closed=1[milestone devon4j 2020.04.002].
 
-== = 2021.04.001
+== 2021.04.001
 
 New release of `devon4j` with fixes, updates and improvements:
 

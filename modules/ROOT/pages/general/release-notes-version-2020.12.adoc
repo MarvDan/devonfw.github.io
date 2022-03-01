@@ -20,7 +20,7 @@ This release includes lots of addition of new features, updates and bug fixes bu
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-== = 2020.12.001
+== 2020.12.001
 
 Update with the following bugfixes and improvements:
 
@@ -35,7 +35,7 @@ Update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/16?closed=1[milestone 2020.12.001].
 
-== = 2020.08.001
+== 2020.08.001
 
 Update with the following bugfixes and improvements:
 
@@ -51,7 +51,7 @@ Update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/12?closed=1[milestone 2020.08.001].
 
-== = 2020.04.004
+== 2020.04.004
 
 Minor update with the following bugfixes and improvements:
 
@@ -60,7 +60,7 @@ Minor update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/14?closed=1[milestone 2020.04.004].
 
-== = 2020.04.003
+== 2020.04.003
 
 Minor update with the following bugfixes and improvements:
 
@@ -69,7 +69,7 @@ Minor update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/13?closed=1[milestone 2020.04.003].
 
-== = 2020.04.002
+== 2020.04.002
 
 Minor update with the following bugfixes and improvements:
 
@@ -86,7 +86,7 @@ The full list of changes for this release can be found in https://github.com/dev
 
 The consolidated list of features for this devon4j release is as it follows.
 
-== = 2020.12.001
+== 2020.12.001
 
 New release of `devon4j` with pluggable web security (CSRF starter) and `CompletableFuture` support for async REST service client as well as other improvements:
 
@@ -102,7 +102,7 @@ New release of `devon4j` with pluggable web security (CSRF starter) and `Complet
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2020.12.001/devon4j-doc-2020.12.001.pdf[devon4j guide 2020.12.001].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/14?closed=1[milestone devon4j 2020.12.001].
 
-== = 2020.08.001
+== 2020.08.001
 
 New release of `devon4j` with async REST service client support and other improvements:
 
@@ -113,7 +113,7 @@ New release of `devon4j` with async REST service client support and other improv
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2020.08.001/devon4j-doc-2020.08.001.pdf[devon4j guide 2020.08.001].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/12?closed=1[milestone devon4j 2020.08.001].
 
-== = 2020.04.002
+== 2020.04.002
 
 Minor update of `devon4j` with the following bugfixes and small improvements:
 
@@ -146,33 +146,33 @@ https://github.com/devonfw/cobigen/milestone/181?closed=1[CobiGen CLI v7.1.0]
 https://github.com/devonfw/cobigen/milestone/172?closed=1[CobiGen Maven Plug-in v7.1.0]
 https://github.com/devonfw/cobigen/milestone/170?closed=1[CobiGen Eclipse Plug-in v7.1.0]
 
-== = Templates
+== Templates
 
 * Removed environment.ts from the crud_angular_client_app/CRUD devon4ng Angular App increment since Cobigen did not make any changes in it
 * Removed cross referencing between template increments since there is currently no useful use case for it and it leads to a few problems
 * https://github.com/devonfw/cobigen/milestone/182?closed=1[v2020.12.001]
 
-== = Java Plug-in
+== Java Plug-in
 	
 * Now properly merges using the input files line delimiters instead of defaulting to those of the host system.
 * https://github.com/devonfw/cobigen/milestone/169?closed=1[v7.1.0]
 
-== = TypeScript Plug-in
+== TypeScript Plug-in
 
 * Fixed NPE Added the option to read a path from an object input
 * https://github.com/devonfw/cobigen/milestone/185?closed=1[v7.1.0]
 
-== = Property Plug-in
+== Property Plug-in
 
 * Now properly merges using the input files line delimiters instead of defaulting to those of the host system.
 * https://github.com/devonfw/cobigen/milestone/178?closed=1[v7.1.0]
 
-== = OpenAPI Plug-in
+== OpenAPI Plug-in
 
 * Fixed an issue where nullable enums lead to errors
 * https://github.com/devonfw/cobigen/milestone/176?closed=1[7.1.0]
 
-== = Textmerger
+== Textmerger
 
 * Now properly merges using the input files line delimiters instead of defaulting to those of the host system.
 * https://github.com/devonfw/cobigen/milestone/179?closed=1[v7.1.0]

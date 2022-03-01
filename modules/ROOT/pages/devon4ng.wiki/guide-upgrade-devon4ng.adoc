@@ -31,7 +31,7 @@ In order to perform a basic upgrade we will execute:
 $ ng update @angular/cli @angular/core
 ```
 
-== = Upgrade to new Angular version
+== Upgrade to new Angular version
 
 The process will be the same, but first we need to make sure that our devon4ng application is in the lates version of Angular 8, so the `ng update` command can perform the upgrade not only in the dependencies but also making code changes to reflect the new features and fixes.
 
@@ -77,7 +77,7 @@ More information at https://angular.io/guide/updating-to-version-9 and https://a
 $ ng update @angular/cli @angular/core @angular/material
 ```
 
-== = Ionic/Angular applications
+== Ionic/Angular applications
 
 Just following the same procedure we can upgrade Angular applications, but we must take care of important specific Ionic dependencies:
 
@@ -85,7 +85,7 @@ Just following the same procedure we can upgrade Angular applications, but we mu
 $ ng update @angular/cli @angular/core @ionic/angular @ionic/angular-toolkit [@ionic/...]
 ```
 
-== = Other dependencies
+== Other dependencies
 
 Every application will make use of different dependencies. Angular CLI `ng upgrade` will also take care of these ones. For example, if you need to upgrade `@capacitor` you will perform:
 
@@ -99,6 +99,6 @@ Another example could be that you need to upgrade `@ngx-translate` packages. As 
 $ ng update @ngx-translate/core @ngx-translate/http-loader
 ```
 
-== = Angular Update Guide online tool
+== Angular Update Guide online tool
 
 It is recommended to use the Angular Update Guide tool at https://update.angular.io/ that will provide the necessary steps to upgrade any Angular application depending on multiple criteria. 

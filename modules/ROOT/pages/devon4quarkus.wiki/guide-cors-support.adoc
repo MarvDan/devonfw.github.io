@@ -22,7 +22,7 @@ Quarkus comes with a https://quarkus.io/guides/http-reference#cors-filter[CORS f
 quarkus.http.cors=true
 ```
 
-== = Configuration with quarkus
+== Configuration with quarkus
 
 Here’s an example of a full CORS filter configuration, including a regular expression defining an allowed origin:
 
@@ -76,7 +76,7 @@ quarkus.http.cors.access-control-allow-credentials=true
 
 |== =
 
-== = Configuration with service mesh
+== Configuration with service mesh
 Alternatively, if you use service mesh, you can also define your CORS policy directly there. Here is an example from https://istio.io/latest/docs/reference/config/networking/virtual-service/#CorsPolicy[istio]
 
 More information about the CORS headers can be found https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#cors[here]

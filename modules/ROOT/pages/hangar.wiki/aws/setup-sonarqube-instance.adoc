@@ -3,7 +3,7 @@
 The scope of this section is to deploy an AWS EC2 instance running SonarQube for further usage from a CI pipeline. A set of scripts and a Terraform recipe have been created in order to assist you in the launch of a SonarQube instance with an embedded database.
 
 ==  Getting Started
-== = Prerequisites
+== Prerequisites
 * https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started[Install Terraform].
 
 * https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html[Install AWS CLI].
@@ -16,7 +16,7 @@ aws ec2 create-key-pair --key-name sonarqube --query 'KeyMaterial' --output text
 
 IMPORTANT: This will create a public key, directly stored in AWS (current region only), and a private key stored in the `sonarqube.pem` file, that will be necessary if you ever need to access the instance, so be sure you store it securely.
 
-== = Relevant files
+== Relevant files
 
 * `main.tf` contains declarative definition written in HCL of AWS infrastructure.
 * `setup_sonarqube.sh` script to be run on EC2 instance that installs and deploys a container running SonarQube.

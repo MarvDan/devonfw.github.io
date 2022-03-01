@@ -33,13 +33,13 @@ This is the last release with the current semantic versioning number and without
 
 ==  Changes and new features
 
-== = devonfw-ide
+== devonfw-ide
 
 We have entirely rewritten our automated solution for your local IDE (integrated desktop environment). The former oasp4j-ide and devonfw distributions with their extra-large gigabyte zip files are not entirely replaced with devonfw-ide. This new solution is provided as a small *.tar.gz file that is publicly available. It works on all platforms and has been tested on Windows, MacOS, and Linux. After extraction you only need to run a `setup` script. Here you provide a settings git URL for your customer project or simply hit return for testing or small projects. After reading and confirming the terms of use it will download all required tools in the proper versions for your operating system and configure them. Instead of various confusing scripts there is now only one CLI command `devon` for all use-cases what gives a much better user experience.
 
 To get started go to the https://github.com/devonfw/ide/blob/master/documentation/Home.adoc#devon-ide[home page]. There is even a https://github.com/devonfw/ide/blob/master/documentation/migration-from-devonfw-3.0.0-or-lower.adoc#migration-from-oasp4j-ide[migration-guide] if you are currently used to the old approach and want to quickly jump into the new solution.
 
-== = My Thai Star Sample Application
+== My Thai Star Sample Application
 
 The new release of My Thai Star has focused on the following improvements:
 
@@ -79,7 +79,7 @@ The new release of My Thai Star has focused on the following improvements:
 ** New deployment pipelines
 ** Automated creation of pipelines in Jenkins
 
-== = Documentation updates
+== Documentation updates
 
 This release addresses the new documentation workflow, being now possible to keep the documentation synced with any change. The new documentation includes the following contents:
 
@@ -97,7 +97,7 @@ This release addresses the new documentation workflow, being now possible to kee
 * Contribution guide
 * Release notes
 
-== = devon4j
+== devon4j
 
 The following changes have been incorporated in devon4j:
 
@@ -111,7 +111,7 @@ The following changes have been incorporated in devon4j:
 * Many improvements to documentation (added JDK guide, architecture-mapping, JMS, etc.)
 * For all details see https://github.com/devonfw/devon4j/milestone/6?closed=1[milestone].
 
-== = devon4ng
+== devon4ng
 
 The following changes have been incorporated in devon4ng:
 
@@ -134,7 +134,7 @@ The following changes have been incorporated in devon4ng:
 ** Layout with Angular Material
 ** Theming with Angular Material
 
-== = devon4net
+== devon4net
 
 The following changes have been incorporated in devon4net:
 
@@ -166,7 +166,7 @@ The following changes have been incorporated in devon4net:
 *** Repository classes unified and reviewed for increasing performance and reduce the consumed memory 
 *** Added support for different database servers: In memory, Cosmos, MySQL + MariaDB, Firebird, PostgreSQL, Oracle, SQLite, Access, MS Local.
 
-== = devon4node
+== devon4node
 
 The following changes have been incorporated in devon4node:
 
@@ -195,7 +195,7 @@ The following changes have been incorporated in devon4node:
 * New application samples
 
 
-== = CobiGen
+== CobiGen
 
 * CobiGen core new features:
 ** CobiGen CLI: Update command implemented. Now you will be able to update easily all your CobiGen plug-ins and templates inside the CLI. Please take a look into the https://github.com/devonfw/cobigen/wiki/howto_Cobigen-CLI-generation[documentation] for more info.
@@ -212,7 +212,7 @@ The following changes have been incorporated in devon4node:
 ** CobiGen for Eclipse is now JDK11 compatible.
 ** Fixed bugs when adapting templates and other bugs on the CobiGen core. 
 
-== = devonfw shop floor
+== devonfw shop floor
 
 * Added devon4ng OpenShift templates
 * Added devon4j OpenShift templates
@@ -224,7 +224,7 @@ The following changes have been incorporated in devon4node:
 
 * Patched minor bugs
 
-== = sonar-devon4j-plugin
+== sonar-devon4j-plugin
 
 sonar-devon4j-plugin is a SonarQube plugin for architecture governance of devon4j applications. It verifies the architecture and conventions of devon4j, the Java stack of devonfw. The following changes have been incorporated:
 * Plugin was renamed from sonar-devon-plugin to sonar-devon4j-plugin

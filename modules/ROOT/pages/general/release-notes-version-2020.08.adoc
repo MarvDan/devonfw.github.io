@@ -20,7 +20,7 @@ This release includes lots of addition of new features, updates and bug fixes bu
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-== = 2020.08.001
+== 2020.08.001
 
 Update with the following bugfixes and improvements:
 
@@ -36,7 +36,7 @@ Update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/12?closed=1[milestone 2020.08.001].
 
-== = 2020.04.004
+== 2020.04.004
 
 Minor update with the following bugfixes and improvements:
 
@@ -45,7 +45,7 @@ Minor update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/14?closed=1[milestone 2020.04.004].
 
-== = 2020.04.003
+== 2020.04.003
 
 Minor update with the following bugfixes and improvements:
 
@@ -54,7 +54,7 @@ Minor update with the following bugfixes and improvements:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/13?closed=1[milestone 2020.04.003].
 
-== = 2020.04.002
+== 2020.04.002
 
 Minor update with the following bugfixes and improvements:
 
@@ -71,7 +71,7 @@ The full list of changes for this release can be found in https://github.com/dev
 
 The consolidated list of features for this devon4j release is as it follows.
 
-== = 2020.08.001
+== 2020.08.001
 
 New release of `devon4j` with async REST service client support and other improvements:
 
@@ -82,7 +82,7 @@ New release of `devon4j` with async REST service client support and other improv
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2020.08.001/devon4j-doc-2020.08.001.pdf[devon4j guide 2020.08.001].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/12?closed=1[milestone devon4j 2020.08.001].
 
-== = 2020.04.002
+== 2020.04.002
 
 Minor update of `devon4j` with the following bugfixes and small improvements:
 
@@ -119,7 +119,7 @@ New `devon4node` version is published, the changes are:
 
 CobiGen version numbers have been consolidated to now represent plug-in compatibility in the major release number (7.x.x).
 
-== = CLI
+== CLI
 
 * CLI increments can be referenced by name and description.
 * Ability to configure logging.
@@ -128,32 +128,32 @@ CobiGen version numbers have been consolidated to now represent plug-in compatib
 * Possibility to prefer custom plug-ins over CobiGen ones.
 * Fixed bug, which broke whole CobiGen execution in case a custom CobiGen Plug-in was throwing an arbitrary exception.
 
-== = Eclipse
+== Eclipse
 
 * Improved Performance by lazy plug-in loading.
 * Possibility to prefer custom plug-ins over CobiGen ones.
 * Fixed bug, which broke whole CobiGen execution in case a custom CobiGen Plug-in was throwing an arbitrary exception.
 
-== = Maven
+== Maven
 
 * Fixed bug to properly load template util classes.
 * Improved Performance by lazy plug-in loading.
 * Possibility to prefer custom plug-ins over CobiGen ones.
 * Fixed bug, which broke whole CobiGen execution in case a custom CobiGen Plug-in was throwing an arbitrary exception.
 
-== = XML Plug-in
+== XML Plug-in
 
 * Added ability to provide custom merge schemas as part of the template folder.
 * Added further merge strategies for merging including XML validation.
 
-== = Java Plug-in
+== Java Plug-in
 	
 * Fixed NPE for annotated constructors.
 * Fixed line separator handling to now prefer the file's one instead of the system ones.
 * Fixed unwanted new lines in constructors after merging.
 * Fixed annotation formatting after merge.
 
-== = TypeScript Plug-in
+== TypeScript Plug-in
 
 * Fixed issue on automatic update of the ts-merger bundle.
 

@@ -13,7 +13,7 @@ endif::[]
 ==  devon4ng
 Created to support the development of Angular applications, https://github.com/devonfw/devon4ng[devon4ng] includes Google https://material.io/[Material Design] as main visual language. It takes maximum the advantage of Angular's possibilities and Material components, making it possible to build modular, well-designed, responsive front-end applications.
 
-== = devon4ng Technology Stack
+== devon4ng Technology Stack
 devon4ng works on top of Angular but also provides several tools, libraries and code conventions to make your Angular apps easier to develop. It's based on the following technologies:
 
 - http://angular.io/[Angular Framework] as the main development framework
@@ -33,7 +33,7 @@ The main advantages of these technologies are listed here:
 * *Angular Material* is composed of a number of fancy components like tabs, cards, buttons, ...
 * *Yarn* is faster than https://www.npmjs.com/[NPM] and provides more advanced functionalities to manage dependencies.
 
-== = devon4ng Tools
+== devon4ng Tools
 
 == ==  IDE
 There is no integrated IDE that comes with the framework. This means you are free to work with whatever IDE suits you best. However, we highly recommend the use of https://code.visualstudio.com/[Visual Studio Code], for which we provide an https://github.com/devonfw/extension-pack-vscode[extension pack] that contains many useful plugins to make development with Typescript and Angular even easier.
@@ -44,7 +44,7 @@ The https://github.com/angular/angular-cli[Agular CLI] lets developers automatiz
 == ==  Testing
 Testing ensures that the TypeScript code used in our services and components works properly, but we can also check HTML tags and properties. There are many options to test Angular apps, however https://github.com/karma-runner/karma[Karma] and https://github.com/jasmine/jasmine[Jasmine] are the most widespread test frameworks.
 
-== = devon4ng Architecture Overview
+== devon4ng Architecture Overview
 Since Angular is used as the foundational framework for devon4ng, the application architecture is going to be the same as the https://angular.io/docs/ts/latest/guide/architecture.html[Angular architecture]:
 
 image::images/devon4ng/1.Intro/architecture_overview.png[Angular Architecture Overview]

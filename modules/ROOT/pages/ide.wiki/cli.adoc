@@ -37,7 +37,7 @@ Every commandlet takes the following generic arguments:
 |`-q` or `--quiet` |be quiet and avoid output.
 |== == == == == == == == == == == =
 
-== = Command-wrapper
+== Command-wrapper
 For many commandlets the `devon` command acts as a wrapper.
 Similar to `mvnw` or `gradlew` you can use it as a proxy command.
 Therefore `devon mvn clean install` will be the same as `mvn clean install`.
@@ -46,7 +46,7 @@ We see the main benefit in this for writing portable scripts that you may commit
 In your daily usage you can and surely should avoid to always type `devon` as prefix to every command.
 However, when you automate and want to avoid "command not found" errors, you can simply prefix the command with `devon`.
 
-== = Commandlet overview
+== Commandlet overview
 
 The following commandlets are currently available:
 

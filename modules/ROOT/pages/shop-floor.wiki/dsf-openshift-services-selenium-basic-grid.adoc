@@ -14,7 +14,7 @@ Selenium Grid is the platform provided by Selenium in order to perform the execu
 
 It basically consists on a Selenium Server (also known as hub or simply server) which redirects the requests it receives to the appropriate node (Firefox node, Chrome node, ...) depending on how the Selenium WebDriver is configured or implemented (See link:http://www.seleniumhq.org/docs/[Selenium Doc.])
 
-== = Additional documentacion:
+== Additional documentacion:
 
 * link:https://www.tutorialspoint.com/selenium/selenium_grids.htm[] 
 * link:http://www.softwaretestinghelp.com/selenium-ide-download-and-installation-selenium-tutorial-2[]
@@ -33,7 +33,7 @@ The present procedure is divided into two different main parts:
 * Second part: Selenium node installation (Firefox & Chrome)
 * Create persistent volumes for the hub and the node(s)
 
-== = Selenium Hub installation
+== Selenium Hub installation
 
 The followed approach consists on deploying new image from the OpenShift WenConsole.
 
@@ -85,7 +85,7 @@ image::./images/others/selenium/hub/done2.png[]
 
 '''
 
-== = Selenium Node Firefox installation
+== Selenium Node Firefox installation
 
 _(Same steps apply for Selenium Node Chrome with the selenium/node-chrome Docker image)_
 
@@ -135,7 +135,7 @@ image::./images/others/selenium/node/done3.png[]
 
 '''
 
-== = Persistent Volumes
+== Persistent Volumes
 
 Last part of the installation of the Selenium Grid consists on creating persistent volumes for both, the hub container and the node container.
 

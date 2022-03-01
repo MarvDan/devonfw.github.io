@@ -42,7 +42,7 @@ There are feature modules and special modules described by the Angular Style Gui
 Angular or Angular Style Guide give no guidance on how to structure a module internally.
 This is where this architecture comes in.
 
-== = Layers
+== Layers
 
 The architecture describes two layers. The terminology is based on common language in web development.
 
@@ -63,7 +63,7 @@ A use case services interacts with the store and adapters.
 Methods of use case services are the API for _Smart Components_.
 Those methods are _Actions_ in reactive terminology.
 
-== = Modules
+== Modules
 
 Angular requires a module called _app_ which is the main entrance to an application at runtime - this module gets bootstrapped.
 Angular Style Guide defines feature modules and two special modules - https://angular.io/guide/ngmodule#the-core-module[_core_] and https://angular.io/guide/ngmodule#shared-module[_shared_]. 

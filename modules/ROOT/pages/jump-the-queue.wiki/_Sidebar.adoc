@@ -1,4 +1,4 @@
-== = link:home[Home]
+== link:home[Home]
 
 == ==  link:jump-the-queue-design[JumpTheQueue Design]
 

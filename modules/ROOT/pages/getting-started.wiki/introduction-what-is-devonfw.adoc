@@ -36,14 +36,14 @@ _devonfw_ uses a state-of-the-art, open source, core reference architecture for 
 ==  The devonfw Technology Stack
 devonfw is fully open source and consists of the following technology stacks:
 
-== = Back-End Solutions
+== Back-End Solutions
 For server applications, _devonfw_ includes the following solutions:
 
 * https://github.com/devonfw/devon4j[devon4j]: Server implementation based on Java, https://spring.io/[Spring] and https://projects.spring.io/spring-boot/[Spring Boot].
 * https://github.com/devonfw/devon4net[devon4net]: Server implementation based on https://dotnet.microsoft.com/[.NET].
 * https://github.com/devonfw/devon4node[devon4node]: Server implementation based on https://nestjs.com/[NestJS].
 
-== = Front-End solutions
+== Front-End solutions
 For client applications, _devonfw_ includes two solutions based on _TypeScript_, _JavaScript_, _C#_ and _.NET_:
 
 * https://github.com/devonfw/devon4ng[devon4ng]: Frontend implementation based on https://angular.io/[Angular] and a hybrid mobile implementation based on https://ionicframework.com/[Ionic].
@@ -51,7 +51,7 @@ For client applications, _devonfw_ includes two solutions based on _TypeScript_,
 
 ==  Custom Tools
 
-== = devonfw-ide
+== devonfw-ide
 The https://github.com/devonfw/ide/wiki#devonfw-ide[devonfw-ide] is _not_ one monolithic program that is installed with a traditional executable; rather it's a collection of scripts which are invoked via command line to automate several, repetetive development tasks. These scripts then interact with other tools, frameworks, and third-party IDEs to streamline the development workflow.
 
 image::images/introduction/devonfw-ide.png[,width="550", link="images/introduction/devonfw-ide.png"]
@@ -84,7 +84,7 @@ It supports the following build-systems:
 
 TIP: Other IDEs, platforms, or tools can easily be integrated as https://github.com/devonfw/ide/wiki/cli#commandlets[commandlets].
 
-== = CobiGen
+== CobiGen
 
 https://github.com/devonfw/cobigen/wiki#architecture[CobiGen] is a code generator included in the _devonfw-ide_, that allows users to generate the project structure and large parts of the application component code. This saves a lot of time, which is usually wasted on repetitive engineering tasks and/or writing boilerplate code.
 

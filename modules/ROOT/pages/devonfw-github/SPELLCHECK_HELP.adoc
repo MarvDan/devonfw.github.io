@@ -18,13 +18,13 @@ Spellcheck workflow has 2 parts:
 * Configuration
 * Dictionary
 
-== = Configuration 
+== Configuration 
 
 https://github.com/devonfw/.github/blob/master/.github/workflows/.spellcheck.yml[Configuration file] from .github contains all configuration for spellcheck workflow. 
 
 In configuration file you can configure folder path, file type to be scanned as well as filters to ignore some format of text. Currently, spellcheck is following en_US as configured in this file.
 
-== = Dictionary
+== Dictionary
 
 Spellcheck has option to add your customized spellings which you think are correct but detected as mistakes in spellcheck report. 
 

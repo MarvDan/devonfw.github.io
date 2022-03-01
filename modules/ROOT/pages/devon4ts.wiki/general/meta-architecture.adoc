@@ -19,7 +19,7 @@ toc::[]
 
 ==  Introduction
 
-== = Purpose of this document
+== Purpose of this document
 
 In our business applications, the client easily gets underestimated. Sometimes the client is more complex to develop and design than the server. While the server architecture is nowadays easily to agree as common sense, for clients this is not as obvious and stable especially as it typically depends on the client framework used. Finding a concrete architecture applicable for all clients may therefore be difficult to accomplish. 
 
@@ -27,11 +27,11 @@ This document tries to define on a high abstract level, a reference architecture
 
 The architecture proposed herein is neither new nor was it developed from scratch. Instead it is the gathered and consolidated knowledge and best practices of various projects (s. References).
 
-== = Goal of the Client Architecture
+== Goal of the Client Architecture
 
 The goal of the client architecture is to support the non-functional requirements for the client, i.e. mostly maintainability, scalability, efficiency and portability. As such it provides a component-oriented architecture following the same principles listed already in the devonfw architecture overview. Furthermore it ensures a homogeneity regarding how different concrete UI technologies are being applied in the projects, solving the common requirements in the same way.
 
-== = Architecture Views
+== Architecture Views
 
 As for the server we distinguish between the business and the technical architecture. Where the business architecture is different from project to project and relates to the concrete design of dialog components given concrete requirements, the technical architecture can be applied to multiple projects.
 
@@ -46,7 +46,7 @@ The following gives a complete overview of the proposed reference architecture. 
 image::../images/devonfw-methodology/OASP_ClientArchitecture_CompleteOverview.png[Complete Client Architecture Overview, width="450", link="../images/devonfw-methodology/OASP_ClientArchitecture_CompleteOverview.png"]
 _Figure 1 Overview_
 
-== = Client Architecture
+== Client Architecture
 
 On the highest level of abstraction we see the need to differentiate between dialog components and their container they are managed in, as well as the access to the application server being the back-end for the client (e.g. an devon4j instance). This section gives a summary of these components and how they relate to each other. Detailed architectures for each component will be supplied in subsequent sections
  
@@ -80,7 +80,7 @@ Dialog components need to be managed in their life-cycle and how they can be cou
 
 Dialogs will require a back-end application server in order to execute their business logic. Typically in an devonfw application the service layer will provide interfaces for the functionality exposed to the client. These business oriented interfaces should also be present on the client backed by a proxy handling the concrete call of the server over the network. This component provides the set of interfaces as well as the proxy.
 
-== = Dialog Container Architecture
+== Dialog Container Architecture
 
 The dialog container can be further structured into the following components with their respective tasks described in own sections:
  
@@ -112,7 +112,7 @@ The service registry offers the possibility to define, register and lookup these
 
 Services should be defined as interfaces allowing for different implementations and thus loose coupling.
 
-== = Dialog Component Architecture
+== Dialog Component Architecture
 
 A dialog component has to support all or a subset of the following tasks: +
 (T1)	Displaying the user interface incl. internationalization +
@@ -171,7 +171,7 @@ When interacting, dialog components should interact only between the same or low
 
 ==  Appendix
 
-== = Notes about Quasar Client
+== Notes about Quasar Client
 
 The Quasar client architecture as the consolidated knowledge of our CSD projects is the major source for the above drafted architecture. However, the above is a much simplified and more agile version thereof:
 

@@ -15,14 +15,14 @@ The parts to be deployed are: an NGINX reverse proxy, the java application and t
 
 Deploys on the server the Java part of My Thai Star.
 
-== = Parameters
+== Parameters
 
 - `*registryUrl*`: The URL to the docker registry where the image is stored.
 - `*registryCredentialsId*`: Credentials to publish/download images from registry.
 - `*dockerNetwork*`: Network of your My Thai Star application. You can deploy several versions of MTS in the same server by changing the `dockerNetwork`.
 - *VERSION*: The version that you can to deploy.
 
-== = Pipeline steps
+== Pipeline steps
 
 - *Create docker network*: Create the docker network with the name provided as parameter.
 - *Deploy new image*: Deploy a new java container. If it already exists, first it delete the previous one.
@@ -31,14 +31,14 @@ Deploys on the server the Java part of My Thai Star.
 
 Deploys on the server the Angular part of My Thai Star
 
-== = Parameters
+== Parameters
 
 - `*registryUrl*`: The URL to the docker registry where the image is stored.
 - `*registryCredentialsId*`: Credentials to publish/download images from registry.
 - `*dockerNetwork*`: Network of your My Thai Star application. You can deploy several versions of MTS in the same server by changing the `dockerNetwork`.
 - *VERSION*: The version that you can to deploy.
 
-== = Pipeline steps
+== Pipeline steps
 
 - *Create docker network*: Create the docker network with the name provided as parameter.
 - *Deploy new image*: Deploy a new angular container. If it already exists, first it delete the previous one.
@@ -49,7 +49,7 @@ NOTE: As reverse proxy connects to the Java and Angular application, both must b
 
 The `MyThaiStar_REVERSE-PROXY_DEPLOY` pipeline will deploy the My Thai Star reverse proxy into a remote machine using docker.
 
-== = Parameters
+== Parameters
 
 - `*registryUrl*`: The URL to the docker registry where the image is stored.
 - `*registryCredentialsId*`: Credentials to publish/download images from registry.
@@ -59,7 +59,7 @@ The `MyThaiStar_REVERSE-PROXY_DEPLOY` pipeline will deploy the My Thai Star reve
 - *docker Network*: Network of your My Thai Star application. You can deploy several versions of MTS in the same server by changing the port and the docker Network.
 - *VERSION*: The version that you can to deploy.
 
-== = Pipeline steps
+== Pipeline steps
 
 - *Create docker network*: Create the docker network with the name provided as parameter.
 - *Create the Docker image*: If build-Reverse-Proxy is enabled, this step will create a new docker image and publish it to the docker registry.

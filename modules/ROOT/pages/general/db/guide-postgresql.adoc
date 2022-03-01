@@ -7,7 +7,7 @@ This section gives guidance and hints for those who use https://www.postgresql.o
 
 ==  Java
 
-== = Driver
+== Driver
 PostgreSQL is fully open-source. The driver is therefore available in maven central.
 Your dependency for the driver should look as following:
 

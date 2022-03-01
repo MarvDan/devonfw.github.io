@@ -6,7 +6,7 @@ https://github.com/devonfw/devonfw-shop-floor/tree/master/dsf4openshift/openshif
 
 ==  Create a scrip to add custom langauges and custom catalog categories
 
-== = Custom language
+== Custom language
 
 For this example, we are going add a new language into the languages category. To do that we must create a script and we named as catalog-categories.js
 [source,Javascript]
@@ -31,7 +31,7 @@ category.subCategories.splice(2,0,{ // Insert at the third spot.
 });
 ----
 
-== = Custom category
+== Custom category
 
 For this example, we are going add a new category into the category tab. To do that we must create a script and we named as catalog-categories.js
 [source,Javascript]

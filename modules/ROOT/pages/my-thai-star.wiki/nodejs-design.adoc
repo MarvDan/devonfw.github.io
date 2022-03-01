@@ -40,7 +40,7 @@ image::images/nodejs/folder_organization.png[, link="images/nodejs/folder_organi
 - Logic Layer: the layer in charge of hosting the business logic of the application.
 - Data Access Layer: the layer to communicate with the data base.
 
-== = Service layer
+== Service layer
 
 The services layer will be solved using REST services with https://expressjs.com[ExpressJS] 
 
@@ -115,7 +115,7 @@ router.post('/booking/search', (req: types.CustomRequest, res: Response) => {
 });
 ----
 
-== = Logic layer and Data access layer
+== Logic layer and Data access layer
 
 In the _logic_ layer we will locate all the _business logic_ of the application. It will be located in the file logic.ts. If in this layer we need to get access to the data, we make use of data access layer directly, in this case using devon4node with the DynamoDB adapter.
 
@@ -141,11 +141,11 @@ We could define the data access layer separately, but devon4node allows us to do
 
 For the _Authentication_ and _Authorization_ the app will implement the `https://jwt.io/[json web token]` protocol.
 
-== = JWT basics
+== JWT basics
 
 Refer to link:java-design#jwt-basics[JWT basics] for more information.
 
-== = JWT implementation details
+== JWT implementation details
 
 The _Json Web Token_ pattern will be implemented based on the `https://github.com/auth0/node-jsonwebtoken[_JSON web token_]` library available on npm.
 

@@ -16,7 +16,7 @@ In this chapter we are going to build a serverless back-end with OASP4Fn. The ma
 ==  Install Tools
 In this section we’re going to introduce all the necessary tools we’re going to need to start programming and a initial configuration if necessary.
 
-== = Visual Studio Code
+== Visual Studio Code
 Download the installer from the https://code.visualstudio.com/Download[official page] and install it.
 Once installed, the first thing you should do is install the extensions that will help you during the development, to do that follow this steps:
 
@@ -26,22 +26,22 @@ Once installed, the first thing you should do is install the extensions that wil
 
 In the case that you are unable to set up the extensions using the method mentioned, you can also use the scripts provided in https://github.com/oasp/oasp-vscode-ide[this] repository.
 
-== = NodeJS
+== NodeJS
 Go to the https://nodejs.org/en/[node.js] official page and download the version you like the most, the LTS or the Current as you wish.
 
-== = Typescript
+== Typescript
 Let’s install what is going to be the main language during development: TypeScript. This is a ES6 super set that will help us to get a final clean and distributable JavaScript code. This is installed globally with https://www.npmjs.com/[npm], the package manager used to install and create JavaScript modules in NodeJS, that is installed along with Node, so for install typescript you don’t have to install npm explicitly, only run this command:
 
 `npm install –g typescript`
 
-== = Yarn
+== Yarn
 As npm, https://yarnpkg.com/en/[Yarn] is a package manager, the differences are that Yarn is quite more faster and usable, so we decided to use it to manage the dependencies of OASP4Fn projects.
 
 To install it you only have to go to the official https://yarnpkg.com/en/docs/install[installation page] and follow the instructions.
 
 Even though, if you feel more comfortable with npm, you can remain using npm, there is no problem regarding this point.
 
-== = Serverless
+== Serverless
 Lastly, we are going to install the serverless framework, that are going to help us deploying our handlers in our provider we have chosen.
 
 `npm install –g serverless`

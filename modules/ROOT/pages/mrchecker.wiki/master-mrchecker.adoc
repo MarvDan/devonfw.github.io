@@ -12,7 +12,7 @@ include::Who-Is-MrChecker/Test-Stages.adoc[leveloffset=3]
 
 In this section, it is possible to find all the information regarding the main modules of MrChecker: 
 
-== = Core Test Module
+== Core Test Module
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Core-Test-Module.adoc[leveloffset=4]
 
@@ -32,11 +32,11 @@ include::Who-Is-MrChecker/Test-Framework-Modules/Core-Test-Module-Externalize-te
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Core-Test-Module-Different-Environments.adoc[leveloffset=4]
 
-== = Selenium Module
+== Selenium Module
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module.adoc[leveloffset=4]
 
-== = Selenium Structure
+== Selenium Structure
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-What-is-Selenium.adoc[leveloffset=4]
 
@@ -46,7 +46,7 @@ include::Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-What-is-Pa
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-List-of-web-elements.adoc[leveloffset=4]
 
-== = Framework Features
+== Framework Features
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Construction-of-Framework-Page-Class.adoc[leveloffset=4]
 
@@ -62,7 +62,7 @@ include::Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Run-with-f
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Selenium-Test-Module-Selenium-Best-Practices.adoc[leveloffset=4]
 
-== = Web API Module
+== Web API Module
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Web-API-Test-Module.adoc[leveloffset=4]
 
@@ -74,21 +74,21 @@ include::Who-Is-MrChecker/Test-Framework-Modules/Web-API-Test-Module-How-to-make
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Web-API-Test-Module-Smoke-Tests-virtualization.adoc[leveloffset=4]
 
-== = Security Module
+== Security Module
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Security-Test-Module.adoc[leveloffset=4]
 
-== = Database Module
+== Database Module
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Database-Test-Module.adoc[leveloffset=4]
 
-== = Mobile Test Module
+== Mobile Test Module
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Mobile-Test-Module.adoc[leveloffset=4]
 
 include::Who-Is-MrChecker/Test-Framework-Modules/Mobile-Test-Module-How-to-use.adoc[leveloffset=4]
 
-== = DevOps Test Module
+== DevOps Test Module
 
 include::Who-Is-MrChecker/Test-Framework-Modules/DevOPS-Test-Module.adoc[leveloffset=4]
 
@@ -105,14 +105,14 @@ include::Who-Is-MrChecker/Test-Framework-Modules/DevOPS-Test-Module-Jenkins-Plug
 include::Who-Is-MrChecker/Test-Framework-Modules/DevOPS-Test-Module-Docker-commands.adoc[leveloffset=4]
 
 ==  MrChecker download
-== = Windows
+== Windows
 
 include::MrChecker-download/Windows/Advanced-installation.adoc[leveloffset=4]
 
-== = Mac
+== Mac
 include::MrChecker-download/Mac.adoc[leveloffset=4]
 
-== = My Thai Star
+== My Thai Star
 include::MrChecker-download/MyThaiStar.adoc[leveloffset=4]
 ==  Tutorials
 
@@ -126,7 +126,7 @@ Your Product Under Test will be the following website: http://the-internet.herok
 
 include::Who-Is-MrChecker/Tutorials/Project-Organisation.adoc[leveloffset=3]
 
-== = Basic Tutorials
+== Basic Tutorials
 
 == ==  Basic Tests
 
@@ -186,13 +186,13 @@ include::Who-Is-MrChecker/Tutorials/Basic-Tutorials/First-Steps/The-Internet-Bas
 
 include::Who-Is-MrChecker/Tutorials/Basic-Tutorials/First-Steps/BFLogger.adoc[leveloffset=5]
 
-== = E2E Tutorials
+== E2E Tutorials
 
 include::Who-Is-MrChecker/Tutorials/E2E-Tutorials/Tutorial1.adoc[leveloffset=4]
 
 ==  Migration from JUnit4 to JUnit5
 
-== = Migration guide
+== Migration guide
 
 include::Migration/Migration-guide.adoc[leveloffset=4]
 
@@ -200,7 +200,7 @@ include::Migration/Migration-guide.adoc[leveloffset=4]
 
 Here you can find the most frequently asked questions regarding working with MrChecker and installation problems.
 
-== = Common problems
+== Common problems
 
 include::FAQ/Common-problems/I-cannot-find.adoc[leveloffset=4]
 
@@ -208,13 +208,13 @@ include::FAQ/Common-problems/It-is-possible.adoc[leveloffset=4]
 
 include::FAQ/Common-problems/Tests-are-not-stable.adoc[leveloffset=4]
 
-== = How to
+== How to
 
 include::FAQ/How-to/Change-timeouts.adoc[leveloffset=4]
 
 include::FAQ/How-to/Start-a-browser.adoc[leveloffset=4]
 
-== = Installation problems
+== Installation problems
 
 include::FAQ/Installation-problems/Chromedriver-version.adoc[leveloffset=4]
 

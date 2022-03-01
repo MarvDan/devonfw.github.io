@@ -20,7 +20,7 @@ toc::[]
 ==  Creating a Simple Store
 In the following pages we use the example of an online streaming service. We will model a particular feature, a watchlist that can be populated by the user with movies she or he wants to see in the future.
 
-== = Initializing NgRx
+== Initializing NgRx
 
 If you're starting fresh, you first have to initialize NgRx and create a root state. The fastest way to do this is using the schematic:
 
@@ -79,7 +79,7 @@ import { WatchlistModule } from './watchlist/watchlist.module';
 export class AppModule { }
 ----
 
-== = Create an entity model and initial state
+== Create an entity model and initial state
 We need a simple model for our list of movies. Create a file `watchlist/models/movies.ts` and insert the following code:
 
 [source, typescript]
@@ -146,7 +146,7 @@ export const initialState: State = {
 };
 ----
 
-== = Select the current watchlist
+== Select the current watchlist
 
 State slices can be retrieved from the store using selectors.
 
@@ -241,7 +241,7 @@ export class WatchlistComponent {
 </ul>
 ----
 
-== = Dispatching an action to update watched minutes
+== Dispatching an action to update watched minutes
 
 We track the user's current progress at watching a movie as the `playbackMinutes` property. After closing a video, the watched minutes have to be updated. In NgRx, state is being updated by dispatching actions. An action is an option with a (globally unique) type discriminator and an optional payload.
 
@@ -312,7 +312,7 @@ export function reducer(state = initialState, action: playbackActions.ActionsUni
 
 export function updatePlaybackMinutesMapper(movieId: number, stoppedAtMinute: number) {
   return (item: WatchlistItem) => {
-    if (item.movie.id == = movieId) {
+    if (item.movie.id == movieId) {
       return {
         ...item,
         playbackMinutes: stoppedAtMinute
@@ -341,7 +341,7 @@ import { produce } from 'immer';
 ...
 case playbackActions.playbackFinished.type:
       return produce(state, draft => {
-        const itemToUpdate = draft.items.find(item => item.movie.id == = action.movieId);
+        const itemToUpdate = draft.items.find(item => item.movie.id == action.movieId);
         if (itemToUpdate) {
           itemToUpdate.playbackMinutes = action.stoppedAtMinute;
         }

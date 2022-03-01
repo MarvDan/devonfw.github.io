@@ -94,7 +94,7 @@ Create the docker image and then publish the image into a docker registry.
 
 ==  Adjustments
 
-== = Pipeline Environment
+== Pipeline Environment
 
 In order to easily reuse the pipeline in other java projects, all variables have been defined in the block environment. All variables have the default values that Production Line uses, so if you're going to work in production line you won't have to change anything. Example:
 
@@ -133,7 +133,7 @@ image::images/ci/angular/nexus3_global_config.png[, link="nexus3_global_config.P
 +
 image::images/ci/angular/maven_tool.png[, link="maven_tool.PNG"]
 
-== = Distribution management
+== Distribution management
 The only _extra_ thing that needs to be added to the Java server-side is some information that determines where the artifact of the project is going to be stored in *Nexus*. This is going to be a section in the main `pom.xml` file called `<distributionManagement>`. This section will point to the PL instance's Nexus. Let's have a look at it. It's already configured with the PL default values.
 
 [source, xml]

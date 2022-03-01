@@ -44,7 +44,7 @@ Even though these included rules are not "intentionally wrong" they are only sam
 _Solicitor_ is a tool for technically supporting the management of OSS licenses within your project.
 _Solicitor_ neither gives legal advice nor is a replacement for a lawyer.
 
-== = Licensing of Solicitor
+== Licensing of Solicitor
 The _Solicitor_ code and accompanying resources (including this userguide) as stored in the GIT Repository https://github.com/devonfw/solicitor are licensed as Open Source under Apache 2 license (https://www.apache.org/licenses/LICENSE-2.0).
 
 IMPORTANT: Specifically observe the "Disclaimer of Warranty" and "Limitation of Liability" which are part of the license.
@@ -82,7 +82,7 @@ There are three major technical components: The _reader_ and _writer_ components
 
 _Solicitor_ is working without additional persisted data: When being executed it generates the output direcly from the read input data after processing the business rules.
 
-== = Data Model
+== Data Model
 
 image:datamodel.png[width=50%,scaledwidth=50%]
 
@@ -194,7 +194,7 @@ might be influenced see <<Resolving of License URLs>>.
 
 For a description of the URL guessing mechanism see <<Guessing of license URLs>>.
 
-== == = License types
+== == License types
 Defines the type of license
 
 * `OSS-SPDX` - An OSS license which has a corresponding SPDX-Id
@@ -203,7 +203,7 @@ Defines the type of license
 * `UNKNOWN`- License is unknown
 * `IGNORED`- license will be ignored (non selected license in multi licensing case; only to be used as "Effective Normalized License Type")
 
-== == = Pseudo License Ids
+== == Pseudo License Ids
 A "normalized" license id might be either a SPDX-Id or a "pseudo license id" which is used to indicate a specific situation. The following pseudo license ids are used:
 
 * `OSS specific` - a nonstandard OSS license which could not be mapped to a SPDX-Id
@@ -212,7 +212,7 @@ A "normalized" license id might be either a SPDX-Id or a "pseudo license id" whi
 * `NonOSS` - commercial license, not OSS
 
 ==  Usage
-== = Executing Solicitor
+== Executing Solicitor
 _Solicitor_ is a standalone Java (Spring Boot) application. Prerequisite for running it is an existing Java 8 or 11 runtime environment. If you do not yet have a the _Solicitor_ executable JAR (`solicitor.jar`) you need to build it as given on the project GitHub homepage https://github.com/devonfw/solicitor .
 
 _Solicitor_ is executed with the following command:
@@ -243,7 +243,7 @@ If you want to reference a file in the filesystem you need to write it as follow
 Note that this only applies to resources being read. Output files are adressed without that prefix.
 ****
 
-== = Project Configuration File
+== Project Configuration File
 The project configuration of _Solicitor_ is done via a configuration file in
 JSON format. This configuration file defines the engagements and applications master data, configures the readers for importing component and license information, references the business rules to be applied and defines the exports to be done.
 
@@ -407,7 +407,7 @@ The writer configuration defines how the processed data will be exported and/or 
 
 For details on the writer configuration see <<Reporting and Creating output documents>>.
 
-== = Starting a new project
+== Starting a new project
 
 To simplify setting up a new project _Solicitor_ provides an option to create a project starter configuration in a given directory.
 
@@ -420,7 +420,7 @@ directly enable execution of solicitor and check functionality.
 
 This configuration then serves as starting point for project specific configuration.
 
-== = Exporting the Builtin Configuration
+== Exporting the Builtin Configuration
 
 When working with _Solicitor_ it might be necessary to get access to the builtin base configuration, e.g. for reviewing the builtin sample rules or using builtin reporting templates as starting point for the creation of own templates.
 
@@ -437,7 +437,7 @@ will export all internal configuration to the given directory. This includes:
 * The SQL statements which are used for <<SQL transformation and filtering>>
 * The referenced templates for the <<Velocity Writer>> and <<Excel Writer>>
 
-== = Configuration of Technical Properties
+== Configuration of Technical Properties
 Besides the project configuration done via the above described file there are a set of technical settings in _Solicitor_ which are done via properties. _Solicitor_ is implemented as a https://spring.io/projects/spring-boot[Spring Boot Application] and makes use
 of the https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-external-config[standard configuration mechanism provided by the Spring Boot Platform] which provides several ways to define/override properties.
 
@@ -453,7 +453,7 @@ java -Dsome.property.name1=value -Dsome.property.name2=another_value -jar solici
 Different Readers are available to import raw component / license information for different
 technologies. This chapter describes how to setup the different build / dependency management systems to create the required input and how to configure the corresponding reader.
 
-== = Maven
+== Maven
 
 For the export of the licenses from a maven based project the license-maven-plugin is used, which can directly be called without the need to change anything in the pom.xml.
 
@@ -482,7 +482,7 @@ In _Solicitor_ the data is read with the following reader config:
 
 (the above assumes that _Solicitor_ is executed in the maven projects main directory)
 
-== = CSV
+== CSV
 The CSV input is normally manually generated and should look like this:
 
 [source]
@@ -567,7 +567,7 @@ These configurations may also be used to overwrite options of a https://commons.
 Important: In case that a component has multiple licenses attached, there needs to be a separate
 line in the csv file for each license.
 
-== = NPM
+== NPM
 
 For NPM based projects either the NPM License Crawler (https://www.npmjs.com/package/npm-license-crawler) or the NPM License Checker (https://www.npmjs.com/package/license-checker) might be used. The NPM License Crawler can process several node packages in one run.
 
@@ -643,7 +643,7 @@ In _Solicitor_ the data is read with the following part of the config
 } ]
 ----
 
-== = Yarn
+== Yarn
 
 To generate the input file required for Solicitor yarn needs to be executed with the following command within the directory that contains the project's package.json (we require JSON output here):
 
@@ -672,7 +672,7 @@ In _Solicitor_ the data is read with the following part of the config
 } ]
 ----
 
-== = Pip
+== Pip
 
 To generate the input file required for Solicitor one has follow two steps:
 
@@ -705,7 +705,7 @@ In _Solicitor_ the data is read with the following part of the config
 } ]
 ----
 
-== = Gradle (Windows)
+== Gradle (Windows)
 
 For the export of the licenses from a Gradle based project the Gradle License Plugin is used.
 
@@ -753,7 +753,7 @@ In _Solicitor_ the data is read with the following part of the config
 
 NOTE: The former reader of type `gradle` is deprecated and should no longer be used. See <<List of Deprecated Features>>.
 
-== = Gradle (Android)
+== Gradle (Android)
 For the Export of the the Licenses from a Gradle based Android Projects the Gradle License Plugin is used.
 
 To install the Plugin some changes need to be done in the build.gradle of the Project, like following example
@@ -828,7 +828,7 @@ When processing, _Solicitor_ will internally use the rule template to create one
 is defined by the sequence of declaration in the config file. Processing of the current group will
 be finished when there are no more rules to fire in that group. Processing of the next group will then start. Rule groups which have been finished processing will not be resumed even if rules within that group might have been activated again due to changes of the facts.
 
-== = Extended comparison syntax
+== Extended comparison syntax
 By default any condtions given in the fields of decision tables are simple textual comparisons: The condition
 is true if the property of the model is identical to the given value in the XLS sheet.
 
@@ -847,7 +847,7 @@ NOTE: The former prefix notation of `REGEX:` is deprecated and should no longer 
 ==  Standard Business Rules
 The processing of business rules is organized in different phases. Each phase might consist of multiple decision tables to be processed in order.
 
-== = Phase 1: Determining assigned Licenses
+== Phase 1: Determining assigned Licenses
 In this phase the license data imported via the readers is cleaned and normalized. At the end of this phase the internal data model should clearly represent all components and their assigned licenses in normalized form.
 
 The phase itself consists of two decision tables / rule groups:
@@ -888,7 +888,7 @@ With this decision table the license info from the RawLicense is mapped to the N
 
 icon:magic[]: On these fields the <<Extended comparison syntax>> might be used
 
-== = Phase 2: Selecting applicable Licenses
+== Phase 2: Selecting applicable Licenses
 Within this phase the actually applicable licenses will be selected for each component.
 
 This phase consists of two decision tables.
@@ -931,7 +931,7 @@ The second decision table in this group is used to define the `effectiveNormaliz
 
 icon:magic[]: On these fields the <<Extended comparison syntax>> might be used
 
-== = Phase 3: Legal evaluation
+== Phase 3: Legal evaluation
 
 The third phase ist the legal evaluation of the licenses and the check, whether OSS usage is according to defined legal policies. Again this phase comprises two decision tables.
 
@@ -973,7 +973,7 @@ to create the result of the legal evaluation. Rules here might be general for al
 
 icon:magic[]: On these fields the <<Extended comparison syntax>> might be used
 
-== = Amending the builtin decision tables with own rules
+== Amending the builtin decision tables with own rules
 
 The standard process as described before consists of 6 decision tables / rule
 groups to be processed in sequence. When using the builtin default base configuration all those decision tables use the internal sample data / rules as contained in _Solicitor_.
@@ -996,7 +996,7 @@ Creating such reports consists of three steps:
 ** Velocity templates (for textual output like e.g. HTML)
 ** Excel templates
 
-== = SQL transformation and filtering
+== SQL transformation and filtering
 
 == ==  Database structure
 
@@ -1022,7 +1022,7 @@ is done:
 
 WARNING: The result table column `OBJ_<TABLENAME>` gives access to the native Solicitor data model (java objects), e.g. in the Velocity writer. As this breaks the decoupling done via the SQL database using this feature is explicitely discouraged. It should only be used with high caution and in exceptional situations. The feature might be discontinued in future versions without prior notice.
 
-== = Determining difference to previously stored model
+== Determining difference to previously stored model
 
 When using the command line option `-d` _Solicitor_ can determine difference information between two different data models (e.g. the difference between the licenses of the current release and a former release.) The difference is calculated on the result of the above described SQL statements:
 
@@ -1054,7 +1054,7 @@ For each field of "changed" or "unchanged" rows the following status is availabl
 
 For each field of such rows it is furtheron possible to access the new and the old field value.
 
-== = Sample SQL statement
+== Sample SQL statement
 
 The following shows a sample SQL statement showing some join over multiple tables and the use of
 correlations keys.
@@ -1066,7 +1066,7 @@ include::files/allden_normalizedlicenses.sql[]
 
 NOTE: Above example also shows how the case sensitive column names have to be handled within the SQL
 
-== = Writers
+== Writers
 
 The above dscribed SQL processing is identical for all Writers. Writers only differ in the
 way how the output document is created based on a template and the reporting table data
@@ -1086,10 +1086,10 @@ For further information see the
 
 == ==  Excel Writer
 
-== == = Using Placeholders in Excel Spreadsheets
+== == Using Placeholders in Excel Spreadsheets
 Within Excel spreadsheet templates there are two kinds of placeholders / markers possible, which control the processing:
 
-== == = Iterator Control
+== == Iterator Control
 The templating logic searches within the XLSX workbook for fields containing the names of the
 reporting data tables as defined in the Writer configuration like e.g.:
 
@@ -1098,10 +1098,10 @@ reporting data tables as defined in the Writer configuration like e.g.:
 
 Whenever such a string is found in a cell this indicates that this row is a template row. For each entry in the respective resporting data table a copy of this row is created and the attribute replacement will be done with the data from that reporting table. (The pattern `\#...#` will be removed when copying.)
 
-== == = Attribute replacement
+== == Attribute replacement
 Within each row which was copied in the previous step the templating logic searches for the string pattern `$someAttributeName$` where `someAttributeName` corresponds to the column names of the reporting table. Any such occurence is replaced with the corresponding data value.
 
-== == = Representation of Diff Information
+== == Representation of Diff Information
 In case that a difference processing (new vs. old model data) was done this will be represented
 as follows when using the XLS templating:
 
@@ -1117,7 +1117,7 @@ Resolving of the content of license texts which are referenced by the URLs given
 
 The determined content is available as `NormalizedLicense.effectiveNormalizedLicenseContent` and `NormalizedLicense.licenseRefContent`
 
-== = Encoding of URLs
+== Encoding of URLs
 When creating the resource or filename for given URLs in the above steps the following encoding scheme will be applied to ensure that always a valid name can be created:
 
 All "non-word" characters (i.e. characters outside the set `[a-zA-Z_0-9]`) are replaced by underscores ("`_`").
@@ -1141,7 +1141,7 @@ The result of the license URL guessing is available via three attributes:
 
 NOTE: Downloading the license content (also including the checking if a certain resource is available when trying different possible filenames) is done using the same (caching) mechanisms as downloading the content for other URLs, see the previous section.
 
-== = Caching of guessed URLs
+== Caching of guessed URLs
 The information about guessed URLs for given original URLs (also including the audit info on the guessing process) uses a caching mechanism which is mainly identical to the caching of downloaded content. The files containing the cached data are stored in directory `licenseurls` (instead of `licenses` for the content itself).
 
 The file content looks as follows:
@@ -1182,7 +1182,7 @@ a temporary workaround and not a standard setting.
 NOTE: If usage of a feature should be discontinued immediately (e.g. because it might lead to
 wrong/misleading output) the first stage of deprecation will be skipped.
 
-== = List of Deprecated Features
+== List of Deprecated Features
 The following features are deprecated via the above mechanism:
 
 * Reader of type "gradle"  (use Reader of type "gradle2" instead); Stage 2 from Version 1.0.5 on; see https://github.com/devonfw/solicitor/issues/58
@@ -1270,7 +1270,7 @@ command line when starting `Solicitor`.
 
 This facilitates configuration management, distribution and deployment of such extensions.
 
-== = Format of the extension file
+== Format of the extension file
 The extensions might be provided as JAR file or even as a simple ZIP file. There is only
 one mandatory file which contains (at least metadata) about the extension and which needs
 to be included in this archive _in the root folder_.
@@ -1294,7 +1294,7 @@ Overriding / redefining the default base configuration within the Extension enab
 update all rule data and templates without the need to touch the projects configuration
 file.
 
-== = Activating the Extension
+== Activating the Extension
 The Extension will be activated by referencing it as follows when starting _Solicitor_:
 
 [listing]

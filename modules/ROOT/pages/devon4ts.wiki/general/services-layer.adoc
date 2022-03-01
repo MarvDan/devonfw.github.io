@@ -144,7 +144,7 @@ With this action there need to be multiple state updates.
 * Ads need to be updated with related products
 * etc.
 
-== = Pattern
+== Pattern
 
 To handle this interaction in a scalable way we apply the following pattern. 
 
@@ -155,7 +155,7 @@ The state of interest is encapsulated inside a store. All _Smart Components_ int
 
 To put this pattern into perspective the `UseCaseService` is a programmatic alternative to `redux-thunk` or `@ngrx/effects`. The main motivation here is to use the full power of TypeScript `--strictNullChecks` and to let the learning curve not to become as steep as it would be when learning a new state management framework. This way actions are just `void` method calls.
 
-== = Example
+== Example
 
 .Smart Components interaction example
 image::../images/smart-smart-components-example.svg["Smart component interaction example", link="../images/smart-smart-components-example.svg", width="450"]

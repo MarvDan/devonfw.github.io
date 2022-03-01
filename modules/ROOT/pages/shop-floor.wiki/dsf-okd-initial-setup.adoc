@@ -4,13 +4,13 @@ These are scripts to customize an Openshift cluster to be a devonfw Openshift.
 
 ==  How to use
 
-== = Prerequisite: Customize Openshift
+== Prerequisite: Customize Openshift
 
 devonfw Openshift Origin use custom icons, and we need to add it to openshift. More information:
 
 * link:dsf-okd-customize[Customize Openshift]
 
-== = Script initial-setup
+== Script initial-setup
 
 Download https://raw.githubusercontent.com/devonfw/devonfw-shop-floor/master/dsf4openshift/openshift-cluster-setup/initial-setup/initial-setup.sh[this] script and execute it.
 
@@ -18,7 +18,7 @@ More information about what this script does https://raw.githubusercontent.com/d
 
 ==  Known issues
 
-== = Failed to push image
+== Failed to push image
 
 If you receive an error like this:
 ```

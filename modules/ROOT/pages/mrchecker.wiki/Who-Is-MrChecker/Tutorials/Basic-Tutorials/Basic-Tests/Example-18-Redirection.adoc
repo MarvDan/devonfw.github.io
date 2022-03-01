@@ -6,7 +6,7 @@ After clicking on the link, you will be redirected to Status Codes Page.
 
 image::images/example51.png[]
 
-== == = Page Class
+== == Page Class
 
 == == ==  Redirect Link Page
 
@@ -79,7 +79,7 @@ public class StatusCodesHomePage extends BasePage {
 }
 ----
 
-== == = Test Class
+== == Test Class
 
 Steps: 
 

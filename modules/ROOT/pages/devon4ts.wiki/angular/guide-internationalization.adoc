@@ -25,7 +25,7 @@ More info at link:https://angular.io/guide/i18n[Angular i18n official documentat
 
 The official approach could be a bit complicated, therefore the recommended one is to use the recommended library **Transloco** from https://github.com/ngneat/transloco/.
 
-== = Install and configure Transloco
+== Install and configure Transloco
 
 In order to include this library in your devon4ng **Angular >= 7.2** project you will need to execute in a terminal:
 
@@ -83,7 +83,7 @@ export class TranslocoRootModule {}
 
 NOTE: As you might have noticed it also set an `HttpLoader` into the module's providers. The `HttpLoader` is a class that implements the `TranslocoLoader` interface. It's responsible for instructing Transloco how to load the translation files. It uses Angular HTTP client to fetch the files, based on the given path.
 
-== = Usage
+== Usage
 In order to translate any label in any HTML template you will need to use the `transloco` pipe available:
 
 [source,html]
@@ -151,7 +151,7 @@ Transloco understands nested JSON objects. This means that you can have a transl
 
 In order to access access the value, use the dot notation, in this case `HOME.HELLO`.
 
-== = Using the service, pipe or directive
+== Using the service, pipe or directive
 
 == ==  Structural Directive
 Using a structural directive is the **recommended** approach. It's DRY and efficient, as it creates **one** subscription per template:

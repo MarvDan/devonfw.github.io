@@ -123,7 +123,7 @@ Now we can start adding our first test. In link:jump-the-queue-design[JumpTheQue
 
 Let's add tests to check these functionalities:
 
-== = 1. Registration
+== 1. Registration
 We are going to create a method with a descriptive name; `saveVisitorTest`, and we are going to add the `@Test` annotation to it.
 
 Inside this test, we are going to verify the registration process of our app. To do so, we only need to call the `saveVisitor` method of the component and provide a `VisitorEto` object. After the method is called, we are going to check the response of the method, to verify that the expected business logic has been executed correctly:
@@ -205,7 +205,7 @@ Now running again the test we should obtain the expected result
 
 image::images/devon4j/8.Testing/jumpthequeue_testing_result2.png[JumpTheQueue Test Results 2]
 
-== = 2. Finding Visitors
+== 2. Finding Visitors
 
 For the second functionality (finding visitors) we can add a new test with a very similar approach. The only difference is that in this case we are going to need to declare a _Search Criteria_ object, that will contain a pageable to recover the first page and the first 100 values.
 
@@ -228,7 +228,7 @@ To run both tests (all the tests included in the class) we only need to do right
 
 image::images/devon4j/8.Testing/jumpthequeue_testing_result3.png[JumpTheQueue Test Results 3]
 
-== = Extra Functionalities
+== Extra Functionalities
 The _devon4j_ test module provide us with some extra functionalities that we can use to create tests in an easier way.
 
 Extending `ComponentTest` class we also have available the `doSetUp()` and `doTearDown()` methods, that we can use to initialize and release resources in our test classes.

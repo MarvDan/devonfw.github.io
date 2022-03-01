@@ -67,14 +67,14 @@ image::images/initialize-instance/create-account5.png[]
 
 In order to execute this template, you need to add it into Jenkins manually. In order to do that, you can follow link:how-to-add-a-template[this guide]
 
-== = Parameters
+== Parameters
 
 The required parameters are:
 
 - `svcaccount`: The service account created as prerequisite. It must be added as a Jenkins credential.
 - `installDeploymentPlugins`: With this parameter you can install extra plugins into Jenkins. Also, you can add extra template utils.
 
-== = Execution
+== Execution
 
 . Press the Build with Parameters button
 . Insert the parameters.
@@ -87,7 +87,7 @@ WARNING: if any plugin is installed, Jenkins will be restarted and the pipeline 
 image::images/initialize-instance/initialize-instance.png[]
 image::images/initialize-instance/initialize-instance2.png[]
 
-== = The result
+== The result
 
 * Install plugins stage
 +

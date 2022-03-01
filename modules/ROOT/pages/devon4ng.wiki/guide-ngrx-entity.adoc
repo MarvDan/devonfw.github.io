@@ -52,7 +52,7 @@ export function reducer(state = initialState, action: playbackActions.ActionsUni
     case playbackActions.playbackFinished.type:
       const itemToUpdate = entitySelectors
       .selectAll(state) <4>
-      .find(item => item.movie.id == = action.movieId);
+      .find(item => item.movie.id == action.movieId);
       if (itemToUpdate) {
         return entityAdapter.updateOne({ <5>
           id: itemToUpdate.id,

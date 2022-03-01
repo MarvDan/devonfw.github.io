@@ -11,7 +11,7 @@ Steps:
 
 image::images/example2.png[]
 
-== == = Page Class 
+== == Page Class 
 
 Create a Page class for AB Testing page. Override all the required methods:
 
@@ -40,7 +40,7 @@ Create a Page class for AB Testing page. Override all the required methods:
  } 
 ----
  
-== == = How to use Enum?
+== == How to use Enum?
  
 Similarly as in environmental variables case, create an enum for storing values of subURLs: 
  

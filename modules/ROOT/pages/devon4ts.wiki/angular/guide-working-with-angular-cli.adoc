@@ -90,7 +90,7 @@ TIP: You can adjust the linting rules in the file tslint.json which can be found
 
 ==  Generating Code
 
-== = Creating a new Angular CLI project
+== Creating a new Angular CLI project
 
 For creating a new Angular CLI project the command `ng new` is used.
 
@@ -100,7 +100,7 @@ The following command creates a new application named my-app.
 ng create my-app
 ```
 
-== = Creating a new feature module
+== Creating a new feature module
 
 A new feature module can be created via `ng generate module`` command.
 
@@ -116,7 +116,7 @@ image::images/generate-module.png["Generate a module with Angular CLI", width="4
 TIP: The created feature module needs to be added to the AppModule by hand.
 Other option would be to define a lazy route in AppRoutingModule to make this a lazy loaded module.
 
-== = Creating a new component
+== Creating a new component
 
 To create components the command `ng generate component` can be used.
 

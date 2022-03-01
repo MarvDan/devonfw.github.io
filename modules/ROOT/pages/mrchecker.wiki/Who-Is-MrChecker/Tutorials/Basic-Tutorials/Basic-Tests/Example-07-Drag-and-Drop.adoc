@@ -20,7 +20,7 @@ Steps:
 7. Move element B to position A 
 8. Again check if element A is in container A and B in container B 
 
-== == = Page Class 
+== == Page Class 
 ----
 public class DragAndDropPage extends BasePage {
 
@@ -231,7 +231,7 @@ Drag and Drop helper file:
 })(jQuery);
  
 ----
-== == = Test Class
+== == Test Class
 ----
 @Category({ TestsSelenium.class, TestsChrome.class, TestsFirefox.class, TestsIE.class })
 public class DragAndDropTest extends TheInternetBaseTest {

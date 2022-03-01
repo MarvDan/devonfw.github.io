@@ -12,7 +12,7 @@ First of all, install https://docs.aws.amazon.com/cli/latest/userguide/getting-s
 
 * An AWS account with IAM full access permission.
 
-== = Alternative
+== Alternative
 
 In case you do not have an account or permission to create new IAM users, request it to your AWS administrator asking for the following policies being attached. Then go to <<check-iam-user-permissions>>.
 
@@ -35,7 +35,7 @@ The script located at `/scripts/accounts/aws/create-user.sh` will automatically 
 
 In case you do not have an AWS access key (needed to authenticate through API), follow https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey[this guide] to create it.
 
-== = Usage
+== Usage
 ```
 create-user.sh \
   -u <username> \
@@ -48,7 +48,7 @@ create-user.sh \
   [-r <region>] 
 ```
 
-== = Flags
+== Flags
 ```
 -u      [Required] Username for the new user
 -g      [Required] Group name for the group to be created or used
@@ -60,7 +60,7 @@ create-user.sh \
 -r      [Optional] AWS region
 ```
 
-== = Example
+== Example
 ```
 ./create-user.sh -u Bob -g DevOps -f ./eks-managed-policies.txt -c ./eks-custom-policies.json -a "myAccessKey" -s "mySecretKey" -r eu-west-1
 ```
@@ -68,7 +68,7 @@ NOTE: If the "DevOps" group does not exist, it will be created.
 
 NOTE: Required policies for using EKS are located at `/scripts/accounts/aws/eks-managed-policies.txt` and `/scripts/accounts/aws/eks-custom-policies.json`
 
-== = After execution
+== After execution
 On success, the newly created user access data will be shown as output:
 ```
 Access key ID: <accessKeyID>
@@ -81,7 +81,7 @@ IMPORTANT: It is mandatory to store the access key ID and the secret access key 
 
 The script located at `/scripts/accounts/aws/verify-account-policies.sh` will check that the necessary policies were attached to the IAM user.
 
-== = Usage
+== Usage
 ```
 verify-account-policies.sh \
   -u <username> \
@@ -93,7 +93,7 @@ verify-account-policies.sh \
   [-r <region>] 
 ```
 
-== = Flags
+== Flags
 ```
 -u      [Required] Username whose policies will be checked
 -p      [Optional] Policies to be checked, splitted by comma
@@ -105,7 +105,7 @@ verify-account-policies.sh \
 ```
 NOTE: At least one policies flag (`-p`, `-f` or `-c`) is required.
 
-== = Example
+== Example
 ```
 ./verify-account-policies.sh -u Bob -f ./eks-managed-policies.txt -c ./eks-custom-policies.json -a "myAccessKey" -s "mySecretKey" -r eu-west-1
 ```

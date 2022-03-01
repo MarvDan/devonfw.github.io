@@ -18,7 +18,7 @@ This is a quick example to add custom icons and categories inside openshift.
 
 To modify the icons inside openshift, we must to modify our master-config.yaml of our openshift cluster. This file is inside the openshift container and to obtain a copy of it, we must to know what's our openshift container name.
 
-== = Obtain the master-config.yaml of our openshift cluster
+== Obtain the master-config.yaml of our openshift cluster
 
 == ==  Obtain the name of our openshift container
 
@@ -44,7 +44,7 @@ $ docker cp origin:/var/lib/origin/openshift.local.config/master/master-config.y
 
 Now we have a file with the configuration of our openshift cluster.
 
-== = Copy all customize files inside the openshift container
+== Copy all customize files inside the openshift container
 
 To use our customization of devonfw Openshift, we need to copy our files inside the openshift container. 
 
@@ -56,7 +56,7 @@ container, for example, we could put it all inside a folder called openshift.loc
 $ docker cp ./openshift.local.devonfw origin:/var/lib/origin/
 ----
 
-== = Edit and copy the master-config.yaml to use our customize files
+== Edit and copy the master-config.yaml to use our customize files
 
 The master-config.yaml have a sections to charge our custom files. All these sections are inside the `assetConfig` and their names are the next:
 

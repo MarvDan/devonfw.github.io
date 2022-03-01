@@ -58,7 +58,7 @@ image::./images/configuration/jenkinsfile-stages.jpg[]
 
 Now it is time to create the stages.
 
-== = Setup Jenkins tools
+== Setup Jenkins tools
 
 The first stage is one of the most dangerous, because in it on one hand the tools are added to the pipeline and to the path and on other hand the values are tagged depending on the branch that is being executed. If you are going to create a ci/cd for a new branch or you are going to modify something, be very careful with everything that this first step declares.
 
@@ -99,7 +99,7 @@ script {
 }
 ----
 
-== = Code lint analysis
+== Code lint analysis
 
 The next stage is to analyze the code making a lint analysis. To do it your project should have a tslint file with the configuration (_tslint.json_).
 
@@ -112,7 +112,7 @@ sh """yarn lint"""
 
 NOTE: Your project need to have an script with tslint configuration (_tslint.json_).
 
-== = Execute tests
+== Execute tests
 
 To test you application first of all your application should have created the tests and you should use one of the next two options:
 
@@ -132,7 +132,7 @@ sh """yarn test:ci"""
 
 NOTE: Remember that your project should have the tests created and in case of do it with yarn or npm, you package.json should have the script declared. This is an example `"test:ci": "ng test --browsers ChromeHeadless --watch=false"`.
 
-== = SonarQube Analisys
+== SonarQube Analisys
 
 It is time to see if your application complies the requirements of the sonar analysis.
 
@@ -213,7 +213,7 @@ script {
 }
 ----
 
-== = Build
+== Build
 
 If SonarQube is passed, you could build your application. To do it, if you are using devon4ng or devon4node you only need to add the next command:
 
@@ -221,7 +221,7 @@ sh """yarn build"""
 
 NOTE: If you are using devon4j this and the next step _Store in Nexus_ are making together using `mvn deploy`.
 
-== = Store in Nexus
+== Store in Nexus
 
 One time the application has been built the code of the application you could find the artifacts stored in the dist folder. You should push these artifacts to store them in Nexus.
 
@@ -274,7 +274,7 @@ script {
 }
 ----
 
-== = Create docker image
+== Create docker image
 
 Now we need to use this artifacts to create a Docker image. To create the docker image you need an external server to do it. You could do it using one of the next:
 
@@ -320,7 +320,7 @@ link:dsf-deployment-dsf4openshift#configure-builds-to-create-docker-image-using-
 
 NOTE: if your project is a maven project you should read the _pom.xml_ file instead of the _package.json_, you could do it with the next command `def pom = readMavenPom file: 'pom.xml'`. Due to the fact that there are different variable names between those two files, remember to modify *${props.name}* for *${pom.artifactId}* and *${props.version}* for *${pom.version}* in the code.
 
-== = Deploy docker image
+== Deploy docker image
 
 Once you have the docker image in the registry we only need to import it into your deployment environment. We can do it executing one of the next commands:
 
@@ -373,7 +373,7 @@ script {
 
 NOTE: if your project is a maven project you should read the _pom.xml_ file instead of the _package.json_, you could do it with the next command `def pom = readMavenPom file: 'pom.xml'`. Due to the fact that there are different variable names between those two files, remember to modify *${props.name}* for *${pom.artifactId}* and *${props.version}* for *${pom.version}* in the code.
 
-== = Check status
+== Check status
 
 Now is time to check if your pods are running ok.
 

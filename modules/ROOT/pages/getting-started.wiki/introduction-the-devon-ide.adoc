@@ -45,7 +45,7 @@ CobiGen is distributed in the Devon distribution as an Eclipse plugin, and is av
 
 Since an application's code can greatly vary, and every program can be written in lots of ways without being semantically different, IDE comes with pre-installed and pre-configured plugins that use some kind of a probabilistic approach, usually based on pattern matching, to determine which pieces of code should be reviewed. These hints are a real time-saver, helping you to review incoming changes and prevent bugs from propagating into the released artifacts. Apart from CobiGen mentioned in the previous paragraph, the IDE provides CheckStyle, SonarQube, FindBugs and SOAP-UI. Details of each can be found in subsequent sections.
 
-== = CheckStyle
+== CheckStyle
 
 == ==  What is CheckStyle?
 
@@ -101,7 +101,7 @@ You can navigate to the problems in your code by double-clicking the problem in 
 On the left hand side of the editor an icon is shown for each line that contains a CheckStyle violation. Hovering with your mouse above this icon will show you the problem message.
 Also note the editor annotations - they are there to make it even easier to see where the problems are.
 
-== = FindBugs
+== FindBugs
 
 == ==  What is FindBugs?
 
@@ -130,7 +130,7 @@ image::images/introduction/devon-ide/FindBugs3.png["ShowView bug Explorer",width
 
 image::images/introduction/devon-ide/FindBugs4.png["bug Explorer",width="450",link="images/introduction/devon-ide/FindBugs4.png"]
 
-== = SonarLint
+== SonarLint
 
 == ==  What is SonarLint?
 

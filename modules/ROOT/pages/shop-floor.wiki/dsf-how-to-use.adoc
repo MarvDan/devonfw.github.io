@@ -22,7 +22,7 @@ The first step is configuring your services and integrate them with jenkins. Her
 
 ==  Step 2 - Create the project
 
-== = Create and integrate git repository
+== Create and integrate git repository
 
 The second is create or git repository and integrate it with Jenkins.
 
@@ -30,19 +30,19 @@ Here you can find a manual guide about how it:
 
 * link:dsf-configure-gitlab[GitLab] new project.
 
-== = Start new devonfw project
+== Start new devonfw project
 
 It is time to create your devonfw project:
 
 You can find all that you need about how to create a link:dsf-create-new-devonfw-project[new devonfw project]
 
-== = cicd configuration
+== cicd configuration
 
 Now you need to add cicd files in your project.
 
 == ==  Manual configuration
 
-== == = Jenkinsfile
+== == Jenkinsfile
 
 Here you can find all that you need to know to do your link:dsf-configure-jenkinsfile[Jenkinsfile].
 
@@ -52,12 +52,12 @@ Here you can find all that you need to know to do your link:dsf-configure-docker
 
 == ==  Automatic configuration
 
-== == = cicdgen
+== == cicdgen
 
 If you are using production line for provisioning you could use cicdgen to configure automatically almost everything explained in the manual configuration. To do it see the https://github.com/devonfw/cicdgen/wiki[cicdgen] documentation.
 
 ////
-== == = Optional components
+== == Optional components
 
   * TODO: Manual Guide about add things like config service for angular (Maybe it's going to be included in cicdgen)
 ////

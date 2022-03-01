@@ -4,7 +4,7 @@ In Page classes, when you load/start web, it is uncommon to save fixed main URL.
 
 Instead of _hardcoded_ main URL variable, you build your Page class with a dynamic variable.
 
-== = How to create / update system environment
+== How to create / update system environment
 
 Dynamic variable values are stored under path _\src\resources\enviroments\environments.csv_.
 

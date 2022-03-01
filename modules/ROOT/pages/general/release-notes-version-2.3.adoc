@@ -32,7 +32,7 @@ The creation of the ADcenter is such a short time is visible proof that we´re g
 
 ==  Changes and new features
 
-== = devonfw dist 
+== devonfw dist 
 
 The *devonfw dist*, or distribution, i.e. the central zip file which contains the main working environment for the devonfw developer, has been significantly enhanced. New features include: 
 
@@ -57,7 +57,7 @@ The *devonfw dist*, or distribution, i.e. the central zip file which contains th
 ** devon4ng-application-template for Angular5 at workspaces/examples
 ** Devon4sencha starter templates updated
 
-== = devon4j 2.5
+== devon4j 2.5
 
 == ==  Support for JAX-RS & JAX-WS clients
 
@@ -73,7 +73,7 @@ Based on OWASP(Open Web Application Security Project), devon4j aims to give deve
 
 Integration of an devon4j application to a Microservices environment can now be leveraged with this release of devon4j. Introduction of service clients for RESTful and SOAP web services based on Java EE give developers agility and ease to access microservices in the Devon framework. It significantly cuts down the efforts on part of developers around boilerplate code and stresses more focus on the business code improving overall efficiency and quality of deliverables.
 
-== = Cobigen
+== Cobigen
 
 A new version of Cobigen has been included. New features include: 
  
@@ -83,18 +83,18 @@ A new version of Cobigen has been included. New features include:
 * Cobigen_Templates project and docs updated
 * Bugfixes and Hardening
 
-== = My Thai Star Sample Application
+== My Thai Star Sample Application
 
 From this release on the My Thai Star application has been fully integrated in the different frameworks in the platform. Further more, a more modularized approach has been followed in the current release of My Thai star application to decouple client from implementation details. Which provides better encapsulation of code and dependency management for API and implementation classes. This has been achieved with creation of a new “API” module that contain interfaces for REST services and corresponding Request/Response objects. With existing “Core” module being dependent on “API” module. To read further you can follow the link https://github.com/devonfw/my-thai-star/wiki/java-design#basic-architecture-details 
 
 Furthermore: an email and Twitter micro service were integrated in my-thai-star. This is just for demonstration purposes. A full micro service framework is already part of devon4j 2.5.0
 
-== = Documentation refactoring
+== Documentation refactoring
 
 The complete devonfw guide is restructured and refactored. Getting started guides are added for easy start with devonfw.Integration of the new Tutorial with the existing devonfw Guide whereby existing chapters of the previous tutorial were converted to Cookbook chapters. Asciidoctor is used for devonfw guide PDF generation. 
 See: https://github.com/devonfw/devonfw-guide/wiki
 
-== = devon4ng
+== devon4ng
 
 The following changes have been incorporated in devon4ng:
 
@@ -105,11 +105,11 @@ The following changes have been incorporated in devon4ng:
 * Core and Shared Modules included to follow the recommended Angular projects structure, 
 * Yarn and NPM compliant since both lock files are included in order to get a stable installation.
 
-== = Admin interface for devon4j apps 
+== Admin interface for devon4j apps 
 
 The new version includes an Integration of an admin interface for devon4j apps (Spring Boot). This module is based on CodeCentric´s Spring Boot Admin (https://github.com/codecentric/spring-boot-admin).
 
-== = Devcon 
+== Devcon 
 
 A new version of Devcon has been released. Fixes and new features include:
 
@@ -117,7 +117,7 @@ A new version of Devcon has been released. Fixes and new features include:
 * New menu has been added - “other modules”, if menus are more than 10, other modules will display some menus.
 * A progress bar has been added for installing the distribution
 
-== = devonfw Modules
+== devonfw Modules
 
 Existing devonfw modules can now be accessed with the help of starters following namespace devonfw-<module_name>-starter. Starters available for modules:
 
@@ -132,13 +132,13 @@ Existing devonfw modules can now be accessed with the help of starters following
 
 See: https://github.com/devonfw/devon/wiki#ip-modules 
 
-== = devonfw Shop Floor 
+== devonfw Shop Floor 
 
 This incubator is intended to be a compilation of DevOps experiences from the devonfw perspective. “How we use our devonfw projects in DevOps environments”. Integration with the Production Line, creation and service integration of a Docker-based CI environment and deploying devonfw applications in an OpenShift Origin cluster using devonfw templates.
 
 See: https://github.com/devonfw/devonfw-shop-floor
 
-== = devonfw-testing 
+== devonfw-testing 
 
 The Allure Test Framework is an automated testing framework for functional testing of web applications and in coming future native mobile apps, web services and databases. All modules have tangible examples of how to build resilient integration test cases based on delivered functions. 
 
@@ -162,7 +162,7 @@ The Allure Test Framework is an automated testing framework for functional testi
 
 See:  https://github.com/devonfw/devonfw-testing/wiki
 
-== = DOT.NET Framework incubators
+== DOT.NET Framework incubators
 
 The .NET Core and Xamarin frameworks are still under development by a workgroup from The Netherlands, Spain, Poland, Italy, Norway and Germany. The 1.0 release is expected to be coming soon but the current incubator frameworks are already being used in several engagements.  Some features to highlight are:
 
@@ -179,13 +179,13 @@ The .NET Core and Xamarin frameworks are still under development by a workgroup 
 ** Backend (.NET Core)
 ** FrontEnd (Xamarin)
 
-== = devonfw has been Primed by Red Hat for OpenShift
+== devonfw has been Primed by Red Hat for OpenShift
 
 OpenShift is a supported distribution of Kubernetes from Red Hat for container-based software deployment and management. It is using Docker containers and DevOps tools for accelerated application development. Using OpenShift allows Capgemini to avoid Cloud Vendor lock-in. OpenShift provides devonfw with a state of the art CI/CD environment (devonfw Shop Floor), providing devonfw with a platform for the whole development life cycle: from development to staging / deploy.
 
 See https://hub.openshift.com/primed/120-capgemini
 
-== = Harvested components and modules
+== Harvested components and modules
 
 The devonfw Harvesting process continues to add valuable components and modules to the devonfw platform. The last months the following elements were contributed: 
 
@@ -203,7 +203,7 @@ JHipster is a code generator based on Yeoman generators. Its default generator g
 
 This component has been donated by, has been harvested from system in use by, Capgemini  Valencia. This dashboard, apart from an optional gamification element, allows the display of multiple Jenkins instances. 
 
-== = And lots more, among others:
+== And lots more, among others:
 
 * devon4j/devonfw docker based build in a docker process.
 

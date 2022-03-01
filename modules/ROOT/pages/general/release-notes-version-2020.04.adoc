@@ -46,7 +46,7 @@ This would have not been possible without the commitment and hard work of the de
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-== = 2020.04.001
+== 2020.04.001
 
 Starting with this release we have changed the versioning schema in `devonfw` to `yyyy.mm.NNN` where `yyyy.mm` is the date of the planned milestone release and `NNN` is a running number increased with every bug- or security-fix update.
 
@@ -59,7 +59,7 @@ Starting with this release we have changed the versioning schema in `devonfw` to
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/9?closed=1[milestone 2020.04.001].
 
-== = 3.3.1
+== 3.3.1
 
 New release with bugfixes and new ide plugin feature:
 
@@ -74,7 +74,7 @@ New release with bugfixes and new ide plugin feature:
 
 The full list of changes for this release can be found in https://github.com/devonfw/ide/milestone/10?closed=1[milestone 3.3.1].
 
-== = 3.3.0
+== 3.3.0
 
 New release with bugfixes and new project import feature:
 
@@ -90,7 +90,7 @@ The full list of changes for this release can be found in https://github.com/dev
 
 The consolidated list of features for this devon4j release is as it follows.
 
-== = 2020.04.001
+== 2020.04.001
 
 Starting with this release we have changed the versioning schema in `devonfw` to `yyyy.mm.NNN` where `yyyy.mm` is the date of the planned milestone release and `NNN` is a running number increased with every bug- or security-fix update.
 
@@ -132,7 +132,7 @@ The full list of changes for this release can be found in https://github.com/dev
 
 The consolidated list of features for this devon4ng release is as it follows.
 
-== = 2020.04.001
+== 2020.04.001
 
 Starting with this release we have changed the versioning schema in `devonfw` to `yyyy.mm.NNN` where `yyyy.mm` is the date of the planned milestone release and `NNN` is a running number increased with every bug- or security-fix update.
 
@@ -246,7 +246,7 @@ New release with updates and bugfixes:
 
 The consolidated list of features for this Sonar devon4j plugin release is as it follows.
 
-== = 2020.04.001
+== 2020.04.001
 
 This is the first version using our new versioning scheme. Here, the following issues were resolved:
 

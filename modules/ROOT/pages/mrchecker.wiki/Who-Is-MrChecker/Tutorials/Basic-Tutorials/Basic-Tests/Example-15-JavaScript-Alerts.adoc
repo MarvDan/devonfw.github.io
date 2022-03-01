@@ -12,7 +12,7 @@ In developer mode, you can view JavaScript which creates alerts.
 
 image::images/example45.png[]
 
-== == = Page Class
+== == Page Class
 
 ----
 public class JavaScriptAlertsPage extends BasePage {
@@ -113,7 +113,7 @@ public class JavaScriptAlertsPage extends BasePage {
 
 Using `switchTo()` method you can change processed content. `switchTo().alert()` allows performing actions on appearing alerts such as accepting, dismissing or entering keys.
 
-== == = Test Class
+== == Test Class
 
 Before all tests: Open The Internet Main Page and go to JavaScript Alert page 
 

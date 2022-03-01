@@ -46,7 +46,7 @@ https://www.microsoft.com/net/core[.Net Core SDK]
 *   Type `dotnet run`.
 
 
-== = [navy]#Debug#
+== [navy]#Debug#
 
 . Open Program.cs by clicking on it. The first time you open a C# file in Visual Studio Code, OmniSharp will load in the editor.
 

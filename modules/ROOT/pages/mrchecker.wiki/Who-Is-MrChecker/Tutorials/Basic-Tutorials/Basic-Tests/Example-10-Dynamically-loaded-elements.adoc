@@ -33,7 +33,7 @@ After a certain time, the loading bar becomes invisible, and then the script cre
 
 image::images/example31.png[]
 
-== == = Page Class
+== == Page Class
 ----
 public class DynamicLoadingPage extends BasePage {
 
@@ -150,7 +150,7 @@ public class DynamicLoadingPage extends BasePage {
  
 ----
 
-== == = WebDriverWait 
+== == WebDriverWait 
 This class performs waiting for actions using Selenium Web Driver: 
 
 * WebDriverWait(WebDriver driver, long timeOutInSeconds) - constructor, first parameter takes WebDriver, in a second you can specify a timeout in seconds. 
@@ -200,7 +200,7 @@ Or as a lambda expression:
             }
         });
 ----
-== == = Test Class 
+== == Test Class 
 
 Case 1 steps: 
 

@@ -14,7 +14,7 @@ In order to build all of this, it will be necessary, first, to have a running Op
 
 Before using the builder images, add them to the OpenShift cluster.
 
-== = Deploy the Source-2-Image builder images
+== Deploy the Source-2-Image builder images
 
 First, create a dedicated `devonfw` project as admin.
 
@@ -42,7 +42,7 @@ oc policy add-role-to-group system:image-puller system:authenticated --namespace
 
 That's all!
 
-== = Deploy devonfw templates
+== Deploy devonfw templates
 
 Now, it's time to create devonfw templates to use this s2i and add it to the browse catalog. More information link:dsf-okd-templates[here].
 

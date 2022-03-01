@@ -6,7 +6,7 @@ You can move the slider by dragging it with a mouse or using arrow keys. The pag
 
 image::images/example53.png[]
 
-== == = Page Class
+== == Page Class
 
 ----
 public class HorizontalSliderPage extends BasePage {
@@ -130,7 +130,7 @@ And use:
 * `setSliderPositionTo(BigDecimal position, int method)` - moves slider to a given position. If the position is not valid, it changes it to the nearest proper value. Second parameter determinates movement method: 0 - Keyboard, 1 - Mouse 
 * `BigDecimal verifyAndCorrectPositionValue(BigDecimal position)` - returns nearest correct position 
 
-== == = Test Class
+== == Test Class
 
 Before all tests: Open The Internet Main Page 
 

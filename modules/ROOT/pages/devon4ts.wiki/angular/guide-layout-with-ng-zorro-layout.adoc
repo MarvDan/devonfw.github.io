@@ -467,7 +467,7 @@ After that we need to create the table
           <tbody>
             <tr *ngFor="let data of editRowTable.data" class="editable-row">
               <td>
-                <div class="editable-cell" [hidden]="editId == = data.id" (click)="startEdit(data.id)">
+                <div class="editable-cell" [hidden]="editId == data.id" (click)="startEdit(data.id)">
                   {{ data.name }}
                 </div>
                 <input [hidden]="editId !==  data.id" type="text" nz-input [(ngModel)]="data.name" (blur)="stopEdit()" />

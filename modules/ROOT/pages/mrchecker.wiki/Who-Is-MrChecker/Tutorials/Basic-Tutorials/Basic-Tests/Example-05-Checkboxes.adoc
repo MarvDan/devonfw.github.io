@@ -15,7 +15,7 @@ Steps:
 7. Unselect second checkbox 
 8. Test if the second checkbox is unchecked 
 
-== == = Page Class 
+== == Page Class 
 
 Because both checkboxes are in one form, it's possible to locate them by one selector and then access each individual one by index. 
 
@@ -84,11 +84,11 @@ public class CheckboxesPage extends BasePage {
 }
  
 ----
-== == = CheckBox 
+== == CheckBox 
 CheckBox class contains a method to perform actions on checkboxes such as setting and unsetting or verifying if the specified box is checked.
 Use method elementCheckbox(By selector) to create CheckBox Object. 
 
-== == = Test Class 
+== == Test Class 
 
 ----
 @Category({ TestsSelenium.class, TestsChrome.class, TestsFirefox.class, TestsIE.class })

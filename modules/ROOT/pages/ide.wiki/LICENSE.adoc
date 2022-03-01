@@ -2492,7 +2492,7 @@ The externally maintained libraries used by Node.js are:
     ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
     OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-    == = src/compat.h src/compat-inl.h == =
+    == src/compat.h src/compat-inl.h == =
 
     ISC License
 

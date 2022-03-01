@@ -65,7 +65,7 @@ EMPTY
 
 Link to full file structure: https://github.com/devonfw/devonfw-testing/blob/develop/mrchecker-framework-modules/mrchecker-webapi-module/src/test/java/com/capgemini/mrchecker/endpoint/rest/REST_FarenheitToCelsiusMethod_Test.java[REST_FarenheitToCelsiusMethod_Test.java]
 
-== = Start up Virtual Server
+== Start up Virtual Server
 
 ----
 public void startVirtualServer() {
@@ -85,7 +85,7 @@ public void startVirtualServer() {
 }
 ----
 
-== = Plug in a virtual asset
+== Plug in a virtual asset
 
 REST_FarenheitToCelsiusMethod_Test.java
 

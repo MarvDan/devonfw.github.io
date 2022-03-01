@@ -29,7 +29,7 @@ The Docker commandlet will install Docker automatically.
 Please note that besides the sandbox concept of devonfw-ide this is a global installation on your system.
 When uninstalling devonfw-ide, you may have to manually uninstall Docker and Kubernetes if you do not need it anymore.
 
-== = requirements
+== requirements
 Running Docker and especially link:kubectl[Kubernetes] on your machine in the background will require quite some resources.
 This will allocate at least 2GB of additional RAM.
 
@@ -43,7 +43,7 @@ If you use Docker and Kubernetes on your local machine on a daily basis this mak
 
 In case you only use Docker rarely, you can save resources by stopping it when not needed after it has been installed.
 
-== = Windows and macOS
+== Windows and macOS
 To enable or disable autostart, you can launch Docker Desktop on Windows or MacOS got to the `Preferences` (gear icon in the title bar). Then in the `General` tab you can check or uncheck the option `Start Docker Desktop when you login` (see also https://docs.docker.com/docker-for-windows/#general[here]). When autostart is disabled and you launch Docker Desktop it will notice and ask your to start the service or do this automatically for you.
 On Windows you can also manually tweak this:
 
@@ -63,7 +63,7 @@ docker: no matching manifest for linux/arm64/v8 in the manifest list entries.
 
 So with A1 CPU you may need to add `--platform linux/x86_64` as option to your Docker command to find the expected container image.
 
-== = Linux
+== Linux
 There is no Docker Desktop for Linux.
 As Docker initially comes from the Linux world, it is easy to set it up on a Linux machine and use it from the commandline.
 Therefore we do not install a GUI for you in case you are a Linux user.

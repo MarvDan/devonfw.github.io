@@ -23,7 +23,7 @@ To know more details about the above technologies please visit the following doc
 
 Following the DEVON4J conventions the Java My Thai Star back-end is going to be developed dividing the application in _Components_ and using a three layers architecture.
 
-== = Project modules
+== Project modules
 
 Using the DEVON4J approach for the Java back-end project we will have a structure of a _Maven_ project formed by three projects
 
@@ -37,7 +37,7 @@ image::images/java/project_modules.png[, link="images/java/project_modules.png"]
 
 We can automatically generate this project structure https://github.com/devonfw/devon/wiki/getting-started-creating-new-devonfw-application#running-the-archetype[using the DEVON4J _Maven_ archetype]
 
-== = Components
+== Components
 
 The application is going to be divided in different components to encapsulate the different domains of the application functionalities.
 
@@ -65,7 +65,7 @@ Other components:
 - Twitter integration: planned as a _Microservice_ will provide the twitter integration needed for some specific functionalities of the application. 
 
 
-== = Layers
+== Layers
 
 - `https://github.com/devonfw/devon4j/wiki/guide-service-layer[Service Layer]`: this layer will expose the REST API to exchange information with the client applications.
 
@@ -75,13 +75,13 @@ Other components:
 
 This architecture is going to be reflected dividing each component of the application in different packages to match those three layers.
 
-== = Component structure
+== Component structure
 
 Each one of the components defined previously are going to be structured using the _three-layers_ architecture. In each case we will have a _service_ package, a _logic_ package and a `_dataaccess_` package to fit the layers definition.
 
 image::images/java/component_structure.png[, link="images/java/component_structure.png"]
 
-== = Dependency injection
+== Dependency injection
 
 As it is explained in the `https://github.com/devonfw/devon4j/wiki/guide-dependency-injection[devonfw documentation]` we are going to implement the _dependency injection_ pattern basing our solution on _Spring_ and the Java standards: _java.inject_ (JSR330) combined with JSR250.
 
@@ -112,7 +112,7 @@ public class MyBeanImpl implements MyBean {
 }
 ----
 
-== = Layers communication
+== Layers communication
 
 The connection between layers, to access to the functionalities of each one, will be solved using the _dependency injection_ and the JSR330 annotations.
 
@@ -192,7 +192,7 @@ Following the https://github.com/devonfw/devon4j/wiki/guide-rest[naming conventi
 
 You can find all the details for the services implementation in the https://github.com/devonfw/my-thai-star/blob/develop/swagger/mythaistar.yaml[Swagger definition] included in the My Thai Star project on Github.
 
-== = Service API
+== Service API
 
 The `_api.rest_` package in the _service_ layer of a _component_ will store the definition of the service by a  _Java interface_. In this definition of the service we will set-up the _endpoints_ of the service, the type of data expected and returned, the _HTTP_ method for each endpoint of the service and other configurations if needed.
 
@@ -212,7 +212,7 @@ public interface DishmanagementRestService {
 }
 ----
 
-== = Service `impl`
+== Service `impl`
 
 Once the service `_api_` is defined we need to implement it using the _Java interface_ as reference. We will add the _service implementation_ class to the `_impl.rest_` package and implement the `_RestService interface_`.
 
@@ -300,7 +300,7 @@ To get more details about _pagination_, _data base security, _concurrency contro
 
 For the _Authentication_ and _Authorization_ the app will implement the `https://jwt.io/[json web token`] protocol.
 
-== = JWT basics
+== JWT basics
 
 - A user will provide a username / password combination to our Auth server.
 
@@ -310,7 +310,7 @@ For the _Authentication_ and _Authorization_ the app will implement the `https:/
 
 image::images/java/jwt_schema.png[, link="images/java/jwt_schema.png"]
 
-== = JWT implementation details
+== JWT implementation details
 
 The _Json Web Token_ pattern will be implemented based on the https://docs.spring.io/spring-security/site/docs/4.0.x/reference/htmlsingle/[_Spring Security_] framework that is provided by default in the _Devon4j_ projects.
 

@@ -43,7 +43,7 @@ devon4node -h
 devon4node new -h
 ----
 
-== = new
+== new
 
 `devon4node new` allows you to create new devon4node applications. It's an interactive command and it will ask you for everything that it need in order to create a new application.
 
@@ -71,7 +71,7 @@ devon4node new my-app -n
 devon4node new my-app -n -typeorm sqlite -config-module -auth-jwt
 ----
 
-== = generate
+== generate
 
 This command allows you to generate code into your application. It receive he name of the schematic that will generate the code.
 
@@ -477,7 +477,7 @@ It will add helmet package as project dependency and update the main.ts file in 
 |== == == == 
 
 
-== = db
+== db
 
 Execute a database command. This command is an alias of `typeorm` command, so if you exetue the command `devon4node db migration:create` under the hood it will execute `typeorm migration:create`. For more information see link:https://typeorm.io/#/using-cli[typeorm CLI documentation].
 

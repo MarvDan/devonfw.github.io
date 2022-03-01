@@ -47,7 +47,7 @@ To configure the mailer module, you only need to import it in your application i
 
 Your must pass the configuration using the `forRoot` or `forRootAsync` methods.
 
-== = `forRoot()`
+== `forRoot()`
 
 The `forRoot` method receives an `MailerModuleOptions` object as parameter. It configures the `MailerModule` using the input `MailerModuleOptions` object.
 
@@ -99,7 +99,7 @@ Then, you need to call to `forRoot` function in the module imports. Example:
 })
 ----
 
-== = `forRootAsync()`
+== `forRootAsync()`
 
 The method `forRootAsync` enables you to get the mailer configuration in a asynchronous way. It is useful when you need to get the configuration using, for example, a service (e.g. `ConfigurationService`).
 
@@ -139,7 +139,7 @@ export class CatsService {
 
 Then, you only need to use the methods provided by the `MailerService` in your service. Take into account that you can inject it in every place that support NestJS dependency injection.
 
-== = `MailerService` methods
+== `MailerService` methods
 
 == ==  `sendPlainMail`
 

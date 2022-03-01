@@ -21,7 +21,7 @@ In order to learn more about MrChecker structure, start from Project Organisatio
 
 ==  How to create a basic test in MrChecker
 
-== = Example: Booking a table
+== Example: Booking a table
 As an example to test we will use https://mts-devonfw-core.cloud.okteto.net/bookTable[MyThaiStar] booking page. +
 In order to book a table, do the following steps:
 
@@ -38,7 +38,7 @@ image::images/image2.png[]
 
 You can go through these steps manually and doublecheck the result.
 
-== = How to prepare a test
+== How to prepare a test
 
 == ==  1. Create BookTablePage class
 

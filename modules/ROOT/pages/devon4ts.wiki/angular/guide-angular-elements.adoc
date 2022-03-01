@@ -35,25 +35,25 @@ Angular Elements is really powerful but since, the transition between views is g
 
 In a generalized way, a simple `Angular component` could be transformed to an `Angular Element` with this steps:
 
-== = Installing Angular Elements
+== Installing Angular Elements
 
 The first step is going to be install the library using our preferred packet manager:
 
-== == = NPM
+== == NPM
 
 [source]
 ----
 npm install @angular/elements
 ----
 
-== == = YARN
+== == YARN
 
 [source]
 ----
 yarn add @angular/elements
 ----
 
-== = Preparing the components in the modules
+== Preparing the components in the modules
 
 Inside the `app.module.ts`, in addition to the normal declaration of the components inside `declarations`, the modules inside `imports` and the services inside `providers`, the components need to added in `entryComponents`. If there are components that have their own module, the same logic is going to be applied for them, only adding in the `app.module.ts` the components that do not have their own module. Here is an example of this:
 
@@ -100,7 +100,7 @@ export class AppModule {
 ....
 ----
 
-== = A component example
+== A component example
 
 In order to be able to use a component, `@Input()` and `@Output()` variables are used. These variables are going to be the ones that will allow the Angular Element to communicate with the framework/JavaScript:
 
@@ -167,15 +167,15 @@ export class DishFormComponent implements OnInit {
 
 In this file there are definitions of multiple variables that will be used as input and output. Since the input variables are going to be used directly by html, only lowercase and underscore strategies can be used for them. On the `onSubmit(dishForm: NgForm)` a service is used to pass this variables to another component. Finally, as a last thing, the selector inside `@Component` has been removed since a tag that will be used dynamically was already defined in the last step.
 
-== = Solving the error
+== Solving the error
 
 In order to be able to use this `Angular Element` a `Polyfills`/`Browser support` related error needs to solved. This error can be solved in two ways:
 
-== == = Changing the target 
+== == Changing the target 
 
 One solution is to change the target in `tsconfig.json` to `es2015`. This might not be doable for every application since maybe a specific target is required.
 
-== == = Installing Polyfaces
+== == Installing Polyfaces
 
 Another solution is to use `AutoPollyfill`. In order to do so, the library is going to be installed with a packet manager:
 
@@ -206,7 +206,7 @@ import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
 
 If you want to learn more about polyfills in angular you can do it https://angular.io/guide/browser-support[here]
 
-== = Building the Angular Element
+== Building the Angular Element
 
 First, before building the `Angular Element`, every element inside that app component except the module need to be removed. After that, a bash script is created in the root folder,. This script will allow to put every necessary file into a JS.
 
@@ -217,7 +217,7 @@ ng build "projectName" --configuration production --output-hashing=none && cat d
 
 After executing the bash script, it will generate inside the path `dist/"projectName"` (or `dist/apps/projectname` in a Nx workspace) a JS file named `"nameWantedAngularElement".js` and a css file.
 
-== == = Building with `ngx-build-plus` (Recommended)
+== == Building with `ngx-build-plus` (Recommended)
 
 The library https://github.com/manfredsteyer/ngx-build-plus[`ngx-build-plus`] allows to add different options when building. In addition, it solves some errors that will occur when trying to use multiple angular elements in an application. In order to use it, yarn or npm can be used:
 
@@ -287,7 +287,7 @@ module.exports = {
   If some libraries are excluded from the `Angular Element` you will need to add the bundled UMD files of those libraries manually.
 == == 
 
-== = Using the Angular Element
+== Using the Angular Element
 
 The `Angular Element` that got generated in the last step can be used in almost every framework. In this case, the `Angular Element` is going to be used in html:
 
@@ -400,11 +400,11 @@ This allows JavaScript to hook with the `@Output()` event emitter that was defin
 
 In order to use an `Angular Element` within another `Angular` project the following steps need to be followed:
 
-== = Copy bundled script and css to resources
+== Copy bundled script and css to resources
 
 First copy the generated `.js` and `.css` inside assets in the corresponding folder.
 
-== = Add bundled script to angular.json
+== Add bundled script to angular.json
 
 Inside `angular.json` both of the files that were copied in the last step are going to be included. This will be done both, in `test` and in `build`. Including it on the test, will allow to perform unitary tests.
 
@@ -452,11 +452,11 @@ By declaring the files in the `angular.json` angular will take care of including
   If you are using Nx, the configuration file `angular.json` might be named as `workspace.json`, depending on how you had setup the workspace. The structure of the file remains similar though.
 == == 
 
-== = Using Angular Element
+== Using Angular Element
 
 There are two ways that `Angular Element` can be used:
 
-== == = Create component dynamically
+== == Create component dynamically
 
 In order to add the component in a dynamic way, first adding a container is necessary:
 
@@ -488,7 +488,7 @@ export class AppComponent implements OnInit {
   ....
 ----
 
-== == = Using it directly
+== == Using it directly
 
 In order to use it directly on the templates, in the `app.module.ts` the `CUSTOM_ELEMENTS_SCHEMA` needs to be added:
 

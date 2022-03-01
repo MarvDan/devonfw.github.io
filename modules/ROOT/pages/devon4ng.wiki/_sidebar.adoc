@@ -1,17 +1,17 @@
-== = link:architecture[Architecture Overview]
+== link:architecture[Architecture Overview]
 
-== = link:meta-architecture[Client Meta Architecture]
+== link:meta-architecture[Client Meta Architecture]
 
-== = Layers
+== Layers
 ** link:components-layer[Components Layer]
 ** link:services-layer[Services Layer]
 
-== = Guides
+== Guides
 ** link:guide-package-managers[Package Managers]
 ** link:guide-npm-yarn-workflow[Package Managers Workflow]
 ** link:guide-yarn-2-support[Yarn 2 Support]
 
-== = Angular
+== Angular
 ** link:guide-accessibility[Accessibility]
 ** link:guide-angular-elements[Angular Elements]
 ** link:guide-angular-lazy-loading[Angular Lazy Loading]
@@ -30,21 +30,21 @@
 ** link:guide-upgrade-devon4ng[Upgrade devon4ng applications]
 ** link:guide-working-with-angular-cli[Working with Angular CLI]
 
-== = Ionic
+== Ionic
 ** link:guide-ionic-getting-started[Ionic Getting started]
 ** link:guide-ionic-from-code-to-android[Ionic to Android]
 ** link:guide-ionic-pwa[Ionic Progressive Web Apps]
 
-== = Layouts
+== Layouts
 ** link:guide-layout-with-angular-material[Angular Material Layout]
 
-== = NgRx
+== NgRx
 ** link:guide-ngrx-getting-started[Introduction]
 ** link:guide-ngrx-simple-store[State, Selection and Reducers]
 ** link:guide-ngrx-effects[Side effects with NgRx/Effects]
 ** link:guide-ngrx-entity[Simplifying CRUD with NgRx/Entity]
 
-== = Cookbook
+== Cookbook
 ** link:cookbook-abstract-class-store[Abstract Class Store]
 ** link:guide-add-electron[Angular Electron]
 ** link:guide-angular-mock-service[Mock Service]

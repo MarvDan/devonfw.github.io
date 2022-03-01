@@ -16,7 +16,7 @@ Remote setup in CI machine (located in the Netherlands)
 
 ==  1. Install Docker and Docker Compose in RHEL 6.5
 
-== = Docker
+== Docker
 
 Due to that OS version, the only way to have Docker running in the CI machine is by installing it from the *EPEL* repository (Extra Packages for Enterprise Linux).
 
@@ -53,7 +53,7 @@ Due to that OS version, the only way to have Docker running in the CI machine is
 Docker version 1.7.1, build 786b29d/1.7.1
 ----
 
-== = Docker Compose
+== Docker Compose
 
 Download and install it via *curl*. It will use link:https://github.com/docker/compose/releases?after=1.7.0-rc2[this site].
 
@@ -138,7 +138,7 @@ Some naming conventions had been followed as naming containers as `mirabaud_[ser
 
 Several folders have been created to store each service's volumes, `docker-compose.yml`(s), extra configuration settings and so on:
 
-== = Jenkins
+== Jenkins
 
 == ==  Command
 
@@ -170,7 +170,7 @@ sudo docker run -d --name mirabaud_jenkins -v /jenkins:/var/jenkins_home -p 8080
 volumes/jenkins_home:/var/jenkins_home
 ```
 
-== = SonarQube
+== SonarQube
 
 == ==  Command
 
@@ -193,7 +193,7 @@ volumes/extensions:/opt/sonarqube/extensions
 volumes/lib/bundled-plugins:/opt/sonarqube/lib/bundled-plugins                                                    
 ```
 
-== = Nexus
+== Nexus
 
 == ==  Command
 
@@ -210,7 +210,7 @@ volumes/lib/bundled-plugins:/opt/sonarqube/lib/bundled-plugins
 volumes/nexus-data/:/sonatype-work                         
 ```
 
-== = Atlassian Crucible
+== Atlassian Crucible
 
 == ==  Command
 
@@ -232,7 +232,7 @@ volumes/data:/atlassian/data/crucible
 
 Both Services had been deploying by using the `# docker-compose up -d` command from their root directories (`/gitlab` and `/mattermost`). The syntax of the two `docker-compose.yml` files is the one corresponding with the 1st version (due to the `docker-compose v1.5`).
 
-== = GitLab
+== GitLab
 
 == ==  `docker-compose.yml`
 
@@ -268,7 +268,7 @@ volumes/var/opt:/var/log/gitlab
 volumes/var/log:/var/log/gitlab
 ```
 
-== = Mattermost
+== Mattermost
 
 == ==  `docker-compose.yml`:
 

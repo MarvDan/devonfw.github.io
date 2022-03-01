@@ -41,20 +41,20 @@ image::images/angular/routes.png[, link="images/angular/routes.png"]
 
 _Note: no-name-route corresponds to whatever URL the user introduced and does not exist, it redirects to Home-Component._
 
-== = Public area
+== Public area
 == ==  App Component
 Contains the components that are on top of all views, including:
 
-== == = Order sidenav
+== == Order sidenav
 Sidenav where selected orders are displayed with their total price and some comments.
 
-== == = Navigation sidenav (only for mobile)
+== == Navigation sidenav (only for mobile)
 This sidenav proposal is to let user navigate through the app when the screen is too small to show the navigation buttons on the header.
 
-== == = Header
+== == Header
 It contains the title, and some other basic functions regarding open and close sidenavs.
 
-== == = Footer (only for desktop)
+== == Footer (only for desktop)
 At the end of the page that shows only when open on desktop.
 
 == ==  Home-Component
@@ -63,49 +63,49 @@ Main view that shows up when the app initializes.
 == ==  Menu-Component
 View where the users can view, filter and select the dishes (with their extras) they want to order it contains a component to each menu entry:
 
-== == = Menu-card
+== == Menu-card
 This component composes all the data of a dish in a card. Component made to display indeterminate number of dishes easily.
 
 == ==  Book Table Component
 
 View to make book a table in a given data with a given number of assistants or create a reservation with a number of invitations via email.
 
-== == = Book-table-dialog
+== == Book-table-dialog
 Dialog which opens as a result of fulfilling the booking form, it displays all the data of the booking attempt, if everything is correct, the user can send the information or cancel if something is wrong.
 
-== == = Invitation-dialog
+== == Invitation-dialog
 Dialog which opens as a result of fulfilling the invitation form, it displays all the data of the booking with friends attempt, if everything is correct, the user can send the information or cancel if something is wrong.
 
 == ==  User Area
 Group of dialogs with the proposal of giving some functionalities to the user, as login, register, change password or connect with Twitter.
 
-== == = Login-dialog
+== == Login-dialog
 Dialog with a tab to navigate between login and register.
 
-== == = Password-dialog
+== == Password-dialog
 Functionality reserved to already logged users, in this dialog the user can change freely their password.
 
-== == = Twitter-dialog
+== == Twitter-dialog
 Dialog designed specifically to connect your user account with Twitter.
 
-== = Waiter cockpit area
+== Waiter cockpit area
 Restricted area to workers of the restaurant, here we can see all information about booked tables with the selected orders and the reservations with all the guests and their acceptance or decline of the event.
 
 
 == ==  Order Cockpit Component
 Data table with all the booked tables and a filter to search them, to show more info about that table you can click on it and open a dialog.
 
-== == = Order-dialog
+== == Order-dialog
 Complete display of data regarding the selected table and its orders.
 
 == ==  Reservation Cockpit Component
 
 Data table with all the reservations and a filter to search them, to show more info about that table you can click on it and open a dialog.
 
-== == = Reservation-dialog
+== == Reservation-dialog
 Complete display of data regarding the selected table and its guests.
 
-== = Email Management
+== Email Management
 As the application send emails to both guests and hosts, we choose an approach based on URL where the email contain a button with an URL to a service in the app and a token, front-end read that token and depending on the URL, will redirect to one service or another. For example: 
 [source]
 ----
@@ -136,10 +136,10 @@ As it can be seen in the basic structure, every view that has a minimum of logic
 
 Also, services and directives can be created to compose a reusable piece of code that will be reused in some parts of the code:
 
-== = Price-calculator-service
+== Price-calculator-service
 This service located in the shared folder of sidenav contains the basic logic to calculate the price of a single order (with all the possibilities) and to calculate the price of a full list of orders for a table. As this is used in the sidenav and in the waiter cockpit, it has been exported as a service to be imported where needed and easily testable.
 
-== = Authentication
+== Authentication
 Authentication services serves as a validator of roles and login and, at the same time, stores the basic data regarding security and authentication.
 
 Main task of this services is to provide visibility at app level of the current user information:
@@ -148,13 +148,13 @@ Main task of this services is to provide visibility at app level of the current 
 * Check the permissions of the current user.
 * Store the username and the JWT token.
 
-== = Snack Service
+== Snack Service
 Service created to serve as a factory of Angular Material `Snackbars`, which are used commonly through the app. This service accepts some parameters to customize the `snackBar` and opens it with this parameters.
 
-== = Window Service
+== Window Service
 For responsiveness reasons, the dialogs have to accept a width parameter to adjust to screen width and this information is given by Window object, as it is a good practice to have it in an isolated service, which also calculates the width percentage to apply on the dialogs.
 
-== = Equal-validator-directive
+== Equal-validator-directive
 This directive located in the shared folder of `userArea` is used in 2 fields to make sure they have the same value. This directive is used in confirm password fields in register and change password.
 
 ==  Mock Back-end
@@ -171,16 +171,16 @@ Contains the three main groups of functionalities in the application. Every grou
 * *Real back-end service* works as Mock back-end but in this case the methods call for server rest services through Http.
 
 
-== = Booking
+== Booking
 The booking group of functionalities manages the calls to reserve a table with a given time and assistants or with guests, get reservations filtered, accept or decline invitations or cancel the reservation.
 
-== = Orders
+== Orders
 Management of the orders, including saving, filtering and cancel an order.
 
-== = Dishes
+== Dishes
 The dishes group of functionalities manages the calls to get and filter dishes.
 
-== = Login
+== Login
 Login manages the `userArea` logic: login, register and change password.
 
 
@@ -188,12 +188,12 @@ Login manages the `userArea` logic: login, register and change password.
 
 My Thai Star security is composed by two main security services:
 
-== = Auth-guard
+== Auth-guard
 
 Front-end security approach, this service implements an interface called `CanActivate` that comes from angular/router module. `CanActivate` interface forces you to implement a `canActivate()` function which returns a Boolean.
 This service checks with the Auth-Service stored data if the user is logged and if he has enough permission to access the waiter cockpit. This prevents that a forbidden user could access to waiter cockpit just by editing the URL in the browser.
 
-== = JWT
+== JWT
 
 JSON Web Token consists of a token that is generated by the server when the user logs in. Once provided, the token has to be included in an Authentication header on every Http call to the rest service, otherwise the call will be forbidden.
 JWT also has an expiration date and a role checking, so if a user has not enough permissions or keeps logged for a long certain amount of time that exceeds this expiration date, the next time he calls for a service call, the server will return an error and forbid the call. You can log again to restore the token.

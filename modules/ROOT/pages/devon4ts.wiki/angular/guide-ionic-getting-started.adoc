@@ -25,12 +25,12 @@ Ionic is used for developing hybrid applications, which means not having to rely
 
 ==  Basic environment set up
 
-== = Install Ionic CLI
+== Install Ionic CLI
 Although the devonfw distribution comes with and already installed Ionic CLI, here are the steps to install it. The installation of Ionic is easy, just one command has to be written:
 
 `$ npm install -g @ionic/cli`
 
-== = Update Ionic CLI
+== Update Ionic CLI
 
 If there was a previous installation of the Ionic CLI, it will need to be uninstalled due to a change in package name.
 

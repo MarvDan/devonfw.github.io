@@ -14,7 +14,7 @@ Steps:
 5. Save page images sources and it's descriptions after refresh 
 6. Compare page content before and after refresh and verify if it's different 
 
-== == = Page Class
+== == Page Class
 ----
 public class DynamicContentPage extends BasePage {
 
@@ -65,7 +65,7 @@ public class DynamicContentPage extends BasePage {
 }
  
 ----
-== == = ListElements 
+== == ListElements 
 
 ListElements is MrChecker collection which can store WebElement Objects. Constructing ListElements with cssSelector allows you to store every element on the page which fits  the selector. Example methods: 
 ----
@@ -75,7 +75,7 @@ getSize() - returns number of stored Elements
 In getImageLinks() example it's shown how to get a list of specified Elements' attributes. 
 ----
 
-== == = Test Class 
+== == Test Class 
 ----
 @Category({ TestsSelenium.class, TestsChrome.class, TestsFirefox.class, TestsIE.class })
 public class DynamicContentTest extends TheInternetBaseTest {

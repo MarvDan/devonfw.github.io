@@ -30,21 +30,21 @@ include::dsf-configure-nexus.adoc[leveloffset=2]
 include::dsf-configure-sonarqube.adoc[leveloffset=2]
 
 ==  Create project
-== = Create and integrate git repository
+== Create and integrate git repository
 include::dsf-configure-gitlab.adoc[leveloffset=2].
 
-== = start new devonfw project
+== start new devonfw project
 
 It is time to create your devonfw project:
 
   * visit our https://github.com/devonfw/devonfw-tutorial-sources/wiki/build-devon4ng-application[devon4ng] guide.
   * visitr our https://github.com/devonfw/devonfw-tutorial-sources/wiki/build-devon4j-application[devon4j] guide.
 
-== = cicd configuration
+== cicd configuration
 
 == ==  Manual configuration
 
-== == = Jenkinsfile
+== == Jenkinsfile
 include::dsf-configure-jenkins.adoc[leveloffset=2].
 
 ==  Deployment
@@ -52,7 +52,7 @@ include::dsf-configure-jenkins.adoc[leveloffset=2].
 include::dsf-deployment-dsf4openshift.adoc[leveloffset=2].
 
 ==  Annexes
-== = Custom Services
+== Custom Services
 
 == ==  BitBucket
 include::dsf-openshift-services-bitbucket-basic-server-setup.adoc[leveloffset=3]

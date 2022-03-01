@@ -47,7 +47,7 @@ Although there are many frameworks to create backend applications in NodeJS, non
 
 NestJS adopts various Angular concepts, such as dependency injection, piping, interceptors and modularity, among others. By using modularity we can reuse some of our modules between applications. One example that devon4node provide is the link:guides-mailer[mailer module].
 
-== = Modules
+== Modules
 
 Create a application module is simple, you only need to create an empty class with the decorator `Module`:
 
@@ -80,7 +80,7 @@ One example of global module is the `CoreModule`. In the `CoreModule` you must i
 
 For more information about modules, see link:https://docs.nestjs.com/modules[NestJS documentation page]
 
-== = Folder structure
+== Folder structure
 
 devon4node defines a folder structure that every devon4node application must follow. The folder structure is:
 
@@ -119,7 +119,7 @@ devon4node defines a folder structure that every devon4node application must fol
 
 link:guides-code-generation[devon4node schematics] ensures this folder structure so, please, do not create files by your own, use the link:guides-code-generation[devon4node schematics].
 
-== = NestJS components
+== NestJS components
 
 NestJS provides several components that you can use in your application:
 

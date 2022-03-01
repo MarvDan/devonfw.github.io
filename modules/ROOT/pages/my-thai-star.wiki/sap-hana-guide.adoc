@@ -126,7 +126,7 @@ spring.datasource.password=password
 
 ==  Enabling prediction UseCase in MTSJ
 
-== = Setting up MTSJ angular
+== Setting up MTSJ angular
 
 update the following property in config file in `my-thai-star\angular\src\app\core\config`
 

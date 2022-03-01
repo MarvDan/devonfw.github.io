@@ -4,15 +4,15 @@ In this section you will see how you can create a new environment instance in yo
 
 ==  Prerequisites
 
-== = devonfw project
+== devonfw project
 
 Yo need to have a devonfw project in a git repository or a docker image uploaded to a docker registry.
 
-== = Comunication between components
+== Comunication between components
 
 Openshift must have access to docker registry.
 
-== = Download OpenShift Client Tools
+== Download OpenShift Client Tools
 
 First of all you need to download the OpenShift client, you can find it https://www.okd.io/download.html[here].
 
@@ -20,11 +20,11 @@ Remember that what you need to download *oc Client Tools* and not _OKD Server_.
 
 NOTE: This tutorial has been made with the version 3.10.0 of the client, it is recommended to use the most current client, but if it does not work, it is possible that the instructions have become obsolete or that the OpenShift used needs another older/newer version of the client. To download a specific version of the client you can find here the https://github.com/openshift/origin/releases/[older versions] and the https://github.com/openshift/origin/releases/tag/v3.10.0[version 3.10.0].
 
-== = Add oc client to path
+== Add oc client to path
 
 Once you have downloaded the client you have to add it to the *PATH* environment variable.
 
-== = Log into OpenShift with admin account
+== Log into OpenShift with admin account
 
 You can log using a terminal and executing the next instructions:
 
@@ -35,14 +35,14 @@ oc login $OpenShiftUrl
 
 NOTE: You need a valid user to log in.
 
-== = Select the project where you are going to create the environment
+== Select the project where you are going to create the environment
 
 [source,Shell]
 ----
 oc project $projectName
 ----
 
-== = Add all the secrets that you need
+== Add all the secrets that you need
 
 For example, to create a secret for a nexus repository you should execute the next commands:
 
@@ -53,7 +53,7 @@ oc create secret docker-registry $nameForSecret --docker-server=${dockerRegistry
 
 ==  Configure OpenShift
 
-== = Configure builds to create docker image using OpenShift
+== Configure builds to create docker image using OpenShift
 
 If you need to create docker images of your projects you could use OpenShift to do it _(Off course only if you have enough rights)_.
 
@@ -71,7 +71,7 @@ These are a summary about the parameters used in our commands:
 
 NOTE: From now on you will refer to the name that you are going to give to the environment as *$enviroment*. Remember to modify it for the correct value in all instructions.
 
-== == = devon4ng build config
+== == devon4ng build config
 
 You need to create nginx build config with docker.
 
@@ -82,14 +82,14 @@ oc new-build --strategy docker --binary --docker-image nginx:alpine-perl --name=
 
 NOTE: You need nginx:alpine-perl to read the environment config file in openshift, if you are not going to use it, you could use nginx:latest instead.
 
-== == = devon4node build config
+== == devon4node build config
 
 [source,Shell]
 ----
 oc new-build --strategy docker --binary --docker-image node:lts --name=${props.name}-$environment --to=${dockerRegistry}/${props.name}:${dockerTag} --to-docker=true
 ----
 
-== == = devon4j build config
+== == devon4j build config
 
 [source,Shell]
 ----
@@ -98,7 +98,7 @@ oc new-build --strategy docker --binary --docker-image openjdk:<version> --name=
 
 NOTE: You need to specify the <version> of java used for your project. Also you can use the -alpine image. This image is based on the popular https://alpinelinux.org/[Alpine Linux project]. Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general. More information on https://hub.docker.com/_/openjdk/[docker hub].
 
-== == = How to use the build
+== == How to use the build
 
 In this step is where you will build a docker image from a compiled application.
 
@@ -132,7 +132,7 @@ NOTE: ${artifactsPath} is the path where you have the artifacts of the prerequis
 
 NOTE: Maybe you need to link:dsf-deployment-dsf4openshift#Raise/decrease-memory-or-CPU-limits[raise your memory or CPU limits].
 
-== = Configure new environment
+== Configure new environment
 
 Now it is time to configure the environment.
 
@@ -184,7 +184,7 @@ oc expose svc/${props.name}-$environment --hostname=$url
 oc create route edge --service=${props.name}-$environment --hostname=$url
 ----
 
-== = Import new images from registry
+== Import new images from registry
 
 When you have new images in the registry you must import them to OpenShift. You could do it executing the next commands:
 
@@ -195,7 +195,7 @@ oc import-image ${props.name}-$environment --from=${dockerRegistry}/${props.name
 
 NOTE: Maybe you need to raise your memory or CPU limits. It is explained below.
 
-== = Raise/decrease memory or CPU limits
+== Raise/decrease memory or CPU limits
 
 If you need to raise (or decrease) the memory or CPU limits that you need you could do it for your deployments and builders configurations following the next steps.
 

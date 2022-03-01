@@ -8,7 +8,7 @@ All this information is used as a part of the link:dsf-okd-initial-setup[initial
 
 ==  How to use
 
-== = Previous requirements
+== Previous requirements
 
 == ==  Deploy the Source-2-Image builder images
 
@@ -22,7 +22,7 @@ Remember that this templates also have custom icons, and to use it, we must modi
 
 * link:dsf-okd-customize[Customize Openshift].
 
-== = Deploy devonfw templates
+== Deploy devonfw templates
 
 Now, it's time to create devonfw templates to use this s2i and add it to the browse catalog.
 
@@ -41,7 +41,7 @@ When it finishes, remember to logout as an admin and enter with our normal user.
 $ oc login
 ----
 	
-== = How to use devonfw templates in openshift
+== How to use devonfw templates in openshift
 
 To use these templates with openshift, we can override any parameter values defined in the file by adding the --param-file=paramfile option.
 

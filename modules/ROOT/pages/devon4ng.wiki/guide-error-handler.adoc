@@ -27,7 +27,7 @@ Angular allows us to set up a custom error handler that can be used to control t
 
 In order to create a custom `ErrorHandler` three steps are going to be needed:
 
-== = Creating the custom `ErrorHandler` class
+== Creating the custom `ErrorHandler` class
 
 In this first step the custom `ErrorHandler` class is going to be created inside the folder `/app/core/errors/errors-handler.ts`:
 
@@ -66,7 +66,7 @@ export class ErrorsHandler implements ErrorHandler {
 
 This class can be used to control the different type of errors. If wanted, the `classname` variable could be used to add more switch cases. This would allow control of more specific situations.
 
-== = Creating a `ErrorInterceptor`
+== Creating a `ErrorInterceptor`
 
 Inside the same folder created in the last step we are going to create the `ErrorInterceptor`(`errors-handler-interceptor.ts`). This `ErrorInterceptor` is going to retry any failed calls to the server to make sure it is not being found before showing the error:
 
@@ -87,7 +87,7 @@ export class ErrorsHandlerInterceptor implements HttpInterceptor {
                 delay(500),
                 take(5),
                 concatMap((error: any, retryIndex: number) => {
-                    if (++retryIndex == = 5) {
+                    if (++retryIndex == 5) {
                         throw error;
                     }
                     return of(error);
@@ -104,7 +104,7 @@ This custom made interceptor is implementing the `HttpInterceptor` and inside th
   2. With `take(5)` retry five times.
   3. With `concatMap` if the index that `take()` gives is not 5 it returns the error, else, it throws the error.
 
-== = Creating a Error Module
+== Creating a Error Module
 
 Finally, creating a module(`errors-handler.module.ts`) is necessary to include the `interceptor` and the custom error handler. In this case, the module is going to be created in the same folder as the last two: 
 

@@ -32,7 +32,7 @@ image::./images/others/azure-pipelines/pipeline-settings.png[]
 
 The pipeline is created with the minimum required steps to run it which are the following:
 
-== = TRIGGERS
+== TRIGGERS
 
 Triggers that will activate the pipeline execution
 
@@ -43,7 +43,7 @@ trigger:
 - develop
 ----
 
-== = VARIABLES
+== VARIABLES
 
 Variables that will be used in the next steps
 
@@ -55,7 +55,7 @@ variables:
   buildConfiguration: 'Release'
 ----
 
-== = TOOLS AND LIBRARIES 
+== TOOLS AND LIBRARIES 
 For .NET:
 
 *-NuGet Tool Installer task*:
@@ -80,7 +80,7 @@ The NuGet command to run.
 
 For more info use the official https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/tool/nuget?view=azure-devops[documentation].
 
-== = BUILD
+== BUILD
 *-Visual Studio Build task*:
 
 [source,yaml]
@@ -97,7 +97,7 @@ Use this task to build with MSBuild and set the Visual Studio version property.
 
 For more info use the official https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops[documentation]
 
-== = TEST
+== TEST
 *-Visual Studio Test task*:
 [source,yaml]
 ----
@@ -120,9 +120,9 @@ This steps are the ones generated when your pipeline is created, we can create t
 
 In our case, apart from build and test, we also need to deploy
 
-== = DEPLOY
+== DEPLOY
 
-== = App Services
+== App Services
 
 While deploying with App Services, 2 steps are required:
 

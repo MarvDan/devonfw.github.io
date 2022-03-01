@@ -18,7 +18,7 @@ NOTE: _devon4Net_ is composed by a number of packages that increases the functio
 You can get the devon4Net packages on https://www.nuget.org/packages?q=devonfw[nuget.org].
 
 
-== = `Devon4Net`.Application.WebAPI.Configuration
+== `Devon4Net`.Application.WebAPI.Configuration
 == ==  Description
 The devon4Net web API configuration core.
 
@@ -77,7 +77,7 @@ The devon4Net web API configuration core.
   }
 ```
 
-== = Devon4Net.Infrastructure.CircuitBreaker
+== Devon4Net.Infrastructure.CircuitBreaker
 == ==  Description
 The Devon4Net.Infrastructure.CircuitBreaker component implements the retry pattern for HTTP/HTTPS calls.
 
@@ -175,7 +175,7 @@ Where:
 |== == == == == == == == == == == =
 
 
-== = devon4Net.Domain.UnitOfWork
+== devon4Net.Domain.UnitOfWork
 == ==  Description
 Unit of work implementation for devon4net solution. This unit of work provides the different methods to access the data layer with an atomic context. Sync and Async repository operations are provided. Customized Eager Loading method also provided for custom entity properties.
 
@@ -285,7 +285,7 @@ public async Task<PaginationResult<Dish>> GetpagedDishListFromFilter(int current
 ----
 
 
-== = devon4Net.Infrastructure.Extensions
+== devon4Net.Infrastructure.Extensions
 == ==  Description
 Miscellaneous extension library which contains :
 - Predicate expression builder
@@ -305,7 +305,7 @@ _HttpContext_
 
 
 
-== = devon4Net.Infrastructure.JWT
+== devon4Net.Infrastructure.JWT
 == ==  Description
 
 [quote, What is JSON Web Token?, https://jwt.io/introduction/]
@@ -443,7 +443,7 @@ or on:
 
 
 
-== = devon4Net.Infrastructure.Middleware
+== devon4Net.Infrastructure.Middleware
 == ==  Description
 - devon4Net support for middleware classes.
 
@@ -495,7 +495,7 @@ or on:
 
 
 
-== = devon4Net.Infrastructure.Swagger
+== devon4Net.Infrastructure.Swagger
 == ==  Description
 - devon4net Swagger abstraction to provide full externalized easy configuration. 
 
@@ -611,7 +611,7 @@ image::images/swaggerDocXMLCheck.png["Generate documentation XML check", width="
 image::images/swaggerDoc.png["Generate documentation XML check", width="*", link="images/swaggerDoc.png"]
 
 
-== = devon4Net.Infrastructure.Test
+== devon4Net.Infrastructure.Test
 == ==  Description
 devon4Net Base classes to create unit tests and integration tests with Moq and `xUnit`.
 
@@ -636,7 +636,7 @@ devon4Net Base classes to create unit tests and integration tests with Moq and `
 
 ==  Deperecated packages
 
-== = devon4Net.Domain.Context
+== devon4Net.Domain.Context
 == ==  Description
 devon4Net.Domain.Context contains the extended class devon4NetBaseContext in order to make easier the process of having a model context configured against different database engines. This configuration allows an easier testing configuration against local and in memory databases.
 
@@ -680,7 +680,7 @@ new Dictionary<string, string> {
 
 - On devon4Net.Application.Configuration.Startup/DataBaseConfiguration/ConfigureDataBase configure your connections.
 
-== = devon4Net.Infrastructure.ApplicationUser
+== devon4Net.Infrastructure.ApplicationUser
 == ==  Description
 devon4Net Application user classes to implement basic Microsoft's basic authentication in order to be used on authentication methodologies such Jason Web Token (JWT).
 
@@ -751,7 +751,7 @@ public static void AddApplicationUserDbContextSQlServerService(this IServiceColl
 - This component is used with the components _devon4Net.Infrastructure.JWT_ and _devon4Net.Infrastructure.JWT.MVC_.
 
 
-== = devon4Net.Infrastructure.Communication
+== devon4Net.Infrastructure.Communication
 == ==  Description
 Basic client classes to  invoke` GET`/POST methods asynchronously. This component has the minimal classes to send basic data. For more complex operations please use _ASP4Net.Infrastructure.Extensions_.
 
@@ -787,7 +787,7 @@ private async Task RestManagementServiceSample(EmailDto dataToSend)
 ----
 
 
-== = devon4Net.Infrastructure.JWT.MVC
+== devon4Net.Infrastructure.JWT.MVC
 == ==  Description
 - devon4Net Extended controller to interact with  JWT features
 
@@ -868,7 +868,7 @@ public async Task<IActionResult> Login([FromBody]LoginDto loginDto)
 
 
 
-== = devon4Net.Infrastructure.MVC
+== devon4Net.Infrastructure.MVC
 == ==  Description
 Common classes to extend controller functionality on API. Also provides support for paged results in devon4Net applications and automapper injected class.
 
@@ -916,7 +916,7 @@ public async Task<IActionResult> Search([FromBody] FilterDtoSearchObject filterD
 ----
 
 
-== = devon4Net.Infrastructure.AOP
+== devon4Net.Infrastructure.AOP
 == ==  Description
 Simple AOP Exception handler for .Net Controller classes integrated with Serilog.
 
@@ -948,7 +948,7 @@ If an exception occurs, a message will be displayed on log with the stack trace.
 
 
 
-== = devon4Net.Infrastructure.Cors
+== devon4Net.Infrastructure.Cors
 == ==  Description
 Enables CORS configuration for devon4Net application. Multiple domains can be configured from configuration. Mandatory to web clients (p.e. Angular) to prevent making AJAX requests to another domain.
 

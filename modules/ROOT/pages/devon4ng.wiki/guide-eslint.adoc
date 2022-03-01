@@ -48,7 +48,7 @@ $ ng new --collection=@angular-eslint/schematics
 
 ==  Migrating an Angular CLI project from Codelyzer and TSLint
 
-== = 1 - Add relevant dependencies
+== 1 - Add relevant dependencies
 
 The first step is to run the schematic to add `@angular-eslint` to your project:
 
@@ -59,7 +59,7 @@ $ ng add @angular-eslint/schematics
 
 This will handle installing the latest version of all the relevant packages for you and adding them to the `devDependencies` of your package.json.
 
-== = 2 - Run the `convert-tslint-to-eslint` schematic on a project
+== 2 - Run the `convert-tslint-to-eslint` schematic on a project
 
 The next thing to do is consider which "project" you want to migrate to use ESLint. If you have a single application in your workspace you will likely have just a single entry in the projects configuration object within your `angular.json` file. If you have a `projects/`` directory in your workspace, you will have multiple entries in your `projects` configuration and you will need to chose which one you want to migrate using the `convert-tslint-to-eslint` schematic.
 
@@ -72,7 +72,7 @@ $ ng g @angular-eslint/schematics:convert-tslint-to-eslint {{YOUR_PROJECT_NAME_G
 
 From now on, `ng lint` will use ESLint!
 
-== = 3 - Remove root TSLint configuration and use only ESLint
+== 3 - Remove root TSLint configuration and use only ESLint
 
 Once you are happy with your ESLint setup, you simply need to remove the root-level `tslint.json` and potentially uninstall TSLint and any TSLint-related plugins/dependencies if your Angular CLI workspace is now no longer using TSLint at all.
 

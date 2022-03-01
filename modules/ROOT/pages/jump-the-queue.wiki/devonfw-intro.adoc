@@ -54,7 +54,7 @@ For client applications _devonfw_ includes two possible solutions, both based on
 
 ==  Custom Tools
 
-== = Devcon
+== Devcon
 For project management and other life-cycle related tasks, _devonfw_ provides also https://github.com/devonfw/devcon[Devcon], a command line and graphic user interface cross platform tool.
 
 With _Devcon_ users can automate the creation of new projects (both server and client), build and run those and even, for server projects, deploy locally on Tomcat.
@@ -63,7 +63,7 @@ image::images/devon/devcon.png[Devcon, 600]
 
 All those tasks can be done manually using _Maven_, _Tomcat_, _Sencha CMD_, _Bower_, _Gulp_, etc. but with _Devcon_ users have the possibility of managing the projects without the necessity of dealing with all those different tools.
 
-== = CobiGen
+== CobiGen
 
 _CobiGen_ is a code generator included in the context of _devonfw_ that allows users to generate all the structure and code of the components, helping to save a lot of time consumed in repetitive tasks.
 

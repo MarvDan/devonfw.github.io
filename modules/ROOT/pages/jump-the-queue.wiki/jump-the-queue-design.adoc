@@ -26,25 +26,25 @@ This document is intended to reflect a real world use case. The design takes thi
 As a < type of user >, I want < some goal > so that < some reason >.
 ----
 
-== = Epic: Register Event
+== Epic: Register Event
 As a visitor of an event, I want to use a website or an app, which -- after registration -- provides me with a number (and optional date/time), so I can get convenient access to the event.
 
-== = User Story: Register
+== User Story: Register
 As a user of _JumpTheQueue_, I want to register with my name, username, password and phone number, comply with the requirements and obtain my queue number.
  
 == ==  Acceptance Criteria
 A full name (first name / last name) is mandatory. This name as well as the username, password and telephone number must be valid.
 
-== = User Story: Terms and Conditions
+== User Story: Terms and Conditions
 As a user of _JumpTheQueue_, I accept that the organizer of the event can store my personal data and send me commercial notices (aka “spam”).
 
 == ==  Acceptance Criteria
 The terms and conditions must be accepted by ticking the corresponding check boxes.
 
-== = User Story: Join a Queue
+== User Story: Join a Queue
 As a user of _JumpTheQueue_, I want to join the queue at the event.
 
-== = User Story: List Queued Visitors
+== User Story: List Queued Visitors
 As a user of _JumpTheQueue_, I want to see which queue number is currently being processed and what my own queue number is. Optionally, I want to know the estimated remaining time until it's my turn.
 
 [NOTE]
@@ -52,10 +52,10 @@ As a user of _JumpTheQueue_, I want to see which queue number is currently being
 The "remaining time" feature is not further developed/implemented.
 == == 
  
-== = User Story: Leave the Queue
+== User Story: Leave the Queue
 As a user of _JumpTheQueue_, I want to be able to leave a queue I previously joined.
 
-== = User Story: Verify contact data
+== User Story: Verify contact data
 As a user of _JumpTheQueue_, I have to confirm either my E-Mail address or my phone number by entering a code which was sent to me, so my contact-data can be verified.
 
 [NOTE]
@@ -65,7 +65,7 @@ This feature is not further developed/implemented.
 
 ==  User Interface
 
-== = Flow
+== Flow
 .The basic flow of the application.
 image::images/jumpthequeue/flow.png[JumpTheQueue App Flow, 450]
 
@@ -75,7 +75,7 @@ image::images/jumpthequeue/flow.png[JumpTheQueue App Flow, 450]
 * if there are no errors an access code will be generated, which will be shown on the following page (this code can optionally be appended with the access date/time)
 * this page could also show a visualization of the queue, listing all currently queued visitors
 
-== = Mock-Ups
+== Mock-Ups
 .The pages/views of the application.
 image::images/jumpthequeue/mockups.png[JumpTheQueue Mock-Up, 800]
 
@@ -109,10 +109,10 @@ _or_::
 == == 
 [subs=+macros]
 ----
-isnull = (v) => v == = null
+isnull = (v) => v == null
 notnull = (v) => !isnull(v)
  
-isempty = (s: string) => s.length == = 0
+isempty = (s: string) => s.length == 0
 notempty = (s: string) => !notempty(s)
  
 isEmailAddress = trivial: notnull + notempty + pass:quotes[_consists of_] <name>@<domain.toplevel>

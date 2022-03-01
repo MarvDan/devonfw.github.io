@@ -208,7 +208,7 @@ When you mock data you don't know exactly if the data and the structure received
 To get more information go to link:https://docs.cypress.io/guides/guides/network-requests.html#Testing-Strategies[Testing Strategies]
 
 
-== = Route
+== Route
 
 Cypress can intercept a XHR request and interact with it.
 
@@ -264,7 +264,7 @@ cy.fixture('box')
 We get `boxFruit` data from the box fixture and then we mock the API call with it so now the response of the call is `boxFruit` object.
 When the button is clicked, it waits to receive the response of the call and then checks if the list contains one of the elements of the `fruitBox`.
 
-== = Request
+== Request
 Make a HTTP request.
 
 [source, TypeScript]
@@ -465,7 +465,7 @@ The tests results appear on the terminal, but to have a more friendly view we ca
 
 image::./images/cypress/reporter.jpg[]
 
-== = Mochawesome
+== Mochawesome
 
 In this case we are going to use Mochawesome, initially its a Mocha reporter but as Cypress uses Mocha it works the same.
 

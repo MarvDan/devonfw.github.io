@@ -56,10 +56,10 @@ Currently, the **OASP4Fn architecture** defines a series of adapters to help dev
 
 image::images/oasp4fn/1.Introduction/oasp4fn_available.png[OASP4Fn Available]
 
-== = TypeScript
+== TypeScript
 The Serverless framework is not prepared by default to use TypeScript. OASP4Fn allows the developer to use **TypeScript** as the programming language in any development, as it provides the **types definitions** and a **pre-configured webpack building system** that automates the transpilation of the different handlers. 
 
-== = Infrastructure as Code 
+== Infrastructure as Code 
 The service made with OASP4Fn must follow a **specified structure**, that along with a configuration file will allow the user to avoid having to configure his service manually. 
 
 ----
@@ -86,7 +86,7 @@ The logic of our application must be stored in a folder, called **handlers**, in
 
 Furthermore of the specified before, in the file `oasp4fn.config.js`, it is specified the configuration of the events, deployment information and the runtime environment in which the handlers will run.
 
-== = Annotations
+== Annotations
 In addition to the configuration file, we can specify to each handler a **concrete configuration**, related to the event that triggers the handler, using a **dummy function** that adds or modifies the configuration specified in OASP4Fn configuration file.
 
 [source,typescript]

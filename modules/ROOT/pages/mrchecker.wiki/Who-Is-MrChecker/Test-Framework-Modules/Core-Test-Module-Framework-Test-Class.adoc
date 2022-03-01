@@ -33,7 +33,7 @@ public class DemoTest extends BaseTest {
 }
 ----
 
-== = BasePage method: setUp
+== BasePage method: setUp
 
 This method will be executed before the test. It allows objects to be instantiated, e.g. Page objects.
 
@@ -44,11 +44,11 @@ public void setUp() {
 }
 ----
 
-== = BasePage method: tearDown
+== BasePage method: tearDown
 
 The tearDown methods executes after the test. It allows the clean up of the testing environment.
 
-== = Annotations
+== Annotations
 
 The `@Test` annotation indicates that the following method is a test method.
 
@@ -69,7 +69,7 @@ public void willResultBeShown() {
 
 This method will interact with a page object in order to test it.
 
-== = Sample Setup
+== Sample Setup
 
 ----
 @BeforeClass

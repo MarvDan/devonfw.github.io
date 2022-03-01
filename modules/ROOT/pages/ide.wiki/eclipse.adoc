@@ -55,7 +55,7 @@ In general you should try to stick with the configuration pre-defined by your pr
 
 As the maintainer of the link:settings[settings] for your project you should avoid to ship too many plugins that may waste resources but are not used by every developer. By configuring additional plugins with `plugin_active=false` you can give your developers the freedom to install some additional plugins easily.
 
-== = legacy plugin config
+== legacy plugin config
 For downward compatibility we still support the deprecated legacy configuration if the folder `settings/eclipse/plugins` does not exist:
 The project link:configuration[configuration] typically defines the plugins that will be installed via `ECLIPSE_PLUGINS` link:variables[variable]. Otherwise defaults from this `eclipse` link:cli#commandlets[commandlet] will apply.
 Be aware that this comes at your own risk and sometimes plugins can conflict and break your IDE.
@@ -82,7 +82,7 @@ image::images/eclipse-spellcheck.png["Eclipse spellchecker”]
 In the latter case, you should commit the changes to your link:settings[settings] so that it will be available to your entire team.
 For further details about committing changes to the settings please consult the link:usage#admin[admin usage].
 
-== = non-english dictionary
+== non-english dictionary
 
 In case your project has to write documentation or text in languages other than English, you might want to prefill your project dictionary for that language.
 Here we collect a list of such dictionaries that you can download and merge into your project dictionary:

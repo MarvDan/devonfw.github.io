@@ -27,7 +27,7 @@ In order to configure the services, we need technical users for the following co
 
 *The following sections describe how to configure the components to enable technical users and tokens.*
 
-== = Technical Gitlab User and settings
+== Technical Gitlab User and settings
 
 The creation of the GitLab Group and Project will require a private GitLab token which has to be created manually. The token can be obtained like this:
 
@@ -61,7 +61,7 @@ The GitLab API user needs to have API access and the rights to create a new grou
 4. Scroll down to 'Access' and un-tick 'Can Create Group'
 
 
-== = Technical Nexus3 user and settings
+== Technical Nexus3 user and settings
 
 Nexus3 is used to store build artifacts such as the frontend and the backend. In the future it might also be used to store docker images of MTS.
 
@@ -93,7 +93,7 @@ image::./images/devon4j-mts/mavensettings.PNG[600,500]
 
 image::./images/devon4j-mts/mavensettings2.PNG[600,500]
 
-== = Jenkins Preparation
+== Jenkins Preparation
 
 ** Install required plugins: +
 HTTP Request Plugin +
@@ -112,7 +112,7 @@ Add the following data
 
 image::./images/devon4j-mts/sonarjenkins.PNG[600,500]
 
-== = Technical SonarQube user and settings
+== Technical SonarQube user and settings
 
 == ==  User Token for SonarQube
 

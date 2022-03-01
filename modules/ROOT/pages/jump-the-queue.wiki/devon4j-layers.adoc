@@ -54,7 +54,7 @@ public class MyBeanImpl implements MyBean {
 }
 ```
 
-== = Communication between Layers
+== Communication between Layers
 The communication between layers is solved using the described _Dependency Injection_ pattern, based on _Spring_ and the _Java_ standards: `java.inject` (https://jcp.org/en/jsr/detail?id=330[JSR330]) combined with https://jcp.org/en/jsr/detail?id=250[JSR250].
 
 image::images/devon4j/5.Layers/layers_impl.png[Layer Implementation]
@@ -110,7 +110,7 @@ public class BookingmanagementImpl extends AbstractComponentFacade implements Bo
 }
 ```
 
-== = Service Layer
+== Service Layer
 As we mentioned at the beginning, the _service_ layer is where the services of our application (_REST_ or _SOAP_) will be located.
 
 In _devon4j_ applications the default implementation for web services is based on http://cxf.apache.org/[Apache CXF], a services framework for Java apps that supports web service standards like _SOAP_ (implementing https://en.wikipedia.org/wiki/Java_API_for_XML_Web_Services[JAX-WS]) and _REST_ services (implementing https://en.wikipedia.org/wiki/Java_API_for_RESTful_Web_Services[JAX-RS]).
@@ -168,7 +168,7 @@ public class BookingmanagementRestServiceImpl implements BookingmanagementRestSe
 
 As you can see, this layer simply delegates method-calls to the _logic_ layer, in order to resolve business logic requirements of the app.
 
-== = Logic Layer
+== Logic Layer
 In this layer we store all the custom implementations we will need to fulfill the requirements of our application. Including:
 
 * business logic
@@ -233,7 +233,7 @@ In the above _MyThaiStar_ logic layer example we can see:
 * business logic and https://github.com/devonfw/devon4j/wiki/guide-beanmapping[object mappings]
 * delegation of the transaction management through Spring's `@Transactional` annotation
 
-== = Transfer Objects
+== Transfer Objects
 In the code examples of the _logic_ layer section you may have seen a `BookingCto` object. This is one of the https://github.com/devonfw/devon4j/wiki/guide-transferobject[transfer objects] defined in _devon4j_. It is used to transfer data between the layers.
 
 The main benefits of using _Transfer Objects_ are:
@@ -255,7 +255,7 @@ In _devon4j_ we can find two different _Transfer Objects_ (TOs):
 * Either a 1:1 reference or a https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html[Collection] (https://docs.oracle.com/javase/tutorial/collections/interfaces/list.html[List]) of TOs.
 * Are easy to map manually by reusing ETOs or other CTOs.
 
-== = Data Access Layer
+== Data Access Layer
 The third -- and last -- layer of the _devon4j_ architecture is the one responsible for storing all the code related to the connection and access of the database.
 
 For mapping Java objects to the database, _devon4j_ use the _Java Persistence API_ (https://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html[JPA]). Explicitly, the JPA implementation _devon4j_ uses is http://hibernate.org/orm/[Hibernate].
@@ -289,7 +289,7 @@ public interface BookingRepository extends DefaultRepository<BookingEntity> {
 
 The implementation of `findBookings` uses https://github.com/devonfw/devon4j/blob/develop/documentation/guide-repository.adoc[Spring Data] and http://www.querydsl.com/[QueryDSL] to manage dynamic queries.
 
-== = Layers of the JumpTheQueue Application
+== Layers of the JumpTheQueue Application
 The sections above describe the main elements of layers of the _devon4j_ components. If you have completed the exercise in the link:devon4j-components[previous chapter], you may have noticed that all those components are already created for us by _CobiGen_.
 
 Take a look to our application structure:
@@ -343,7 +343,7 @@ By using _CobiGen_ we have created a complete and functional _devon4j_ applicati
 
 Now we'll run the application and try to use the REST service to save a new visitor:
 
-== = JumpTheQueue Running
+== JumpTheQueue Running
 As already mentioned, in this tutorial we will be using https://www.getpostman.com/[Postman] to test our API.
 
 First, open your _JumpTheQueue_ project in Eclipse and run the app (right-click `SpringBootApp.java > Run as > Java Application`.

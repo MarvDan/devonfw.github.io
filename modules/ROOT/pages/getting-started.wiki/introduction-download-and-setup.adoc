@@ -38,7 +38,7 @@ Older devonfw distributions can be obtained from the http://de-mucevolve02/files
 
 ==  Setup the Workspace for Older Versions
 
-== = Windows
+== Windows
 
 1. Unzip the devonfw distribution into a directory of your choice. *The path to the devonfw distribution directory should contain no spaces*, to prevent problems with some of the tools.
 
@@ -57,7 +57,7 @@ image::images/introduction/download-install/setup_2.png[, width="450", link="ima
 
 *Note* : If you use a proxy to connect to the Internet, you have to manually configure it in Maven, Sencha Cmd and Eclipse. Next section explains about it.
 
-== = Linux
+== Linux
 
 * Unzip the devonfw distribution into a directory of your choice. *The path to the devonfw distribution directory should contain no spaces*, to prevent problems with some of the tools.
 

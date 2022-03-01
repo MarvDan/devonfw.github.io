@@ -30,7 +30,7 @@ image::./images/configuration/sonarqube-webhook.png[]
 
 To use SonarQube in our pipelines you need to configure Jenkins to integrate SonarQube.
 
-== = SonarQube Scanner
+== SonarQube Scanner
 
 First, you need to configure the scanner. Go to Manage Jenkins clicking on left menu and enter in *_Global Tool Configuration_*.
 
@@ -38,7 +38,7 @@ Go to SonarQube Scanner section and add a new SonarQube scanner like this.
 
 image::./images/configuration/sonarqube-jenkins-scanner.png[]
 
-== = SonarQube Server
+== SonarQube Server
 
 Now you need to configure where is our SonarQube server using the user token that you create before. Go to Manage Jenkins clicking on left menu and enter in *_Configure System_*.
 
@@ -52,7 +52,7 @@ NOTE: Remember, the token was created at the beginning  of this SonarQube config
 
 Now is time to configure your sonar in order to measure the quality of your code. To do it, please follow the official documentation about our plugins and Quality Gates and Profiles https://github.com/devonfw/sonar-devon4j-plugin[here].
 
-== = How to ignore files
+== How to ignore files
 
 Usually the developers need to ignore some files from Sonar analysis. To do that, they must add the next line as a parameter of the sonar execution to their Jenkinsfile in the SonarQube code analysis step.
 

@@ -17,7 +17,7 @@ Steps:
 5. Select second dropdown Option 
 6. Check if Option 2 is selected
 
-== == = Page Class
+== == Page Class
 
 ----
 public class DropdownPage extends BasePage {
@@ -66,14 +66,14 @@ public class DropdownPage extends BasePage {
 }
  
 ----
-== == = DropdownListElement class 
+== == DropdownListElement class 
 
 DropdownListElement is MrChecker's class, which contains methods for performing the dropdown list of actions: 
 ----
 elementDropdownList() - returns DropdownListElement Object 
 ----
 
-== == = Test Class
+== == Test Class
 ----
 @Category({ TestsSelenium.class, TestsChrome.class, TestsFirefox.class, TestsIE.class })
 public class DropdownTest extends TheInternetBaseTest {

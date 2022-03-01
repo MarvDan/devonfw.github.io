@@ -31,11 +31,11 @@ When you combine all tools, you can be sure that you follow the devon4node codin
 
 Here we will detail some of most important devon4node coding conventions. To be sure that you follows all devon4node coding conventions use the tools described before.
 
-== = Indentation
+== Indentation
 
 All devon4node code files must be indented using spaces. The indentation with must be 2 spaces.
 
-== = White space
+== White space
 
 In order to improve the readability of your code, you must introduce whitespaces. Example:
 
@@ -51,7 +51,7 @@ must be
 if (condition) {
 ----
 
-== = Naming conventions
+== Naming conventions
 
 == ==  File naming
 
@@ -92,11 +92,11 @@ All variable names must be in camel case.
 const coffeeList: Coffe[];
 ----
 
-== = Declarations
+== Declarations
 
 For all variable declarations we must use `const` or `let`. `var` is forbidden. We prefer to use  `const` when possible.
 
-== = Programming practices
+== Programming practices
 
 == ==  Trailing comma
 

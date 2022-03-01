@@ -190,7 +190,7 @@ In `uploader.component.ts` is missing `uploadFile(...)` method.
     const formDataBody = this.getFormData(file);
     this.dataService.uploadFile(formDataBody).subscribe(
       (event) => {
-        if (event.type == = HttpEventType.UploadProgress) {
+        if (event.type == HttpEventType.UploadProgress) {
           this.fileProgress = Math.round((100 * event.loaded) / event.total);
         } else if (event instanceof HttpResponse) {
           this.fileInProgress = false;

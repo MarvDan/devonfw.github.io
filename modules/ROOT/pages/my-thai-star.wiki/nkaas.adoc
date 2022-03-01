@@ -7,7 +7,7 @@ The `MyThaiStar` sample application can be deployed on a nKaaS environment. The 
 
 ==  Setting up the environment
 
-== = Following the nKaaS guide
+== Following the nKaaS guide
 
 After requesting access to the nKaaS platform you'll be greeted with a welcome mail which contains your personal credentials. Make sure to change the given password to a personal one within the 24 hour time period, otherwise the  credentials will expire.
 
@@ -15,7 +15,7 @@ After successfully following the link:https://portal.capgemini-ips.com/native-ku
 
 *Known issues:* The nKaaS guide provides a download link for *OpenVPN Connect*. However, some users experienced connection issues with this client. If you're having issues connecting to the VPN with OpenVPN Connect, you may try out the client by link:https://www.ovpn.com/en/guides/windows-openvpn-gui[OVPN].
 
-== = Requesting a namespace
+== Requesting a namespace
 
 Initially, you won't be able to edit anything on Kubernetes, as you don't have any privileges on any namespace. To request your own namespace you should raise a ticket at the link:https://servicedesk.capgemini-ips.com/servicedesk/customer/portal/143[Customer Support Portal] containing your desired name for the namespace.
 

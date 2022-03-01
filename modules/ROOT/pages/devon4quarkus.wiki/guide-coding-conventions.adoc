@@ -16,7 +16,7 @@ This  guide describe the conventions for naming and structure in a devon4quarkus
 
 ==  Structure
 
-== = Packages
+== Packages
 
 For a devon4quarkus-based application, we recommend using the following Java package scheme:
 
@@ -64,7 +64,7 @@ For a typical backend microservice that provides HTTP API and data persistence v
       └──ServiceOrderDTO
 ----
 
-== = Layer
+== Layer
 
 == ==  Data access layer
 
@@ -124,7 +124,7 @@ If this is the case, we suggest to introduce `«version»` as an intermediate pa
    
 ----
 
-== = Comparison with devon4j
+== Comparison with devon4j
 * `service.[api|impl].[rest|ws]` simply becomes `rest`, `ws` (in case someone is still using legacy SOAP), `grpc`, etc. Technically we can still derive that this all implies the `service` layer.
 * `dataaccess` becomes `domain`. You are not forced to follow this and architcture validation such as our `sonar-devon4j-plugin` will in the future support both. However, new CobiGen templates for quarkus/cloud-native will use this new default and would need to adopt them if you want to change. We also suggest to put entities in the `model` sub-package (see `«type»`).
 * `logic` remains `logic`

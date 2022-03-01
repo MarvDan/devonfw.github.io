@@ -5,16 +5,16 @@ The `devonfw-ide` already brings a lot of integration out of the box. This page 
 ==  Windows
 devonfw-ide automatically integrates with Windows-Explorer during link:setup[setup].
 
-== = CMD
+== CMD
 If you want to open a `CMD` (MS Dos Shell) directly from `Windows-Explorer` simply right-click on the  folder in your `devonfw-ide` you want to open. From the context menu click on `Open Devon CMD shell here`. This will open `CMD` and automatically initialize your environment according to the `devonfw-ide` project containing the folder (if any, see above).
 
-== = Git-Bash
+== Git-Bash
 Just like for `CMD` you can also click `Git Bash Here` from Windows-Explorer context-menu to open a git bash. If you have selected a folder in your `devonfw-ide` installation, it will automatically initialize your environment.
 
-== = Cygwin
+== Cygwin
 In case you have cygwin installed on your machine, the `devonfw-ide` will autodetect this during `setup` and also install a `Windows-Explorer` integration. Just choose `Open Devon Cygwin Bash Here` to open cygwin bash and initialize your `devonfw-ide` environment.
 
-== = ConEMU
+== ConEMU
 https://conemu.github.io/[ConEmu] is a great extension that brings additional features such as tabs to your windows shells. If you like it, you will also want to have it integrated with `devonfw-ide`. All you need to do is follow these simple steps:
 
 * Copy the file `CmdInit.cmd` from your ConEmu installation (`C:\Program Files\ConEmu\ConEmu\CmdInit.cmd`) to a personal folder (e.g. `C:\Users\MYLOGIN\scripts`).
@@ -29,7 +29,7 @@ https://conemu.github.io/[ConEmu] is a great extension that brings additional fe
 
 Now you have the option ConEmu here if you right click on a folder in Windows Explorer that will open a new tab in ConEmu and automatically setup your environment according to the `devonfw-ide` project containing the folder (if any, see above).
 
-== = ConEMU and StartExplorer
+== ConEMU and StartExplorer
 
 You can even integrate the Eclipse StartExplorer plug-in and ConEMU to open up console right from the file tree of eclipse into ConEMU. You can do this by adding a custom command to StartExplorer:
 

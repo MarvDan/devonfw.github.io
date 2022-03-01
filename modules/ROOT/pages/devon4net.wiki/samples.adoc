@@ -13,13 +13,13 @@ icon:= fa-floppy-o[]  link:resources/samples/mts/MyThaiStar.zip[My Thai Star (.N
 
 video::videos/mts_startup.mp4[width=640, start=0, options=autoplay]
 
-== = Angular requirements
+== Angular requirements
 
 * https://nodejs.org/es/download/[Node]
 * https://cli.angular.io/[Angular CLI]
 * https://yarnpkg.com/lang/en/docs/install/[Yarn]
 
-== = Angular client
+== Angular client
 
 . Install Node.js LTS version
 . Install Angular CLI from command line:
@@ -32,7 +32,7 @@ video::videos/mts_startup.mp4[width=640, start=0, options=autoplay]
 . You are ready
 
 
-== = .Net Core server
+== .Net Core server
 
 == ==  Basic architecture details
 
@@ -67,7 +67,7 @@ Other components:
 - Twitter integration: planned as a _Microservice_ will provide the twitter integration needed for some specific functionalities of the application. 
 
 
-== = Layers
+== Layers
 == ==  Introduction
 The .Net Core backend for My Thai Star application is going to be based on:
 
@@ -102,7 +102,7 @@ As in the previous layers, the _data access_ layer will have both _interface_ an
 == ==  Cross-Cutting concerns
 the layer to make use of transversal components such JWT and mailing.
 
-== = Jwt basics
+== Jwt basics
 
 - A user will provide a username / password combination to our auth server.
 
@@ -112,12 +112,12 @@ the layer to make use of transversal components such JWT and mailing.
 
 image::images/jwt_schema.png[, link="images/jwt_schema.png"]
 
-== = Jwt implementation details
+== Jwt implementation details
 
 The _Json Web Token_ pattern will be implemented based on the https://blogs.msdn.microsoft.com/webdev/2017/04/06/jwt-validation-and-authorization-in-asp-net-core/[_jwt on .net core_] framework that is provided by default in the _devon4Net_ projects.
 
 
-== = Authentication
+== Authentication
 
 Based on _Microsoft_ approach, we will implement a class to define the security _entry point_ and filters. Also, as _My Thai Star_ is a mainly _public_ application, we will define here the resources that won't be secured.
 
@@ -130,7 +130,7 @@ https://docs.microsoft.com/en-us/aspnet/core/security/authorization/[Authorizati
 
 https://docs.microsoft.com/en-us/aspnet/core/security/authorization/claims[Claim based authorization]
 
-== = Dependency injection
+== Dependency injection
 
 As it is explained in the https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection[Microsoft documentation] we are going to implement the _dependency injection_ pattern basing our solution on _.Net Core_.
 
@@ -139,7 +139,7 @@ image::images/dependency_injection.png[, link="images/dependency_injection.png"]
 - Separation of API and implementation: Inside each layer we will separate the elements in different tiers: _interface_ and _implementation_. The _interface_ tier will store the _interface_ with the methods definition and inside the _implementation_ we will store the class that implements the _interface_.
 
 
-== = Layer communication method
+== Layer communication method
 
 The connection between layers, to access to the functionalities of each one, will be solved using the _dependency injection_.
 
@@ -209,7 +209,7 @@ Following the [naming conventions] proposed for _devon4Net_ applications we will
 
 You can find all the details for the services implementation in the https://github.com/devonfw/my-thai-star/blob/develop/swagger/mythaistar.yaml[Swagger definition] included in the My Thai Star project on Github.
 
-== = Api Exposed
+== Api Exposed
 
 The _devon4Net.Business.Controller_ assembly in the _business_ layer of a _component_ will store the definition of the service by a  _interface_. In this definition of the service we will set-up the _endpoints_ of the service, the type of data expected and returned, the _HTTP_ method for each endpoint of the service and other configurations if needed.
 
@@ -252,7 +252,7 @@ icon:= fa-floppy-o[]  link:resources/samples/components/GMailAPIConsumer.zip[Goo
 |Default port|8080
 |== == == == == == == == == == == =
 
-== = Overview
+== Overview
 . Execute `MyThaiStarEmailService.exe`.
 . The first time google will ask you for credentials
 (just one time) in your default browser:
@@ -267,7 +267,7 @@ icon:= fa-floppy-o[]  link:resources/samples/components/GMailAPIConsumer.zip[Goo
 .GMail Server Swagger contract page
 image::images/email_swagger.png["GMail Service", width="820", link="images/email_swagger.png"]
 
-== = JSON Example
+== JSON Example
 This is the JSON example to test with swagger client. Please read the swagger documentation.
 
 [source,json]
@@ -297,7 +297,7 @@ This is the JSON example to test with swagger client. Please read the swagger do
 }
 
 ----
-== = Configure the service port
+== Configure the service port
 
 If you want to change the default port, please edit the config file and
 change the next entry in `appSettings` node:

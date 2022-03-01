@@ -16,7 +16,7 @@ Selenium automates browsers and is used for automating web applications for test
 
 Selenium consists of many parts. If you want to create robust, browser-based regression automation suites and tests, Selenium Webdriver is most appropriate. With Selenium Webdriver you can also scale and distribute scripts across many environments.
 
-== = Strengths
+== Strengths
 
 == ==  Supports BDD
 
@@ -42,7 +42,7 @@ Cucumber and Selenium are both open source tools with a large community, online 
 
 ==  How to run cucumber tests in Mr.Checker
 
-== = Command line / Jenkins
+== Command line / Jenkins
 
 * Run cucumber tests and generate Allure report. Please use this for Jenkins execution. Report is saved under _./target/site_.
 +
@@ -56,7 +56,7 @@ Cucumber and Selenium are both open source tools with a large community, online 
 +
     mvn clean -P cucumber test site allure:serve
 
-== = Eclipse IDE
+== Eclipse IDE
 
 image::images/image41.png[]
 
@@ -72,7 +72,7 @@ Also, IDEs such as Intellij offer several plugins for Cucumber support.
 
 Selenium has the support of some of the largest browser vendors who have taken (or are taking) steps to make Selenium a native part of their browser. It is also the core technology in countless other browser automation tools, APIs and frameworks.
 
-== = Automation process
+== Automation process
 
 == ==  Write a feature file
 
@@ -124,7 +124,7 @@ There are several ways to run scenarios with Cucumber, for example the JUnit run
 
 Cucumber can report results in several different formats, using formatter plugins
 
-== = Features
+== Features
 
 == ==  Feature files using Gherkin
 
@@ -138,7 +138,7 @@ Feature files are placed in a directory structure and together form a feature tr
 
 Tags can be used to group features based on all kinds of categories. Cucumber can include or exclude tests with certain tags when running the tests.
 
-== = Reporting test results
+== Reporting test results
 
 Cucumber can report results in several formats, using formatter plugins.
 Not supported option by Shared Services: The output from Cucumber can be used to present test results in Jenkins or Hudson depending of the preference of the project.
@@ -147,11 +147,11 @@ image::images/image43.png[]
 
 ==  HOW IS Cucumber / Selenium USED AT Capgemini?
 
-== = Tool deployment
+== Tool deployment
 
 Cucumber and Selenium are chosen as one of Capgemini’s test automation industrial tools. We support the Java implementation of Cucumber and Selenium Webdriver. We can help with creating Cucumber, Selenium projects in Eclipse and IntelliJ.
 
-== = Application in ATaaS (Automated Testing as a Service)
+== Application in ATaaS (Automated Testing as a Service)
 
 In the context of industrialisation, Capgemini has developed a range of services to assist and support the projects in process and tools implementation.
 

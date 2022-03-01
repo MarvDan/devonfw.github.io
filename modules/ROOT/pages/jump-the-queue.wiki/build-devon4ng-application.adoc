@@ -42,7 +42,7 @@ If you are using a devonfw work environment -- as instructed in the https://gith
 A global installation is only useful if you want to create Angular projects _outside_ of a devonfw environment or without the devon CLI.
 == == 
 
-== = Visual Studio Code
+== Visual Studio Code
 
 To install the editor, download the installer from the https://code.visualstudio.com/Download[official page] and install it.
 
@@ -52,13 +52,13 @@ Once installed, the first thing you should do is install the extensions that wil
 
 2. Install the `devonfw Platform Extension Pack` (this might take a while).
 
-== = NodeJS
+== NodeJS
 
 Go to https://nodejs.org/en/[nodejs.org] and download the version you like the most -- LTS or Current -- as you wish.
 
 The recommendation is to install the latest version, but keep in mind that to use Angular CLI, your version must be at least 8.x and to use npm at least 5.x. If you have NodeJS already installed on your computer, this is a good moment to check your version and upgrade if necessary.
 
-== = TypeScript
+== TypeScript
 
 Let’s install what is going to be the main language during development: TypeScript. This ES6 super set is tightly coupled to the Angular framework and will help us to get a final clean and distributable JavaScript code. This is installed globally with npm, the package manager used to install and create JavaScript modules in NodeJS, that is installed along with Node. To install TypeScript, you don’t have to install npm explicitly, just run this command:
 
@@ -66,7 +66,7 @@ Let’s install what is going to be the main language during development: TypeSc
 npm install –g typescript
 ```
 
-== = Yarn
+== Yarn
 
 Just like npm, https://yarnpkg.com/en/[Yarn] is a package manager for JavaScript/Node modules. Yarn is quite a bit faster and more usable in our opinion, so we decided to use it to manage the dependencies of devon4ng projects.
 
@@ -74,7 +74,7 @@ To install Yarn, you only have to go to the official https://yarnpkg.com/en/docs
 
 However, if you feel more comfortable with npm, you can keep using it.
 
-== = Angular/CLI
+== Angular/CLI
 
 This CLI is specifically built to make Angular projects easier to develop, maintain and deploy, so we are going to make use of it.
 
@@ -155,7 +155,7 @@ The `ng serve` command starts the development mode of the Angular/CLI. This mean
 
 For the next steps we'll have to stop the development mode by pressing `Ctrl + C` and terminating the batch job (*Y*).
 
-== = Adding Google Material and Covalent Teradata
+== Adding Google Material and Covalent Teradata
 
 [NOTE]
 == == 

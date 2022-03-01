@@ -121,7 +121,7 @@ ssh -o StrictHostKeyChecking=no root@10.40.235.244 docker cp mythaistar/dist/. m
 +
 After deploying the application will be available at http://de-mucdevondepl01:8090[http://de-mucdevondepl01:8090]
 
-== = Complete Pipeline Script:
+== Complete Pipeline Script:
 
 The complete Groovy script:
 

@@ -27,7 +27,7 @@ If a tool needs extra initialization, you can create a batch file named `ide-con
 For most of the tools you just download the official release and add the content to the folder in the layout above (resulting in e.g. `software/maven/bin/mvn` and NOT `software/maven/apache-maven-3.2.0/bin/mvn`).
 However, there are some specials to care about.
 
-== = Eclipse
+== Eclipse
 Eclipse is typically the most complicated animal out of the tools. Here is a suggestion how to build your eclipse distribution:
 
 . Download the latest stable version of `Eclipse IDE for JEE developers` from https://www.eclipse.org/downloads/

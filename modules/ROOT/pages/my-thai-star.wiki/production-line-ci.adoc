@@ -3,13 +3,13 @@ toc::[]
 
 == My Thai Star in Production Line
 
-== = What is PL?
+== What is PL?
 
 The Production Line Project is a set of server-side collaboration tools for Capgemini engagements. It has been developed for supporting project engagements with individual tools like issue tracking, continuous integration, continuous deployment, documentation, binary storage and much more!
 
 image::images/ci/pl_logo.png[, link="images/ci/pl_logo.png"]
 
-== = Introduction
+== Introduction
 
 Although the PL Project is a wide set of tools, only 3 are going to be mainly used for My Thai Star projects to build a Continuous Integration and Continuos Delivery environment. All three are available in the link:https://devon.s2-eu.capgemini.com/#https://devon.s2-eu.capgemini.com/jenkins/[PL instance] used for this project.
 

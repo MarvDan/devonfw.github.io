@@ -32,7 +32,7 @@ public class DemoPage extends BasePage {
 
 The example above demonstrates a minimum valid Page Object class with all required methods included.
 
-== = BasePage method: isLoaded
+== BasePage method: isLoaded
 
 The inherited method `isLoaded()` can be used to check if the current Page Object Model has been loaded correctly. There are multiple ways to verify a correctly loaded page. One example would be to compare the actual page title with the expected page title.
 
@@ -45,7 +45,7 @@ public boolean isLoaded() {
 }
 ----
 
-== = BasePage method: load
+== BasePage method: load
 
 The method `load()` can be used to tell the webdriver to load a specific page.
 
@@ -55,7 +55,7 @@ public void load() {
 }
 ----
 
-== = BasePage method: pageTitle
+== BasePage method: pageTitle
 
 The `pageTitle()` method returns a String containing the page title.
 

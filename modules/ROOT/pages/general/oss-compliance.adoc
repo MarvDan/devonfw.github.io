@@ -84,7 +84,7 @@ Therefore we add it permanently as a build-plugin to the project parent-pom like
 
 In the config above there are several settings that help to permanently improve the result of an automated OSS scan. We explain these now.
 
-== = Declare additional licenses
+== Declare additional licenses
 
 Sometimes the licenses of used OSS cannot be resolved automatically. That is not the mistake of the maven-license-tool, but the mistake of the OSS author who didn't make the respective license-information properly available. 
 
@@ -113,7 +113,7 @@ In case the use of "missing files" is activated, but the THIRD-PARTY.properties-
 
 You now need to fill in missing license information and rerun the plugin.
 
-== = Redefine wrongly detected licenses
+== Redefine wrongly detected licenses
 
 In case automatically detected licenses proof to be wrong by closer investigation, this wrong detection can be overwritten. Add a configuration to declare alternative licenses within each maven-subproject: /src/license/override-THIRD-PARTY.properties
 
@@ -124,7 +124,7 @@ com.sun.mail--javax.mail--1.5.6=Common Development and Distribution License 1.1
 
 This can be also be useful for OSS that provides a multi-license to make a decision which license to actually choose .
 
-== = Merge licenses
+== Merge licenses
 
 You will see that many prominent licenses come in all sorts of notations, e.g. Apache-2.0 as: "Apache 2" or "ASL-2.0" or "The Apache License, Version 2.0". The Mojo Maven License Plugin allows to harmonize different forms of a license-naming like this:
 

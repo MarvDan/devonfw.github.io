@@ -21,7 +21,7 @@ toc::[]
 
 OpenShift is a docker container orchestrator built on top Kubernetes.
 
-== = Overview
+== Overview
 
 This template allow you to configure Jenkins in order to work with OpenShift.
 
@@ -46,7 +46,7 @@ For manual creation see: link:how-to-add-a-template[How to add a Template]
 
 IMPORTANT: This template needs the link:https://github.com/devonfw/production-line-shared-lib[devonfw Production Line Shared Lib]
 
-== = Parameters
+== Parameters
 
 The required parameters are:
 
@@ -55,7 +55,7 @@ The required parameters are:
 - `ocProject`: The OpenShift Project.
 - `ocToken`: The OpenShift token. In order to have a long-term token, this token should be a service account token.
 
-== = Execution
+== Execution
 
 . Press the Build with Parameters button
 . Insert the parameters.

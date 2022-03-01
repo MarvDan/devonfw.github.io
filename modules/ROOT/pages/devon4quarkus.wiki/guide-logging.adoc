@@ -17,7 +17,7 @@ Internally, Quarkus uses the JBoss Logging facade, an abstraction layer that pro
 
 ==  Usage
 
-== = Maven integration
+== Maven integration
 We recommend using SLF4j as the logging API. Since Quarkus uses JBoss logging internally, you can use it out of the box and do not need to add any dependencies to your project to use it. JBoss LogManager will send it to the appropriate implementation.
 
 **Exceptional case:**
@@ -34,7 +34,7 @@ For example, if you have a dependency that uses SLF4j, you need to add the follo
 This is not needed for libraries that are dependencies of a Quarkus extension as the extension will take care of this for you.
 == == 
 
-== = Logger access
+== Logger access
 The general pattern for accessing an instance of a logger class is to use static instances. So for SLF4j, the following lines are sufficient to create a log object:
 ```
 ...
@@ -48,7 +48,7 @@ public class MyClass {
 ```
 If you are use https://projectlombok.org/api/lombok/extern/slf4j/Slf4j.html[Lombok] in your project, you can simply add the `@SLF4J` annotation to your class. Lombok will then automatically create a logger instance that you can use in your code.
 
-== = Using the logger
+== Using the logger
 After you have created the logger instance, you can simply use one of the log methods of the corresponding object. Different logging APIs provide different methods for creating log messages. When using SLF4j, there are several methods such as `info`, `warn`, `error` that are logged depending on the log level set  (see xref:configuration[]).
 ```
 ...
@@ -59,7 +59,7 @@ public void myMethod(...) {
 ```
 For detailed documentation on the SLF4j API, see http://www.slf4j.org/manual.html[here].
 
-== = Configuration
+== Configuration
 [#configuration]
 The are several options you can set in the `application.properties` file to configure the bahaviour of the logger. For example, to set the log level or the format of the log messages.
 
@@ -84,7 +84,7 @@ Result:
 [D: 2021-07-20 11:54:33,127] [P: DEBUG] [C: «MDC values»] [T: executor-thread-0] [L: my.package.MyClass] [M: log message...]
 ```
 
-== = Customizing log messages
+== Customizing log messages
 You can use http://www.slf4j.org/manual.html#mdc[Mapped Diagnostic Context] to add custom fields to your log messages. MDC is a simple map consisting of key-value pairs to store additional useful information such as session or request ids that can be helpful when filtering log messages or debugging applications. 
 
 ```

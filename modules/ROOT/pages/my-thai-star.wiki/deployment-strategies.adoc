@@ -50,7 +50,7 @@ For every operation performed in the external Deployment Server, it is necessary
 The second way of deployment will be by orchestrating both elements of the application: The Angular client-side and the Java server-side. Both elements will be running in Docker containers as well, but in this case they won't be independent anymore. *Docker Compose* will be in charge of keeping both containers up, or to put them down.
 
 
-== = Project adjustment
+== Project adjustment
 
 In order to perform this second way of deployment, some files will be created in the project. The first one is the *Dockerfile* for the Angular client-side. This file will pull (if necessary) an *Nginx* Docker image and copy the Angular artifact (`/dist` folder) inside of the deployment folder of the image. It will be located in the main directory of the Angular client-side project.
 

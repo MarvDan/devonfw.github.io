@@ -55,7 +55,7 @@ image::./images/others/jenkins-gitlab/jenkins-gitlab-connection.png[]
 
 ==  5. Jenkins Pipeline changes
 
-== = 5.1 Choose GitLab connection in Pipeline's General configuration
+== 5.1 Choose GitLab connection in Pipeline's General configuration
 
 First, our pipeline should allow us to add a GitLab connection to connect to (the already created one).
 
@@ -66,7 +66,7 @@ In the case of the local example, could be like this:
 * GitLab connection: `my-local-gitlab`
 * GitLab Repository Name: `myusername/webhook-test` (for example)
 
-== = 5.2 Create a Build Trigger
+== 5.2 Create a Build Trigger
 
 . You should already see your GitLab project's URL (as you stated in the General settings of the Pipeline).
 

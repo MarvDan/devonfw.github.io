@@ -79,7 +79,7 @@ Sometimes pre-built themes do not meet the needs of a project, because color sch
 For this topic, we are going to use a basic layout project that can be found in https://github.com/devonfw-sample/devon4ts-samples/tree/master/apps/angular-material-basic-layout[devon4ts-samples repository].
 
 
-== = Basics
+== Basics
 
 Before starting writing custom themes, there are some necessary things that have to be mentioned:
 
@@ -92,7 +92,7 @@ Before starting writing custom themes, there are some necessary things that have
 .Theme files structure.
 image::images/angular/angular-theming/theme-files-structure.png["Theme files structure", width=600 link="images/angular/angular-theming/theme-files-structure.png"]
 
-== = Basic custom theme
+== Basic custom theme
 
 To create a new custom theme, the `.scss` file containing it has to have imported the angular `_theming.scss` file (angular/material/theming) file and mat-core included. `_theming.scss` includes multiple color palettes and some functions that we are going to see below. The file for this basic theme is going to be named `*styles-custom-dark.scss*`.
 
@@ -206,7 +206,7 @@ If we have multiple themes it is necessary to add the include statement inside a
 
 This will apply *$custom-dark-theme* theme for the entire application.
 
-== = Full custom theme
+== Full custom theme
 
 Sometimes it is needed to custom different elements from background and foreground, in those situations we have to create a new function similar to _mat-light-theme_ and _mat-dark-theme_. Let's focus con mat-light-theme:
 
@@ -327,7 +327,7 @@ After defining our new theme, we can import it from `styles.scss`.
 }
 ----
 
-== = Multiple themes and overlay-based components
+== Multiple themes and overlay-based components
 
 Certain components (e.g. menu, select, dialog, etc.) that are inside of a global overlay container,require an additional step to be affected by the theme's css class selector.
 

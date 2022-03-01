@@ -4,7 +4,7 @@ In this section you will see how you can create a new environment instance in Op
 
 ==  Configure your OpenShift to deploy your devonfw projects
 
-== = Prerequisites
+== Prerequisites
 
 == ==  OpenShift Cluster
 
@@ -12,21 +12,21 @@ To have your deployment environment with OpenShift you need to have an OpenShift
 
 // TODO: For example, you can obtain it from ITAAS
 
-== = Manual configuration
+== Manual configuration
 
 Here you can find all that you need to know to link:dsf-deployment-dsf4openshift-manual-configuration[configure OpenShift] manually.
 
-== = Automatic configuration
+== Automatic configuration
 
 Here you can find all that you need to know to link:dsf-deployment-dsf4openshift-automatic-configuration[configure OpenShift] automatically.
 
 ==  Service integration with jenkins
 
-== = Prerequisites
+== Prerequisites
 
 To integrate it, you need to have installed the plugin OpenShift Client. To install it go to Manage Jenkins clicking on left menu and enter in *_Manage Plugins_*. Go to Available tab and search it using the filter textbox in the top right corner and install it.
 
-== = Configuration
+== Configuration
 
 Second, you need to configure the OC Client. Go to Manage Jenkins clicking on left menu and enter in *_Global Tool Configuration_*.
 

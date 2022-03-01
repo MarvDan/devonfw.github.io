@@ -41,7 +41,7 @@ Especially the build and deployment jobs require several additional Jenkins plug
 
 All build and deployment jobs are taken from the official `My-Thai-Star` (https://github.com/devonfw/my-thai-star) repository. The created build and deployment jobs inside Jenkins will use the Jenkinsfiles from the cloned repo in Gitlab. These are currently the following Jenkinsfiles:
 
-== = Jenkins Jobs
+== Jenkins Jobs
 
 .Jenkins Jobs
 [width="100%",options="header,footer"]
@@ -65,7 +65,7 @@ In case you see improvements we would love to see a Pull Request.
 
 ==  Prerequisities before running the template
 
-== = Production Line Components
+== Production Line Components
 
 *To use the template you need to make sure that your PL has the following components installed:*
 
@@ -79,7 +79,7 @@ In case you see improvements we would love to see a Pull Request.
 *Additional components can be ordered from the ProductionLine service team.*
 == == 
 
-== = Technical User Setup 
+== Technical User Setup 
 
 In order to configure the services, we need technical users for the following components:
 
@@ -127,7 +127,7 @@ The GitLab API user needs to have API access and the rights to create a new grou
 3. Select the user(s) in question and click 'Edit'
 4. Scroll down to 'Access' and un-tick 'Can Create Group'
 
-== = Build/Deployment Requirements
+== Build/Deployment Requirements
 
 The My Thai Star CICD pipelines will create a docker image and then the deployment pipelines will use it in order to deploy the application. As Production Line do not include a docker daemon, you need an additional server to do it. Those server needs:
 
@@ -147,12 +147,12 @@ So please make sure, that nothing important is running.
 We have job-parameters inside the template Jenkinsfile that will only be active if Jenkins has run the job at least once!
 == == 
 
-== = Setup template job in Jenkins
+== Setup template job in Jenkins
 
 The guide on how to add a template to your Jenkins can be found in the root directory of the template repository: https://github.com/devonfw/production-line.git
 
 
-== = Execute the Jenkins job in your Jenkins
+== Execute the Jenkins job in your Jenkins
 
 * Go to the Jenkins job.
 * Execute job.

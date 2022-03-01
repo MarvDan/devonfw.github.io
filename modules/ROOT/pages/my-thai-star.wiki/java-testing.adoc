@@ -42,13 +42,13 @@ public class DishmanagementTest extends `ComponentTest` {
 
 ==  Running the tests
 
-== = From Eclipse
+== From Eclipse
 
 We can run the test from within _Eclipse_ with the contextual menu _Run As > JUnit Test_. This functionality can be launched from method level, class level or even package level. The results will be shown in the _JUnit_ tab.
 
 image::images/java/test_results_eclipse.PNG[, link="images/java/test_results_eclipse.PNG"]
 
-== = From command line using Maven
+== From command line using Maven
 
 We can also run tests using _Maven_ and the command line, using the command `_mvn test_` (or `_mvn clean test_`).
 

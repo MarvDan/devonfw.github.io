@@ -37,7 +37,7 @@ image::images/serverless/folder_organization.png[, link="images/serverless/folde
 - Logic Layer: the layer in charge of hosting the business logic of the application.
 - Data Access Layer: the layer to communicate with the data base.
 
-== = Service layer
+== Service layer
 
 The services layer will be solved using REST services with https://serverless.com/[Serverless]
 
@@ -142,7 +142,7 @@ If you change the integration to lambda-proxy, you must take care that in this c
 
 After defining all the handlers, we must execute the _fun_ command, which will generate the files serverless.yml and `webpack.config.js`. 
 
-== = Logic layer and Data access layer
+== Logic layer and Data access layer
 
 link:NodeJS-design#logic-layer-and-data-access-layer[See in NodeJS section]
 
@@ -150,11 +150,11 @@ link:NodeJS-design#logic-layer-and-data-access-layer[See in NodeJS section]
 
 For the _Authentication_ and _Authorization_ the app will implement the https://jwt.io/[json web token] protocol.
 
-== = JWT basics
+== JWT basics
 
 Refer to link:java-design#jwt-basics[JWT basics] for more information.
 
-== = JWT implementation details
+== JWT implementation details
 
 The _Json Web Token_ pattern will be implemented based on the https://github.com/auth0/node-jsonwebtoken[_JSON web token_] library available on npm.
 

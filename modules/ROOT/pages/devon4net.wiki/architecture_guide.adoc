@@ -112,7 +112,7 @@ The repository and unit of work patterns are create an abstraction layer between
 
 NOTE: Domain Layer has no dependencies with other layers. It contains the Entities, datasources and the Repository Interfaces.
 
-== = devon4Net architecture layer implementation
+== devon4Net architecture layer implementation
 
 The next picture shows how the devon4Net API template implements the architecture described in previous points:
 
@@ -144,7 +144,7 @@ The provided _Data Layer_ contains the abstract classes to inherit from. All new
 image::images/layer_arch_detail.png["technical architecture", width="750", link="images/layer_arch_detail.png"]
 
 ==  Templates
-== = State of the art
+== State of the art
 
 The provided bundle contains the devon4Net API template based on .net core. The template allows to create a microservice solution with minimal configuration. 
 
@@ -223,7 +223,7 @@ Included features:
             - Added Apache Kafka support for deliver/consume messages and create/delete topics as well             
 
 
-== = Software stack
+== Software stack
 
 .Technology Stack of devon4Net
 [options="header"]
@@ -245,7 +245,7 @@ Included features:
 |== == == == == == == == == == == =
 
 
-== = Target platforms
+== Target platforms
 
 Thanks to the new .Net Core platform from Microsoft, the developed software can be published Windows, Linux, OS, X and Android platforms.
 

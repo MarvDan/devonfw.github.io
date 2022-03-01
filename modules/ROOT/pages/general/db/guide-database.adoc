@@ -12,7 +12,7 @@ The classical and well-established form of a database is a relational database m
 In devonfw we recommend to use an RDBMS unless you have specific need.
 However, in case you have the need for big data, graph-data, BLOB focus, or schema-less dynamic data you can have a look at xref:nosql[NoSQL] options but be aware that these may be experimental and are not fully supported by devonfw.
 
-== = Options
+== Options
 In devonfw we are not biased for a particular RDBMS so you have the freedom of choice.
 Here are the most common options:
 
@@ -36,7 +36,7 @@ But as indicated by the questions above you need to be fully aware of what you a
 NoSQL databases can be _schemaless_ (untyped, dynamic & flexible) and/or _schemaful_ (typed, structured & strict).
 Furhter, there are different types of NoSQL databases that are discussed in the following sub-sections:
 
-== = Java
+== Java
 
 == ==  Column DB
 Column NoSQL databases are more related to a regular xref:rdbms[RDBMS] with their tables and columns.

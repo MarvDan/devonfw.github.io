@@ -34,7 +34,7 @@ In this section we are going to focus on the implementation of the server projec
 
 The _MyThaiStar_ project is hosted on https://github.com/devonfw/my-thai-star[GitHub] and includes different technologies such as _Java_, _.NET_ and _Node_ for back-end solutions _Angular_ and _Xamarin_ as default clients.
 
-== = The devon4j Project
+== The devon4j Project
 Using the _devon4j_ approach for the Java back-end project we will have a structure of a main _Maven_ project formed by four sub-projects:
 
 image::images/devon4j/2.Example_app/project_modules.png[Maven Project Structure]
@@ -47,14 +47,14 @@ The `batch` project contains components related to the https://spring.io/project
 
 The `server` project configures the packaging of the application.
 
-== = The Components
+== The Components
 In early chapters we have mentioned that the devon4j applications should be divided in different components that will provide the functionality for the different features of the application. Following the naming convention `[Target]management` being the _Target_ the main _entity_ that we want to manage.
 
 The components, as part of the logic of the app, are located in the _core_ project of the app. In the case of _MyThaiStar_ we need to show the different available *dishes*, we need to manage the *booking* and the *orders* and we need to create new *users*. So the application will be divided in the following components:
 
 image::images/devon4j/2.Example_app/project_components.png[Application Components]
 
-== = The Component Structure (Layers)
+== The Component Structure (Layers)
 Each component of the app is internally divided following the three-layer architecture (`service`, `logic` and `dataaccess`) that Devon4j proposes. So we will have three different packages to order our component's elements:
 
 image::images/devon4j/2.Example_app/component_layers.png[Component Layers]

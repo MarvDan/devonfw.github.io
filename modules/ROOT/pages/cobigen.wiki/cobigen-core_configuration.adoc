@@ -11,7 +11,7 @@ CobiGen is maintaining a home directory further referenced in this documentation
 The actual configuration of CobiGen is maintained by a single folder or jar. The location can be configured with respect to the implemented configuration fall-back mechanism. CobiGen will search for the location of the configuration in the following order:
 
 1. A configuration jar or directory, which is passed to CobiGen by the Maven or Eclipse integration or any other program using the CobiGen programming interface:
-1.1. the Maven integration allows to configure a jar dependency to be included in the currently running classpath _(of interest for link:cobigen-maven_configuration#plugin-injection-since-v3[maven configuration]_
+1.1. the Maven integration allows to configure a jar dependency to be included in the currently running classpath _(of interest for link:cobigen-maven_configuration#plugin-injection-since-v3.adoc[maven configuration]_
 1.2. the Eclipse integration allows to specify a `CobiGen_Templates` project in the eclipse workspace 
 2. The file `$cghome/.cobigen` exists and the property `templates` is set to a valid configuration (e.g. `templates=C:\project\ide\conf\templates` or `templates=C:\project\ide\conf\templates.jar`) _Hint: Check for log entry like `Value of property templates in $cghome/.cobigen is invalid` to identify an invalid configuration which is not taken up as expected_
 3. The folder `$cghome/templates/CobiGen_Templates` exists
@@ -200,7 +200,7 @@ A template declaration consist of multiple information:
 ** `?removeSuffix(suffix)` - Removes the given `suffix` in the variable's value iff the variable's value ends with the given `suffix`. Otherwise nothing will happen. (since `cobigen-core v1.1.0`)
 ** `?removePrefix(prefix)` - Analogue to `?removeSuffix` but removes the prefix of the variable's value. (since `cobigen-core v1.1.0`)
 * The attribute `templateFile` describes the relative path dependent on the template folder specified in the xref:trigger-node[trigger] to the template file to be generated.
-* The attribute `mergeStrategy` _(optional)_ can be _optionally_ specified and declares the type of merge mechanism to be used, when the `destinationPath` points to an already existing file. CobiGen by itself just comes with a `mergeStrategy` `override`, which enforces file regeneration in total. Additional available merge strategies have to be obtained from the different plug-in's documentations (see here for link:cobigen-javaplugin#merger-extensions[java], link:cobigen-xmlplugin#merger-extensions[XML], link:cobigen-propertyplugin#merger-extensions[properties], and link:cobigen-textmerger#merger-extensions[text]). Default: _not set_ (means not mergeable)
+* The attribute `mergeStrategy` _(optional)_ can be _optionally_ specified and declares the type of merge mechanism to be used, when the `destinationPath` points to an already existing file. CobiGen by itself just comes with a `mergeStrategy` `override`, which enforces file regeneration in total. Additional available merge strategies have to be obtained from the different plug-in's documentations (see here for link:cobigen-javaplugin#merger-extensions.adoc[java], link:cobigen-xmlplugin#merger-extensions.adoc[XML], link:cobigen-propertyplugin#merger-extensions.adoc[properties], and link:cobigen-textmerger#merger-extensions.adoc[text]). Default: _not set_ (means not mergeable)
 * The attribute `targetCharset` _(optional)_ can be _optionally_ specified and declares the encoding with which the contents will be written into the destination file. This also includes reading an existing file at the destination path for merging its contents with the newly generated ones. Default: _UTF-8_
 
 _(Since version 4.1.0)_ It is possible to reference external `template` (templates defined on another trigger), thanks to using `<incrementRef ...>` that are explained xref:increment-node[here].
@@ -340,14 +340,14 @@ Given the `relocate` feature, you can even step out of the root path, which in g
 In addition to what is served by the different model builders of the different plug-ins, CobiGen provides a minimal model based on context variables as well as CobiGen properties. The following model is independent of the input format and will be served as a template model all the time:
 
 * variables
-** all triggered `xref:variableassignment-node[context variables]` mapped to its assigned/mapped value
-** all xref:template-properties[template properties]
-* all simple names of xref:java-template-logic[Java template logic] implementation classes
-* all full qualified names of xref:java-template-logic[Java template logic] implementation classes
-* further input related model, e.g. link:cobigen-javaplugin#template-object-model[model from Java inputs]
+** all triggered `xref:variableassignment-node.adoc[context variables]` mapped to its assigned/mapped value
+** all xref:template-properties.adoc[template properties]
+* all simple names of xref:java-template-logic.adoc[Java template logic] implementation classes
+* all full qualified names of xref:java-template-logic.adoc[Java template logic] implementation classes
+* further input related model, e.g. link:cobigen-javaplugin#template-object-model.adoc[model from Java inputs]
 
 == Plugin Mechanism
 
 Since `cobigen-core 4.1.0`, we changed the plug-in discovery mechanism. So far it was necessary to register new plugins programmatically, which introduces the need to let every tool integration, i.e. for eclipse or maven, be dependent on every plug-in, which should be released. This made release cycles take long time as all plug-ins have to be integrated into a final release of maven or eclipse integration.
 
-Now, plug-ins are automatically discovered by the Java https://docs.oracle.com/javase/tutorial/ext/basics/spi.html[Service Loader] mechanism from the classpath. This also effects the setup of link:cobigen-eclipse_installation#upgrading-to-v3[eclipse] and link:cobigen-maven_configuration#additions-since-v3[maven] integration to allow modular releases of CobiGen in future. We are now able to provide faster rollouts of bug-fixes in any of the plug-ins as they can be released completely independently.
+Now, plug-ins are automatically discovered by the Java https://docs.oracle.com/javase/tutorial/ext/basics/spi.html[Service Loader] mechanism from the classpath. This also effects the setup of link:cobigen-eclipse_installation#upgrading-to-v3.adoc[eclipse] and link:cobigen-maven_configuration#additions-since-v3.adoc[maven] integration to allow modular releases of CobiGen in future. We are now able to provide faster rollouts of bug-fixes in any of the plug-ins as they can be released completely independently.

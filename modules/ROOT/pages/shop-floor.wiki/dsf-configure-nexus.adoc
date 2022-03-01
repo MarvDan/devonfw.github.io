@@ -8,7 +8,7 @@ Then you can change that password and create a new one.
 
 ==  Prerequisites
 
-== = Repositories
+== Repositories
 
 You need to have one repository for snapshots, another for releases and another one for release-candidates. Normally you use maven2 (hosted) repositories and if you are going to use a docker registry, you need docker (hosted) too.
 
@@ -34,7 +34,7 @@ image::./images/configuration/nexus-create-user-form.png[]
 
 To use Nexus in our pipelines you need to configure Jenkins.
 
-== = Customize jenkins
+== Customize jenkins
 
 The first time you enter jenkins, you are asked fot the pluggins to be installed.
 We select  _install suggested plugins_ and later we can add the plugins that we need depending on the project necessities.
@@ -51,7 +51,7 @@ image::./images/configuration/jenkins-url.png[]
 
 Your jenkins setup is ready!
 
-== = Add nexus user credentials
+== Add nexus user credentials
 
 First of all you need to add the user created in the step before to Jenkins. To do it (on the left menu) click on Credentials, then on System. Now you could access to *_Global credentials (unrestricted)_*.
 
@@ -61,7 +61,7 @@ Enter on it and you could see a button on the left to *_Add credentials_*. Click
 
 image::./images/configuration/nexus-jenkins-credentials-form.png[]
 
-== = Add the nexus user to maven global settings
+== Add the nexus user to maven global settings
 
 In order to do this, you will need the *Config File Provider* plugin so we need to download it.Go to Jenkins->Manage jenkins->Manage plugins and "_available_" tab and search for it:
 

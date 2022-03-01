@@ -33,7 +33,7 @@ This graphic shows that modules acts as gates to access components "inside" them
 Because the objective of this guide is related mainly with logic, the html structure and SCSS styles are less relevant, but the complete code can be found as a sample https://github.com/devonfw-sample/devon4ts-samples/tree/master/apps/angular-lazy-loading[here].
 
 
-== = Implementation
+== Implementation
 
 First write in a console `ng new level-app --routing`, to generate a new project called level-app including an app-routing.module.ts file (*--routing* flag). If you are using Nx, the command would be `nx generate @nrwl/angular:app level-app --routing` in your Nx workspace.
 

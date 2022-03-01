@@ -60,10 +60,10 @@ As service framework:
 ==  devon4j Tools
 The following tools are included in the https://github.com/devonfw/ide[devonfw IDE], which -- among many other things -- can create, run and deploy devon4j applications, avoiding lots of manual work.
 
-== = Custom Eclipse Instance
+== Custom Eclipse Instance
 As part of the _devonfw_ framework, devon4j projects are integrated into a customized Eclipse instance, which provides pre-configurations and pre-installed plugins, focusing on code quality and productivity boosting. 
 
-== = CobiGen
+== CobiGen
 A generic incremental generator for end to end code generation that allows us to automate the generation of major components of our apps. Based on entities, CobiGen can generate all CRUD functionality for us, starting with services and ending with the persistence data layer.
 
 ==  devon4j Architecture Overview

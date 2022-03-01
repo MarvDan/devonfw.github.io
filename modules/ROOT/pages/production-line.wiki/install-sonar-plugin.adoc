@@ -21,7 +21,7 @@ toc::[]
 
 SonarQube can extends its behaviour by adding plugins. Some on them can be installed by using the SonarQube Marketplace, others can be installed by copying the .jar into the SonarQube plugins folder.
 
-== = Overview
+== Overview
 
 This template will help you to install SonarQube plugins by copying the .jar into the SonarQube plugins folder. As you do not have access to the Production Line volumes, it will help you when you want to install a plugin that is not installed in the SonarQube Marketplace.
 
@@ -41,11 +41,11 @@ For manual creation see: link:how-to-add-a-template[How to add a Template]
 
 IMPORTANT: This template needs the link:https://github.com/devonfw/production-line-shared-lib[devonfw Production Line Shared Lib]
 
-== = Parameters
+== Parameters
 
 The only parameter required is the plugin download URL. 
 
-== = Execution
+== Execution
 
 . Press the Build with Parameters button
 . Insert plugin the download url. Example: https://github.com/dependency-check/dependency-check-sonar-plugin/releases/download/1.2.6/sonar-dependency-check-plugin-1.2.6.jar

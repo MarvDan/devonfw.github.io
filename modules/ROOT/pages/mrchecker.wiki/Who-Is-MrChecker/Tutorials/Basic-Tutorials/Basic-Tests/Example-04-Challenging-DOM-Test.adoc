@@ -4,7 +4,7 @@ In the browser's developer mode, you can see how the page is built. Notice, that
 
 image::images/example6.png[]
 
-== == = DOM - Document Object Model 
+== == DOM - Document Object Model 
 
 HTML DOM is a model of the page created by the browser. The page could be represented as the tree of objects. Read more. 
 
@@ -61,12 +61,12 @@ public class ChallengingDomPage extends BasePage {
 }
  
 ----
-== == = Jsoup Helper 
+== == Jsoup Helper 
 Jsoup Helper is the tool which helps to parse HTML document and get searched values. This is especially useful when values are organized in a generic structure such as a table. 
 
 JsoupHelper.findTexts(By selector) - this method returns text content of a table as a list of Strings 
 
-== == = Test Class 
+== == Test Class 
 Steps: 
 
 1. Open The Internet Main Page 

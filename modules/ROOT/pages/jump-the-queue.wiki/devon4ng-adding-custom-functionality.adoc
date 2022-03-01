@@ -35,7 +35,7 @@ To navigate between these views/components, we are going to implement routes usi
 
 To see our progress, move to the root folder of the `angular` project and run `ng serve -o` again. This will recompile and publish our client app to http://localhost:4200. Angular will keep watching for changes, so whenever we modify the code, the app will automatically reload.
 
-== = Root Component
+== Root Component
 
 `app.component.ts` inside `angular/src/app` will be our root component, so we don't have to create a new file yet. We are going to add elements to the root component that will be common no matter what view will be displayed.
 
@@ -297,7 +297,7 @@ As you can see, now the body content is the HTML of `FormLoginComponent`. This i
 
 For now we are going to leave the header like this. In the future we will separate it into another component inside a layout folder.
 
-== = `LoginForm` Component
+== `LoginForm` Component
 
 As we have already created this component from the section before, let's move on to building the template of the login view.
 
@@ -338,7 +338,7 @@ image::images/devon4ng/3.BuildYourOwn/formlogin.png[Form Login, 250]
 This is going to be the container for the login. +
 Now we will continue with the second component: Login.
 
-== = Login Component
+== Login Component
 
 Our first step will be to create the component in the exact same way we created the `FormLogin` component but this time we are going to generate it in a new folder called components inside `formlogin`. Putting every child component inside that folder will allow us to keep a good and clear structure. In order to do this, we use the command:
 
@@ -468,7 +468,7 @@ image::images/devon4ng/3.BuildYourOwn/login.png[JumpTheQueue Login Screen, 250]
 
 With two components already created, we need to use the router to navigate between them. Following the application flow of events, we are going to add a _navigate_ function to the register button. When we press it, we will be redirected to our future register component.
 
-== = Register Component
+== Register Component
 
 First, we are going to generate the register component via:
 
@@ -737,7 +737,7 @@ The `AuthService` will be the one that contains the login info, the `AuthGuardSe
 To keep this tutorial simple, we are going to perform the password check client side. *THIS IS NOT CORRECT!* Usually, you would send the username and password to the back-end, check that the values are correct, and create a corresponding token which you would pass in the header and use it inside the `AuthService` -- checking with some interceptors that the token is both in the `AuthService` and in the request.
 == == 
 
-== = Login, Auth and AuthGuard Services
+== Login, Auth and AuthGuard Services
 
 We are going to create the 3 services via `ng generate service <path>`:
 
@@ -857,7 +857,7 @@ export class AuthService {
 
   public isPermited(userRole: string): boolean {
     return (
-      this.getPermission(this.currentRole) == = this.getPermission(userRole)
+      this.getPermission(this.currentRole) == this.getPermission(userRole)
     );
   }
 }
@@ -905,7 +905,7 @@ export class AuthGuardService implements CanActivate {
       console.log('Error login');
     }
 
-    if (this.router.url == = '/') {  // if the router is the app route
+    if (this.router.url == '/') {  // if the router is the app route
       this.router.navigate(['/login']);
     }
     return false;
@@ -974,11 +974,11 @@ export class LoginService {
       // Checks if given username and password are the ones aved in the database
       this.getVisitorByUsername(username).subscribe(
           (visitorFound) => {
-              if (visitorFound.username == = username && visitorFound.password == = password) {
+              if (visitorFound.username == username && visitorFound.password == password) {
                   this.authService.setUserId(visitorFound.id);
                   this.authService.setLogged(true);
                   this.authService.setUser(visitorFound.username);
-                  if (visitorFound.userType == = false) {
+                  if (visitorFound.userType == false) {
                       this.authService.setRole('VISITOR');
                       this.router.navigate(['ViewQueue']);
                   } else {
@@ -1014,7 +1014,7 @@ If you remember the devon4j tutorial, we used `Criteria` in order to filter and 
 
 [NOTE]
 == == 
-For the tutorial we are only considering the visitor side of the application. That's why we `setLogged(false)` if it's `userType == = true` (BOSS side).
+For the tutorial we are only considering the visitor side of the application. That's why we `setLogged(false)` if it's `userType == true` (BOSS side).
 == == 
 
 Then we add to the `login-module.ts` and `LoginService`:
@@ -1099,7 +1099,7 @@ constructor(private registerService: RegisterService, private router: Router, pu
 
 Now we only need to generate two more components (`header` and `view-queue`) and services (`AccessCodeService` and `QueueService`) in order to finish the implementation of our _JumpTheQueue_ app.
 
-== = Separating Header from Layout
+== Separating Header from Layout
 
 By separating the header on top of the page from the layout, we enable the reuse of this component and reach a better separation of concerns across our application. To do this, we are going to generate a new component inside `angular/src/app/layout/header` via:
 
@@ -1144,7 +1144,7 @@ In the header logic (`header.component.ts`) we are simply going to inject the `A
 
 Separating components will allow us to keep the code clean and easy to work with.
 
-== = `ViewQueue` Component
+== `ViewQueue` Component
 
 For the last view, we are going to learn how to use our Observables on the HTML template directly without having to `subscribe()` to them.
 
@@ -1230,7 +1230,7 @@ export class AccessCodeArray {
 ...
 ----
 
-== = AccessCode and Queue Services
+== AccessCode and Queue Services
 
 After this is done, we are going to generate the `AccessCodeService` and the `QueueService`:
 
@@ -1394,7 +1394,7 @@ Now we are going to create the template `view-queue.component.html` (which will 
           <h1 style="font-size: 100px" class="text-center text-xxl push-lg">{{data.accessCodeAttended?.ticketNumber}}</h1> 
         </div>
       </div>
-      <div style="border-top: 2px solid black;" class="pad-bottom-lg pad-top-lg text-center row" *ngIf="data.accessCodeVisitor == = null">
+      <div style="border-top: 2px solid black;" class="pad-bottom-lg pad-top-lg text-center row" *ngIf="data.accessCodeVisitor == null">
         <button mat-raised-button (click)="onJoinQueue(data.queue.id)" color="primary" class="text-upper">Join the queue</button> 
       </div>
     </mat-card>
@@ -1402,7 +1402,7 @@ Now we are going to create the template `view-queue.component.html` (which will 
         <button mat-raised-button (click)="onLeaveQueue(data.accessCodeVisitor.id)" color="primary" class="text-upper">Leave the queue</button> 
     </div>
   </div>
-  <div *ngIf="data.queue == = null || (data.queue !==  null && data.queue.active == = false)" class="row">
+  <div *ngIf="data.queue == null || (data.queue !==  null && data.queue.active == false)" class="row">
     <h1 style="font-size: 50px" class="text-center text-xxl push-lg">The queue is not active try again later</h1> 
   </div>
 </td-layout>

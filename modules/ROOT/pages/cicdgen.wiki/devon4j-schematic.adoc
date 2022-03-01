@@ -65,7 +65,7 @@ The url of the Microsoft Teams `webhook`. It is returned by Microsoft Teams when
 +
 * --merge
 +
-If you have used cicdgen previously, you can choose what you want to do in case of file conflict. The default behavior is to throw an error and not modify any file. You can see the other strategies on their link:merge-strategies[specific page].
+If you have used cicdgen previously, you can choose what you want to do in case of file conflict. The default behavior is to throw an error and not modify any file. You can see the other strategies on their link:merge-strategies.adoc[specific page].
 +
 * --commit
 +

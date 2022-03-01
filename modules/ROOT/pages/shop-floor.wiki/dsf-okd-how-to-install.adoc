@@ -2,7 +2,7 @@
 
 ==  Pre-requisites
 
-== = Install docker
+== Install docker
 
 https://docs.docker.com/engine/installation/linux/docker-ce/debian/#set-up-the-repository
 
@@ -12,7 +12,7 @@ $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
 ----
 
-== = Download Openshift Origin Client
+== Download Openshift Origin Client
 
 Download Openshift Origin Client from https://www.openshift.org/download.html#oc-platforms[here]
 
@@ -27,7 +27,7 @@ mv openshift-origin-server-v3.7.1-ab0f056-linux-64bit oc
 ```
 ////
 
-== = Add oc to path
+== Add oc to path
 
 [source,Shell]
 ----
@@ -36,7 +36,7 @@ $ export PATH=$PATH:/home/administrador/oc
 
 ==  Install Openshift Cluster
 
-== = Add the insecure registry
+== Add the insecure registry
 
 Create file ```/etc/docker/daemon.json``` with the next content:
 
@@ -47,7 +47,7 @@ Create file ```/etc/docker/daemon.json``` with the next content:
 }
 ----
 
-== = Download docker images for openshift
+== Download docker images for openshift
 
 [source,Shell]
 ----
@@ -66,7 +66,7 @@ wget https://raw.githubusercontent.com/openshift-evangelists/oc-cluster-wrapper/
 
 oc-cluster up devonfw-shop-floor --public-hostname X.X.X.X
 
-== = Configure iptables
+== Configure iptables
 
 We must create iptables rules to allow traffic from other machines.
 

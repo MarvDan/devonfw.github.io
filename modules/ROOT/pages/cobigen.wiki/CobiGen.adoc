@@ -57,7 +57,7 @@ include::cobigen-usecases.adoc[]
 include::cobigen-core_configuration.adoc[]
 
 :leveloffset: 0
-== = Plug-ins
+== Plug-ins
 :leveloffset: 3
 include::cobigen-javaplugin.adoc[]
 

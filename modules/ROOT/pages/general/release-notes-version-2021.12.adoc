@@ -20,7 +20,7 @@ This release includes lots of addition of new features, updates and bug fixes bu
 
 The consolidated list of features for this devonfw IDE release is as it follows.
 
-== = 2021.12.001
+== 2021.12.001
 
 Update with the following bugfixes and improvements:
 
@@ -34,7 +34,7 @@ Update with the following bugfixes and improvements:
 
 The consolidated list of features for this devon4j release is as it follows.
 
-== = 2021.04.003
+== 2021.04.003
 
 Bugfix release of with the following stories:
 
@@ -48,7 +48,7 @@ Bugfix release of with the following stories:
 Documentation is available at https://repo.maven.apache.org/maven2/com/devonfw/java/doc/devon4j-doc/2021.04.003/devon4j-doc-2021.04.003.pdf[devon4j guide 2021.04.003].
 The full list of changes for this release can be found in https://github.com/devonfw/devon4j/milestone/19?closed=1[milestone devon4j 2020.04.003].
 
-== = 2021.04.002
+== 2021.04.002
 
 Bugfix release of with the following stories:
 
@@ -61,7 +61,7 @@ The full list of changes for this release can be found in https://github.com/dev
 
 ==  Quarkus
 
-== = Documentation update
+== Documentation update
 
 * Separated the Java section of the homepage into 'General', 'Spring' and 'Quarkus'
 * Guiding the reader
@@ -72,7 +72,7 @@ The full list of changes for this release can be found in https://github.com/dev
 * Project structure: Defined 'new' modern project structure for Quarkus applications
 * Added and updated different technical guides for Quarkus
 
-== = Reference applications
+== Reference applications
 
 * devon4quarkus-product
 https://github.com/devonfw-sample/devon4quarkus-reference is application including a REST service for product management including different concepts documented in the devon4j documentation. Additionally it demonstrates Kubernetes deployment and Helm charts.
