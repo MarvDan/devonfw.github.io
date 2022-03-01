@@ -16,7 +16,7 @@
   <description>The devon4j documentation that gives detailed guidance for the Java stack of devonfw.</description>
 
   <properties>
-    <docgen.asciidoc.page>devon4j-doc</docgen.asciidoc.page>
+    <docgen.adoc.page>devon4j-doc</docgen.adoc.page>
     <revision>dev-SNAPSHOT</revision>
   </properties>
 

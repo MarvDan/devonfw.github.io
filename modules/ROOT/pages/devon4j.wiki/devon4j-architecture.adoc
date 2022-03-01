@@ -1,7 +1,7 @@
 ==Architecture
 
-include::architecture.asciidoc[leveloffset=1]
+include::architecture.adoc[leveloffset=1]
 
 <<<<
 
-include::guide-component.asciidoc[leveloffset=2]
+include::guide-component.adoc[leveloffset=2]

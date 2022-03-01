@@ -46,10 +46,10 @@ This command wraps the usage of angular schematics CLI. With this we generate fi
 
 Available schematics that generate the code:
 
-* link:devon4j/devon4j-schematic.asciidoc[devon4j]
-* link:devon4j/devon4ng-schematic.asciidoc[devon4ng]
-* link:devon4j/devon4net-schematic.asciidoc[devon4net]
-* link:devon4j/devon4node-schematic.asciidoc[devon4node]
+* link:devon4j/devon4j-schematic.adoc[devon4j]
+* link:devon4j/devon4ng-schematic.adoc[devon4ng]
+* link:devon4j/devon4net-schematic.adoc[devon4net]
+* link:devon4j/devon4node-schematic.adoc[devon4node]
 
 ==== Examples
 

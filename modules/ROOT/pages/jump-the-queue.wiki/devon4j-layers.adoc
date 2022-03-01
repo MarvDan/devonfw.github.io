@@ -287,7 +287,7 @@ public interface BookingRepository extends DefaultRepository<BookingEntity> {
 }
 ```
 
-The implementation of `findBookings` uses https://github.com/devonfw/devon4j/blob/develop/documentation/guide-repository.asciidoc[Spring Data] and http://www.querydsl.com/[QueryDSL] to manage dynamic queries.
+The implementation of `findBookings` uses https://github.com/devonfw/devon4j/blob/develop/documentation/guide-repository.adoc[Spring Data] and http://www.querydsl.com/[QueryDSL] to manage dynamic queries.
 
 === Layers of the JumpTheQueue Application
 The sections above describe the main elements of layers of the _devon4j_ components. If you have completed the exercise in the link:devon4j-components[previous chapter], you may have noticed that all those components are already created for us by _CobiGen_.

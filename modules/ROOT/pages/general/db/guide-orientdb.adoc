@@ -3,7 +3,7 @@ toc::[]
 
 ==OrientDB
 
-This section is the place to share experience for those who use https://orientdb.com/[OrientDB] (see also https://orientdb.org/[Open-Source community edition]) as link:guide-database.asciidoc#nosql[NoSQL database].
+This section is the place to share experience for those who use https://orientdb.com/[OrientDB] (see also https://orientdb.org/[Open-Source community edition]) as link:guide-database.adoc#nosql[NoSQL database].
 
 == Java
 

@@ -46,7 +46,7 @@ So you can now use the devonfw distribution (the "zip" file), CobiGen, the devon
 ** FindBugs Plugin updated.
 ** CobiGen plugin updated.
 * Other Software
-** Visual Studio Code latest version included and pre-configured with https://devonfw.com/website/pages/docs/cli.asciidoc.html#vscode.asciidoc
+** Visual Studio Code latest version included and pre-configured with https://devonfw.com/website/pages/docs/cli.adoc.html#vscode.adoc
 ** Ant updated to latest.
 ** Maven updated to latest.
 ** Java updated to latest.
@@ -135,7 +135,7 @@ This release incorporates a new Solution Guide for Application Security based on
 * CobiGen OpenAPI plugin released with multiple bug-fixes and other functionalities like:
 ** Assigning global and local variables is now possible. Therefore you can set any string for further processing on the templates. For instance, changing the root package name of the generated files. Documented here.
 ** Enabled having a class with more than one relationship to another class (more than one property of the same type).
-* CobiGen Text merger plugin has been extended and now it is able to merge text blocks. This means, for example, that the generation and merging of AsciiDoc documentation is possible. Documented here.
+* CobiGen Text merger plugin has been extended and now it is able to merge text blocks. This means, for example, that the generation and merging of adoc documentation is possible. Documented here.
 
 === Devcon 
 A new version of Devcon has been released. Fixes and new features include:

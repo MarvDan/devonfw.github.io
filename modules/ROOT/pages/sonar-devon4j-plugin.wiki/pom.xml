@@ -13,7 +13,7 @@
         <packaging>pom</packaging>
         <name>${project.artifactId}</name>
         <description>Documentation for devonfw-sonar-devon4j-plugin</description>
-        <docgen.asciidoc.page>devonfw-sonar-devon4j-plugin-doc</docgen.asciidoc.page>
+        <docgen.adoc.page>devonfw-sonar-devon4j-plugin-doc</docgen.adoc.page>
         <revision>dev</revision>
         <changelist>-SNAPSHOT</changelist>
     </properties>

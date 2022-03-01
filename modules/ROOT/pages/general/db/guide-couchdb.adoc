@@ -3,7 +3,7 @@ toc::[]
 
 ==CouchDB
 
-This section is the place to share experience for those who use https://couchdb.apache.org/[CouchDB] as link:guide-database.asciidoc#nosql[NoSQL database].
+This section is the place to share experience for those who use https://couchdb.apache.org/[CouchDB] as link:guide-database.adoc#nosql[NoSQL database].
 
 == Java
 

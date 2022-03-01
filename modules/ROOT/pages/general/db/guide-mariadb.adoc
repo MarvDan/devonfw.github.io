@@ -3,7 +3,7 @@ toc::[]
 
 ==MariaDB
 
-This section gives guidance and hints for those who use https://mariadb.org/[MariaDB] as link:guide-database.asciidoc#rdbms[RDBMS].
+This section gives guidance and hints for those who use https://mariadb.org/[MariaDB] as link:guide-database.adoc#rdbms[RDBMS].
 
 == Java
 

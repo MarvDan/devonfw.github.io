@@ -30,7 +30,7 @@ All the  guidelines shown and used in this document are a set of rules and conve
 |Templates| Main .net Core template to start developing from scratch
 |License| License agreement
 |README.md| Github main page
-|TERMS_OF_USE.asciidoc| The devon4net terms of use
+|TERMS_OF_USE.adoc| The devon4net terms of use
 |LICENSE| The devon license
 |Other files| Such the code of conduct and contributing guide
 |=======================

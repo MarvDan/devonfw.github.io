@@ -3,7 +3,7 @@
     "description": "Publishes the documents to wiki and triggers devonfw guide and website to update by using the ascidoc files from the documentation/ directory",
     "iconName": "Logo_devonfw",
     "categories": [
-        "asciidoc"
+        "adoc"
     ],
     "filePatterns": [
     

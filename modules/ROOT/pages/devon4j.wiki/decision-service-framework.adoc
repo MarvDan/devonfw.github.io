@@ -15,7 +15,7 @@ For Quarkus applications, devon4j recommends to use https://github.com/resteasy/
 For WebServices we rely on the JAX-WS standard. On our short list we have https://metro.java.net[Metro2] and http://cxf.apache.org[Apache CXF]. Here a collection of facts and considerations:
 
 .Decision for JAX-WS implementation
-[cols="asciidoc",options="header",grid="cols"]
+[cols="adoc",options="header",grid="cols"]
 |=======================
 |        |*Metro2*|*Apache CXF*
 |*Pro*   |

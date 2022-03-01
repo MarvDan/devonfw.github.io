@@ -28,8 +28,8 @@ From existing devonfw template is very similar to devon4j, devon4ng, devon4net a
 To be able to run Jenkins Node job under ProductionLine you need to configure below settings in Jenkins and Gitlab
 
 * Jenkins +
-** Execute the link:./initialize-instance.asciidoc[initialize instance template]
-** If you plan to deploy into OpenShift, you need to execute link:./openshift-configuration.asciidoc[openshift-configuration] template also.
+** Execute the link:./initialize-instance.adoc[initialize instance template]
+** If you plan to deploy into OpenShift, you need to execute link:./openshift-configuration.adoc[openshift-configuration] template also.
 * Gitlab +
 ** Create a project and upload your current code. In order to start a new project in your local machine, you can use the link:https://github.com/devonfw/ide[devonfw-ide]. The project must be a devon4j, devon4ng, devon4net or devon4node project.
 ** Generate User Private Token +
@@ -58,7 +58,7 @@ The GitLab API user needs to have API access and the rights to create a new grou
 
 == How to insert the Template
 
-In order to add the template, you can follow the link:./how-to-add-a-template.asciidoc[guide].
+In order to add the template, you can follow the link:./how-to-add-a-template.adoc[guide].
 
 
 == How to run the Template

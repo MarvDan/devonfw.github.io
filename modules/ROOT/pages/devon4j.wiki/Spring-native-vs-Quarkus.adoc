@@ -45,7 +45,7 @@ Spring Native is composed of the following modules:
 
 * *spring-native-configuration:* configuration hints for Spring classes used by Spring AOT plugins, including various Spring Boot auto-configurations.
 
-* *spring-native-docs:* reference guide, in asciidoc format.
+* *spring-native-docs:* reference guide, in adoc format.
 
 * *spring-native-tools:* tools used for reviewing image building configuration and output.
 

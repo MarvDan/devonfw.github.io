@@ -28,7 +28,7 @@ This repository contains a collection of guides and documents from different _de
 
 ## How this guide is organized
 
-Each submodule contains a master file `name-of-the-wiki.wiki/master-name-of-the-wiki.asciidoc` which includes all the other files in the submodule. All `master-*.asciidoc` files are joined in `devonfw-guide/master.asciidoc`. This way, all documents are linked and can be used to generate a complete file.
+Each submodule contains a master file `name-of-the-wiki.wiki/master-name-of-the-wiki.adoc` which includes all the other files in the submodule. All `master-*.adoc` files are joined in `devonfw-guide/master.adoc`. This way, all documents are linked and can be used to generate a complete file.
 
 ## How to generate a PDF
 

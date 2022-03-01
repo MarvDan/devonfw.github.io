@@ -138,7 +138,7 @@ The new Eclipse devonfw distribution is now based on Eclipse OOMPH, which allows
 == Visual Studio Code or Atom
 The devonfw distro now contains Visual Studio Code alongside Eclipse in order to provide a default, state of the art, environment for web based development.
 
-See: https://devonfw.com/website/pages/docs/cli.asciidoc.html#vscode.asciidoc
+See: https://devonfw.com/website/pages/docs/cli.adoc.html#vscode.adoc
 
 == More I18N options
 The platform now contains more documentation and a conversion utility which makes it easier to share i18n resource files between the different frameworks.

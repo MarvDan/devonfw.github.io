@@ -3,7 +3,7 @@ toc::[]
 
 ==Redis
 
-This section is the place to share experience for those who use https://redis.io/[Redis] as link:guide-database.asciidoc#nosql[NoSQL database].
+This section is the place to share experience for those who use https://redis.io/[Redis] as link:guide-database.adoc#nosql[NoSQL database].
 
 == Java
 

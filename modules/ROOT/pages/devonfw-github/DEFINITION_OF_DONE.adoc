@@ -8,7 +8,7 @@ toc::[]
 A user story is considered Done in the sprint if the below conditions are met:
 
 . Implementation of task following guidelines
-  *  Follow coding convention and standard guidelines to complete your task implementation. Check out link:https://github.com/ssarmokadam/.github/blob/master/CONTRIBUTING.asciidoc[here]
+  *  Follow coding convention and standard guidelines to complete your task implementation. Check out link:https://github.com/ssarmokadam/.github/blob/master/CONTRIBUTING.adoc[here]
   * TODO - Check if automation is possible
 .  Add unit test cases
    You should add unit test cases or integration tests (if required) for your topic. Unit/integration test should pass.
@@ -20,10 +20,10 @@ A user story is considered Done in the sprint if the below conditions are met:
   * Follow documentation guideline and add/modify documentation for your topic.
 . Raise Pull Request for changes done 
   * Check for PR guidelines as detailed in point 6. a. 
-  * If you are contributing in devonfw for first time please take a look at contribution guidelines available at https://github.com/devonfw/.github/blob/master/CONTRIBUTING.asciidoc
+  * If you are contributing in devonfw for first time please take a look at contribution guidelines available at https://github.com/devonfw/.github/blob/master/CONTRIBUTING.adoc
 . Pull Request is reviewed and merged
   * Points to be checked in the review +
-      1. Followed coding convention while implementation. For devon4j you can find details link:https://github.com/devonfw/devon4j/blob/master/documentation/coding-conventions.asciidoc[here] +
+      1. Followed coding convention while implementation. For devon4j you can find details link:https://github.com/devonfw/devon4j/blob/master/documentation/coding-conventions.adoc[here] +
 2. If working on devon4j, add javadocs wherever necessary +
       3. Added unit tests +
       4. Build is successful +

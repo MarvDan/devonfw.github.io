@@ -1,5 +1,5 @@
 ==Coding Conventions
 
-include::coding-conventions.asciidoc[leveloffset=1]
+include::coding-conventions.adoc[leveloffset=1]
 
 <<<<

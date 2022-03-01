@@ -1,6 +1,6 @@
 # Documentation
 
-We are using [devonfw/docgen](https://github.com/devonfw/docgen) to build our documentation from asciidoc.
+We are using [devonfw/docgen](https://github.com/devonfw/docgen) to build our documentation from adoc.
 ## Usage
 To generate everything we should run:
 

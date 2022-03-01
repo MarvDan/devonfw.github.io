@@ -3,7 +3,7 @@ toc::[]
 
 ==GigaSpaces XAP (Smart Cache)
 
-This section is the place to share experience for those who use https://www.gigaspaces.com/products/xap/[GigaSpaces XAP] as link:guide-database.asciidoc#nosql[NoSQL database].
+This section is the place to share experience for those who use https://www.gigaspaces.com/products/xap/[GigaSpaces XAP] as link:guide-database.adoc#nosql[NoSQL database].
 
 == Java
 

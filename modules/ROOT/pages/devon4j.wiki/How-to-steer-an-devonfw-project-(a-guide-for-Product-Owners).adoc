@@ -22,11 +22,11 @@ Pro Git is an excellent and free online book https://git-scm.com/book/en/v2[http
 
 *License*. Every devonfw project MUST be licensed under the Apache License version 2. For the short explanation of what this entails see: https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)[https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)] and for a more elaborate description see: https://www.whitesourcesoftware.com/whitesource-blog/top-10-apache-license-questions-answered/[https://www.whitesourcesoftware.com/whitesource-blog/top-10-apache-license-questions-answered/]
 
-*Documentation*: every devonfw project MUST use AsciiDoc as text document format for its own documentation. This is done in order to unify on a common documentation tool chain. See: http://asciidoc.org/[http://asciidoc.org/]
+*Documentation*: every devonfw project MUST use adoc as text document format for its own documentation. This is done in order to unify on a common documentation tool chain. See: http://adoc.org/[http://adoc.org/]
 
 Every project MUST have a README file (see down) OR use the Wiki for it´s documentation.
 
-Every project MUST have a CONTRIBUTING file and MUST have a Code of Conduct (see down). We maintain the “official” Covenant Code of Conduct that must be present in every devonfw or devonfw project at the root folder as CODE_OF_CONDUCT.asciidoc or CODE_OF_CONDUCT.md here:
+Every project MUST have a CONTRIBUTING file and MUST have a Code of Conduct (see down). We maintain the “official” Covenant Code of Conduct that must be present in every devonfw or devonfw project at the root folder as CODE_OF_CONDUCT.adoc or CODE_OF_CONDUCT.md here:
 
 See: https://github.com/devonfw/devon/wiki/Contributing-Code-of-Conduct[https://github.com/devonfw/devon/wiki/Contributing-Code-of-Conduct]
 

@@ -5,7 +5,7 @@ toc::[]
 This article helps to create a sample application using CobiGen.
 
 == Prerequisites
-Download and install devonfw IDE https://devonfw.com/website/pages/docs/devonfw-ide-introduction.asciidoc.html#setup.asciidoc[here],
+Download and install devonfw IDE https://devonfw.com/website/pages/docs/devonfw-ide-introduction.adoc.html#setup.adoc[here],
 
 == Steps to create a Sample Project using CobiGen
 The `HOW_TO` is divided in 2 parts:

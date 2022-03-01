@@ -81,4 +81,4 @@ include::future-deployment[leveloffset=3]
 
 include::traefik-reverse-proxy[leveloffset=3]
 
-include::nkaas.asciidoc[leveloffset=2]
+include::nkaas.adoc[leveloffset=2]

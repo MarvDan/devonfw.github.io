@@ -53,13 +53,13 @@
 
 == Options
 * link:guide-jee[JEE]
-* https://github.com/devonfw/devonfw-guide/blob/master/general/db/guide-database.asciidoc[Databases]
+* https://github.com/devonfw/devonfw-guide/blob/master/general/db/guide-database.adoc[Databases]
 
 === Coding 
 * link:coding-conventions[Coding Conventions]
 * link:guide-structure[Project Structure]
 * link:coding-tools[Development Tools]
-* https://github.com/devonfw/.github/blob/master/CONTRIBUTING.asciidoc#contributing[Contributing to devonfw]
+* https://github.com/devonfw/.github/blob/master/CONTRIBUTING.adoc#contributing[Contributing to devonfw]
 
 === Tutorials
 * link:tutorial-newapp[Start a new application]

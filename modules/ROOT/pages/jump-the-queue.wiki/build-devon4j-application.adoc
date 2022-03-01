@@ -14,7 +14,7 @@ endif::[]
 In this step we are going to create our work environment and establish the first part of our back-end. Like most *devonfw* projects, our back-end will be build in Java and thus utilize the tools, libraries and frameworks provided by the https://github.com/devonfw/devon4j[devon4j] stack.
 
 == Setting up a devonfw Work Environment
-Follow the setup instructions listed https://github.com/devonfw/devon-ide/blob/master/documentation/setup.asciidoc[here]. +
+Follow the setup instructions listed https://github.com/devonfw/devon-ide/blob/master/documentation/setup.adoc[here]. +
 After you have done so, your working directory should look like this:
 
 image::images/devon4j/3.BuildYourOwn/after_setup.png[After Setup, 250]
@@ -52,7 +52,7 @@ C:\...\workspaces\main\jumpthequeue\java>
 
 [NOTE]
 ====
-We are using the `java` https://github.com/devonfw/devon-ide/blob/master/documentation/java.asciidoc[commandlet] of the devon IDE. After the command `create` we are passing the arguments `package`, `groupId` and `version` in this case.
+We are using the `java` https://github.com/devonfw/devon-ide/blob/master/documentation/java.adoc[commandlet] of the devon IDE. After the command `create` we are passing the arguments `package`, `groupId` and `version` in this case.
 ====
 [WARNING]
 ====

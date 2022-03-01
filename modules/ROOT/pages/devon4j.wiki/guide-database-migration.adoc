@@ -3,7 +3,7 @@ toc::[]
 
 ==Database Migration
 
-When you have a schema-based https://github.com/devonfw/devonfw-guide/blob/master/general/db/guide-database.asciidoc[database],
+When you have a schema-based https://github.com/devonfw/devonfw-guide/blob/master/general/db/guide-database.adoc[database],
 you need a solution for schema versioning and migration for your database.
 A specific release of your app requires a corresponding version of the schema in the database to run.
 As you want simple and continuous deployment you should automate the schema versiong and database migration.

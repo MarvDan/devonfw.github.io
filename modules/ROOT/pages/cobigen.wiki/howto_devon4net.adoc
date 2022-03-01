@@ -17,7 +17,7 @@ In order to make it work we are using https://github.com/devonfw/cobigen[CobiGen
 
 ==== [navy]#devonfw-IDE#
 
-First, we will install the devonfw-IDE. It is a tool that will setup your IDE within minutes. Please follow the install guide https://github.com/devonfw/ide/blob/master/documentation/setup.asciidoc[here].
+First, we will install the devonfw-IDE. It is a tool that will setup your IDE within minutes. Please follow the install guide https://github.com/devonfw/ide/blob/master/documentation/setup.adoc[here].
 
 ==== [navy]#devon4net Templates#
 

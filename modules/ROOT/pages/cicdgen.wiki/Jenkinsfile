@@ -47,20 +47,20 @@ pipeline {
             }
         }
 
-        stage('Remove .asciidoc from links'){
+        stage('Remove .adoc from links'){
             steps {
                 script {
                     dir("${REPO_NAME}-wiki"){
-                        final foundFiles = findFiles(glob: '**/*.asciidoc')
+                        final foundFiles = findFiles(glob: '**/*.adoc')
                         for (int i = 0; i < foundFiles.size(); i++) {
                             def filename = readFile encoding: 'utf8', file: foundFiles[i].toString()
-                            filename = filename.replaceAll("(link|include)(:+)(?!http)([A-z\\/\\_\\-\\.]+)\\.(asciidoc|adoc)", '$1$2$3')
+                            filename = filename.replaceAll("(link|include)(:+)(?!http)([A-z\\/\\_\\-\\.]+)\\.(adoc|adoc)", '$1$2$3')
                             writeFile encoding: 'utf8', file: foundFiles[i].toString(), text: filename
                         }
                         final foundFiles2 = findFiles(glob: '**/*.adoc')
                         for (int i = 0; i < foundFiles2.size(); i++) {
                             def filename = readFile encoding: 'utf8', file: foundFiles2[i].toString()
-                            filename = filename.replaceAll("(link|include)(:+)(?!http)([A-z\\/\\_\\-\\.]+)\\.(asciidoc|adoc)", '$1$2$3')
+                            filename = filename.replaceAll("(link|include)(:+)(?!http)([A-z\\/\\_\\-\\.]+)\\.(adoc|adoc)", '$1$2$3')
                             writeFile encoding: 'utf8', file: foundFiles2[i].toString(), text: filename
                         }
                     }

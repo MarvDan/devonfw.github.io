@@ -16,7 +16,7 @@
     <description>The devon4quarkus documentation that gives detailed guidance for quarkus stack of devonfw.</description>
 
     <properties>
-        <docgen.asciidoc.page>devon4quarkus</docgen.asciidoc.page>
+        <docgen.adoc.page>devon4quarkus</docgen.adoc.page>
     </properties>
 
     <!-- run "mvn package" and get the PDF result in target/generated-docs/*.pdf -->

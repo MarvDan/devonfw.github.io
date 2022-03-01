@@ -60,7 +60,7 @@
                     </versionRange>
                     <goals>
                       <goal>
-                        process-asciidoc
+                        process-adoc
                       </goal>
                     </goals>
                   </pluginExecutionFilter>
@@ -139,14 +139,14 @@
             <id>output-html</id>
             <phase>generate-resources</phase>
             <goals>
-              <goal>process-asciidoc</goal>
+              <goal>process-adoc</goal>
             </goals>
           </execution>
           <execution>
             <id>output-pdf</id>
             <phase>generate-resources</phase>
             <goals>
-              <goal>process-asciidoc</goal>
+              <goal>process-adoc</goal>
             </goals>
             <configuration>
               <outputFile>solicitor_userguide.pdf</outputFile>

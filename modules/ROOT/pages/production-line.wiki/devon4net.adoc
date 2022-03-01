@@ -33,8 +33,8 @@ This includes CICD files for a devonfw technology stack with configuration for:
 To be able to run Jenkins Node job under ProductionLine you need to configure below settings in Jenkins and Gitlab
 
 * Jenkins +
-** Execute the link:./initialize-instance.asciidoc[initialize instance template]
-** If you plan to deploy into OpenShift, you need to execute link:./openshift-configuration.asciidoc[openshift-configuration] template also.
+** Execute the link:./initialize-instance.adoc[initialize instance template]
+** If you plan to deploy into OpenShift, you need to execute link:./openshift-configuration.adoc[openshift-configuration] template also.
 * Gitlab +
 ** Generate User Private Token +
 Go to your Profile in Gitlab +
@@ -62,7 +62,7 @@ The GitLab API user needs to have API access and the rights to create a new grou
 
 == How to insert the Template
 
-In order to add the template, you can follow the link:./how-to-add-a-template.asciidoc[guide].
+In order to add the template, you can follow the link:./how-to-add-a-template.adoc[guide].
 
 == How to run the Template
 

@@ -15,23 +15,23 @@ endif::[]
 
 
 [preface]
-include::home.asciidoc[leveloffset=0]
+include::home.adoc[leveloffset=0]
 
 :toc:
 
-include::dsf-how-to-use.asciidoc[leveloffset=1]
+include::dsf-how-to-use.adoc[leveloffset=1]
 
 == Provisioning environments
-include::dsf-provisioning-production-line.asciidoc[leveloffset=2]
-include::dsf-provisioning-dsf4docker.asciidoc[leveloffset=2]
+include::dsf-provisioning-production-line.adoc[leveloffset=2]
+include::dsf-provisioning-dsf4docker.adoc[leveloffset=2]
 
 == Configuration and services integration
-include::dsf-configure-nexus.asciidoc[leveloffset=2]
-include::dsf-configure-sonarqube.asciidoc[leveloffset=2]
+include::dsf-configure-nexus.adoc[leveloffset=2]
+include::dsf-configure-sonarqube.adoc[leveloffset=2]
 
 == Create project
 === Create and integrate git repository
-include::dsf-configure-gitlab.asciidoc[leveloffset=2].
+include::dsf-configure-gitlab.adoc[leveloffset=2].
 
 === start new devonfw project
 
@@ -45,28 +45,28 @@ It is time to create your devonfw project:
 ==== Manual configuration
 
 ===== Jenkinsfile
-include::dsf-configure-jenkins.asciidoc[leveloffset=2].
+include::dsf-configure-jenkins.adoc[leveloffset=2].
 
 == Deployment
 
-include::dsf-deployment-dsf4openshift.asciidoc[leveloffset=2].
+include::dsf-deployment-dsf4openshift.adoc[leveloffset=2].
 
 == Annexes
 === Custom Services
 
 ==== BitBucket
-include::dsf-openshift-services-bitbucket-basic-server-setup.asciidoc[leveloffset=3]
-include::dsf-openshift-services-bitbucket-extra-server-configuration.asciidoc[leveloffset=3]
-include::dsf-mirabaud-cicd-environment-setup.asciidoc[leveloffset=2]
-include::dsf-mirabaud-jenkins-gitLab-integration.asciidoc[leveloffset=3]
-include::dsf-mirabaud-jenkins-nexus-integration.asciidoc[leveloffset=3]
-include::dsf-mirabaud-jenkins-sonarqube-integration.asciidoc[leveloffset=3]
-include::dsf-okd.asciidoc[leveloffset=2]
-include::dsf-okd-how-to-install.asciidoc[leveloffset=3]
-include::dsf-okd-initial-setup.asciidoc[leveloffset=3]
-include::dsf-okd-s2i.asciidoc[leveloffset=3]
-include::dsf-okd-templates.asciidoc[leveloffset=3]
-include::dsf-okd-customize.asciidoc[leveloffset=3]
-include::dsf-okd-customize-icons.asciidoc[leveloffset=5]
-include::dsf-okd-customize-catalog.asciidoc[leveloffset=5]
-include::dsf-okd-customize-v3-7.asciidoc[leveloffset=5]
+include::dsf-openshift-services-bitbucket-basic-server-setup.adoc[leveloffset=3]
+include::dsf-openshift-services-bitbucket-extra-server-configuration.adoc[leveloffset=3]
+include::dsf-mirabaud-cicd-environment-setup.adoc[leveloffset=2]
+include::dsf-mirabaud-jenkins-gitLab-integration.adoc[leveloffset=3]
+include::dsf-mirabaud-jenkins-nexus-integration.adoc[leveloffset=3]
+include::dsf-mirabaud-jenkins-sonarqube-integration.adoc[leveloffset=3]
+include::dsf-okd.adoc[leveloffset=2]
+include::dsf-okd-how-to-install.adoc[leveloffset=3]
+include::dsf-okd-initial-setup.adoc[leveloffset=3]
+include::dsf-okd-s2i.adoc[leveloffset=3]
+include::dsf-okd-templates.adoc[leveloffset=3]
+include::dsf-okd-customize.adoc[leveloffset=3]
+include::dsf-okd-customize-icons.adoc[leveloffset=5]
+include::dsf-okd-customize-catalog.adoc[leveloffset=5]
+include::dsf-okd-customize-v3-7.adoc[leveloffset=5]

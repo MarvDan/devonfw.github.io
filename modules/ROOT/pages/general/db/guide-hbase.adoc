@@ -3,7 +3,7 @@ toc::[]
 
 ==HBase
 
-This section is the place to share experience for those who use https://hbase.apache.org/[HBase] as link:guide-database.asciidoc#nosql[NoSQL database].
+This section is the place to share experience for those who use https://hbase.apache.org/[HBase] as link:guide-database.adoc#nosql[NoSQL database].
 
 == Java
 

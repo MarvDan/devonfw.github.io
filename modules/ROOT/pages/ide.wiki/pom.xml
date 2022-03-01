@@ -15,7 +15,7 @@
   <description>Documentation for devonfw-ide (Integrated Development Environment)</description>
 
   <properties>
-    <docgen.asciidoc.page>devonfw-ide-doc</docgen.asciidoc.page>
+    <docgen.adoc.page>devonfw-ide-doc</docgen.adoc.page>
     <revision>dev-SNAPSHOT</revision>
   </properties>
 

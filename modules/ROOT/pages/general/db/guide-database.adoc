@@ -16,16 +16,16 @@ However, in case you have the need for big data, graph-data, BLOB focus, or sche
 In devonfw we are not biased for a particular RDBMS so you have the freedom of choice.
 Here are the most common options:
 
-* link:guide-hana.asciidoc[SAP Hana] (high performance in-memory, many advanced features)
-* link:guide-oracle.asciidoc[Oracle] (most established, well featured for enterprise)
-* link:guide-postgresql.asciidoc[PostgreSQL] (great open-source RDBMS)
-* link:guide-mariadb.asciidoc[MariaDB] (true OSS successor of MySQL)
-* link:guide-mysqlserver.asciidoc[MS SQL Server] (best choice for Microsoft and Windows dominated IT landscapes)
+* link:guide-hana.adoc[SAP Hana] (high performance in-memory, many advanced features)
+* link:guide-oracle.adoc[Oracle] (most established, well featured for enterprise)
+* link:guide-postgresql.adoc[PostgreSQL] (great open-source RDBMS)
+* link:guide-mariadb.adoc[MariaDB] (true OSS successor of MySQL)
+* link:guide-mysqlserver.adoc[MS SQL Server] (best choice for Microsoft and Windows dominated IT landscapes)
 
 Please click on any of the above choices and go to the according guide to find specific detials such as client/driver.
 
 == NoSQL
-While not (yet) officially supported and recommendet there are also interesting NoSQL (Not Only SQL) databases that could be an interesting alternative. Please be aware that you will typically not be able to use link:guide-jpa.asciidoc[JPA] (and hibernate). Further before choosing a NoSQL database you should check the following aspects:
+While not (yet) officially supported and recommendet there are also interesting NoSQL (Not Only SQL) databases that could be an interesting alternative. Please be aware that you will typically not be able to use link:guide-jpa.adoc[JPA] (and hibernate). Further before choosing a NoSQL database you should check the following aspects:
 
 * Is the database of choice reliable and mature enough for your project?
 * Can the operators of your product support the database of choice properly (provisioning, administration, backup, scaling & clustering, monitoring, etc.)?
@@ -45,16 +45,16 @@ Therefore, you have to carefully design your data-model upfront with the all the
 
 The most prominent options are:
 
-* link:guide-cassandra.asciidoc[Cassandra] (high-performance, schema-based DB)
-* link:guide-hbase.asciidoc[HBase] (distributed, big-data Hadoop database)
+* link:guide-cassandra.adoc[Cassandra] (high-performance, schema-based DB)
+* link:guide-hbase.adoc[HBase] (distributed, big-data Hadoop database)
 
 ==== Key-Value DB
 As indicated by the name, a key-value database stores objects as key/value pairs similar to `Properties` or `Map` in Java.
 
 The most prominent options are:
 
-* link:guide-redis.asciidoc[Redis] (in-memory key/value store, especially used as cache or message broker)
-* link:guide-aerospike.asciidoc[aerospike]
+* link:guide-redis.adoc[Redis] (in-memory key/value store, especially used as cache or message broker)
+* link:guide-aerospike.adoc[aerospike]
 
 ==== Document DB
 A document database is similar to a key-value database, but it stores objects in standard structured formats such as XML, JSON, or BSON.
@@ -62,9 +62,9 @@ Therefore not only flat key/value pairs but even trees of hierarchical data can 
 
 The most prominent options are:
 
-* link:guide-mongodb.asciidoc[MongoDB]
-* link:guide-couchdb.asciidoc[CouchDB]
-* link:guide-ravendb.asciidoc[RavenDB]
+* link:guide-mongodb.adoc[MongoDB]
+* link:guide-couchdb.adoc[CouchDB]
+* link:guide-ravendb.adoc[RavenDB]
 
 ==== Graph DB
 If the connections (links/relations) between your data is key and an xref:rdbms[RDBMS] is just not flexible or fast enough for your plans, then a graph database can help you.
@@ -73,8 +73,8 @@ For queries there are even specific standards and languages like https://tinkerp
 
 The most prominent options are:
 
-* link:guide-neo4j.asciidoc[neo4j]
-* link:guide-blazegraph.asciidoc[blazegraph]
+* link:guide-neo4j.adoc[neo4j]
+* link:guide-blazegraph.adoc[blazegraph]
 
 ==== Hybrid DB
 In addition to the above types there are some NoSQL databases that are hybrid and combine the features and aspects of these types.
@@ -86,4 +86,4 @@ If you have collected very positive, profound and productive experience with suc
 
 The most prominent options are:
 
-* link:guide-orientdb.asciidoc[OrientDB] (object-oriented, hyper-flexible, column- and graph-based)
+* link:guide-orientdb.adoc[OrientDB] (object-oriented, hyper-flexible, column- and graph-based)

@@ -6,7 +6,7 @@ This article helps to create a sample application using cobigen.
 
 == Prerequisites
 
-Download and install devonnfw IDE https://devonfw.com/website/pages/docs/devonfw-ide-introduction.asciidoc.html#setup.asciidoc[here],
+Download and install devonnfw IDE https://devonfw.com/website/pages/docs/devonfw-ide-introduction.adoc.html#setup.adoc[here],
 
 == Steps to create a Sample Project using Cobigen
 

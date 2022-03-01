@@ -3,7 +3,7 @@ toc::[]
 
 ==PostgreSQL
 
-This section gives guidance and hints for those who use https://www.postgresql.org/[PostgreSQL] as link:guide-database.asciidoc#rdbms[RDBMS].
+This section gives guidance and hints for those who use https://www.postgresql.org/[PostgreSQL] as link:guide-database.adoc#rdbms[RDBMS].
 
 == Java
 

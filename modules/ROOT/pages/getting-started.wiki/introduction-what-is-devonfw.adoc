@@ -25,7 +25,7 @@ Welcome to the *devonfw* platform. This is a product of the CSD (Custom Solution
 
 devonfw is a development platform aiming for the standardization of processes and the boosting of productivity. It provides an architecture blueprint for server and client applications, alongside a set of tools to deliver a fully functional, _out-of-the-box_ development environment.
 
-TIP: The devonfw _name_ is a registered trademark of image:images/introduction/Capgemini_Logo_Small.png[,width="80",Capgemini,link="https://www.capgemini.com/"], but the software and documentation included in _devonfw_ are fully open source. Please refer to our https://github.com/devonfw/devonfw-guide/blob/master/general/oss-compliance.asciidoc[OSS Compliance] section for more information.
+TIP: The devonfw _name_ is a registered trademark of image:images/introduction/Capgemini_Logo_Small.png[,width="80",Capgemini,link="https://www.capgemini.com/"], but the software and documentation included in _devonfw_ are fully open source. Please refer to our https://github.com/devonfw/devonfw-guide/blob/master/general/oss-compliance.adoc[OSS Compliance] section for more information.
 
 == Building Blocks of the Platform
 

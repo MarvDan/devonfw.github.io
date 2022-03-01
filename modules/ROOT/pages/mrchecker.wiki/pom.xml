@@ -15,6 +15,6 @@
   <name>MrCheckerTestFramework - documentation</name>
 
   <properties>
-    <docgen.asciidoc.page>master-mrchecker</docgen.asciidoc.page>
+    <docgen.adoc.page>master-mrchecker</docgen.adoc.page>
   </properties>
 </project>

@@ -6,7 +6,7 @@ toc::[]
 
 == General Installation Process
 
-1. First of all you will have to https://devonfw.com/website/pages/docs/setup.asciidoc.html[setup the devonfw IDE]. Once the download is complete and you started the installation process via the setup command (or setup.bat), you will be prompted for a settings URL. You can just press enter as no special settings are used. Following that, you will simply have to wait and follow any instructions given.
+1. First of all you will have to https://devonfw.com/website/pages/docs/setup.adoc.html[setup the devonfw IDE]. Once the download is complete and you started the installation process via the setup command (or setup.bat), you will be prompted for a settings URL. You can just press enter as no special settings are used. Following that, you will simply have to wait and follow any instructions given.
 +
 After you have executed the steps mentioned above, your install location should look like the picture below.
 +
@@ -67,4 +67,4 @@ If you want to contribute to CobiGen you should fork CobiGen and change the orig
 You can check your remote settings by entering `workspaces/main/cobigen` and run the command: git remote -v.
 Now let us change the URL to your Fork: `git remote set-url origin <Fork url>`
 You can use the CobiGen repository as another remote, to get the latest changes. check out the following tutorial to do so.
-https://devonfw.com/website/pages/docs/CONTRIBUTING.asciidoc.html#contributing.asciidoc_forking
+https://devonfw.com/website/pages/docs/CONTRIBUTING.adoc.html#contributing.asciidoc_forking

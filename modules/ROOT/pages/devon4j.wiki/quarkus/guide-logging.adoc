@@ -72,7 +72,7 @@ quarkus.log.category."org.hibernate".level=DEBUG
 ```
 This would set the default log level in your application to `INFO` and the Hibernate log level to `DEBUG`.
 
-To understand when to use which log level, you can take a look at the https://github.com/devonfw/devon4j/blob/master/documentation/guide-logging.asciidoc#how-to-log[devon4j logging guide].
+To understand when to use which log level, you can take a look at the https://github.com/devonfw/devon4j/blob/master/documentation/guide-logging.adoc#how-to-log[devon4j logging guide].
 
 ==== Format
 To configure the output format of the log messages, set the property `quarkus.log.console.format`. Information on the supported options can be found https://quarkus.io/guides/logging#logging-format[here].

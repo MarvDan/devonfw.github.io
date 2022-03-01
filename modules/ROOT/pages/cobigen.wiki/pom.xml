@@ -14,6 +14,6 @@
   </parent>
 
   <properties>
-    <docgen.asciidoc.page>master-cobigen</docgen.asciidoc.page>
+    <docgen.adoc.page>master-cobigen</docgen.adoc.page>
   </properties>
 </project>

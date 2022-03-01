@@ -2,7 +2,7 @@ name: Sync Docs
 on:
   push:
     paths:
-      - '**.asciidoc'
+      - '**.adoc'
       - '**.md'    
       - '**.adoc'
     branches:

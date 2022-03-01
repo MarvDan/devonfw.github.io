@@ -15,4 +15,4 @@ The arguments (`devon cobigen «args»`) are explained by the following table:
 |`«args»`        |run CobiGen with the given arguments (`«args»`)
 |=======================
 
-Please read the actual documentation of https://github.com/devonfw/cobigen/blob/master/documentation/howto_Cobigen-CLI-generation.asciidoc#cobigen-command-line-interface-generation[CobiGen CLI] for further details.
+Please read the actual documentation of https://github.com/devonfw/cobigen/blob/master/documentation/howto_Cobigen-CLI-generation.adoc#cobigen-command-line-interface-generation[CobiGen CLI] for further details.

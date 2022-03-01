@@ -89,8 +89,8 @@ include::cookbook-abstract-class-store[leveloffset=2]
 
 include::guide-add-electron[leveloffset=2]
 
-include::guide-angular-mock-service.asciidoc[leveloffset=2]
+include::guide-angular-mock-service.adoc[leveloffset=2]
 
-include::guide-cypress.asciidoc[leveloffset=2]
+include::guide-cypress.adoc[leveloffset=2]
 
-include::guide-eslint.asciidoc[leveloffset=2]
+include::guide-eslint.adoc[leveloffset=2]

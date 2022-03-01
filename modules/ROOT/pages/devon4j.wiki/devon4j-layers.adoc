@@ -1,23 +1,23 @@
 ==Layers
 
-include::guide-client-layer.asciidoc[leveloffset=2]
+include::guide-client-layer.adoc[leveloffset=2]
 
 <<<<
 
-include::guide-service-layer.asciidoc[leveloffset=2]
+include::guide-service-layer.adoc[leveloffset=2]
 
 <<<<
 
-include::guide-logic-layer.asciidoc[leveloffset=2]
+include::guide-logic-layer.adoc[leveloffset=2]
 
-include::guide-component-facade.asciidoc[leveloffset=3]
+include::guide-component-facade.adoc[leveloffset=3]
 
-include::guide-usecase.asciidoc[leveloffset=3]
-
-<<<<
-
-include::guide-dataaccess-layer.asciidoc[leveloffset=2]
+include::guide-usecase.adoc[leveloffset=3]
 
 <<<<
 
-include::guide-batch-layer.asciidoc[leveloffset=2]
+include::guide-dataaccess-layer.adoc[leveloffset=2]
+
+<<<<
+
+include::guide-batch-layer.adoc[leveloffset=2]

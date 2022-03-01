@@ -1,77 +1,77 @@
 ==Usage
 
-include::usage.asciidoc[leveloffset=2]
+include::usage.adoc[leveloffset=2]
 
 <<<<
 
-include::configuration.asciidoc[leveloffset=2]
+include::configuration.adoc[leveloffset=2]
 
 <<<<
 
-include::variables.asciidoc[leveloffset=2]
+include::variables.adoc[leveloffset=2]
 
 <<<<
 
-include::cli.asciidoc[leveloffset=2]
+include::cli.adoc[leveloffset=2]
 
-include::build.asciidoc[leveloffset=3]
+include::build.adoc[leveloffset=3]
 
-include::docker.asciidoc[leveloffset=3]
+include::docker.adoc[leveloffset=3]
 
-include::eclipse.asciidoc[leveloffset=3]
+include::eclipse.adoc[leveloffset=3]
 
-include::gradle.asciidoc[leveloffset=3]
+include::gradle.adoc[leveloffset=3]
 
-include::help.asciidoc[leveloffset=3]
+include::help.adoc[leveloffset=3]
 
-include::ide.asciidoc[leveloffset=3]
+include::ide.adoc[leveloffset=3]
 
-include::intellij.asciidoc[leveloffset=3]
+include::intellij.adoc[leveloffset=3]
 
-include::ionic.asciidoc[leveloffset=3]
+include::ionic.adoc[leveloffset=3]
 
-include::jasypt.asciidoc[leveloffset=3]
+include::jasypt.adoc[leveloffset=3]
 
-include::java.asciidoc[leveloffset=3]
+include::java.adoc[leveloffset=3]
 
-include::jenkins.asciidoc[leveloffset=3]
+include::jenkins.adoc[leveloffset=3]
 
-include::kubectl.asciidoc[leveloffset=3]
+include::kubectl.adoc[leveloffset=3]
 
-include::mvn.asciidoc[leveloffset=3]
+include::mvn.adoc[leveloffset=3]
 
-include::ng.asciidoc[leveloffset=3]
+include::ng.adoc[leveloffset=3]
 
-include::node.asciidoc[leveloffset=3]
+include::node.adoc[leveloffset=3]
 
-include::npm.asciidoc[leveloffset=3]
+include::npm.adoc[leveloffset=3]
 
-include::release.asciidoc[leveloffset=3]
+include::release.adoc[leveloffset=3]
 
-include::sonar.asciidoc[leveloffset=3]
+include::sonar.adoc[leveloffset=3]
 
-include::vscode.asciidoc[leveloffset=3]
+include::vscode.adoc[leveloffset=3]
 
-include::yarn.asciidoc[leveloffset=3]
+include::yarn.adoc[leveloffset=3]
 
 <<<<
 
-include::structure.asciidoc[leveloffset=2]
+include::structure.adoc[leveloffset=2]
 
-include::conf.asciidoc[leveloffset=3]
+include::conf.adoc[leveloffset=3]
 
-include::log.asciidoc[leveloffset=3]
+include::log.adoc[leveloffset=3]
 
-include::scripts.asciidoc[leveloffset=3]
+include::scripts.adoc[leveloffset=3]
 
-include::settings.asciidoc[leveloffset=3]
+include::settings.adoc[leveloffset=3]
 
-include::software.asciidoc[leveloffset=3]
+include::software.adoc[leveloffset=3]
 
-include::system.asciidoc[leveloffset=3]
+include::system.adoc[leveloffset=3]
 
-include::updates.asciidoc[leveloffset=3]
+include::updates.adoc[leveloffset=3]
 
-include::workspaces.asciidoc[leveloffset=3]
+include::workspaces.adoc[leveloffset=3]
 
-include::projects.asciidoc[leveloffset=3]
+include::projects.adoc[leveloffset=3]
