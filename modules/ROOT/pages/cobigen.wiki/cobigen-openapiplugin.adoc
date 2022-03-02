@@ -40,7 +40,7 @@ Additionally, the java plugin provides the ability to match packages (`container
 
 * type 'element'
 
-The container matcher matches elements as Java Objects, in this case will be always an `OpenAPIFile` object. (See link:cobigen-core_configuration#containermatcher-node[`containerMatcher` semantics] to get more information about `containerMatchers` itself.)
+The container matcher matches elements as Java Objects, in this case will be always an `OpenAPIFile` object. (See link:cobigen-core_configuration#containermatcher-node.adoc[`containerMatcher` semantics] to get more information about `containerMatchers` itself.)
 
 [[openapi-variable-assignment]]
 === Variable Assignment types

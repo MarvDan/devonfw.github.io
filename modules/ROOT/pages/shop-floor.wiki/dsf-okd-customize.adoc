@@ -43,10 +43,10 @@ webconsole-config.yaml: |
 
 ==  More information
 
-* link:dsf-okd-customize-icons[Customize icons] for Openshift.
-* link:dsf-okd-customize-catalog[Customize catalog] for Openshift.
+* link:dsf-okd-customize-icons.adoc[Customize icons] for Openshift.
+* link:dsf-okd-customize-catalog.adoc[Customize catalog] for Openshift.
 * https://docs.openshift.com/container-platform/latest/install_config/web_console_customization.html#loading-custom-scripts-and-stylesheets[Openshift docs] about customization.
 
 ==  Old versions
 
-* Customize Openshift for link:dsf-okd-customize-v3-7[version 3.7].
+* Customize Openshift for link:dsf-okd-customize-v3-7.adoc[version 3.7].

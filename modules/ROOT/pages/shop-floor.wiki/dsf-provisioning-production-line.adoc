@@ -19,4 +19,4 @@ You can order your Production Line environment instance following the https://km
 
 ---
 
-link:dsf-how-to-use#Step-1---Configuration-and-services-integration[Back].
+link:dsf-how-to-use#Step-1---Configuration-and-services-integration.adoc[Back].

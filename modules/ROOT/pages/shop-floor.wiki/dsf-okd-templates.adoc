@@ -4,7 +4,7 @@ This are the devonfw templates to build devonfw apps for Openshift using the s2i
 
 - Inside the `example-mythaistar` we have an example to deploy My Thai Star application using devonfw templates.
 
-All this information is used as a part of the link:dsf-okd-initial-setup[initial setup] for openshift.
+All this information is used as a part of the link:dsf-okd-initial-setup.adoc[initial setup] for openshift.
 
 ==  How to use
 
@@ -14,13 +14,13 @@ All this information is used as a part of the link:dsf-okd-initial-setup[initial
 
 Remember that this templates need a build image from s2i-devonfw-angular and s2i-devonfw-java. More information:
 
-* link:dsf-okd-s2i#deploy-the-source-2-image-builder-images[Deploy the Source-2-Image builder images].
+* link:dsf-okd-s2i#deploy-the-source-2-image-builder-images.adoc[Deploy the Source-2-Image builder images].
 
 == ==  Customize Openshift
 
 Remember that this templates also have custom icons, and to use it, we must modify the master-config.yml inside openshift. More information:
 
-* link:dsf-okd-customize[Customize Openshift].
+* link:dsf-okd-customize.adoc[Customize Openshift].
 
 == Deploy devonfw templates
 

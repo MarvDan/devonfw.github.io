@@ -81,11 +81,11 @@ We currently provide a generic deployed version of the templates on the devonfw-
 
 Using the following configuration you will be able to customize your generation as follows:
 
-* `<destinationRoot>` specifies the root directory the relative `destinationPath` of link:cobigen-core_configuration#Templates-configuration[CobiGen templates configuration] should depend on. _Default ${basedir}_
-* `<inputPackage>` declares a package name to be used as input for batch generation. This refers directly to the CobiGen Java Plug-in link:cobigen-javaplugin#`ContainerMatcher`-types[container matchers of type package] configuration.
+* `<destinationRoot>` specifies the root directory the relative `destinationPath` of link:cobigen-core_configuration#Templates-configuration.adoc[CobiGen templates configuration] should depend on. _Default ${basedir}_
+* `<inputPackage>` declares a package name to be used as input for batch generation. This refers directly to the CobiGen Java Plug-in link:cobigen-javaplugin#`ContainerMatcher`-types.adoc[container matchers of type package] configuration.
 * `<inputFile>` declares a file to be used as input. The CobiGen maven plug-in will try to parse this file to get an appropriate input to be interpreted by any CobiGen plug-in.
-* `<increment>` specifies an link:cobigen-core_configuration#increment-node[increment] ID to be generated. You can specify one single increment with content `ALL` to generate all increments matching the input(s).
-* `<template>` specifies a link:cobigen-core_configuration#increment-node[template] ID to be generated. You can specify one single template with content `ALL` to generate all templates matching the input(s).
+* `<increment>` specifies an link:cobigen-core_configuration#increment-node.adoc[increment] ID to be generated. You can specify one single increment with content `ALL` to generate all increments matching the input(s).
+* `<template>` specifies a link:cobigen-core_configuration#increment-node.adoc[template] ID to be generated. You can specify one single template with content `ALL` to generate all templates matching the input(s).
 * `<forceOverride>` specifies an overriding behavior, which enables non-mergeable resources to be completely rewritten by generated contents. For mergeable resources this flag indicates, that conflicting fragments during merge will be replaced by generated content. _Default: false_ 
 * `<failOnNothingGenerated>` specifies whether the build should fail if the execution does not generate anything.
 
@@ -119,7 +119,7 @@ Using the following configuration you will be able to customize your generation 
 
 == Plugin Injection Since v3
 
-Since version 3.0.0, the link:cobigen-core_configuration#plugin-mechanism[plug-in mechanism] has changed to support modular releases of the CobiGen plug-ins. Therefore, you need to add all plug-ins to be used for generation. Take the following example to get the idea:
+Since version 3.0.0, the link:cobigen-core_configuration#plugin-mechanism.adoc[plug-in mechanism] has changed to support modular releases of the CobiGen plug-ins. Therefore, you need to add all plug-ins to be used for generation. Take the following example to get the idea:
 
 .Example of a full configuration including plugins
 ```xml

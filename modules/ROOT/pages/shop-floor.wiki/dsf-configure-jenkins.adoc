@@ -279,7 +279,7 @@ Now we need to use this artifacts to create a Docker image. To create the docker
 
 *Create docker image using OpenShift cluster*
 
-To create the docker image with this option you need to configure your OpenShift. You could read how to configure it link:dsf-deployment-dsf4openshift#configure-builds-to-create-docker-image-using-OpenShift[here].
+To create the docker image with this option you need to configure your OpenShift. You could read how to configure it link:dsf-deployment-dsf4openshift#configure-builds-to-create-docker-image-using-OpenShift.adoc[here].
 
 [Groovy]
 ----
@@ -315,7 +315,7 @@ docker.withRegistry("""${dockerRegistryProtocol}${dockerRegistry}""", dockerRegi
 }
 ----
 
-link:dsf-deployment-dsf4openshift#configure-builds-to-create-docker-image-using-OpenShift[here]
+link:dsf-deployment-dsf4openshift#configure-builds-to-create-docker-image-using-OpenShift.adoc[here]
 
 NOTE: if your project is a maven project you should read the _pom.xml_ file instead of the _package.json_, you could do it with the next command `def pom = readMavenPom file: 'pom.xml'`. Due to the fact that there are different variable names between those two files, remember to modify *${props.name}* for *${pom.artifactId}* and *${props.version}* for *${pom.version}* in the code.
 
@@ -325,7 +325,7 @@ Once you have the docker image in the registry we only need to import it into yo
 
 *Deploy docker image in OpenShift cluster*
 
-To deploy the docker image with this option you need to configure your OpenShift. You could read how to configure it link:dsf-deployment-dsf4openshift#configure-new-environment[here].
+To deploy the docker image with this option you need to configure your OpenShift. You could read how to configure it link:dsf-deployment-dsf4openshift#configure-new-environment.adoc[here].
 
 [Groovy]
 ----

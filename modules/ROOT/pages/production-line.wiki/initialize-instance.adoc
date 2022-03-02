@@ -144,8 +144,8 @@ This stage is the responsible of configure the Jenkins-SonarQube integration. It
 Some templates needs that Jenkins has installed some plugins. If the plugins are not installed, the template will fail. In order to prevent this behaviour, we use the `initialize-instance` to install all plugins required in order templates. Then, we create another templates that will use the plugins installed by `initialize-instance`. In this stage we create some template utils to configure Jenkins after all required plugins are installed. Those templates are:
 +
 ** link:install-sonar-plugin[Install_SonarQube_Plugin]
-** If `installDeploymentPlugins` is `Docker` or `Docker+Openshift`: link:docker-configuration[Docker_Configuration]
-** If `installDeploymentPlugins` is `Openshift` or `Docker+Openshift`: link:openshift-configuration[Openshift_Configuration]
+** If `installDeploymentPlugins` is `Docker` or `Docker+Openshift`: link:docker-configuration.adoc[Docker_Configuration]
+** If `installDeploymentPlugins` is `Openshift` or `Docker+Openshift`: link:openshift-configuration.adoc[Openshift_Configuration]
 * Configure Nexus 3 stage
 +
 This stage will configure the Production Line Nexus3

@@ -14,11 +14,11 @@ To have your deployment environment with OpenShift you need to have an OpenShift
 
 == Manual configuration
 
-Here you can find all that you need to know to link:dsf-deployment-dsf4openshift-manual-configuration[configure OpenShift] manually.
+Here you can find all that you need to know to link:dsf-deployment-dsf4openshift-manual-configuration.adoc[configure OpenShift] manually.
 
 == Automatic configuration
 
-Here you can find all that you need to know to link:dsf-deployment-dsf4openshift-automatic-configuration[configure OpenShift] automatically.
+Here you can find all that you need to know to link:dsf-deployment-dsf4openshift-automatic-configuration.adoc[configure OpenShift] automatically.
 
 ==  Service integration with jenkins
 
@@ -38,12 +38,12 @@ image::./images/configuration/openshift-jenkins-plugin.png[]
 
 Now it is time to add/upgrade the next stages in to your Jenkinsfile:
 
-Add link:dsf-configure-jenkinsfile#create-docker-image[create docker image] stage.
+Add link:dsf-configure-jenkinsfile#create-docker-image.adoc[create docker image] stage.
 
-Add link:dsf-configure-jenkinsfile#deploy-docker-image[deploy docker image] stage.
+Add link:dsf-configure-jenkinsfile#deploy-docker-image.adoc[deploy docker image] stage.
 
-Add link:dsf-configure-jenkinsfile#check-status[check status] stage.
+Add link:dsf-configure-jenkinsfile#check-status.adoc[check status] stage.
 
-Upgrade link:dsf-configure-jenkinsfile#setup-Jenkins-tools[Setup Jenkins tools] stage.
+Upgrade link:dsf-configure-jenkinsfile#setup-Jenkins-tools.adoc[Setup Jenkins tools] stage.
 
 NOTE: Remember to upgrade your parameters to difference which environment is used per branch.

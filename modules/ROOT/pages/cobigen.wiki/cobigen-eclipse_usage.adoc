@@ -54,7 +54,7 @@ The first step is to check whether the generation configuration is available at 
 
 image:images/howtos/eclipse/health_check_no_templates.png[]
 
-This indicates, that there is no Project named _CobiGen_Templates_ available in the current workspace. To run CobiGen appropriately, it is necessary to have a configuration project named _CobiGen_Templates_ imported into your workspace. For more information see chapter link:cobigen-eclipse_installation#Installation-steps[Eclipse Installation].
+This indicates, that there is no Project named _CobiGen_Templates_ available in the current workspace. To run CobiGen appropriately, it is necessary to have a configuration project named _CobiGen_Templates_ imported into your workspace. For more information see chapter link:cobigen-eclipse_installation#Installation-steps.adoc[Eclipse Installation].
 
 The second step is to check whether the template project includes a valid _context.xml_. If this check fails, you will see the following message:
 
@@ -81,7 +81,7 @@ The third step checks whether there are templates for the selected element(s). I
 
 image:images/howtos/eclipse/health_check_no_matching_triggers.png[]
 
-This indicates, that there no trigger has been activated, which matches the current selection. The reason might be that your selection is faulty or that you imported the wrong template project (e.g. you are working on a devon4j project, but imported the Templates for the Register Factory). If you are a template developer, have a look at the  link:cobigen-core_configuration#trigger-node[trigger configuration] and at the corresponding available plug-in implementations of triggers, like e.g., link:cobigen-javaplugin#Trigger-extension[Java Plug-in] or link:cobigen-xmlplugin#Trigger-extension[XML Plug-in].
+This indicates, that there no trigger has been activated, which matches the current selection. The reason might be that your selection is faulty or that you imported the wrong template project (e.g. you are working on a devon4j project, but imported the Templates for the Register Factory). If you are a template developer, have a look at the  link:cobigen-core_configuration#trigger-node.adoc[trigger configuration] and at the corresponding available plug-in implementations of triggers, like e.g., link:cobigen-javaplugin#Trigger-extension.adoc[Java Plug-in] or link:cobigen-xmlplugin#Trigger-extension.adoc[XML Plug-in].
 
 If all the checks are passed you see the following message:
 

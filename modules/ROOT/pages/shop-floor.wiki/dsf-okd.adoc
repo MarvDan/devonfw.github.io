@@ -13,10 +13,10 @@ OKD provides a complete open source container application platform. If you are l
 [discrete]
 ==  Continue reading...
 
-* link:dsf-okd-how-to-install[How to install Openshift Origin]
-* link:dsf-okd-initial-setup[Initial setup]
-** link:dsf-okd-s2i[s2i]
-** link:dsf-okd-templates[templates]
-** link:dsf-okd-customize[Customize Openshift]
-*** link:dsf-okd-customize-icons[Customize icons]
-*** link:dsf-okd-customize-catalog[Customize catalog]
+* link:dsf-okd-how-to-install.adoc[How to install Openshift Origin]
+* link:dsf-okd-initial-setup.adoc[Initial setup]
+** link:dsf-okd-s2i.adoc[s2i]
+** link:dsf-okd-templates.adoc[templates]
+** link:dsf-okd-customize.adoc[Customize Openshift]
+*** link:dsf-okd-customize-icons.adoc[Customize icons]
+*** link:dsf-okd-customize-catalog.adoc[Customize catalog]

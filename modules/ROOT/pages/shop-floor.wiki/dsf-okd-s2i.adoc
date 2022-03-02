@@ -4,11 +4,11 @@ This are the s2i source and templates to build an s2i images. It provides OpenSh
 
 This work is totally based on the implementation of  https://github.com/Mickuehl[Michael Kuehl] from RedHat for Oasp s2i.
 
-All this information is used as a part of the link:dsf-okd-initial-setup[initial setup] for openshift.
+All this information is used as a part of the link:dsf-okd-initial-setup.adoc[initial setup] for openshift.
 
 ==  Previous setup
 
-In order to build all of this, it will be necessary, first, to have a running OpenShift cluster. How to install it link:dsf-okd-how-to-install[here].
+In order to build all of this, it will be necessary, first, to have a running OpenShift cluster. How to install it link:dsf-okd-how-to-install.adoc[here].
 
 ==  Usage
 
@@ -44,7 +44,7 @@ That's all!
 
 == Deploy devonfw templates
 
-Now, it's time to create devonfw templates to use this s2i and add it to the browse catalog. More information link:dsf-okd-templates[here].
+Now, it's time to create devonfw templates to use this s2i and add it to the browse catalog. More information link:dsf-okd-templates.adoc[here].
 
 ==  Build All
 

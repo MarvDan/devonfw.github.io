@@ -85,7 +85,7 @@ Additionally, the java plugin provides the ability to match packages (containers
 ----
 +
 
-The container matcher matches packages provided by the type `com.capgemini.cobigen.javaplugin.inputreader.to.PackageFolder` with a regular expression stated in the `value` attribute. (See link:cobigen-core_configuration#containermatcher-node[`containerMatcher` semantics] to get more information about `containerMatchers` itself.)
+The container matcher matches packages provided by the type `com.capgemini.cobigen.javaplugin.inputreader.to.PackageFolder` with a regular expression stated in the `value` attribute. (See link:cobigen-core_configuration#containermatcher-node.adoc[`containerMatcher` semantics] to get more information about `containerMatchers` itself.)
 
 
 === Variable Assignment types

@@ -14,6 +14,6 @@ NOTE: more information about how to create projects in https://docs.gitlab.com/e
 
 ==  Service integration
 
-To learn how to configure the integration between GitLab and Jenkins see the next link:dsf-mirabaud-jenkins-gitLab-integration[example]
+To learn how to configure the integration between GitLab and Jenkins see the next link:dsf-mirabaud-jenkins-gitLab-integration.adoc[example]
 
 // TODO: using BlueOcean interface

@@ -1,4 +1,4 @@
-==Helpful links for template development
+== Helpful links for template development
 
 * http://freemarker.org/[FreeMarker Root Page]
 
@@ -8,4 +8,4 @@
 
 ** https://try.freemarker.apache.org/[FreeMarker Template Tester]
 
-* link:cobigen-javaplugin#template-object-model[Variables to access Java source model]
+* link:cobigen-javaplugin#template-object-model.adoc[Variables to access Java source model]

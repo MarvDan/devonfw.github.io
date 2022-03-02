@@ -8,7 +8,7 @@ These are scripts to customize an Openshift cluster to be a devonfw Openshift.
 
 devonfw Openshift Origin use custom icons, and we need to add it to openshift. More information:
 
-* link:dsf-okd-customize[Customize Openshift]
+* link:dsf-okd-customize.adoc[Customize Openshift]
 
 == Script initial-setup
 

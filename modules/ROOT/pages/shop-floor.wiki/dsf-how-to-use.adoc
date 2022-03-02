@@ -8,17 +8,17 @@ To start working you need to have some services running in your provisioning env
 
 To host those services we recommend to have a Production Line instance but you can use other platforms. Here is the list for the different options:
 
-  * link:dsf-provisioning-production-line[Production Line].
-// TODO:  * link:dsf-provisioning-dsf4openshift[dsf4openshift].
-  * link:dsf-provisioning-dsf4docker[dsf4docker].
+  * link:dsf-provisioning-production-line.adoc[Production Line].
+// TODO:  * link:dsf-provisioning-dsf4openshift.adoc[dsf4openshift].
+  * link:dsf-provisioning-dsf4docker.adoc[dsf4docker].
 
 ==  Step 1 - Configuration and services integration
 
 The first step is configuring your services and integrate them with jenkins. Here you have an example about how to manually configure the next services:
 
-  * link:dsf-configure-nexus[Nexus].
-  * link:dsf-configure-sonarqube[SonarQube].
-//  * link:dsf-configure-jenkins[Jenkins].
+  * link:dsf-configure-nexus.adoc[Nexus].
+  * link:dsf-configure-sonarqube.adoc[SonarQube].
+//  * link:dsf-configure-jenkins.adoc[Jenkins].
 
 ==  Step 2 - Create the project
 
@@ -28,13 +28,13 @@ The second is create or git repository and integrate it with Jenkins.
 
 Here you can find a manual guide about how it:
 
-* link:dsf-configure-gitlab[GitLab] new project.
+* link:dsf-configure-gitlab.adoc[GitLab] new project.
 
 == Start new devonfw project
 
 It is time to create your devonfw project:
 
-You can find all that you need about how to create a link:dsf-create-new-devonfw-project[new devonfw project]
+You can find all that you need about how to create a link:dsf-create-new-devonfw-project.adoc[new devonfw project]
 
 == cicd configuration
 
@@ -44,11 +44,11 @@ Now you need to add cicd files in your project.
 
 == == Jenkinsfile
 
-Here you can find all that you need to know to do your link:dsf-configure-jenkinsfile[Jenkinsfile].
+Here you can find all that you need to know to do your link:dsf-configure-jenkinsfile.adoc[Jenkinsfile].
 
 == ==  Dockerfile
 
-Here you can find all that you need to know to do your link:dsf-configure-dockerfile[Dockerfile].
+Here you can find all that you need to know to do your link:dsf-configure-dockerfile.adoc[Dockerfile].
 
 == ==  Automatic configuration
 
@@ -66,14 +66,14 @@ If you are using production line for provisioning you could use cicdgen to confi
 
 The third is configure our deployment environment. Here is the list for the different options:
 
-  * link:dsf-deployment-dsf4openshift[dsf4openshift].
-// TODO:  * link:dsf-deployment-dsf4docker[dsf4docker].
+  * link:dsf-deployment-dsf4openshift.adoc[dsf4openshift].
+// TODO:  * link:dsf-deployment-dsf4docker.adoc[dsf4docker].
 
 ==  Step 4 - Monitoring
 
 Here you can find information about tools for monitoring:
 
- * link:dsf-configure-jenkins-build-monitor-view[build monitor view] for Jenkins. With this tool you will be able to see in real time what is the state of your Jenkins pipelines.
+ * link:dsf-configure-jenkins-build-monitor-view.adoc[build monitor view] for Jenkins. With this tool you will be able to see in real time what is the state of your Jenkins pipelines.
 
 ////
 ==  Step 5 - Verification

@@ -139,4 +139,4 @@ image::./images/others/selenium/node/done3.png[]
 
 Last part of the installation of the Selenium Grid consists on creating persistent volumes for both, the hub container and the node container.
 
-Persistent Volumes can be easely created folling the the link:dsf-openshift-services-bitbucket-extra-server-configuration[BitBucket Extra server configuration]
+Persistent Volumes can be easely created folling the the link:dsf-openshift-services-bitbucket-extra-server-configuration.adoc[BitBucket Extra server configuration]

@@ -55,8 +55,8 @@ dos2unix dsf4docker-uninstall.sh
 
 The *Docker* part of the shop floor is created based on the experience of the environment setup of the project *Mirabaud Advisory*, and intended to be updated to latest versions. Mirabaud Advisory is a web service developed with devonfw (Java) that, alongside its own implementation, it needed an environment both for the team to follow CICD rules through their 1-week-long sprints and for the client (Mirabaud) to check the already done work.
 
-There is a practical experience about the link:dsf-mirabaud-cicd-environment-setup[Mirabaud Case].
+There is a practical experience about the link:dsf-mirabaud-cicd-environment-setup.adoc[Mirabaud Case].
 
 ---
 
-link:dsf-how-to-use#Step-1---Configuration-and-services-integration[Back].
+link:dsf-how-to-use#Step-1---Configuration-and-services-integration.adoc[Back].

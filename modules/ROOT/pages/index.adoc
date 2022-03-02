@@ -1,5 +1,15 @@
 == devonfw guide
 Updated at {localdatetime}
+:toc:
+:doctype: book
+:idprefix:
+:idseparator: -
+:reproducible:
+:source-highlighter: rouge
+:listing-caption: Listing
+:sectnums:
+:chapter-label:
+:partnums:
 
 include::getting-started.wiki/getting-started.adoc[leveloffset=0]
 
