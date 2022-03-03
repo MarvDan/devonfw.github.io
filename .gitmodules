@@ -1,0 +1,3 @@
+[submodule "docs/modules/ROOT/pages/cicdgen"]
+	path = docs/modules/ROOT/pages/cicdgen
+	url = https://github.com/MarvDan/cicdgen.wiki.git
