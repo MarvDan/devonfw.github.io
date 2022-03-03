@@ -23,10 +23,9 @@ jobs:
         run: |
           pwd
           ls
-          cd docs/modules/ROOT/pages/cicdgen
           pwd
-          ls
-          find /the/path -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
+          ls docs/modules/ROOT/pages/cicdgen
+          find /docs/modules/ROOT/pages/cicdgen -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
           pwd
           ls
           
