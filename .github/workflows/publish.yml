@@ -20,7 +20,7 @@ jobs:
           cd docs/modules/ROOT/pages/cicdgen
           pwd
           ls
-          FOR /R %f IN (*.asciidoc) DO REN "%f" *.adoc
-          pwd
-          ls
+          #FOR /R %f IN (*.asciidoc) DO REN "%f" *.adoc
+          #pwd
+          #ls
           
