@@ -1,0 +1,32 @@
+name: Publish to GitHub Pages
+on:
+  push:
+    branches: [developAntoraGhPage]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Clone
+        uses: actions/checkout@v2
+        with:
+          repository: MarvDan/devonfw.github.io
+          ref: developAntoraGhPage
+          submodules: true
+          
+      - name: Change Asciidoc to Adoc
+        run: |
+          pwd
+          ls
+          pwd
+          ls docs/modules/ROOT/pages/cicdgen
+          find docs/modules/ROOT/pages/cicdgen -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
+          pwd
+          ls docs/modules/ROOT/pages/cicdgen
+          pwd
+          ls docs/modules/ROOT/pages/cicdgen/devon4j
+          
+      - name: Run Antora
+        uses: kameshsampath/antora-site-action@v0.2.4
+        with:
+          antora_playbook: antora-playbook.yml
