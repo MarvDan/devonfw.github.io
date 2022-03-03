@@ -6,8 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2            
+    
+      - name: Clone
+        uses: actions/checkout@v2
+        with:
+          repository: MarvDan/devonfw.github.io
+          ref: developAntoraGhPage
+          submodules: true
+          
       - name: Run Antora
         uses: kameshsampath/antora-site-action@v0.2.4
         with:
