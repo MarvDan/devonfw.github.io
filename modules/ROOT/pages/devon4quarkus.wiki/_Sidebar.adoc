@@ -1,8 +1,0 @@
-== link:Home[Home]
-
-== Guides
-* link:guide-logging[Logging]
-* link:guide-cors-support[CORS support]
-
-== Coding
-* link:guide-coding-conventions[Coding Conventions]

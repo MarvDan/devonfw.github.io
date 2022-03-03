@@ -1,6 +1,0 @@
-== devonfw default community health files
-
-image:https://img.shields.io/github/license/devonfw/ide.svg?label=License["Apache License, Version 2.0",link=https://github.com/devonfw/ide/blob/master/LICENSE]
-
-https://devonfw.com[devonfw] is a standard development platform and consists of many repositories.
-This repository is for https://help.github.com/en/articles/creating-a-default-community-health-file-for-your-organization[default community health files] of this entire devonfw github organization.

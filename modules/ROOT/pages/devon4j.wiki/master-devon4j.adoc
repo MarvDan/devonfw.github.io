@@ -1,3 +1,0 @@
-==devon4j
-
-include::master-doc.adoc[leveloffset=0]

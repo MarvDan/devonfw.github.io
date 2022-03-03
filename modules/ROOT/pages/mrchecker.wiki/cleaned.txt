@@ -1,1 +1,0 @@
-cleaning this repository before automation process integration (from documentation/ folder to .wiki)

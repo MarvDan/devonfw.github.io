@@ -1,3 +1,0 @@
-* link:home[Home]
-* link:guide-sonar-qube-setup.adoc[SonarQube Setup Guide]
-* link:guide-sonar-qube.adoc[SonarQube Usage Guide]

@@ -1,8 +1,0 @@
-== Support
-
-include::migration-from-devonfw-3.0.0-or-lower.adoc[leveloffset=2]
-
-<<<<
-
-include::LICENSE.adoc[leveloffset=2]
-
