@@ -1,6 +1,6 @@
 site:
   title: Devonfw.github.io Docs
-  start_page: devonfw.github.io::index.adoc
+  start_page: devonfw.github.io::index.html
 content:
   sources:
   - url: https://github.com/marvdan/devonfw.github.io.git
@@ -9,11 +9,11 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-    supplemental_files:
-    - path: ui.yml
-      contents: |
-        static_files: [ .nojekyll ]
-    - path: .nojekyll
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files: [ .nojekyll ]
+  - path: .nojekyll
 
 runtime:
   fetch: true
