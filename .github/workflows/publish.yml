@@ -17,7 +17,8 @@ jobs:
         run: |
           pwd
           ls
-          cd docs/modules/ROOT/pages/cicdgen
+          ls solutions
+          ls docs/modules/ROOT/pages/cicdgen
           pwd
           ls
           #FOR /R %f IN (*.asciidoc) DO REN "%f" *.adoc
