@@ -26,7 +26,7 @@ jobs:
           cd docs/modules/ROOT/pages/cicdgen
           pwd
           ls
-          find . -name '*.t1' -exec rename .asciidoc .adoc {} +
+          find /the/path -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
           pwd
           ls
           
