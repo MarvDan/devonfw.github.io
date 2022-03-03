@@ -22,7 +22,9 @@ jobs:
           ls docs/modules/ROOT/pages/cicdgen
           find docs/modules/ROOT/pages/cicdgen -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
           pwd
-          ls
+          ls docs/modules/ROOT/pages/cicdgen
+          pwd
+          ls docs/modules/ROOT/pages/cicdgen/devon4j
           
       - name: Run Antora
         uses: kameshsampath/antora-site-action@v0.2.4
