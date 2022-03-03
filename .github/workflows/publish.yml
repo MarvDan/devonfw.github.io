@@ -14,7 +14,7 @@ jobs:
           antora_playbook: antora-playbook.yml
           
       - name: Change Asciidoc to Adoc
-      run: |
+        run: |
           pwd
           ls
           cd docs/modules/ROOT/pages/cicdgen
