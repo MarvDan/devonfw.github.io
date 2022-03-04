@@ -21,3 +21,6 @@
 [submodule "docs/modules/ROOT/pages/cicdgen"]
 	path = docs/modules/ROOT/pages/cicdgen
 	url = https://github.com/MarvDan/cicdgen.wiki.git
+[submodule "docs/modules/ROOT/pages/cobigen"]
+	path = docs/modules/ROOT/pages/cobigen
+	url = https://github.com/MarvDan/cobigen.wiki.git
