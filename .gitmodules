@@ -24,3 +24,6 @@
 [submodule "docs/modules/ROOT/pages/cobigen"]
 	path = docs/modules/ROOT/pages/cobigen
 	url = https://github.com/MarvDan/cobigen.wiki.git
+[submodule "docs/modules/ROOT/pages/devon4j"]
+	path = docs/modules/ROOT/pages/devon4j
+	url = https://github.com/MarvDan/devon4j.wiki.git
