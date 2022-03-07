@@ -16,25 +16,23 @@ jobs:
           
       - name: Change Asciidoc to Adoc
         run: |
+          find docs/modules/ROOT/pages -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
+          
+     # - name: Run Antora
+      #  uses: kameshsampath/antora-site-action@v0.2.4
+       # with:
+        #  antora_playbook: antora-playbook.yml
+         
+      - name: Test1
+        run: |
           pwd
           ls
-          pwd
-          ls docs/modules/ROOT/pages/cicdgen
-          pwd
-          ls docs/modules/ROOT/pages/devon4j
-          find docs/modules/ROOT/pages -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
-          pwd
-          ls docs/modules/ROOT/pages/cicdgen
-          pwd
-          ls docs/modules/ROOT/pages/cicdgen/devon4j
-          pwd
-          ls docs/modules/ROOT/pages/devon4j
-          
-      - name: Run Antora
-        uses: kameshsampath/antora-site-action@v0.2.4
-        with:
-          antora_playbook: antora-playbook.yml
-          
+       
+      - name: Antora
+        run: |
+         cd docs
+         npm i @antora/site-generator-default
+         
       - name: Test
         run: |
           pwd
