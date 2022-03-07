@@ -22,16 +22,16 @@ jobs:
       - name: Test1
         run: |
           pwd
-          ls
+          ls docs
           
                     
       - name: Run Antora
         uses: kameshsampath/antora-site-action@v0.2.4
         with:
-          antora_playbook: antora-playbook.yml
+          antora_playbook: docs/antora-playbook.yml
        
          
       - name: Test
         run: |
           pwd
-          ls
+          ls docs
