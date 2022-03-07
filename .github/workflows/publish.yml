@@ -20,13 +20,22 @@ jobs:
           ls
           pwd
           ls docs/modules/ROOT/pages/cicdgen
-          find docs/modules/ROOT/pages/cicdgen -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
+          pwd
+          ls docs/modules/ROOT/pages/devon4j
+          find docs/modules/ROOT/pages -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
           pwd
           ls docs/modules/ROOT/pages/cicdgen
           pwd
           ls docs/modules/ROOT/pages/cicdgen/devon4j
+          pwd
+          ls docs/modules/ROOT/pages/devon4j
           
       - name: Run Antora
         uses: kameshsampath/antora-site-action@v0.2.4
         with:
           antora_playbook: antora-playbook.yml
+          
+      - name: Test
+        run: |
+          pwd
+          ls
