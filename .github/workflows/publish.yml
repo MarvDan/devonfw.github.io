@@ -30,7 +30,12 @@ jobs:
        
       - name: Antora
         run: |
+         cd docs
+         pwd
+         ls
          npm i @antora/site-generator-default
+         pwd
+         ls
          
       - name: Test
         run: |
