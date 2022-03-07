@@ -17,7 +17,7 @@ jobs:
       - name: Change Asciidoc to Adoc
         run: |
           find docs/modules/ROOT/pages -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
-          
+    #      
      # - name: Run Antora
       #  uses: kameshsampath/antora-site-action@v0.2.4
        # with:
