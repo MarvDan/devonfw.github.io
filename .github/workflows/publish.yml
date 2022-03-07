@@ -33,7 +33,11 @@ jobs:
          cd docs
          pwd
          ls
-         npm i @antora/site-generator-default
+         #npm i @antora/site-generator-default
+         npm i -g antora-site-generator-lunr
+         pwd
+         ls
+         DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr NODE_PATH="$(npm -g root)" antora --generator antora-site-generator-lunr site.yml
          pwd
          ls
          
