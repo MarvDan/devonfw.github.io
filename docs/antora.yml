@@ -1,0 +1,5 @@
+name: devonfw.github.io
+title: devonfw.github.io
+version: '1.0'
+nav:
+- modules/ROOT/nav.adoc

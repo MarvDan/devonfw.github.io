@@ -16,17 +16,32 @@ jobs:
           
       - name: Change Asciidoc to Adoc
         run: |
+          find docs/modules/ROOT/pages -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
+
+         
+      - name: Test1
+        run: |
           pwd
-          ls
+          ls docs
           pwd
-          ls docs/modules/ROOT/pages/cicdgen
-          find docs/modules/ROOT/pages/cicdgen -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
+          ls docs/modules/ROOT/pages/devon4j
           pwd
-          ls docs/modules/ROOT/pages/cicdgen
-          pwd
-          ls docs/modules/ROOT/pages/cicdgen/devon4j
+          ls docs/modules/ROOT/pages
           
+                    
       - name: Run Antora
         uses: kameshsampath/antora-site-action@v0.2.4
         with:
-          antora_playbook: antora-playbook.yml
+          antora_playbook: docs/antora-playbook.yml
+          
+      - name: Artifact build upload
+        uses: actions/upload-artifact@v2
+        with: 
+          name: my-artifact
+          path: docs/build
+##
+         
+      - name: Test
+        run: |
+          pwd
+          ls docs
