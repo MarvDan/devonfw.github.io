@@ -17,7 +17,7 @@ include::./devon4j.adoc[leveloffset=0]
 
 == Tools
 
-include::cobigen/master-cobigen.adoc[leveloffset=1]
+include::modules/ROOT/pages/cobigen/master-cobigen.adoc[leveloffset=1]
 
 // include::mrchecker.wiki/master-mrchecker.adoc[leveloffset=1]
 
@@ -32,7 +32,7 @@ There are different CICD tools:
 [.internal]
 production-line-link
 
-include::cicdgen/master-cicdgen.adoc[leveloffset=1]
+include::docs/modules/ROOT/pages/cicdgen/master-cicdgen.adoc[leveloffset=1]
 
 // include::hangar.wiki/hangar.adoc[leveloffset=+1]
 
