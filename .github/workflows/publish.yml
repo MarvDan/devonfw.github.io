@@ -25,6 +25,8 @@ jobs:
           ls docs
           pwd
           ls docs/modules/ROOT/pages/devon4j
+          pwd
+          ls docs/modules/ROOT/pages
           
                     
       - name: Run Antora
