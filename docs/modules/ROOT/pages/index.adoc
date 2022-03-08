@@ -36,7 +36,7 @@ include::docs/modules/ROOT/pages/cicdgen/master-cicdgen.adoc[leveloffset=1]
 
 // include::hangar.wiki/hangar.adoc[leveloffset=+1]
 
-// include::my-thai-star.wiki/master-my-thai-star.adoc[leveloffset=0]
+include::my-thai-star.wiki/master-my-thai-star.adoc[leveloffset=0]
 
 // include::general/master-contributing.adoc[leveloffset=0]
 
