@@ -31,6 +31,12 @@ jobs:
         uses: kameshsampath/antora-site-action@v0.2.4
         with:
           antora_playbook: docs/antora-playbook.yml
+          
+      - name: Artifact build upload
+        uses: actions/upload-artifact@v2
+        with: 
+          name: my-artifact
+          path: docs/build
 #
          
       - name: Test
