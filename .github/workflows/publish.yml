@@ -14,6 +14,18 @@ jobs:
           ref: developAntoraGhPage
           submodules: true
           
+      - name: Test2
+        run: |
+          pwd
+          ls docs/modules/ROOT/pages
+          
+      - name: Clone
+        uses: actions/checkout@v2
+        with:
+          repository: devonfw/devon4j.wiki.git
+          path: docs/modules/ROOT/pages
+
+          
       - name: Change Asciidoc to Adoc
         run: |
           find docs/modules/ROOT/pages -depth -name "*.asciidoc" -exec sh -c 'mv "$1" "${1%.asciidoc}.adoc"' _ {} \;
@@ -21,10 +33,6 @@ jobs:
          
       - name: Test1
         run: |
-          pwd
-          ls docs
-          pwd
-          ls docs/modules/ROOT/pages/devon4j
           pwd
           ls docs/modules/ROOT/pages
           
