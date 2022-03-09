@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: devonfw/devon4j.wiki.git
-          path: docs/modules/ROOT/pages
+          #path: docs/modules/ROOT/pages
 
           
       - name: Change Asciidoc to Adoc
