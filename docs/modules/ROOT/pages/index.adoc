@@ -32,7 +32,7 @@ There are different CICD tools:
 [.internal]
 production-line-link
 
-include::docs/modules/ROOT/pages/cicdgen/master-cicdgen.adoc[leveloffset=1]
+include::docs/modules/ROOT/pages/cicdgen/master-cicdgen[leveloffset=1]
 
 // include::hangar.wiki/hangar.adoc[leveloffset=+1]
 
