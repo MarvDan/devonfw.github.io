@@ -3,9 +3,13 @@ site:
   start_page: devonfw.github.io::index.adoc
 content:
   sources:
-  - url: https://github.com/marvdan/devonfw.github.io.git
-    branches: developAntoraGhPage
-    start_path: docs
+  #- url: https://github.com/marvdan/devonfw.github.io.git
+   # branches: developAntoraGhPage
+   # start_path: docs
+  - url: https://github.com/rafaelvicariabarker/devon4j.git
+    branches: HEAD
+  - url: https://github.com/rafaelvicariabarker/cobigen.git
+    branches: HEAD
     
 ui:
   bundle:
