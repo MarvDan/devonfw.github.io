@@ -15,7 +15,7 @@ Updated at {localdatetime}
 
 // include::ide.wiki/devonfw-ide.adoc[leveloffset=0]
 
-include::./devon4j.adoc[leveloffset=0]
+include::devon4j_doc/devon4j.adoc[leveloffset=0]
 
 // include::devon4ng.wiki/master-devon4ng.adoc[leveloffset=0]
 
