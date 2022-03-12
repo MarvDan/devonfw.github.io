@@ -12,6 +12,8 @@ content:
     branches: HEAD
   - url: https://github.com/MarvDan/cicdgen.git
     branches: HEAD
+  - url: https://github.com/MarvDan/dashboard.git
+    branches: HEAD
     
 ui:
   bundle:
