@@ -15,7 +15,7 @@ Updated at {localdatetime}
 
 // include::ide.wiki/devonfw-ide.adoc[leveloffset=0]
 
-include::devon4j_doc/devon4j.adoc[leveloffset=0]
+include::devon4j/devon4j[leveloffset=0]
 
 // include::devon4ng.wiki/master-devon4ng.adoc[leveloffset=0]
 
@@ -27,7 +27,7 @@ include::devon4j_doc/devon4j.adoc[leveloffset=0]
 
 == Tools
 
-include::modules/ROOT/pages/cobigen/master-cobigen.adoc[leveloffset=1]
+include::cobigen/master-cobigen[leveloffset=1]
 
 // include::mrchecker.wiki/master-mrchecker.adoc[leveloffset=1]
 
@@ -42,7 +42,7 @@ There are different CICD tools:
 [.internal]
 production-line-link
 
-include::docs/modules/ROOT/pages/cicdgen/master-cicdgen[leveloffset=1]
+include::cicdgen/master-cicdgen[leveloffset=1]
 
 // include::hangar.wiki/hangar.adoc[leveloffset=+1]
 
