@@ -23,6 +23,8 @@ jobs:
           
       - name: Create Folders
         run: |
+          pwd
+          cd ../
           cd docs/modules/ROOT/pages
           mkdir{devon4j_doc}
 
