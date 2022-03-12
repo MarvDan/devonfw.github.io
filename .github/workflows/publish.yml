@@ -23,8 +23,7 @@ jobs:
           
       - name: Move doc
         run: |
-          cd docs/modules/ROOT/pages
-          mkdir devon4j_doc
+          mkdir("docs/modules/ROOT/pages") devon4j_doc
           mv docs/documentation docs/modules/ROOT/pages/devon4j_doc
           
     
