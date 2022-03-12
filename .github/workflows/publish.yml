@@ -19,7 +19,7 @@ jobs:
         with:
           repository: devonfw/devon4j
           ref: master
-          path: docs
+          path: docs/devon4j
           
       - name: Create Folders
         run: |
