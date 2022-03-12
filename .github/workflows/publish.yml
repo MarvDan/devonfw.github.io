@@ -30,7 +30,7 @@ jobs:
 
       - name: Move doc
         run: |
-          mv docs/documentation docs/modules/ROOT/pages/devon4j_doc
+          mv docs/devon4j/documentation docs/modules/ROOT/pages/devon4j_doc
           
     
       
