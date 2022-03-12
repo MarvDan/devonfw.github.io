@@ -14,23 +14,23 @@ jobs:
           ref: developAntoraGhPage
           submodules: true
           
-      - name: Clone devon4j
-        uses: actions/checkout@v2
-        with:
-          repository: devonfw/devon4j
-          ref: master
-          path: docs/devon4j
+   #   - name: Clone devon4j
+    #    uses: actions/checkout@v2
+     #   with:
+      #    repository: devonfw/devon4j
+       ##   ref: master
+         # path: docs/devon4j
           
-      - name: Create Folders
-        run: |
-          pwd
-          ls
-          cd docs/modules/ROOT/pages
-          mkdir {devon4j_doc}
+      #- name: Create Folders
+       # run: |
+        #  pwd
+         # ls
+          #cd docs/modules/ROOT/pages
+          #mkdir {devon4j_doc}
 
-      - name: Move doc
-        run: |
-          mv docs/devon4j/documentation docs/modules/ROOT/pages/devon4j_doc
+      #- name: Move doc
+       # run: |
+          #mv docs/devon4j/documentation docs/modules/ROOT/pages/devon4j_doc
           
     
       
