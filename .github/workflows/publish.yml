@@ -37,7 +37,7 @@ jobs:
       - name: Test2
         run: |
           pwd
-          ls docs/modules/ROOT/pages
+          ls docs/modules/ROOT/pages/devon4j_doc
           
           
       - name: Change Asciidoc to Adoc
@@ -48,7 +48,7 @@ jobs:
       - name: Test1
         run: |
           pwd
-          ls docs/modules/ROOT/pages
+          ls docs/modules/ROOT/pages/devon4j_doc
           
                     
       - name: Run Antora
