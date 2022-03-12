@@ -25,6 +25,14 @@ content:
     branches: HEAD
   - url: https://github.com/MarvDan/devon4quarkus.git
     branches: HEAD
+  - url: https://github.com/MarvDan/devon4ts.git
+    branches: HEAD
+  - url: https://github.com/MarvDan/.github.git
+    branches: HEAD
+  - url: https://github.com/MarvDan/getting-started.git
+    branches: HEAD
+  - url: https://github.com/MarvDan/hangar.git
+    branches: HEAD
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
