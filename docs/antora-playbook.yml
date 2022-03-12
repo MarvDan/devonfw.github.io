@@ -1,6 +1,6 @@
 site:
   title: Devonfw.github.io Docs
-  start_page: devonfw.github.io::index.adoc
+  start_page: devon4j::index.adoc
 content:
   sources:
   #- url: https://github.com/marvdan/devonfw.github.io.git
