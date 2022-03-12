@@ -19,7 +19,13 @@ jobs:
         with:
           repository: devonfw/devon4j
           ref: master
-          path: docs/modules/ROOT/pages
+          path: docs
+          
+      - name: Move doc
+        run: |
+          cd docs/modules/ROOT/pages
+          mkdir devon4j_doc
+          mv docs/documentation docs/modules/ROOT/pages/devon4j_doc
           
     
       
