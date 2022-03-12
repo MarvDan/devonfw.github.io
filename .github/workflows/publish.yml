@@ -21,9 +21,13 @@ jobs:
           ref: master
           path: docs
           
+      - name: Create Folders
+        run: |
+          cd docs/modules/ROOT/pages
+          mkdir{devon4j_doc}
+
       - name: Move doc
         run: |
-          mkdir("docs/modules/ROOT/pages") devon4j_doc
           mv docs/documentation docs/modules/ROOT/pages/devon4j_doc
           
     
