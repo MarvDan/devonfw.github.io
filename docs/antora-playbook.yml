@@ -10,6 +10,8 @@ content:
     branches: HEAD
   - url: https://github.com/rafaelvicariabarker/cobigen.git
     branches: HEAD
+  - url: https://github.com/MarvDan/cicdgen.git
+    branches: HEAD
     
 ui:
   bundle:
