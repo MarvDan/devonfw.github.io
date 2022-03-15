@@ -37,17 +37,17 @@ content:
     branches: HEAD
   - url: https://github.com/MarvDan/jump-the-queue.git
     branches: HEAD
-   - url: https://github.com/MarvDan/mrchecker.git
+  - url: https://github.com/MarvDan/mrchecker.git
     branches: HEAD
-   - url: https://github.com/MarvDan/my-thai-star.git
+  - url: https://github.com/MarvDan/my-thai-star.git
     branches: HEAD
-   - url: https://github.com/MarvDan/production-line.git
+  - url: https://github.com/MarvDan/production-line.git
     branches: HEAD
-   - url: https://github.com/MarvDan/shop-floor.git
+  - url: https://github.com/MarvDan/shop-floor.git
     branches: HEAD
-    - url: https://github.com/MarvDan/solicitor.git
+  - url: https://github.com/MarvDan/solicitor.git
     branches: HEAD
-    - url: https://github.com/MarvDan/sonar-devon4j-plugin.git
+  - url: https://github.com/MarvDan/sonar-devon4j-plugin.git
     branches: HEAD
 ui:
   bundle:
