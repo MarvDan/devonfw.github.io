@@ -10,7 +10,7 @@ content:
     branches: HEAD
   - url: https://github.com/MarvDan/cicdgen.git
     branches: HEAD
-  - url: https://github.com/rafaelvicariabarker/cobigen.git
+  - url: https://github.com/MarvDan/cobigen.git
     branches: HEAD
   - url: https://github.com/MarvDan/dashboard.git
     branches: HEAD
